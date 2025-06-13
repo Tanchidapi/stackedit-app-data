@@ -7,7 +7,8 @@
 ## 1.b+树的查找 
 ### 顺序查找：从叶子节点的头指针开始
 ### 随机查找：和b树类似，但一定要找到叶子节点
-### 范围查找：
+### 范围查找：先通过随机查找找到起点，再从起点出发顺序查找找到终点
+## 2...插入、删除与b树类似
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNTA1NDgzNywxMzIwMDA4ODczXX0=
+eyJoaXN0b3J5IjpbNzg2OTgxMzYzLDEzMjAwMDg4NzNdfQ==
 -->
