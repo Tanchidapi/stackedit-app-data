@@ -2,6 +2,7 @@
 ## 被广泛用于数据库的索引结构，即数据库中数据的索引所构成
 ## 叶节点包含所有的关键字，类似于链表结构顺序排列，非叶节点相当于给叶节点层建立索引
 ## m阶b+树中，节点元素个数和其分支个数是相同的，每个节点最多有m个元素与分支，每个非叶节点的元素为对应其子节点最大元素，则非叶节点为索引的索引
+## 叶节点包含所有关键字及指向对应记录的指针，非叶节点只作索引
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDEyOTQwOCwxMzIwMDA4ODczXX0=
+eyJoaXN0b3J5IjpbMTE5NDM4NjIzLDEzMjAwMDg4NzNdfQ==
 -->
