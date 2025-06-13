@@ -4,7 +4,10 @@
 ## 2.b树的性质
 ### 平衡，所有叶节点在同一层；有序，满足左子树比节点小，右子树比节点大；多路，见1.
 ## 3.b树的查找
-
+### 类似于搜索二叉树，最后不匹配时会往下走到失败结点，意味着查找失败
+## 4.b树的插入
+### 搜索查找插入位置，插入后，当前节点
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc0MjcwNTU0LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE2NzU0MTM1MTEsLTIwODg3NDY2MTJdfQ
+==
 -->
