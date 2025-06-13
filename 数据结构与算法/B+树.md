@@ -4,6 +4,9 @@
 ## m阶b+树中，节点元素个数和其分支个数是相同的，每个节点最多有m个元素与分支，每个非叶节点的元素为对应其子节点最大元素，则非叶节点为索引的索引
 ## 叶节点包含所有关键字及指向对应记录的指针，非叶节点只作索引
 ## 兼顾顺序查找与随机查找
+## 1.b+树的查找 
+### 顺序查找：从叶子节点的头指针开始
+### 随机cha'zhao
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjEzMTczODMsMTMyMDAwODg3M119
+eyJoaXN0b3J5IjpbLTE4Njk0NDk3MDIsMTMyMDAwODg3M119
 -->
