@@ -6,7 +6,8 @@
 ## 兼顾顺序查找与随机查找
 ## 1.b+树的查找 
 ### 顺序查找：从叶子节点的头指针开始
-### 随机cha'zhao
+### 随机查找：和b树类似，但一定要找到叶子节点
+### 范围查找：
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njk0NDk3MDIsMTMyMDAwODg3M119
+eyJoaXN0b3J5IjpbMTAxNTA1NDgzNywxMzIwMDA4ODczXX0=
 -->
