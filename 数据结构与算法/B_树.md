@@ -6,8 +6,7 @@
 ## 3.b树的查找
 ### 类似于搜索二叉树，最后不匹配时会往下走到失败结点，意味着查找失败
 ## 4.b树的插入
-### 搜索查找插入位置，插入后，当前节点
+### 搜索查找插入位置，插入后，当前节点可能发生上溢出，对发生上溢出的节点取中间元素即第[m/2] + 1个元素，作为分割点，将该结点shang
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzU0MTM1MTEsLTIwODg3NDY2MTJdfQ
-==
+eyJoaXN0b3J5IjpbMTE1NTkyNTQxNCwtMjA4ODc0NjYxMl19
 -->
