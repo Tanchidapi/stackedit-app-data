@@ -10,7 +10,7 @@
 ## 5.b树的构建
 ### 就是不断进行插入的过程
 ## 6.b树的删除
-### 搜索查找
+### 搜索查找删除位置，若为非叶节点，则类似于二叉搜索树，用其直接前驱或后继进行对换，最后等价于删除叶节点，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0MTQ5NjkxLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTA2MTg5NTY3NywtMjA4ODc0NjYxMl19
 -->
