@@ -7,6 +7,10 @@
 ### 类似于搜索二叉树，最后不匹配时会往下走到失败结点，意味着查找失败
 ## 4.b树的插入
 ### 搜索查找插入位置，插入后，当前节点可能发生上溢出，对发生上溢出的节点取中间元素即第[m/2] + 1个元素，作为分割点，将该结点上移到父节点，两边分裂，然后逐层向上检查是否上溢出
+## 5.b树的构建
+### 就是不断进行插入的过程
+## 6.b树的删除
+### 搜索查找
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NzgyNTAxLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNjU0MTQ5NjkxLC0yMDg4NzQ2NjEyXX0=
 -->
