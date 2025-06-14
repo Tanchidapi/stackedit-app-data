@@ -1,5 +1,6 @@
 # huffman编码树
 ## 通过最小堆和树结构实现，最小堆辅助每次选出最小和次小节点，然后生成子树
+![输入图片说明](/imgs/2025-06-14/1VMz7sYGE6frtKtJ.png)
 ```c++
 // 哈夫曼树节点
 struct HuffmanNode {
@@ -297,5 +298,6 @@ void printFrequency(const map<char, int>& freqMap) {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzI5MzI5MTZdfQ==
+eyJoaXN0b3J5IjpbLTE5NDk2MzkyMzksLTE5NzI5MzI5MTZdfQ
+==
 -->
