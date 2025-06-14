@@ -1,4 +1,4 @@
-# B_数
+# B_树
 ## 1.b树的定义
 ### 对于m阶b树，每个节点对多m - 1个元素，m个分支。对根节点来说，最少1个元素，2个分支，对于非根节点，最少[m/2]个元素，[m/2] + 1个分支，[m/2]为向下取整
 ## 2.b树的性质
@@ -498,5 +498,5 @@ private:
 };
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTExMzEzOThdfQ==
+eyJoaXN0b3J5IjpbLTEzMjkxNjk4NjNdfQ==
 -->
