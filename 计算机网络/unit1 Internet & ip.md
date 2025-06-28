@@ -32,9 +32,12 @@ ip协议有四个属性：
 
 ip协议简单的原因：更快，效率更高，成本更低，保持端到端原则，允许高层定义基于其的协议，对底层做更少假设
 
+ip服务的五个模型：
+1.防止数据报循环，通过在报头中加入计数器实现，路由遇到计数器为0的数据报时会将其丢弃，否则在经过时将其减一
+2.
 ### 传输层
 传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和udp协议等
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUxMjE3NzYwLC02ODAwNTE4MzhdfQ==
+eyJoaXN0b3J5IjpbLTUwNjg3MjM3MSwtNjgwMDUxODM4XX0=
 -->
