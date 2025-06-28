@@ -21,8 +21,8 @@ Internet通过四大基本层实现，自顶向下为：应用层，传输层，
 1. 尽力将数据报传送到另一端，但不保证
 2. 不保证数据报的完整性、顺序性
 ### 传输层
-传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和
+传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和udp协议等
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzgxODE4NCwtNjgwMDUxODM4XX0=
+eyJoaXN0b3J5IjpbLTExMzA5MTQyODksLTY4MDA1MTgzOF19
 -->
