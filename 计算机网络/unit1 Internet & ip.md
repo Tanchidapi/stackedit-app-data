@@ -11,7 +11,10 @@ eg3：Skype
 
 如果一个客户端使用了nat（网络地址转换），客户端可以通过nat轻松的与外界建立链接，但是外界与nat后面的客户端建立链接较为困难，AB链接的建立通过Rendezvous实现，启动时B和R建立双向链接，A要发起对B的请求时，先通过R发送请求，如果B接受，则会发送一个到A的请求，从而建立双向链接，这被称为反向链接，因为其颠倒了启动链接的预期方向![输入图片说明](/imgs/2025-06-28/RbIt6jx7ruIfpcu7.png)情况二
 
+如果两个客户端都在nat后面，则使用另一个中继服务器Relay，此时AB的通信都通过R进行
+![输入图片说明](/imgs/2025-06-28/gWSBUO9xmsyjRgvR.png)情况三
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NzY1MzEzOSwtNjgwMDUxODM4XX0=
+eyJoaXN0b3J5IjpbMjk5NTE4MzkyLC02ODAwNTE4MzhdfQ==
 -->
