@@ -47,10 +47,15 @@ type of service：向路由器提供关于此报的重要提示
 total packet length：总报长
 packet id、flags、fragment offset：被切片后的相关信息
 ttl：该报存活时间，计数器，用于防止数据报循环
-protocol id：chaun'sh
+protocol id：传输层协议
+checksum：计算校验和，防止报头损坏下传输到错误地址
+sia：数据报源ip地址
+dia：数据报汇ip地址
+
+
 ### 传输层
 传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和udp协议等
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NTE5OTM2MywtNjgwMDUxODM4XX0=
+eyJoaXN0b3J5IjpbLTk1ODg5MDYzLC02ODAwNTE4MzhdfQ==
 -->
