@@ -23,11 +23,15 @@ Internet通过四大基本层实现，自顶向下为：应用层，传输层，
 网络层使用ip协议，ip有两个特征：
 1. 尽力将数据报传送到另一端，但不保证
 2. 不保证数据报的完整性、顺序性
+
 ip协议有四个属性：
-1. 发送数据报从
+3. 发送数据报从端到端
+4. 不可靠性
+5. 尽可能做最好，数据报仅在必要时丢弃
+6. 
 ### 传输层
 传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和udp协议等
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MjIwMDY0NywtNjgwMDUxODM4XX0=
+eyJoaXN0b3J5IjpbMTU3MTAyNzgzOCwtNjgwMDUxODM4XX0=
 -->
