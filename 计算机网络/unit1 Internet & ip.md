@@ -59,8 +59,10 @@ tcp byte stream：典型操作中存在客户端与服务器，服务器监听�
 第一步客户端发送同步请求信息SYN
 第二步服务器返回确认同步SYN-ACK
 第三步客户端返回确认ACK
+![输入图片说明](/imgs/2025-06-28/SQ86TI8MgOOrxaJR.png)示意图
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQzMzI0MTg0LC05NTg4OTA2MywtNjgwMD
+eyJoaXN0b3J5IjpbNTI4NTMwNzc1LC05NTg4OTA2MywtNjgwMD
 UxODM4XX0=
 -->
