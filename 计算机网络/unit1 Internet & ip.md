@@ -65,8 +65,8 @@ tcp byte stream：典型操作中存在客户端与服务器，服务器监听�
 第一个是ip地址，网络层凭此将数据报发送到计算机地址
 第二个是tcp端口，告诉计算机软件将数据传送到哪个应用程序
 web服务器通常运行在tcp80端口
-
+从客户端到服务器的过程中通过路由器逐跳传输，路由器有许多链接其的链路，数据报到达时，路由器会决定将其发送到哪个链路上，路由器自身也有ip地址
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODcyNzI2MSw1Mjg1MzA3NzUsLTk1OD
-g5MDYzLC02ODAwNTE4MzhdfQ==
+eyJoaXN0b3J5IjpbLTE5NDUwOTQxMTEsNTI4NTMwNzc1LC05NT
+g4OTA2MywtNjgwMDUxODM4XX0=
 -->
