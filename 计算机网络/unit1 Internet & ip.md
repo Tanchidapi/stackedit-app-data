@@ -56,8 +56,11 @@ dia：数据报汇ip地址
 传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和udp协议等
 TCP：
 tcp byte stream：典型操作中存在客户端与服务器，服务器监听请求，客户端发出链接请求，服务器给出响应，交换需要三个消息，即三次握手
-第一次客户端发送同步qing
+第一步客户端发送同步请求信息SYN
+第二步服务器返回确认同步SYN-ACK
+第三步客户端返回确认ACK
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzQwNzExNSwtOTU4ODkwNjMsLTY4MD
-A1MTgzOF19
+eyJoaXN0b3J5IjpbNzQzMzI0MTg0LC05NTg4OTA2MywtNjgwMD
+UxODM4XX0=
 -->
