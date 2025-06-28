@@ -38,10 +38,15 @@ ip服务的五个模型：
 3. 通过报头校验和来减少传递到错误目标的可能性
 4. 允许ip版本的更新，如IPv4到IPv6
 5. 允许在报头中添加新字段
+![输入图片说明](/imgs/2025-06-28/0iEQHWU2wAumbq0Z.png)IPv4的数据报
+
+如上图，从上到下从左到右分别为：
+version：ip版本
+header length：报头长
 
 ### 传输层
 传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和udp协议等
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDUxOTUxMiwtNjgwMDUxODM4XX0=
+eyJoaXN0b3J5IjpbLTEwMjEzNDYzNTMsLTY4MDA1MTgzOF19
 -->
