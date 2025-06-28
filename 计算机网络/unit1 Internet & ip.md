@@ -14,7 +14,8 @@ eg3：Skype
 如果两个客户端都在nat后面，则使用另一个中继服务器Relay，此时AB的通信都通过R进行
 ![输入图片说明](/imgs/2025-06-28/gWSBUO9xmsyjRgvR.png)情况三
 
-
+## What internet is?
+Internet通过四大基本层实现
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5NTE4MzkyLC02ODAwNTE4MzhdfQ==
+eyJoaXN0b3J5IjpbMTg2OTA2MzczNiwtNjgwMDUxODM4XX0=
 -->
