@@ -54,8 +54,9 @@ dia：数据报汇ip地址
 
 ### 传输层
 传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和udp协议等
-
+TCP：
+tcp byte stream：典型操作中存在客户端与服务器，服务器监听请求，客户端发出链接请求，服务器
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzg1NDA0MDQsLTk1ODg5MDYzLC02OD
+eyJoaXN0b3J5IjpbLTE3MTc4NDA5MzIsLTk1ODg5MDYzLC02OD
 AwNTE4MzhdfQ==
 -->
