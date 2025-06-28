@@ -61,8 +61,10 @@ tcp byte stream：典型操作中存在客户端与服务器，服务器监听�
 第三步客户端返回确认ACK
 ![输入图片说明](/imgs/2025-06-28/SQ86TI8MgOOrxaJR.png)示意图
 
+要打开到另一个程序的tcp流，需要两个地址
+第一个是ip地址，网络层凭此将数据报发送到计算机地址
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4NTMwNzc1LC05NTg4OTA2MywtNjgwMD
-UxODM4XX0=
+eyJoaXN0b3J5IjpbMjk1NjU5ODQxLDUyODUzMDc3NSwtOTU4OD
+kwNjMsLTY4MDA1MTgzOF19
 -->
