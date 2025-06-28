@@ -63,8 +63,9 @@ tcp byte stream：典型操作中存在客户端与服务器，服务器监听�
 
 要打开到另一个程序的tcp流，需要两个地址
 第一个是ip地址，网络层凭此将数据报发送到计算机地址
-
+第二个是tcp端口，告诉计算机软件将数据传送到哪个应用程序
+web服务器通常运行在tcp80端口
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1NjU5ODQxLDUyODUzMDc3NSwtOTU4OD
+eyJoaXN0b3J5IjpbNDQ2MTUxNzkxLDUyODUzMDc3NSwtOTU4OD
 kwNjMsLTY4MDA1MTgzOF19
 -->
