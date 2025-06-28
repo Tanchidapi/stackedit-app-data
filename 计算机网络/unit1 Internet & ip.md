@@ -25,13 +25,15 @@ Internet通过四大基本层实现，自顶向下为：应用层，传输层，
 2. 不保证数据报的完整性、顺序性
 
 ip协议有四个属性：
-3. 发送数据报从端到端
+1. 发送数据报从端到端
 4. 不可靠性
 5. 尽可能做最好，数据报仅在必要时丢弃
-6. 
+6. 没有每流状态，不维护通信过程中的记录
+
+ip协议简单的原因：更快，效率更高，
 ### 传输层
 传输层的工作是运行一个在网络层之上的协议，处理传输过程中丢包等问题，常见的如tcp/ip协议和udp协议等
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MTAyNzgzOCwtNjgwMDUxODM4XX0=
+eyJoaXN0b3J5IjpbNDYwMzA2MzI3LC02ODAwNTE4MzhdfQ==
 -->
