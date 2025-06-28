@@ -17,7 +17,10 @@ eg3：Skype
 ## What internet is?
 Internet通过四大基本层实现，自顶向下为：应用层，传输层，网络层，链接层。其中传输层和网络层是本课程的重点。
 ### 网络层
-网络层使用ip协议，
+网络层使用ip协议，ip有两个特征：
+1. 尽力将数据报传送到另一端，但不保证
+2. 不保证数据报的完整性、顺序性
+3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMzQ5Mjk0LC02ODAwNTE4MzhdfQ==
+eyJoaXN0b3J5IjpbLTE1Njc5Mzc5MTIsLTY4MDA1MTgzOF19
 -->
