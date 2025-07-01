@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 ```
 ## p2 pingpong -ez
 要求：完成一个c程序pingpong，实现创建一对父子进程并相互通信，打印通信信息
-实现：通过fork函数实现创建子进程，
+实现：通过fork函数实现创建子进程，用pipe函数创建管道实现父子进程的通信，pipe接收一个长度为2的整数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDQzMjg5NzAsLTYwNTIzOTg4Ml19
+eyJoaXN0b3J5IjpbMzYxOTIyOTY1LC02MDUyMzk4ODJdfQ==
 -->
