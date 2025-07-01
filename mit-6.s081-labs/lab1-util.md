@@ -79,8 +79,8 @@ main(int argc, char *argv[]){
 ```
 ## p3 primes -moderate
 要求：完成一个c程序primes，实现素数筛，打印出2-35的素数
-实现：关于素数筛的算法可以网上搜索/问ai，本程序中通过guan'da
+实现：关于素数筛的算法可以网上搜索/问ai，本程序中通过管道pipe实现，从2开始
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MzY5MDkzNiwxMzEyMTExNTIwLC0zMD
-gyMzYzOTcsMTkyMzk4NTM1MSwtNjA1MjM5ODgyXX0=
+eyJoaXN0b3J5IjpbODcxNDk0MzkyLDEzMTIxMTE1MjAsLTMwOD
+IzNjM5NywxOTIzOTg1MzUxLC02MDUyMzk4ODJdfQ==
 -->
