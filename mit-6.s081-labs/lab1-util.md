@@ -151,7 +151,7 @@ main(int argc, char *argv[]){
 ```
 ## p4 find -moderate
 要求：完成c程序find，通过ls函数实现对当前目录及其所有子目录的特殊名称的文件查找
-实现：通过递归遍历当前目录文件及其子目录，如果当前路径指向文件且文件名匹配则打印当前文件，如果路径指向目录则记录当前路径，如果当前路径为当前目录或者父目录则不进入递归，否则扩展路径到子目录，对子目录中所有文件遍历递归
+实现：通过递归遍历当前目录文件及其子目录，如果当前路径指向文件且文件名匹配则打印当前文件，如果路径指向目录则记录当前路径，如果当前路径指向当前目录或者父目录则不进入递归，否则扩展路径到子目录，对子目录中所有文件遍历递归
 ```c
 #include "kernel/types.h"
 #include "kernel/stat.h"
@@ -228,9 +228,11 @@ main(int argc, char *argv[]){
     exit(0);
 }
 ```
+## p5 xargs -moderate
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTM4NjEyNSw1MTM4MDM1MjUsODA0Nz
-U2OTYwLDUzMTk5MjE4OCwxMTQyNzkxODksMTMxMjExMTUyMCwt
-MzA4MjM2Mzk3LDE5MjM5ODUzNTEsLTYwNTIzOTg4Ml19
+eyJoaXN0b3J5IjpbLTIwNzY4NTg0ODMsLTQxMTM4NjEyNSw1MT
+M4MDM1MjUsODA0NzU2OTYwLDUzMTk5MjE4OCwxMTQyNzkxODks
+MTMxMjExMTUyMCwtMzA4MjM2Mzk3LDE5MjM5ODUzNTEsLTYwNT
+IzOTg4Ml19
 -->
