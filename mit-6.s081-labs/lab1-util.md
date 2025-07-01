@@ -79,8 +79,80 @@ main(int argc, char *argv[]){
 ```
 ## p3 primes -moderate
 要求：完成一个c程序primes，实现素数筛，打印出2-35的素数
-实现：关于素数筛的算法可以网上搜索/问ai，本程序中通过fork创建子进程递归和管道pipe实现，父进程从2开始向管道中写入所有的数，子进程从管道中读出数并打印出第一个数，创建子进程，然后读出剩下的数，如果剩下的数不能被第一个数整除则再写入管道中
+实现：关于素数筛的算法可以网上搜索/问ai，本程序中通过fork创建子进程递归和管道pipe实现，父进程从2开始向管道中写入所有的数，子进程从管道中读出数并打印出第一个数，创建子进程，然后读出剩下的数，如果剩下的数不能被第一个数整除则再写入管道中，然后递归调用子进程即可
+```c
+#include "kernel/types.h"
+#include "kernel/stat.h"
+#include "user/user.h"
+
+void prime(int *fd){
+    int p, d;
+    close(fd[1]);
+    if(read(fd[0], &p, 4) != 4){
+        printf("error: Can't write!\n");
+        exit(1);
+    }
+    printf("prime %d\n", p);
+    if(read(fd[0], &d, 4)){
+        int fd_of_child[2];
+        if(pipe(fd_of_child) < 0){
+            printf("error: fail to create the pipe!\n");
+            exit(1);
+        }
+        if(fork() == 0){
+            prime(fd_of_child);
+        }
+        else{
+            close(fd_of_child[0]);
+            do{
+                if(d % p != 0){
+                    if(write(fd_of_child[1], &d, 4) != 4){
+                        printf("error: Can't write!");
+                        exit(1);
+                    }
+                }
+            }while(read(fd[0], &d, 4));
+            close(fd[0]);
+            close(fd_of_child[1]);
+            wait(0);
+        }
+    }
+    exit(0);
+}
+
+int
+main(int argc, char *argv[]){
+    if(argc != 1){
+        printf("fault: wrong number of args!\n");
+        exit(1);
+    }
+    int fd[2];
+    if(pipe(fd) < 0){
+        printf("error: fail to create the pipe!\n");
+        exit(1);
+    }
+    int start = 2, end = 35;
+    if(fork() == 0){
+        prime(fd);
+    }
+    else{
+        close(fd[0]);
+        for(int i = start; i <= end; i++){
+            if(write(fd[1], &i, 4) != 4){
+                printf("error: Can't write!\n");
+                exit(1);
+            }
+        }
+        close(fd[1]);
+        wait(0);
+    }
+    exit(0);
+}
+```
+## p4 find -moderate
+要求：通过ls函数实现对目录中规定
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0Mjc5MTg5LDEzMTIxMTE1MjAsLTMwOD
-IzNjM5NywxOTIzOTg1MzUxLC02MDUyMzk4ODJdfQ==
+eyJoaXN0b3J5IjpbMzI4ODU3MDEsMTE0Mjc5MTg5LDEzMTIxMT
+E1MjAsLTMwODIzNjM5NywxOTIzOTg1MzUxLC02MDUyMzk4ODJd
+fQ==
 -->
