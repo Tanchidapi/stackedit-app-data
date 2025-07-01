@@ -151,9 +151,86 @@ main(int argc, char *argv[]){
 ```
 ## p4 find -moderate
 要求：完成c程序find，通过ls函数实现对当前目录及其所有子目录的特殊名称的文件查找
-实现：通过递归遍历当前目录文件及其子目录，如果当前路径指向文件且文件名匹配则打印当前文件，如果路径指向目录则记录当前路径，如果当前路径为当前目录或者父目录则不进入递归，否则扩展路径到子目录，对子目录中
+实现：通过递归遍历当前目录文件及其子目录，如果当前路径指向文件且文件名匹配则打印当前文件，如果路径指向目录则记录当前路径，如果当前路径为当前目录或者父目录则不进入递归，否则扩展路径到子目录，对子目录中所有文件遍历递归
+```c
+#include "kernel/types.h"
+#include "kernel/stat.h"
+#include "user/user.h"
+#include "kernel/fs.h"
+
+
+void
+find(char *path, char *name){
+    int fd;
+    char *p, buf[512];
+    struct dirent de;
+    struct stat st;
+    if((fd = open(path, 0)) < 0){
+        fprintf(2, "error: fail to open %s\n", path);
+        exit(1);
+    }
+    if(fstat(fd, &st) < 0){
+        fprintf(2, "error: Can't get stat %s\n", path);
+        close(fd);
+        exit(1);
+    }
+    switch(st.type){
+        case T_FILE:
+            p = path + strlen(path);
+            while(p >= path && *p != '/') p--;
+            p++;
+            if(strcmp(p, name) == 0){
+                printf("%s\n", path);
+            }
+            break;
+        case T_DIR:
+            if(strlen(path) + 1 + DIRSIZ + 1 > sizeof(buf)){
+                fprintf(2, "find: path too long!\n");
+                exit(1);
+            }
+            strcpy(buf, path);
+            p = buf + strlen(buf);
+            *p++ = '/';
+            while(read(fd, &de, sizeof(de)) == sizeof(de)){
+                if(de.inum == 0 || 
+                strcmp(de.name, ".") == 0 || 
+                strcmp(de.name, "..") == 0) continue;
+                memmove(p, de.name, DIRSIZ);
+                p[DIRSIZ] = 0;
+                if(stat(buf, &st) < 0){
+                    fprintf(2, "error: Can't get stat %s\n", buf);
+                    continue;
+                }
+                if(st.type == T_FILE){
+                    if(strcmp(de.name, name) == 0){
+                        printf("%s\n", buf);
+                    }
+                }
+                else if(st.type == T_DIR){
+                    find(buf, name);
+                }
+            }
+            break;
+    }
+    close(fd);
+}
+
+
+int
+main(int argc, char *argv[]){
+    if(argc != 3){
+        fprintf(2, "error: wrong number of arg!\n");
+        exit(1);
+    }
+    char *path = argv[1];
+    char *name = argv[2];
+    find(path, name);
+    exit(0);
+}
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEzODAzNTI1LDgwNDc1Njk2MCw1MzE5OT
-IxODgsMTE0Mjc5MTg5LDEzMTIxMTE1MjAsLTMwODIzNjM5Nywx
-OTIzOTg1MzUxLC02MDUyMzk4ODJdfQ==
+eyJoaXN0b3J5IjpbLTQxMTM4NjEyNSw1MTM4MDM1MjUsODA0Nz
+U2OTYwLDUzMTk5MjE4OCwxMTQyNzkxODksMTMxMjExMTUyMCwt
+MzA4MjM2Mzk3LDE5MjM5ODUzNTEsLTYwNTIzOTg4Ml19
 -->
