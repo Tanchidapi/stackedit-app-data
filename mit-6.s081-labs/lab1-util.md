@@ -25,7 +25,58 @@ int main(int argc, char *argv[]){
 ## p2 pingpong -ez
 要求：完成一个c程序pingpong，实现创建一对父子进程并相互通信，打印通信信息
 实现：通过fork函数实现创建子进程，getpid获得进程序列号，用pipe函数创建管道实现父子进程的通信。pipe接收一个长度为2的整型数组，并为其创建两个文件描述符，0为读端，1为写端，逻辑上是一个环形队列，通过write函数向管道写端写入数据，read函数从管道读端写入数据，在进行对应操作时需关闭另一端
+```c
+#include "kernel/types.h"
+#include "kernel/stat.h"
+#include "user/user.h"
+#define PINGPONGBUF 5
 
+int
+main(int argc, char *argv[]){
+    if(argc != 1){
+        printf("error: wrong numbers of arg!\n");
+        exit(1);
+    }
+    int fd[2], pid, cur_pid;
+    char inbuf[PINGPONGBUF];
+    char *par = "ping";
+    char *chi = "pong";
+    if(pipe(fd) < 0)
+        exit(1);
+    if((pid = fork()) > 0){
+        cur_pid = getpid();
+        if(write(fd[1], par, PINGPONGBUF) != 5){
+            printf("Can't write to child!\n");
+            exit(1);
+        }
+        close(fd[1]);
+        wait(0);
+        if(read(fd[0], inbuf, PINGPONGBUF) != 5){
+            printf("Can't read from child!\n");
+            exit(1);
+        }
+        printf("%d: received %s\n", cur_pid, inbuf);
+        close(fd[0]);
+        exit(0);
+    }
+    else{
+        cur_pid = getpid();
+        if(read(fd[0], inbuf, PINGPONGBUF) != 5){
+            printf("Can't read from parent!\n");
+            exit(1);
+        }
+        printf("%d: received %s\n", cur_pid, inbuf);
+        close(fd[0]);
+        if(write(fd[1], chi, PINGPONGBUF) != 5){
+            printf("Can't write to parent!\n");
+            exit(1);
+        }
+        close(fd[1]);
+        exit(0);
+    }
+    exit(0);
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk4NTk0MTYxLC02MDUyMzk4ODJdfQ==
+eyJoaXN0b3J5IjpbLTI4Mjg4Mjg5OCwtNjA1MjM5ODgyXX0=
 -->
