@@ -150,9 +150,9 @@ main(int argc, char *argv[]){
 }
 ```
 ## p4 find -moderate
-要求：通过ls函数实现对目录中规定
+要求：完成c程序find，通过ls函数实现对当前目录及其所有子目录的特殊名称的文件查找
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI4ODU3MDEsMTE0Mjc5MTg5LDEzMTIxMT
-E1MjAsLTMwODIzNjM5NywxOTIzOTg1MzUxLC02MDUyMzk4ODJd
-fQ==
+eyJoaXN0b3J5IjpbNTMxOTkyMTg4LDExNDI3OTE4OSwxMzEyMT
+ExNTIwLC0zMDgyMzYzOTcsMTkyMzk4NTM1MSwtNjA1MjM5ODgy
+XX0=
 -->
