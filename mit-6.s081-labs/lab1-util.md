@@ -22,7 +22,9 @@ int main(int argc, char *argv[]){
     }
 }
 ```
-## p2  
+## p2 pingpong -ez
+要求：完成一个c程序pingpong，实现创建一对父子进程并相互通信，打印通信信息
+实现：通过fork函数实现创建子进程，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTE5NDUyMCwtNjA1MjM5ODgyXX0=
+eyJoaXN0b3J5IjpbLTE4NDQzMjg5NzAsLTYwNTIzOTg4Ml19
 -->
