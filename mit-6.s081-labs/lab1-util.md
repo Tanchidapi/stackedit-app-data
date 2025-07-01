@@ -79,8 +79,8 @@ main(int argc, char *argv[]){
 ```
 ## p3 primes -moderate
 要求：完成一个c程序primes，实现素数筛，打印出2-35的素数
-实现：关于素数筛的算法可以网上搜索/问ai，本程序中通过fork创建子进程递归和管道pipe实现，从2开始向管道中写入不能被当前shu
+实现：关于素数筛的算法可以网上搜索/问ai，本程序中通过fork创建子进程递归和管道pipe实现，父进程从2开始向管道中写入不能被当前数整除的数，子进程从管道中
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NjA3MTk5NiwxMzEyMTExNTIwLC0zMD
-gyMzYzOTcsMTkyMzk4NTM1MSwtNjA1MjM5ODgyXX0=
+eyJoaXN0b3J5IjpbLTE2NjU3MDIzMDcsMTMxMjExMTUyMCwtMz
+A4MjM2Mzk3LDE5MjM5ODUzNTEsLTYwNTIzOTg4Ml19
 -->
