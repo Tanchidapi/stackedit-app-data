@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 ```
 ## p2 pingpong -ez
 要求：完成一个c程序pingpong，实现创建一对父子进程并相互通信，打印通信信息
-实现：通过fork函数实现创建子进程，getpid获得进程序列号，用pipe函数创建管道实现父子进程的通信。pipe接收一个长度为2的整型数组，并为其创建两个文件描述符，0为读端，1为写端，逻辑上是一个环形队列，通过write函数向管道写端写入数据，read函数从管道读端写入数据，在进行对应操作时需关闭另一端，读写函数返回值为字符串长度
+实现：通过fork函数实现创建子进程，getpid获得进程序列号，用pipe函数创建管道实现父子进程的通信。pipe接收一个长度为2的整型数组，并为其创建两个文件描述符，0为读端，1为写端，逻辑上是一个环形队列，通过write函数向管道写端写入数据，read函数从管道读端写入数据，在进行对应操作时需关闭另一端，读写函数返回值为字符串长度，但printf打印字符串需要终止符，故读取5字节
 ```c
 #include "kernel/types.h"
 #include "kernel/stat.h"
@@ -77,7 +77,8 @@ main(int argc, char *argv[]){
     exit(0);
 }
 ```
+## p3 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODIzNjM5NywxOTIzOTg1MzUxLC02MD
-UyMzk4ODJdfQ==
+eyJoaXN0b3J5IjpbMTMxMjExMTUyMCwtMzA4MjM2Mzk3LDE5Mj
+M5ODUzNTEsLTYwNTIzOTg4Ml19
 -->
