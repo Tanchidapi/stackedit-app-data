@@ -77,8 +77,8 @@ main(int argc, char *argv[]){
     exit(0);
 }
 ```
-## p3 
+## p3 prime
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMjExMTUyMCwtMzA4MjM2Mzk3LDE5Mj
-M5ODUzNTEsLTYwNTIzOTg4Ml19
+eyJoaXN0b3J5IjpbLTExNTE5MTA3NjMsMTMxMjExMTUyMCwtMz
+A4MjM2Mzk3LDE5MjM5ODUzNTEsLTYwNTIzOTg4Ml19
 -->
