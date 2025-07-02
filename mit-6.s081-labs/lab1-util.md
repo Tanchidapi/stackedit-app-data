@@ -229,9 +229,10 @@ main(int argc, char *argv[]){
 }
 ```
 ## p5 xargs -moderate
-要求：完成一个c程序，终端键入一条命令，然后读取n行文本，对这n行文本都执行第一条
+要求：完成一个c程序，终端键入一条命令，然后读取n行文本，对这n行文本都执行第一条命令
+实现：考虑两个问题，如何读取n行文本并对其划分，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDM3ODc3MTUsLTIwNzY4NTg0ODMsLT
+eyJoaXN0b3J5IjpbLTEzOTEzMTU5NjAsLTIwNzY4NTg0ODMsLT
 QxMTM4NjEyNSw1MTM4MDM1MjUsODA0NzU2OTYwLDUzMTk5MjE4
 OCwxMTQyNzkxODksMTMxMjExMTUyMCwtMzA4MjM2Mzk3LDE5Mj
 M5ODUzNTEsLTYwNTIzOTg4Ml19
