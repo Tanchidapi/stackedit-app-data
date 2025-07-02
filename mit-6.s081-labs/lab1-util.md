@@ -230,9 +230,85 @@ main(int argc, char *argv[]){
 ```
 ## p5 xargs -moderate
 要求：完成一个c程序，终端键入一条命令，然后读取n行文本，对这n行文本都执行第一条命令
-实现：考虑两个问题，如何读取n行文本并对其划分，如何对这n行执行命令，第一个问题通过构造一个get_input函数实现，每次读入一行文本，然后根据空格划分将每一个参数读入参数数组中，第二个问题通过循环，每次执行get_line函数
+实现：考虑两个问题，如何读取n行文本并对其划分，如何对这n行执行命令，第一个问题通过构造一个get_input函数实现，每次读入一行文本，然后根据空格划分将每一个参数读入参数数组中，第二个问题通过循环，每次执行get_line函数然后通过exec函数将第一条命令执行读到的这一行参数即可
+```c
+#include "kernel/types.h"
+#include "kernel/stat.h"
+#include "user/user.h"
+#include "kernel/param.h"
+
+void
+copy(char **p1, char *p2){
+    *p1 = malloc(strlen(p2) + 1);
+    strcpy(*p1, p2);
+}
+
+int
+get_input(char *pars[], int i){
+    if(i > MAXARG){
+        fprintf(2, "error: too much par!");
+        exit(1);
+    }
+    int BUFFER = 1024;
+    char buf[BUFFER];
+    int j = 0;
+    while(read(0, buf + j, 1)){
+        if(buf[j] == '\n'){
+            buf[j] = 0;
+            break;
+        }
+        j++;
+        if(j == BUFFER){
+            fprintf(2, "error: too much par!");
+            exit(1);
+        }
+    }
+    if(j == 0){
+        return -1;
+    }
+    int k = 0;
+    while(k < j){
+        while(k < j && buf[k] == ' '){
+            k++;
+        }
+        int l = k;
+        while(k < j && buf[k] != ' '){
+            k++;
+        }
+        buf[k++] = 0;
+        copy(&pars[i], buf + l);
+        i++;
+    }
+    return i;
+}
+
+int
+main(int argc, char *argv[]){
+    if(argc < 2){
+        fprintf(2, "fault: please enter more arg!\n");
+        exit(1);
+    }
+    int i;
+    char *pars[MAXARG];
+    for(i = 1; i < argc; i++){
+        copy(&pars[i - 1], argv[i]);
+    }
+    int end;
+    while((end = get_input(pars, argc - 1)) != -1){
+        pars[end] = 0;
+        if(fork() == 0){
+            exec(pars[0], pars);
+            exit(0);
+        }
+        else{
+            wait(0);
+        }
+    }
+    exit(0);
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MDg0ODY5OSwtMTgxNzAzNzAwNCwtMj
+eyJoaXN0b3J5IjpbMTYwNzI0NTc1NCwtMTgxNzAzNzAwNCwtMj
 A3Njg1ODQ4MywtNDExMzg2MTI1LDUxMzgwMzUyNSw4MDQ3NTY5
 NjAsNTMxOTkyMTg4LDExNDI3OTE4OSwxMzEyMTExNTIwLC0zMD
 gyMzYzOTcsMTkyMzk4NTM1MSwtNjA1MjM5ODgyXX0=
