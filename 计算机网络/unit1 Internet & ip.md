@@ -93,8 +93,13 @@ cidr是一种地址生成策略，分为两部分，网络和主机，网络的�
 ### 最长前缀匹配算法
 路由器用于选择将数据报选择转发到哪个链路的算法
 匹配时根据目标地址和路由器中的转发表进行前缀匹配，在匹配的链路中选择前缀最长的那一个转发
+![输入图片说明](/imgs/2025-07-02/XRrLvpMz4bFum2Yq.png)
+示意图
+
+### 地址解析协议（ARP）
+是网络层发现与其直接连接的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTU0NzcyLC03NjY5MjUzOTUsLTIwNj
+eyJoaXN0b3J5IjpbMTM3NDU2OTE3LC03NjY5MjUzOTUsLTIwNj
 A2ODUwOTUsNjg1NDE5NTI0LDEzNDcxNzc3OTEsLTg5OTQyOTQ5
 NiwtMTEwNjczMDM0LDE5Nzc2NDIyMTQsODE2NzcwNTIyLDUyOD
 UzMDc3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF19
