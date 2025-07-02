@@ -1,5 +1,4 @@
-## 应互联网
-
+## network application
 最常用的通信模型是双向可靠的字节流，即两台主机间在建立链接后双向的、可靠的对字节流的读写
 eg1：万维网
 其使用了http的超文本传输通信协议，内容均为ASCII文本。客户端发送一个对网页的请求get，请求其根页面，服务器接收到请求后会检测其是否有效，并返回响应，响应中包含一个数字代码，表示响应的结果
@@ -66,6 +65,7 @@ tcp byte stream：典型操作中存在客户端与服务器，服务器监听�
 第二个是tcp端口，告诉计算机软件将数据传送到哪个应用程序
 web服务器通常运行在tcp80端口
 从客户端到服务器的过程中通过路由器逐跳传输，路由器有许多链接其的链路，数据报到达时，路由器会决定将其发送到哪个链路上，路由器自身也有ip地址，因此其可能不传输数据报，而是传递给自己的软件。路由器通过转发表决定行为，数据报到达时，路由器会检查哪个转发表条目模式最匹配该报，转发对应链路
+
 ### 分组交换思想（packet switching）
 分组交换思想是将数据分解成离散的，自包含的数据块，每个数据块称为数据包，包含足够的信息使网络能将其传送到目的地。每个数据包是独立的，到达路由时根据链路空闲与否进行转发与等待
 网络层转发的一种方法是源路由，但存在重大安全问题，一个优化是在每一个交换机中放置少量状态，告诉数据报目的地和下一跳地址
@@ -115,10 +115,9 @@ opcode：指定是请求还是响应
 四个地址字段用于请求和指定映射
 所有字段均为大端序
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjQ2MjA3NzksMTE2NzA2NDYxMywtMT
-Y2MTgxMDQ5MywtMTc0MDY2MDg5OSwtNDg2NTE5NTA4LC03NjY5
-MjUzOTUsLTIwNjA2ODUwOTUsNjg1NDE5NTI0LDEzNDcxNzc3OT
-EsLTg5OTQyOTQ5NiwtMTEwNjczMDM0LDE5Nzc2NDIyMTQsODE2
-NzcwNTIyLDUyODUzMDc3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF
-19
+eyJoaXN0b3J5IjpbNjU4MDg0MzYsMTE2NzA2NDYxMywtMTY2MT
+gxMDQ5MywtMTc0MDY2MDg5OSwtNDg2NTE5NTA4LC03NjY5MjUz
+OTUsLTIwNjA2ODUwOTUsNjg1NDE5NTI0LDEzNDcxNzc3OTEsLT
+g5OTQyOTQ5NiwtMTEwNjczMDM0LDE5Nzc2NDIyMTQsODE2Nzcw
+NTIyLDUyODUzMDc3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF19
 -->
