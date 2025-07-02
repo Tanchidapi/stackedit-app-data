@@ -89,10 +89,10 @@ web服务器通常运行在tcp80端口
 所有互联网规范协议都使用大端序，即高字节在低地址，c库中包含了大小端序的转换函数，使得不同的处理器可以正常的通过网络通信
 ### IPv4
 ipv4地址为网络层的地址，用于两台主机在网络层通信时的互相寻址，ip层将目标地址为该设备地址的数据报传给该设备，网络掩码（netmask）可以告知哪些ip地址是本地的，在同一链路/网络上，通过ipv4地址与netmask按位与运算比较实现
-
+cidr是一种地址生成策略，分为两部分，地址和数量，数量的位数与netmask的有效位一样长
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzIxNTMxMCw2ODU0MTk1MjQsMTM0Nz
-E3Nzc5MSwtODk5NDI5NDk2LC0xMTA2NzMwMzQsMTk3NzY0MjIx
-NCw4MTY3NzA1MjIsNTI4NTMwNzc1LC05NTg4OTA2MywtNjgwMD
-UxODM4XX0=
+eyJoaXN0b3J5IjpbLTE5MTM5NTk2NjAsNjg1NDE5NTI0LDEzND
+cxNzc3OTEsLTg5OTQyOTQ5NiwtMTEwNjczMDM0LDE5Nzc2NDIy
+MTQsODE2NzcwNTIyLDUyODUzMDc3NSwtOTU4ODkwNjMsLTY4MD
+A1MTgzOF19
 -->
