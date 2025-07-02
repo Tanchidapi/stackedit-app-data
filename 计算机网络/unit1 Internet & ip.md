@@ -73,8 +73,9 @@ web服务器通常运行在tcp80端口
 1. 交换机可以对数据包进行独立的本地决策
 2. 可以让交换机高效的共享多个用户之间的链路
 
-流：流是
+流：流是属于同一个端到端的一组数据报，如tcp链接
+交换机为了效率，bu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIyMDc2MzMsODE2NzcwNTIyLDUyODUzMD
-c3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF19
+eyJoaXN0b3J5IjpbNDcwNDM5OTUwLDgxNjc3MDUyMiw1Mjg1Mz
+A3NzUsLTk1ODg5MDYzLC02ODAwNTE4MzhdfQ==
 -->
