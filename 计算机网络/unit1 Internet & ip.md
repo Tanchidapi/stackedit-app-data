@@ -89,13 +89,13 @@ web服务器通常运行在tcp80端口
 所有互联网规范协议都使用大端序，即高字节在低地址，c库中包含了大小端序的转换函数，使得不同的处理器可以正常的通过网络通信
 ### IPv4
 ipv4地址为网络层的地址，用于两台主机在网络层通信时的互相寻址，ip层将目标地址为该设备地址的数据报传给该设备，网络掩码（netmask）可以告知哪些ip地址是本地的，在同一链路/网络上，通过ipv4地址与netmask按位与运算比较实现
-cidr是一种地址生成策略，分为两部分，地址和数量，数量的位数与netmask的有效位一样长，决定了地址的个数
+cidr是一种地址生成策略，分为两部分，网络和主机，网络的位数与netmask的有效位一样长，决定了主机的个数，格式为ip地址/前缀长度
 ### 最长前缀匹配算法
 路由器用于选择将数据报选择转发到哪个链路的算法
 匹配时根据目标地址和路由器中的转发表进行前缀匹配，在匹配的链路中选择前缀最长的那一个转发
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MzE2MTc4MywtNzY2OTI1Mzk1LC0yMD
-YwNjg1MDk1LDY4NTQxOTUyNCwxMzQ3MTc3NzkxLC04OTk0Mjk0
-OTYsLTExMDY3MzAzNCwxOTc3NjQyMjE0LDgxNjc3MDUyMiw1Mj
-g1MzA3NzUsLTk1ODg5MDYzLC02ODAwNTE4MzhdfQ==
+eyJoaXN0b3J5IjpbLTIwMjU0ODA2MjAsLTc2NjkyNTM5NSwtMj
+A2MDY4NTA5NSw2ODU0MTk1MjQsMTM0NzE3Nzc5MSwtODk5NDI5
+NDk2LC0xMTA2NzMwMzQsMTk3NzY0MjIxNCw4MTY3NzA1MjIsNT
+I4NTMwNzc1LC05NTg4OTA2MywtNjgwMDUxODM4XX0=
 -->
