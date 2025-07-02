@@ -102,11 +102,11 @@ cidr是一种地址生成策略，分为两部分，网络和主机，网络的�
 arp是一个简单的请求-应答协议，每个节点保存一个缓存，包含网络层ip地址到链路层地址的映射![输入图片说明](/imgs/2025-07-02/prTPn0JhORguXC5Y.png)
 arp
 
-arp通过广播
+链路层如以太网需要mac地址通信，arp提供ip->arp的映射，通过arp缓存表可以减少重复的广播查询，如果缓存中mei
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDgxMTM4ODksLTE3NDA2NjA4OTksLT
-Q4NjUxOTUwOCwtNzY2OTI1Mzk1LC0yMDYwNjg1MDk1LDY4NTQx
-OTUyNCwxMzQ3MTc3NzkxLC04OTk0Mjk0OTYsLTExMDY3MzAzNC
-wxOTc3NjQyMjE0LDgxNjc3MDUyMiw1Mjg1MzA3NzUsLTk1ODg5
-MDYzLC02ODAwNTE4MzhdfQ==
+eyJoaXN0b3J5IjpbMTIyMzI0MDY4NSwtMTc0MDY2MDg5OSwtND
+g2NTE5NTA4LC03NjY5MjUzOTUsLTIwNjA2ODUwOTUsNjg1NDE5
+NTI0LDEzNDcxNzc3OTEsLTg5OTQyOTQ5NiwtMTEwNjczMDM0LD
+E5Nzc2NDIyMTQsODE2NzcwNTIyLDUyODUzMDc3NSwtOTU4ODkw
+NjMsLTY4MDA1MTgzOF19
 -->
