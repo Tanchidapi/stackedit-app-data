@@ -82,8 +82,10 @@ web服务器通常运行在tcp80端口
 分装是分组和分层结合的成果，将信息组织成分组的原则，既可以维护各层，又可以共享分组内容![输入图片说明](/imgs/2025-07-02/JXzjFLFF0VuAC8yM.png)分装示例
 
 分装可用于递归地分层协议
+![输入图片说明](/imgs/2025-07-02/AMLZRmCDrRZXCDyh.png)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTczNzkwNjUsLTExMDY3MzAzNCwxOT
+eyJoaXN0b3J5IjpbLTE4ODk1MDkxNTAsLTExMDY3MzAzNCwxOT
 c3NjQyMjE0LDgxNjc3MDUyMiw1Mjg1MzA3NzUsLTk1ODg5MDYz
 LC02ODAwNTE4MzhdfQ==
 -->
