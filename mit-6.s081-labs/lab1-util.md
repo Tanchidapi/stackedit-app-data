@@ -230,10 +230,10 @@ main(int argc, char *argv[]){
 ```
 ## p5 xargs -moderate
 要求：完成一个c程序，终端键入一条命令，然后读取n行文本，对这n行文本都执行第一条命令
-实现：考虑两个问题，如何读取n行文本并对其划分，如何对这n行执行命令，第一个问题通过构造一个get_input函数实现，每次读入一行文本，然后根据空格划分
+实现：考虑两个问题，如何读取n行文本并对其划分，如何对这n行执行命令，第一个问题通过构造一个get_input函数实现，每次读入一行文本，然后根据空格划分将每一个参数读入参数数组中，第二个问题通过循环，每次执行get_line函数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTcwMzcwMDQsLTIwNzY4NTg0ODMsLT
-QxMTM4NjEyNSw1MTM4MDM1MjUsODA0NzU2OTYwLDUzMTk5MjE4
-OCwxMTQyNzkxODksMTMxMjExMTUyMCwtMzA4MjM2Mzk3LDE5Mj
-M5ODUzNTEsLTYwNTIzOTg4Ml19
+eyJoaXN0b3J5IjpbMTI3MDg0ODY5OSwtMTgxNzAzNzAwNCwtMj
+A3Njg1ODQ4MywtNDExMzg2MTI1LDUxMzgwMzUyNSw4MDQ3NTY5
+NjAsNTMxOTkyMTg4LDExNDI3OTE4OSwxMzEyMTExNTIwLC0zMD
+gyMzYzOTcsMTkyMzk4NTM1MSwtNjA1MjM5ODgyXX0=
 -->
