@@ -77,9 +77,11 @@ web服务器通常运行在tcp80端口
 交换机为了效率，不对数据报添加或移除每流状态，也不存储，对每个数据报独立决策
 数据的传输是猝发的，分组交换允许链路的共享，如同一路由器下ab两个端，允许a空闲时b使用链路的所有资源，或者二者共用时分享链路，这种单个资源以概率或统计的方式跨多用户共享称为统计复用
 ### 分层思想（layer）
-分层思想使得每一层可以直接使用下层的接口而不用考虑具体实现，为上层提供服务接口，并专注于实现自身所在层的
+分层思想使得每一层可以直接使用下层的接口而不用考虑具体实现，为上层提供服务接口，并专注于实现自身所在层的应用
+### 分装
+分装是分组和分层结合的成果
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU0OTMwNTMxLDE5Nzc2NDIyMTQsODE2Nz
-cwNTIyLDUyODUzMDc3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF19
-
+eyJoaXN0b3J5IjpbMTg2NDU1NjM1NiwxOTc3NjQyMjE0LDgxNj
+c3MDUyMiw1Mjg1MzA3NzUsLTk1ODg5MDYzLC02ODAwNTE4Mzhd
+fQ==
 -->
