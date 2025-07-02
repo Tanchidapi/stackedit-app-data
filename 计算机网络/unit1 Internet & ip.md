@@ -88,8 +88,9 @@ web服务器通常运行在tcp80端口
 计算机之间通过网络传输时将数据存到内存，然后通过网卡发送，接收时从网卡接收，然后存到内存
 所有互联网规范协议都使用大端序，即高字节在低地址，c库中包含了大小端序的转换函数，使得不同的处理器可以正常的通过网络通信
 ### IPv4
+ipv4地址为网络层的地址，用于两台主机在网络层通信时的互相寻址
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDc1NjE3MSwxMzQ3MTc3NzkxLC04OT
+eyJoaXN0b3J5IjpbLTU0OTk3Nzg0MSwxMzQ3MTc3NzkxLC04OT
 k0Mjk0OTYsLTExMDY3MzAzNCwxOTc3NjQyMjE0LDgxNjc3MDUy
 Miw1Mjg1MzA3NzUsLTk1ODg5MDYzLC02ODAwNTE4MzhdfQ==
 -->
