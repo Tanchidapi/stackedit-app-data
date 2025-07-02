@@ -71,8 +71,10 @@ web服务器通常运行在tcp80端口
 网络层转发的一种方法是源路由，但存在重大安全问题，一个优化是在每一个交换机中放置少量状态，告诉数据报目的地和下一跳地址
 分组交换的两个好处：
 1. 交换机可以对数据包进行独立的本地决策
-2. 
+2. 可以让交换机高效的共享多个用户之间的链路
+
+流：流是
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODg2MTY5Miw4MTY3NzA1MjIsNTI4NT
-MwNzc1LC05NTg4OTA2MywtNjgwMDUxODM4XX0=
+eyJoaXN0b3J5IjpbNDIyMDc2MzMsODE2NzcwNTIyLDUyODUzMD
+c3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF19
 -->
