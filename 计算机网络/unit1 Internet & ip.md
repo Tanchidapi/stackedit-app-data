@@ -86,9 +86,9 @@ web服务器通常运行在tcp80端口
 如图，vpn的例子展示了分装的灵活性
 ### 字节序
 计算机之间通过网络传输时将数据存到内存，然后通过网卡发送，接收时从网卡接收，然后存到内存
-所有wu'lian'wang
+所有互联网规范协议都使用大端序，即高字节在低地址
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTkxODA2OSwtMTEwNjczMDM0LDE5Nz
+eyJoaXN0b3J5IjpbLTg5OTQyOTQ5NiwtMTEwNjczMDM0LDE5Nz
 c2NDIyMTQsODE2NzcwNTIyLDUyODUzMDc3NSwtOTU4ODkwNjMs
 LTY4MDA1MTgzOF19
 -->
