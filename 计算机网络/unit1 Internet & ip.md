@@ -1,5 +1,5 @@
-## 互联网（Internet）
-network application
+## 应互联网
+
 最常用的通信模型是双向可靠的字节流，即两台主机间在建立链接后双向的、可靠的对字节流的读写
 eg1：万维网
 其使用了http的超文本传输通信协议，内容均为ASCII文本。客户端发送一个对网页的请求get，请求其根页面，服务器接收到请求后会检测其是否有效，并返回响应，响应中包含一个数字代码，表示响应的结果
@@ -115,9 +115,10 @@ opcode：指定是请求还是响应
 四个地址字段用于请求和指定映射
 所有字段均为大端序
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzA2NDYxMywtMTY2MTgxMDQ5MywtMT
-c0MDY2MDg5OSwtNDg2NTE5NTA4LC03NjY5MjUzOTUsLTIwNjA2
-ODUwOTUsNjg1NDE5NTI0LDEzNDcxNzc3OTEsLTg5OTQyOTQ5Ni
-wtMTEwNjczMDM0LDE5Nzc2NDIyMTQsODE2NzcwNTIyLDUyODUz
-MDc3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF19
+eyJoaXN0b3J5IjpbLTEzMjQ2MjA3NzksMTE2NzA2NDYxMywtMT
+Y2MTgxMDQ5MywtMTc0MDY2MDg5OSwtNDg2NTE5NTA4LC03NjY5
+MjUzOTUsLTIwNjA2ODUwOTUsNjg1NDE5NTI0LDEzNDcxNzc3OT
+EsLTg5OTQyOTQ5NiwtMTEwNjczMDM0LDE5Nzc2NDIyMTQsODE2
+NzcwNTIyLDUyODUzMDc3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF
+19
 -->
