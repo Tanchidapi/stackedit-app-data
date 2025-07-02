@@ -84,9 +84,11 @@ web服务器通常运行在tcp80端口
 分装可用于递归地分层协议
 ![输入图片说明](/imgs/2025-07-02/AMLZRmCDrRZXCDyh.png)
 如图，vpn的例子展示了分装的灵活性
-
+### 字节序
+计算机之间通过网络传输时将数据存到内存，然后通过网卡发送，接收时从网卡接收，然后存到内存
+所有wu'lian'wang
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDgzMzUwNzcsLTExMDY3MzAzNCwxOT
-c3NjQyMjE0LDgxNjc3MDUyMiw1Mjg1MzA3NzUsLTk1ODg5MDYz
-LC02ODAwNTE4MzhdfQ==
+eyJoaXN0b3J5IjpbMjEzMTkxODA2OSwtMTEwNjczMDM0LDE5Nz
+c2NDIyMTQsODE2NzcwNTIyLDUyODUzMDc3NSwtOTU4ODkwNjMs
+LTY4MDA1MTgzOF19
 -->
