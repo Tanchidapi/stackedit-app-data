@@ -79,13 +79,14 @@ web服务器通常运行在tcp80端口
 ### 分层思想（layer）
 分层思想使得每一层可以直接使用下层的接口而不用考虑具体实现，为上层提供服务接口，并专注于实现自身所在层的服务，好处在于每层可以独立的演化
 ### 分装
-分装是分组和分层结合的成果，将信息组织成分组的原则，既可以维护各层，又可以共享分组内容![输入图片说明](/imgs/2025-07-02/JXzjFLFF0VuAC8yM.png)分装示例
+分装是分组和分层结合的成果，将信息组织成分组的原则，既可以维护各层，又可以共享分组内容，将协议层组合成数据报的形式，灵活并保持了他们之间关注点的分离
+![输入图片说明](/imgs/2025-07-02/JXzjFLFF0VuAC8yM.png)分装示例
 
 分装可用于递归地分层协议
 ![输入图片说明](/imgs/2025-07-02/AMLZRmCDrRZXCDyh.png)
 如图，vpn的例子展示了分装的灵活性
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4OTUwNDQ5MCwtMTEwNjczMDM0LDE5Nz
+eyJoaXN0b3J5IjpbLTMyMTQ2NTE4OSwtMTEwNjczMDM0LDE5Nz
 c2NDIyMTQsODE2NzcwNTIyLDUyODUzMDc3NSwtOTU4ODkwNjMs
 LTY4MDA1MTgzOF19
 -->
