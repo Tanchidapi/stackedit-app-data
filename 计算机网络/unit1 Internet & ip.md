@@ -104,10 +104,15 @@ arp
 
 链路层如以太网需要mac地址通信，arp提供ip->arp的映射，通过arp缓存表可以减少重复的广播查询，如果缓存中没有则通过广播发送arp请求，该广播包会被同一子网所有设备接收，对应设备发送响应，发送设备更新arp缓存
 网关是本地网络访问外部网络的唯一出口，网关IP必须与主机在同一子网，若主机要发送数据报给不在同一网络下的设备，则通过网关转发给下一跳路由器
+![输入图片说明](/imgs/2025-07-02/0jVh5j71zUzzbxWP.png)
+arp数据报示意图
+
+分为十个字段
+ha'r'dwe
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjE4MTA0OTMsLTE3NDA2NjA4OTksLT
-Q4NjUxOTUwOCwtNzY2OTI1Mzk1LC0yMDYwNjg1MDk1LDY4NTQx
-OTUyNCwxMzQ3MTc3NzkxLC04OTk0Mjk0OTYsLTExMDY3MzAzNC
-wxOTc3NjQyMjE0LDgxNjc3MDUyMiw1Mjg1MzA3NzUsLTk1ODg5
-MDYzLC02ODAwNTE4MzhdfQ==
+eyJoaXN0b3J5IjpbLTIwMDc1ODE2MTIsLTE2NjE4MTA0OTMsLT
+E3NDA2NjA4OTksLTQ4NjUxOTUwOCwtNzY2OTI1Mzk1LC0yMDYw
+Njg1MDk1LDY4NTQxOTUyNCwxMzQ3MTc3NzkxLC04OTk0Mjk0OT
+YsLTExMDY3MzAzNCwxOTc3NjQyMjE0LDgxNjc3MDUyMiw1Mjg1
+MzA3NzUsLTk1ODg5MDYzLC02ODAwNTE4MzhdfQ==
 -->
