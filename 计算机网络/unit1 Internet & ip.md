@@ -74,8 +74,9 @@ web服务器通常运行在tcp80端口
 2. 可以让交换机高效的共享多个用户之间的链路
 
 流：流是属于同一个端到端的一组数据报，如tcp链接
-交换机为了效率，不对数据报添加或移除每流状态，也不存储
+交换机为了效率，不对数据报添加或移除每流状态，也不存储，对每个数据报独立决策
+数据的传输是猝发的，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzODI5NDI0NSw4MTY3NzA1MjIsNTI4NT
+eyJoaXN0b3J5IjpbMTcwODA2NDMzMCw4MTY3NzA1MjIsNTI4NT
 MwNzc1LC05NTg4OTA2MywtNjgwMDUxODM4XX0=
 -->
