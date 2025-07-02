@@ -229,10 +229,10 @@ main(int argc, char *argv[]){
 }
 ```
 ## p5 xargs -moderate
-
+要求：完成一个c程序，终端键入一条命令，然后读取n行文本，对这n行文本都执行第一条
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzY4NTg0ODMsLTQxMTM4NjEyNSw1MT
-M4MDM1MjUsODA0NzU2OTYwLDUzMTk5MjE4OCwxMTQyNzkxODks
-MTMxMjExMTUyMCwtMzA4MjM2Mzk3LDE5MjM5ODUzNTEsLTYwNT
-IzOTg4Ml19
+eyJoaXN0b3J5IjpbLTE3NDM3ODc3MTUsLTIwNzY4NTg0ODMsLT
+QxMTM4NjEyNSw1MTM4MDM1MjUsODA0NzU2OTYwLDUzMTk5MjE4
+OCwxMTQyNzkxODksMTMxMjExMTUyMCwtMzA4MjM2Mzk3LDE5Mj
+M5ODUzNTEsLTYwNTIzOTg4Ml19
 -->
