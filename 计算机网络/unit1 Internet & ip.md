@@ -98,15 +98,15 @@ cidr是一种地址生成策略，分为两部分，网络和主机，网络的�
 
 ### 地址解析协议（ARP）
 是网络层发现与其直接连接的网络地址关联的链路地址的机制
-如果没有arp，在网络地址不同的情况下，两台主机要通信要经过网关，同时数据报中除了源和目的地的ip地址还需要网卡地址，通过网关时根据网卡地址转发到下一跳，这就导致需要不同层之前的地址映射，即通过arp实现
+网关是用于跨网段的通信，arp协议实现同网络的寻址
 arp是一个简单的请求-应答协议，每个节点保存一个缓存，包含网络层ip地址到链路层地址的映射![输入图片说明](/imgs/2025-07-02/prTPn0JhORguXC5Y.png)
 arp
 
-
+arp通过广播
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDA2NjA4OTksLTQ4NjUxOTUwOCwtNz
-Y2OTI1Mzk1LC0yMDYwNjg1MDk1LDY4NTQxOTUyNCwxMzQ3MTc3
-NzkxLC04OTk0Mjk0OTYsLTExMDY3MzAzNCwxOTc3NjQyMjE0LD
-gxNjc3MDUyMiw1Mjg1MzA3NzUsLTk1ODg5MDYzLC02ODAwNTE4
-MzhdfQ==
+eyJoaXN0b3J5IjpbLTE3MDgxMTM4ODksLTE3NDA2NjA4OTksLT
+Q4NjUxOTUwOCwtNzY2OTI1Mzk1LC0yMDYwNjg1MDk1LDY4NTQx
+OTUyNCwxMzQ3MTc3NzkxLC04OTk0Mjk0OTYsLTExMDY3MzAzNC
+wxOTc3NjQyMjE0LDgxNjc3MDUyMiw1Mjg1MzA3NzUsLTk1ODg5
+MDYzLC02ODAwNTE4MzhdfQ==
 -->
