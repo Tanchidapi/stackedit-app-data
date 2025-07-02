@@ -90,9 +90,11 @@ web服务器通常运行在tcp80端口
 ### IPv4
 ipv4地址为网络层的地址，用于两台主机在网络层通信时的互相寻址，ip层将目标地址为该设备地址的数据报传给该设备，网络掩码（netmask）可以告知哪些ip地址是本地的，在同一链路/网络上，通过ipv4地址与netmask按位与运算比较实现
 cidr是一种地址生成策略，分为两部分，地址和数量，数量的位数与netmask的有效位一样长，决定了地址的个数
+### 最长前缀匹配算法
+路由器用于选择将数据报选择转发到哪个链路的算法
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjA2ODUwOTUsNjg1NDE5NTI0LDEzND
-cxNzc3OTEsLTg5OTQyOTQ5NiwtMTEwNjczMDM0LDE5Nzc2NDIy
-MTQsODE2NzcwNTIyLDUyODUzMDc3NSwtOTU4ODkwNjMsLTY4MD
-A1MTgzOF19
+eyJoaXN0b3J5IjpbLTc2NjkyNTM5NSwtMjA2MDY4NTA5NSw2OD
+U0MTk1MjQsMTM0NzE3Nzc5MSwtODk5NDI5NDk2LC0xMTA2NzMw
+MzQsMTk3NzY0MjIxNCw4MTY3NzA1MjIsNTI4NTMwNzc1LC05NT
+g4OTA2MywtNjgwMDUxODM4XX0=
 -->
