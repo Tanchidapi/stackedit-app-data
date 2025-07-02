@@ -66,7 +66,9 @@ tcp byte stream：典型操作中存在客户端与服务器，服务器监听�
 第二个是tcp端口，告诉计算机软件将数据传送到哪个应用程序
 web服务器通常运行在tcp80端口
 从客户端到服务器的过程中通过路由器逐跳传输，路由器有许多链接其的链路，数据报到达时，路由器会决定将其发送到哪个链路上，路由器自身也有ip地址，因此其可能不传输数据报，而是传递给自己的软件。路由器通过转发表决定行为，数据报到达时，路由器会检查哪个转发表条目模式最匹配该报，转发对应链路
+### 分组交换思想
+分组交换思想是将数据分解成离散的，自包含的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2NzcwNTIyLDUyODUzMDc3NSwtOTU4OD
-kwNjMsLTY4MDA1MTgzOF19
+eyJoaXN0b3J5IjpbNTIwMTA5NzI1LDgxNjc3MDUyMiw1Mjg1Mz
+A3NzUsLTk1ODg5MDYzLC02ODAwNTE4MzhdfQ==
 -->
