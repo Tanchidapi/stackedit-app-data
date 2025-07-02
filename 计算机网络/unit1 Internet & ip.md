@@ -92,9 +92,9 @@ ipv4地址为网络层的地址，用于两台主机在网络层通信时的互�
 cidr是一种地址生成策略，分为两部分，地址和数量，数量的位数与netmask的有效位一样长，决定了地址的个数
 ### 最长前缀匹配算法
 路由器用于选择将数据报选择转发到哪个链路的算法
-pi'pei
+匹配时根据目标地址和路由器中的转发表进行前缀匹配，在匹配的链路中选择前缀最长的那一个转发
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjE5NDQ1MywtNzY2OTI1Mzk1LC0yMD
+eyJoaXN0b3J5IjpbLTY1MzE2MTc4MywtNzY2OTI1Mzk1LC0yMD
 YwNjg1MDk1LDY4NTQxOTUyNCwxMzQ3MTc3NzkxLC04OTk0Mjk0
 OTYsLTExMDY3MzAzNCwxOTc3NjQyMjE0LDgxNjc3MDUyMiw1Mj
 g1MzA3NzUsLTk1ODg5MDYzLC02ODAwNTE4MzhdfQ==
