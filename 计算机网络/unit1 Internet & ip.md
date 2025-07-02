@@ -98,8 +98,9 @@ cidr是一种地址生成策略，分为两部分，网络和主机，网络的�
 
 ### 地址解析协议（ARP）
 是网络层发现与其直接连接的网络地址关联的链路地址的机制
+如果
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5ODExMjI4NiwtNzY2OTI1Mzk1LC0yMD
+eyJoaXN0b3J5IjpbMTczMDExMDUxNCwtNzY2OTI1Mzk1LC0yMD
 YwNjg1MDk1LDY4NTQxOTUyNCwxMzQ3MTc3NzkxLC04OTk0Mjk0
 OTYsLTExMDY3MzAzNCwxOTc3NjQyMjE0LDgxNjc3MDUyMiw1Mj
 g1MzA3NzUsLTk1ODg5MDYzLC02ODAwNTE4MzhdfQ==
