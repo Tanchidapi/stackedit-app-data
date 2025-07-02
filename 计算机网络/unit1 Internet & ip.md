@@ -89,8 +89,10 @@ web服务器通常运行在tcp80端口
 所有互联网规范协议都使用大端序，即高字节在低地址，c库中包含了大小端序的转换函数，使得不同的处理器可以正常的通过网络通信
 ### IPv4
 ipv4地址为网络层的地址，用于两台主机在网络层通信时的互相寻址，ip层将目标地址为该设备地址的数据报传给该设备，网络掩码（netmask）可以告知哪些ip地址是本地的，在同一链路/网络上，通过ipv4地址与netmask按位与运算比较实现
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1NDE5NTI0LDEzNDcxNzc3OTEsLTg5OT
-QyOTQ5NiwtMTEwNjczMDM0LDE5Nzc2NDIyMTQsODE2NzcwNTIy
-LDUyODUzMDc3NSwtOTU4ODkwNjMsLTY4MDA1MTgzOF19
+eyJoaXN0b3J5IjpbLTcwMzIxNTMxMCw2ODU0MTk1MjQsMTM0Nz
+E3Nzc5MSwtODk5NDI5NDk2LC0xMTA2NzMwMzQsMTk3NzY0MjIx
+NCw4MTY3NzA1MjIsNTI4NTMwNzc1LC05NTg4OTA2MywtNjgwMD
+UxODM4XX0=
 -->
