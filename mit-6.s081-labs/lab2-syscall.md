@@ -15,9 +15,11 @@
 3. sysproc.c
 这个文件包含了内核态下，执行的系统函数的具体实现，即对应的系统函数怎么获取用户态传来的参数，然后如何分析并使用系统函数
 4. proc.h
-这个文件是对于操作系统运行时进程相关的对象的定义，如上下文，trapframe，进程，cpu的
+这个文件是对于操作系统运行时进程相关的对象的定义，如上下文，trapframe，进程，cpu的状态，由结构体的形式实现
+5. proc.c
+这个文件是在
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTQzMTA5OTAsMTU1MjY0MDkxMywtMT
-AzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbLTg1Nzk4ODM4MCwxNTUyNjQwOTEzLC0xMD
+M1NjM0MzcyXX0=
 -->
