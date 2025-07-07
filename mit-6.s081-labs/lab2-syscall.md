@@ -22,9 +22,10 @@
 这个头文件定义了内核态下一系列的函数的原型，即函数名，返回值与传参类型
 7. kalloc.c
 这个文件包含了内核分配相关的函数的具体实现
-
+## 系统调用流程
+根据上面的文件列表及其分工我们可以看出在用户态下zhi'xi
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NDE3Njg1LDE1NTI2NDA5MTMsLTEwMz
-U2MzQzNzJdfQ==
+eyJoaXN0b3J5IjpbLTE1NTIwODExMjYsMTU1MjY0MDkxMywtMT
+AzNTYzNDM3Ml19
 -->
