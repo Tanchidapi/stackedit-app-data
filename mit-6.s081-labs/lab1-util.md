@@ -1,5 +1,5 @@
 # Util
-这个实验主要加强对系统调用的应用，编写c程序，通过系统调用函数完成题目所给题目要求，在qemu虚拟机的xv6环境下实现程序运行
+这个实验主要加强对系统调用的应用，初步了解系统调用函数及其作用，编写c程序，通过系统调用函数完成题目所给题目要求，在qemu虚拟机的xv6环境下实现程序运行
 
 qemu的搭建根据mit官网的实验指导书运行到make这一步会出问题，解决方案见
 https://www.bilibili.com/video/BV11K4y127Qk?t=5.0， 评论区有精简版
@@ -308,8 +308,9 @@ main(int argc, char *argv[]){
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNzI0NTc1NCwtMTgxNzAzNzAwNCwtMj
-A3Njg1ODQ4MywtNDExMzg2MTI1LDUxMzgwMzUyNSw4MDQ3NTY5
-NjAsNTMxOTkyMTg4LDExNDI3OTE4OSwxMzEyMTExNTIwLC0zMD
-gyMzYzOTcsMTkyMzk4NTM1MSwtNjA1MjM5ODgyXX0=
+eyJoaXN0b3J5IjpbNjU5OTIzODYzLDE2MDcyNDU3NTQsLTE4MT
+cwMzcwMDQsLTIwNzY4NTg0ODMsLTQxMTM4NjEyNSw1MTM4MDM1
+MjUsODA0NzU2OTYwLDUzMTk5MjE4OCwxMTQyNzkxODksMTMxMj
+ExMTUyMCwtMzA4MjM2Mzk3LDE5MjM5ODUzNTEsLTYwNTIzOTg4
+Ml19
 -->
