@@ -4,7 +4,7 @@
 开始作答前先解释本次实验要用到的头文件的源文件的大概作用
 ## /user目录下的文件
 1. user.h
-这个文件列出了用户态下k'y
+这个文件列出了用户态下可以调用的系统函数以及其他源文件（如ulib.c）的函数，给出函数的名称、返回类型及传参类型
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTgzODM4MF19
+eyJoaXN0b3J5IjpbLTEwMzU2MzQzNzJdfQ==
 -->
