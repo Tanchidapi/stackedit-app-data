@@ -18,8 +18,10 @@
 这个文件是对于操作系统运行时进程相关的对象的定义，如上下文，trapframe，进程，cpu的状态，由结构体的形式实现
 5. proc.c
 这个文件是在已有的头文件的定义上，对进程等对象的一些基础操作，如进程的初始化与分配等
+6. defs.h
+这个头文件定义了内核态下一系列的函数
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MDI3NjM0NSwxNTUyNjQwOTEzLC0xMD
+eyJoaXN0b3J5IjpbLTU1MDIyODM3NCwxNTUyNjQwOTEzLC0xMD
 M1NjM0MzcyXX0=
 -->
