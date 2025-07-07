@@ -9,7 +9,8 @@
 这是一个perl脚本，运行后会生成.s汇编文件，里面定义了每个系统调用函数的跳板函数，会将用户态下的系统调用的id寄存器，然后执行系统调用跳到内核态同一系统调用处理函数syscall
 ## /kernel目录下的文件
 1. syscall.h
+这个文件列出了系统调用函数的一系列id。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MzI0NjU2LDE1NTI2NDA5MTMsLTEwMz
-U2MzQzNzJdfQ==
+eyJoaXN0b3J5IjpbMTk2NTM2NjE5MCwxNTUyNjQwOTEzLC0xMD
+M1NjM0MzcyXX0=
 -->
