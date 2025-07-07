@@ -11,8 +11,8 @@
 1. syscall.h
 这个文件列出了系统调用函数的一系列id，所有系统调用函数都有自己对应的唯一id
 2. syscall.c
-这个文件是系统调用处理的主要函数，会根据
+这个文件是系统调用处理的主要函数，会根据使用系统调用时传入的参数，选择对应的系统函数并执行调用，也包含了huo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDQwNjYxMSwxNTUyNjQwOTEzLC0xMD
+eyJoaXN0b3J5IjpbMjAxMjk0Njg2MywxNTUyNjQwOTEzLC0xMD
 M1NjM0MzcyXX0=
 -->
