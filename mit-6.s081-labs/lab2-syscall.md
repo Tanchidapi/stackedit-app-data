@@ -19,9 +19,10 @@
 5. proc.c
 这个文件是在已有的头文件的定义上，对进程等对象的一些基础操作，如进程的初始化与分配等
 6. defs.h
-这个头文件定义了内核态下一系列的函数
+这个头文件定义了内核态下一系列的函数的原型，即函数名，返回值与传参类型
+7. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MDIyODM3NCwxNTUyNjQwOTEzLC0xMD
-M1NjM0MzcyXX0=
+eyJoaXN0b3J5IjpbLTM4MDkxMzE4LDE1NTI2NDA5MTMsLTEwMz
+U2MzQzNzJdfQ==
 -->
