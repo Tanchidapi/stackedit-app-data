@@ -24,9 +24,9 @@
 这个文件包含了内核分配相关的函数的具体实现
 ## 系统调用流程
 根据上面的文件列表及其分工我们可以看出在用户态下执行系统调用的流程：
-首先，用户申请调用系统函数，这需要要调用的函数包含在系统头文件user.h中，这样用户才可以调用该函数（其实是调用一个跳板函数，因为用户态没有权限直接访问内核态的函数等资源，防止用户越权yo，然后根据usys.pl脚本生成的汇编文件中的跳板函数，
+首先，用户申请调用系统函数，这需要要调用的函数包含在系统头文件user.h中，这样用户才可以调用该函数（其实是调用一个跳板函数，因为用户态没有权限直接访问内核态的函数等资源，防止用户越权无意或恶意访问硬件资源造成损坏），然后根据usys.pl脚本生成的汇编文件中的跳板函数，调用跳转到内核态，在syscall.c文件中处理调用的系统函数id，并在syscall.h头文件中找到对应的
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDcwNDc4NywxNTUyNjQwOTEzLC0xMD
-M1NjM0MzcyXX0=
+eyJoaXN0b3J5IjpbLTEzNDEwNjMxMTIsMTU1MjY0MDkxMywtMT
+AzNTYzNDM3Ml19
 -->
