@@ -4,7 +4,7 @@
 开始作答前先解释本次实验要用到的头文件的源文件的大概作用
 ## /user目录下的文件
 1. user.h
-这个文件
+这个文件列出了用户态下k'y
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NjAzNzg5XX0=
+eyJoaXN0b3J5IjpbMTgyNTgzODM4MF19
 -->
