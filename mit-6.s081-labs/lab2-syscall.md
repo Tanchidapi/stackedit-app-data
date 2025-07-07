@@ -6,7 +6,8 @@
 1. user.h
 这个文件列出了用户态下可以调用的系统函数以及其他源文件（如ulib.c）的函数，给出函数的名称、返回类型及传参类型
 2. usys.pl
-这是一个perl脚本，运行后会生成.s汇编文件，里面定义了每个系统调用函数的跳板函数，会将用户态下的系统调用的id和
+这是一个perl脚本，运行后会生成.s汇编文件，里面定义了每个系统调用函数的跳板函数，会将用户态下的系统调用的id和参数传入寄存器，然后
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MjY0MDkxMywtMTAzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbLTEyMTQ4NzU2NjYsMTU1MjY0MDkxMywtMT
+AzNTYzNDM3Ml19
 -->
