@@ -26,8 +26,9 @@
 根据上面的文件列表及其分工我们可以看出在用户态下执行系统调用的流程：
 首先，用户申请调用系统函数，这需要要调用的函数包含在系统头文件user.h中，这样用户才可以调用该函数（其实是调用一个跳板函数，因为用户态没有权限直接访问内核态的函数等资源，防止用户越权无意或恶意访问硬件资源造成损坏），然后根据usys.pl脚本生成的汇编文件中的跳板函数，调用跳转到内核态，在syscall.c文件中处理调用的系统函数id，并在syscall.h头文件中找到id对应的系统调用函数，然后syscall.c中根据对应的函数执行在sysproc.c中具体的函数实现，完成系统调用，最后返回用户态
 
+ps：很喜欢用南大蒋老师在他们的os课上对于软件视角和硬件视角下的os的描述，在软件的视角
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTI2NzY1MDEsMTU1MjY0MDkxMywtMT
-AzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbMTc3MTQ3MzY5NSwxNTUyNjQwOTEzLC0xMD
+M1NjM0MzcyXX0=
 -->
