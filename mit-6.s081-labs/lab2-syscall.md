@@ -20,9 +20,11 @@
 这个文件是在已有的头文件的定义上，对进程等对象的一些基础操作，如进程的初始化与分配等
 6. defs.h
 这个头文件定义了内核态下一系列的函数的原型，即函数名，返回值与传参类型
-7. 
+7. kalloc.c
+这个文件包含了内核分配相关的函数的具体实现
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MDkxMzE4LDE1NTI2NDA5MTMsLTEwMz
+eyJoaXN0b3J5IjpbMTQ3NDE3Njg1LDE1NTI2NDA5MTMsLTEwMz
 U2MzQzNzJdfQ==
 -->
