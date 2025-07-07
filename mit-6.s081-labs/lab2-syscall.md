@@ -23,9 +23,10 @@
 7. kalloc.c
 这个文件包含了内核分配相关的函数的具体实现
 ## 系统调用流程
-根据上面的文件列表及其分工我们可以看出在用户态下zhi'xi
+根据上面的文件列表及其分工我们可以看出在用户态下执行系统调用的流程：
+首先，用户申请调用系统函数，这需要要调用的函数包含在系统头文件user.h中，这样用户才可以调用该函数，然后根据usys.pljiao
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTIwODExMjYsMTU1MjY0MDkxMywtMT
-AzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbMTE5NTczMzkxMywxNTUyNjQwOTEzLC0xMD
+M1NjM0MzcyXX0=
 -->
