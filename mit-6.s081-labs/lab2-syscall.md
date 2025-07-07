@@ -13,8 +13,11 @@
 2. syscall.c
 这个文件是系统调用处理的主要函数，会根据使用系统调用时传入的id，选择对应的系统函数并执行调用，也包含了获取系统函数所需参数的函数
 3. sysproc.c
-这个文件包含了内核态下，执行的系统函数的具体实现，及对应的系统函数怎么获取用户态传来的参数
+这个文件包含了内核态下，执行的系统函数的具体实现，即对应的系统函数怎么获取用户态传来的参数，然后如何分析并使用系统函数
+4. proc.h
+这个文件是对于操作系统运行z
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMTEzODkwMSwxNTUyNjQwOTEzLC0xMD
-M1NjM0MzcyXX0=
+eyJoaXN0b3J5IjpbLTE5NzI2MjkyMjAsMTU1MjY0MDkxMywtMT
+AzNTYzNDM3Ml19
 -->
