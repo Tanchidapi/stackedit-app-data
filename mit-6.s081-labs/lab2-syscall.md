@@ -152,9 +152,9 @@ mem_count(void)
 		return mem_bytes;
 }
 ```
-在中国ha
+在这个函数中，我们要先取得锁，防止竞态条件出现干扰，kmem是内核中管理内存的结构体，xv6中的内存空闲形式为
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTQ3NjYyNCwtODM1NDU1Nzg0LC0xMD
+eyJoaXN0b3J5IjpbMTc5NTU5NzE4OCwtODM1NDU1Nzg0LC0xMD
 AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
 OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
 MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
