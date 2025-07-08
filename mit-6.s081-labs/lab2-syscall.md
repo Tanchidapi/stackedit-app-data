@@ -167,11 +167,14 @@ proc_count(void)
 }
 ```
 proc在proc.c中定义位进程数组，元素都是进程结构体，这里让指针p指向其首地址，则p相当于指向首地址里面的元素的指针，如果进程状态为UNUSED则计数器加一，随后p++，指针++相当于移动一个元素的单位，即指向下一个进程元素
-5. 在sysproc.c
+5. 在sysproc.c完成sysinfo函数：
+```c
+......
+uint64 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NjUzMTM1OSwtODM1NDU1Nzg0LC0xMD
-AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
-OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
-MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
-LTEwMzU2MzQzNzJdfQ==
+eyJoaXN0b3J5IjpbLTE5NzY4Nzk0NjYsLTgzNTQ1NTc4NCwtMT
+AwMTI4NjcyMiwxODkwMTg3NzE1LDI0NzA2NzMzMywtMzc2NTI0
+NjksMTcxMDgwNTcsLTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMz
+gzMTA0NzYsOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEz
+LC0xMDM1NjM0MzcyXX0=
 -->
