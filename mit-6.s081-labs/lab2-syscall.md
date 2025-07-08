@@ -163,11 +163,12 @@ proc_count(void)
 		if(p -> state != UNUSED)
 			cnt++;
 	}
-	retur
+	return cnt;
 }
 ```
+proc在proc.c中定义位进程数组，元素都是进程结构体，这里让指针p指向其首地址，则pxiang'dan
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjczOTc4MywtODM1NDU1Nzg0LC0xMD
+eyJoaXN0b3J5IjpbLTM3MDgyOTIwNSwtODM1NDU1Nzg0LC0xMD
 AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
 OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
 MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
