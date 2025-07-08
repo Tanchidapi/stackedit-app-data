@@ -166,9 +166,10 @@ proc_count(void)
 	return cnt;
 }
 ```
-proc在proc.c中定义位进程数组，元素都是进程结构体，这里让指针p指向其首地址，则pxiang'dan
+proc在proc.c中定义位进程数组，元素都是进程结构体，这里让指针p指向其首地址，则p相当于指向首地址里面的元素的指针，如果进程状态为UNUSED则计数器加一，随后p++，指针++相当于移动一个元素的单位，即指向下一个进程元素
+5. 在sysproc.c
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDgyOTIwNSwtODM1NDU1Nzg0LC0xMD
+eyJoaXN0b3J5IjpbMTI2NjUzMTM1OSwtODM1NDU1Nzg0LC0xMD
 AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
 OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
 MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
