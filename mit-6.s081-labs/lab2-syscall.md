@@ -120,10 +120,11 @@ sys_trace(void)
 要求：完成一个系统调用函数，作用为打印出当前剩余的内存以及进程数量
 实现：
 1. 用户态下的文件处理与p1类似，不再赘述
-2. 
+因为我们要统计剩余的内存以及当前进程的数量，故我们要ling
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDEyODY3MjIsMTg5MDE4NzcxNSwyND
-cwNjczMzMsLTM3NjUyNDY5LDE3MTA4MDU3LC00NTk5ODYyOTEs
-MTAwNDU1NzI2NSwxMDM4MzEwNDc2LDk4MDYyNjg2NCw3MjE0MT
-E4NzYsMTU1MjY0MDkxMywtMTAzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbMTc1NTA4NzYyNiwtMTAwMTI4NjcyMiwxOD
+kwMTg3NzE1LDI0NzA2NzMzMywtMzc2NTI0NjksMTcxMDgwNTcs
+LTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMzgzMTA0NzYsOTgwNj
+I2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEzLC0xMDM1NjM0Mzcy
+XX0=
 -->
