@@ -142,9 +142,19 @@ mem_count(void)
 	acquire(&kmem.lock);
 
 	uint64 mem_bytes = 0;
-	struct run *
+	struct run *r = kmem.freelist;
+	while(r){
+		mem_bytes += PGSIZE;
+		r = r -> next;
+	}
+
+		release(&kmem.lock);
+		return mem_bytes;
+}
+```
+在中国ha
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyODIzNTA1NCwtODM1NDU1Nzg0LC0xMD
+eyJoaXN0b3J5IjpbMjA3OTQ3NjYyNCwtODM1NDU1Nzg0LC0xMD
 AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
 OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
 MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
