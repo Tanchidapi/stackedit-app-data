@@ -82,11 +82,13 @@ struct proc {
 	uint64 syscall_trace;
 }
 ```
-在进程中加上syscall_trace掩码作为标识，当该进程调用了系统函数trace后该标识会被置位，
+在进程中加上syscall_trace掩码作为标识，当该进程调用了系统函数trace后该标识会被置位，值为对应的掩码
+6. 在proc.c中，进程初始化结束后分配时为syscall_trace赋默认值，防止内存中垃圾数据干扰：
+```c
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODU2MjI5OTEsLTM3NjUyNDY5LDE3MT
-A4MDU3LC00NTk5ODYyOTEsMTAwNDU1NzI2NSwxMDM4MzEwNDc2
-LDk4MDYyNjg2NCw3MjE0MTE4NzYsMTU1MjY0MDkxMywtMTAzNT
-YzNDM3Ml19
+eyJoaXN0b3J5IjpbMTIzMDQxNDc5LC0zNzY1MjQ2OSwxNzEwOD
+A1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzODMxMDQ3Niw5
+ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMsLTEwMzU2Mz
+QzNzJdfQ==
 -->
