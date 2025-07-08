@@ -32,12 +32,12 @@ ps：很喜欢用南大蒋老师在他们的os课上对于软件视角和硬件�
 实现：
 1. 先在用户态提供跳板函数及接口，在user.h中加入定义：
 ```c
-……
+......
 int trace(int);
 ```
-
+因为trace函数需要一个整数掩码作为指定的跟踪的系统函数，所以需要一个int参数，掩码的实现后面说明，同时返回值int，当返回值小于0时
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NzQ3MzI1Nyw3MjE0MTE4NzYsMTU1Mj
-Y0MDkxMywtMTAzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbNjAwOTI1MzQ1LDcyMTQxMTg3NiwxNTUyNj
+QwOTEzLC0xMDM1NjM0MzcyXX0=
 -->
