@@ -48,10 +48,12 @@ entry("trace");
 #define SYS_trace 22
 ```
 这个id是为了在syscall.c文件中处理系统调用时能够找到对应id的系统函数并调用执行
-4. 在syscall.c中处理x
+4. 在syscall.c中处理调用：
+```c
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTIxMTgzOSwxMDM4MzEwNDc2LDk4MD
-YyNjg2NCw3MjE0MTE4NzYsMTU1MjY0MDkxMywtMTAzNTYzNDM3
-Ml19
+eyJoaXN0b3J5IjpbLTE0OTg5Nzc2OTksMTAzODMxMDQ3Niw5OD
+A2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMsLTEwMzU2MzQz
+NzJdfQ==
 -->
