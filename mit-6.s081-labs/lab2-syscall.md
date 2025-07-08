@@ -76,10 +76,16 @@ syscall(void)
 这里的extern声明sys_trace表示这是一个外部函数，作用是编译时告诉编译器这个函数的定义位于其他文件（本例中是在sysproc.c中）中，从而实现跨文件共享函数的功能，static一行的语句是声明了一个函数指针数组，成员都是函数的地址，中括号中是对应的id，作为下标使用，这种数组声明方式更加高效，且将函数id与下标绑定，寻找对应函数时更方便，最后在syscall中加入trace的结果，如果掩码有效（trace被调用）则跟踪掩码指定的系统函数，trace的调用会改变进程中syscall_trace的值，据此可以判断是否调用了trace函数及其要跟踪的系统函数，syscall_names是一个辅助字符串数组，用于记录各自id对应的系统函数名称，便于trace时打印对应函数名
 5. 在proc.h中的对进程的定义的结构体中加上trace掩码：
 ```c
-
+......
+struct proc {
+	......
+	uint64 syscall_trace;
+}
+```
+在进程中加上syscall_trace掩码作为标识，当该进程调用了系统函数trace后该标识会被置位，
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzUxNjgxNzAsLTM3NjUyNDY5LDE3MT
+eyJoaXN0b3J5IjpbLTE3ODU2MjI5OTEsLTM3NjUyNDY5LDE3MT
 A4MDU3LC00NTk5ODYyOTEsMTAwNDU1NzI2NSwxMDM4MzEwNDc2
 LDk4MDYyNjg2NCw3MjE0MTE4NzYsMTU1MjY0MDkxMywtMTAzNT
 YzNDM3Ml19
