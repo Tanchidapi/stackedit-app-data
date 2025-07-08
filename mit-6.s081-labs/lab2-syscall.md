@@ -107,10 +107,10 @@ sys_trace(void)
 	return 0;
 }
 ```
-将参数中的第一个（trace也仅有一个参数）读取到mask中，然后获取调用该函数的进程，并将其进程结构体中的syscall_trace的值赋为对应的掩码，掩码的解释为右移要跟踪的系统调用编号，如果与1按位与的结果为true，则跟踪，比如read的id为5，调用trace时输入的参数为32，则掩码被赋值为32，syscall.cwen
+将参数中的第一个（trace也仅有一个参数）读取到mask中，然后获取调用该函数的进程，并将其进程结构体中的syscall_trace的值赋为对应的掩码，掩码的解释为右移要跟踪的系统调用编号，如果与1按位与的结果为true，则跟踪，比如read的id为5，调用trace时输入的参数为32，则掩码被赋值为32，syscall.c文件中执行syscall函数时执行了read系统函数，随后判断掩码右移read对应id，即右移5位，值为1，再与1按位与结果为true，则说明跟踪到了要求的xi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzE4NTA5MywyNDcwNjczMzMsLTM3Nj
-UyNDY5LDE3MTA4MDU3LC00NTk5ODYyOTEsMTAwNDU1NzI2NSwx
-MDM4MzEwNDc2LDk4MDYyNjg2NCw3MjE0MTE4NzYsMTU1MjY0MD
-kxMywtMTAzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbLTE1MzA1MDEzNTMsMjQ3MDY3MzMzLC0zNz
+Y1MjQ2OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUs
+MTAzODMxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2ND
+A5MTMsLTEwMzU2MzQzNzJdfQ==
 -->
