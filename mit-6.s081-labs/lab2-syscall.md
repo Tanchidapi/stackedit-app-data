@@ -36,14 +36,15 @@ ps：很喜欢用南大蒋老师在他们的os课上对于软件视角和硬件�
 int trace(int);
 ```
 因为trace函数需要一个整数掩码作为指定的跟踪的系统函数，所以需要一个int参数，掩码的实现后面说明，同时返回值int，当返回值小于0时说明调用失败
-2. 在usys.pl中声明跳板函数
+2. 在usys.pl中声明跳板函数：
 ```perl
 ......
 entry("trace");
 ```
-
+这个语句会在脚本运行生成的汇编文件中提供调用这个系统函数的跳板函数
+3. 在syscall.h中定义trace函数及其
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNj
-QwOTEzLC0xMDM1NjM0MzcyXX0=
+eyJoaXN0b3J5IjpbMTAzODMxMDQ3Niw5ODA2MjY4NjQsNzIxND
+ExODc2LDE1NTI2NDA5MTMsLTEwMzU2MzQzNzJdfQ==
 -->
