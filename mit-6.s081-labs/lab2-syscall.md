@@ -133,11 +133,11 @@ uint64 mem_count(void);
 uint64 proc_count(void);
 ......
 ```
-因为
+因为mem_count是计算内存相关的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNTQ1NTc4NCwtMTAwMTI4NjcyMiwxOD
-kwMTg3NzE1LDI0NzA2NzMzMywtMzc2NTI0NjksMTcxMDgwNTcs
-LTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMzgzMTA0NzYsOTgwNj
-I2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEzLC0xMDM1NjM0Mzcy
-XX0=
+eyJoaXN0b3J5IjpbLTE3NTM5Mjc4MzQsLTgzNTQ1NTc4NCwtMT
+AwMTI4NjcyMiwxODkwMTg3NzE1LDI0NzA2NzMzMywtMzc2NTI0
+NjksMTcxMDgwNTcsLTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMz
+gzMTA0NzYsOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEz
+LC0xMDM1NjM0MzcyXX0=
 -->
