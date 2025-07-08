@@ -152,9 +152,9 @@ mem_count(void)
 		return mem_bytes;
 }
 ```
-在这个函数中，我们要先取得锁，防止竞态条件出现干扰，kmem是内核中管理内存的结构体，xv6中的内存空闲形式为空闲链表法，其他常见的方法还有空闲表法、位示图法、成组链接法，通过空闲
+在这个函数中，我们要先取得锁，防止竞态条件出现干扰，kmem是内核中管理内存的结构体，xv6中的内存空闲形式为空闲链表法，其他常见的方法还有空闲表法、位示图法、成组链接法，通过空闲链表统计当前的空闲页，每有一个节点就加上一页的大小，最后返回统计结果
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDc4NjI4MSwtODM1NDU1Nzg0LC0xMD
+eyJoaXN0b3J5IjpbMTM1NTU3MTU1MCwtODM1NDU1Nzg0LC0xMD
 AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
 OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
 MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
