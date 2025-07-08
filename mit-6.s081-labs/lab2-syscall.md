@@ -121,7 +121,7 @@ sys_trace(void)
 实现：
 1. 用户态下的文件处理与p1类似，不再赘述
 因为我们要统计剩余的内存以及当前进程的数量，故我们要两个辅助函数，一个为mem_count，用于计算剩余内存，一个为proc_count，用于统计当前进程数
-2. 在defs.h中定义两个辅助函数
+2. 在defs.h中定义两个辅助函数：
 ```c
 ......
 // kalloc.c
@@ -133,9 +133,10 @@ uint64 mem_count(void);
 uint64 proc_count(void);
 ......
 ```
-因为mem_count是计算内存相关的
+因为mem_count是计算内存相关的函数，故声明在kalloc.c这个系列中，proc_count是进程相关的函数，故声明在proc.c这个系列中
+3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTM5Mjc4MzQsLTgzNTQ1NTc4NCwtMT
+eyJoaXN0b3J5IjpbLTExNjQ2MjQyODcsLTgzNTQ1NTc4NCwtMT
 AwMTI4NjcyMiwxODkwMTg3NzE1LDI0NzA2NzMzMywtMzc2NTI0
 NjksMTcxMDgwNTcsLTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMz
 gzMTA0NzYsOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEz
