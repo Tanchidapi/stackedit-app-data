@@ -119,7 +119,7 @@ sys_trace(void)
 ## p2 sysinfo -moderate
 要求：完成一个系统调用函数，作用为打印出当前剩余的内存以及进程数量
 实现：
-1. 用户态下的文件处理与p1类似，不再赘述
+1. 用户态下的文件处理与p1类似，不再赘述，只需注意在user.h头文件中需要声明一下sysinfo结构体供用户态使用
 因为我们要统计剩余的内存以及当前进程的数量，故我们要两个辅助函数，一个为mem_count，用于计算剩余内存，一个为proc_count，用于统计当前进程数
 2. 在defs.h中定义两个辅助函数：
 ```c
@@ -189,9 +189,9 @@ sys_sysinfo(void)
 调用系统函数sysinfo时需要用户态传入一个参数，一个地址用于接收系统函数返回的结果，但是内核态与用户态是不互通的，指针也不能相互访问，故需要使用copyout函数，这个函数会结合进程的页表找到用户态传入的指针对应的物理地址，然后将内核要传出的数据拷贝到这个物理地址中，这样在回到用户态时就能根据传入的指针指向的地址查看返回的结果了，sysinfo结构体是sysinfo.h头文件中定义的，包含了使用sysinfo时返回的形式，将空闲内存和进程数包装在结构体中，copyout直接将这一结构体拷贝到目标地址即可，通过调用前面写的辅助函数实现sysinfo即可，注意要在前面include一下sysinfo.h，不然会报错未定义的结构体sysinfo
 6. 在syscall相关文件中添加sysinfo的相关代码，和p1类似，不再赘述
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEzNDE5NTcwLC04MzU0NTU3ODQsLTEwMD
-EyODY3MjIsMTg5MDE4NzcxNSwyNDcwNjczMzMsLTM3NjUyNDY5
-LDE3MTA4MDU3LC00NTk5ODYyOTEsMTAwNDU1NzI2NSwxMDM4Mz
-EwNDc2LDk4MDYyNjg2NCw3MjE0MTE4NzYsMTU1MjY0MDkxMywt
-MTAzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbMTc3NTcwOTMyOSwtODM1NDU1Nzg0LC0xMD
+AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
+OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
+MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
+LTEwMzU2MzQzNzJdfQ==
 -->
