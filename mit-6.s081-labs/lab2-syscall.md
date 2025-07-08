@@ -159,11 +159,17 @@ uint64
 proc_count(void)
 {
 	uint64 cnt = 0;
-	
+	for(struct proc *p = proc; p < &proc[NPROC]; p++){
+		if(p -> state != UNUSED)
+			cnt++;
+	}
+	retur
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzg4MDUwMjIsLTgzNTQ1NTc4NCwtMT
-AwMTI4NjcyMiwxODkwMTg3NzE1LDI0NzA2NzMzMywtMzc2NTI0
-NjksMTcxMDgwNTcsLTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMz
-gzMTA0NzYsOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEz
-LC0xMDM1NjM0MzcyXX0=
+eyJoaXN0b3J5IjpbMTAxNjczOTc4MywtODM1NDU1Nzg0LC0xMD
+AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
+OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
+MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
+LTEwMzU2MzQzNzJdfQ==
 -->
