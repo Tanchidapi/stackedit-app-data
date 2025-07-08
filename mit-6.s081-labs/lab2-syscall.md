@@ -96,9 +96,20 @@ allocproc(void)
 7. 在sysproc.c中实现具体的trace代码：
 ```c
 uint64
-sys_trace(
+sys_trace(void)
+{
+	int mask;
+
+	if(argint(0, &mask) < 0)
+		return -1;
+	
+	myproc() -> syscall_trace = mask;
+	return 0;
+}
+```
+将参数中的第一个（也仅有一个参数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjAzMjMxLC0zNzY1MjQ2OSwxNzEwOD
+eyJoaXN0b3J5IjpbNTEwNjU1NzQxLC0zNzY1MjQ2OSwxNzEwOD
 A1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzODMxMDQ3Niw5
 ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMsLTEwMzU2Mz
 QzNzJdfQ==
