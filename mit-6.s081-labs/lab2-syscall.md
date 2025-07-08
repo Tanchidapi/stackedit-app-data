@@ -50,10 +50,16 @@ entry("trace");
 这个id是为了在syscall.c文件中处理系统调用时能够找到对应id的系统函数并调用执行
 4. 在syscall.c中处理调用：
 ```c
-
+......
+extern uint64 sys_trace(void);
+......
+static uint64 (*syscalls[])(void) = {
+......
+[SYS_trace]  sys_trace,
+}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTg5Nzc2OTksMTAzODMxMDQ3Niw5OD
-A2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMsLTEwMzU2MzQz
-NzJdfQ==
+eyJoaXN0b3J5IjpbMTA1MjAwODc5LDEwMzgzMTA0NzYsOTgwNj
+I2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEzLC0xMDM1NjM0Mzcy
+XX0=
 -->
