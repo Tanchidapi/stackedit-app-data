@@ -179,9 +179,16 @@ sys_sysinfo(void)
 
 	struct sysinfo sinfo;
 	sinfo.freemem = mem_count();
-	sinfo.nproc = proc_count()
+	sinfo.nproc = proc_count();
+
+	if((copyout(myproc() -> pagetable, addr, (char *)&sinfo, sizeof(sinfo)) < 0)
+		return -1;
+	return 0;
+}
+```
+调用系统函数sysinfo时需要用户态传入一个
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDY1ODUxMCwtODM1NDU1Nzg0LC0xMD
+eyJoaXN0b3J5IjpbMjAzNTk5Mjg2NSwtODM1NDU1Nzg0LC0xMD
 AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
 OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
 MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
