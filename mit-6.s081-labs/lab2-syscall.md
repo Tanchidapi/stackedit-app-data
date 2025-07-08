@@ -42,9 +42,10 @@ int trace(int);
 entry("trace");
 ```
 这个语句会在脚本运行生成的汇编文件中提供调用这个系统函数的跳板函数
-3. 在syscall.h中定义trace函数及其
+3. 在syscall.h中定义trace函数及其id
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzODMxMDQ3Niw5ODA2MjY4NjQsNzIxND
-ExODc2LDE1NTI2NDA5MTMsLTEwMzU2MzQzNzJdfQ==
+eyJoaXN0b3J5IjpbLTE0NDEyNzY5NzUsMTAzODMxMDQ3Niw5OD
+A2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMsLTEwMzU2MzQz
+NzJdfQ==
 -->
