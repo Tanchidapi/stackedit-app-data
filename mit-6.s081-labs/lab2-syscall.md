@@ -65,13 +65,15 @@ syscall(void)
 	if(...){
 		...
 		if((p -> syscall_trace >> num) & 1){
-			printf(
-``````
+			printf("%d: syscall %s -> %d\n",p->pid, syscall_names[num], p->trapframe->a0); // syscall_names[num]: 从 syscall 编号到 syscall 名的映射表		}
+    }
+......
+```
 这里的extern声明sys_trace表示这是一个外部函数，作用是编译时告诉编译器这个函数的定义位于其他文件（本例中是在sysproc.c中）中，从而实现跨文件共享函数的功能，static一行的语句是声明了一个函数指针数组，成员都是函数的地址，中括号中是对应的id，作为下标使用，这种数组声明方式更加高效，且将函数id与下标绑定，寻找对应函数时更方便
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3Mzk4MDgxMywxNzEwODA1NywtNDU5OT
-g2MjkxLDEwMDQ1NTcyNjUsMTAzODMxMDQ3Niw5ODA2MjY4NjQs
-NzIxNDExODc2LDE1NTI2NDA5MTMsLTEwMzU2MzQzNzJdfQ==
+eyJoaXN0b3J5IjpbOTQzNzY2NDQwLDE3MTA4MDU3LC00NTk5OD
+YyOTEsMTAwNDU1NzI2NSwxMDM4MzEwNDc2LDk4MDYyNjg2NCw3
+MjE0MTE4NzYsMTU1MjY0MDkxMywtMTAzNTYzNDM3Ml19
 -->
