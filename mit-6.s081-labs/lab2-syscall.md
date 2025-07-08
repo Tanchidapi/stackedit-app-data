@@ -170,11 +170,20 @@ proc在proc.c中定义位进程数组，元素都是进程结构体，这里让�
 5. 在sysproc.c完成sysinfo函数：
 ```c
 ......
-uint64 
+uint64
+sys_sysinfo(void)
+{
+	uint64 addr;
+	if(argaddr(0, &addr) < 0)
+		return -1;
+
+	struct sysinfo sinfo;
+	sinfo.freemem = mem_count();
+	sinfo.nproc = proc_count()
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzY4Nzk0NjYsLTgzNTQ1NTc4NCwtMT
-AwMTI4NjcyMiwxODkwMTg3NzE1LDI0NzA2NzMzMywtMzc2NTI0
-NjksMTcxMDgwNTcsLTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMz
-gzMTA0NzYsOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEz
-LC0xMDM1NjM0MzcyXX0=
+eyJoaXN0b3J5IjpbMTU4NDY1ODUxMCwtODM1NDU1Nzg0LC0xMD
+AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
+OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
+MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
+LTEwMzU2MzQzNzJdfQ==
 -->
