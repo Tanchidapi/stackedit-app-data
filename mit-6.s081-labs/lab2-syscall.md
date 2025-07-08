@@ -56,10 +56,12 @@ extern uint64 sys_trace(void);
 static uint64 (*syscalls[])(void) = {
 ......
 [SYS_trace]  sys_trace,
-}
+};
+``````
+这里的extern声明sys_trace表示这是一个外部函数，作用是编译时告诉编译器这个函数的
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MjAwODc5LDEwMzgzMTA0NzYsOTgwNj
-I2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEzLC0xMDM1NjM0Mzcy
-XX0=
+eyJoaXN0b3J5IjpbLTEyMDc5MDEyOTMsMTAzODMxMDQ3Niw5OD
+A2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMsLTEwMzU2MzQz
+NzJdfQ==
 -->
