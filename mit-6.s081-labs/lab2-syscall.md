@@ -58,10 +58,10 @@ static uint64 (*syscalls[])(void) = {
 [SYS_trace]  sys_trace,
 };
 ``````
-这里的extern声明sys_trace表示这是一个外部函数，作用是编译时告诉编译器这个函数的定义位于其他文件（本例中是在sysproc.c中）中，从而实现跨文件共享函数的功能，static一行的语句是声明了一个函数指针数组，成员都是
+这里的extern声明sys_trace表示这是一个外部函数，作用是编译时告诉编译器这个函数的定义位于其他文件（本例中是在sysproc.c中）中，从而实现跨文件共享函数的功能，static一行的语句是声明了一个函数指针数组，成员都是函数的指针
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDU1NzI2NSwxMDM4MzEwNDc2LDk4MD
-YyNjg2NCw3MjE0MTE4NzYsMTU1MjY0MDkxMywtMTAzNTYzNDM3
-Ml19
+eyJoaXN0b3J5IjpbLTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMz
+gzMTA0NzYsOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEz
+LC0xMDM1NjM0MzcyXX0=
 -->
