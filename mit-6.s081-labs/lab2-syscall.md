@@ -27,7 +27,7 @@
 首先，用户申请调用系统函数，这需要要调用的函数包含在系统头文件user.h中，这样用户才可以调用该函数（其实是调用一个跳板函数，因为用户态没有权限直接访问内核态的函数等资源，防止用户越权无意或恶意访问硬件资源造成损坏），然后根据usys.pl脚本生成的汇编文件中的跳板函数，调用跳转到内核态，在syscall.c文件中处理调用的系统函数id，并在syscall.h头文件中找到id对应的系统调用函数，然后syscall.c中根据对应的函数执行在sysproc.c中具体的函数实现，完成系统调用，最后返回用户态
 
 ps：很喜欢用南大蒋老师在他们的os课上对于软件视角和硬件视角下的os的描述，在软件的视角下，系统调用就好比向上天祈祷，而os就是这个老天爷，软件需要系统函数执行操作或申请相关硬件资源，自己又没有权限/能力（用户态），所以告诉os说：我需要xxx，然后闭眼等待，这个时候世界静止了，老天爷（os）去帮你实现愿望（将cpu所有权交给到内核，切换到内核态），然后再睁眼时所有需要的东西就得到了（系统调用完成，回到用户态），而老天爷干了什么，就是内核态的事情了，老天爷（os）怎么在内核中完成用户所需的系统函数，这是我们在实验中要具体实现的。当然，在lab2中，我们除了要完成内核中系统函数的具体实现之外，还需要完成如何顺利的祈祷（在用户态中写好接口）
-## p1 trace
+## p1 trace -ez
 要求：完成一个系统调用函数，实现对于所有系统调用函数的跟踪，即用户态请求系统调用函数时，打印出内核态在该过程使用的特定系统函数的信息
 实现：
 1. 先在用户态提供跳板函数及接口，在user.h中加入定义：
@@ -116,11 +116,12 @@ sys_trace(void)
 }
 ```
 将参数中的第一个（trace也仅有一个参数）读取到mask中，然后获取调用该函数的进程，并将其进程结构体中的syscall_trace的值赋为对应的掩码，掩码的解释为右移要跟踪的系统调用编号，如果与1按位与的结果为true，则跟踪，比如read的id为5，调用trace时输入的参数为32，则掩码被赋值为32，syscall.c文件中执行syscall函数时执行了read系统函数，随后判断掩码右移read对应id，即右移5位，值为1，再与1按位与结果为true，则说明跟踪到了要求的系统函数，随后打印出系统函数调用的信息
-## p2 sysinfo
-要求：
+## p2 sysinfo -moderate
+要求：完成一个系统调用函数，作用为打印出当前剩余的内存以及进程数量
+实现：
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU3NjgyMzEsMjQ3MDY3MzMzLC0zNz
-Y1MjQ2OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUs
-MTAzODMxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2ND
-A5MTMsLTEwMzU2MzQzNzJdfQ==
+eyJoaXN0b3J5IjpbMTg5MDE4NzcxNSwyNDcwNjczMzMsLTM3Nj
+UyNDY5LDE3MTA4MDU3LC00NTk5ODYyOTEsMTAwNDU1NzI2NSwx
+MDM4MzEwNDc2LDk4MDYyNjg2NCw3MjE0MTE4NzYsMTU1MjY0MD
+kxMywtMTAzNTYzNDM3Ml19
 -->
