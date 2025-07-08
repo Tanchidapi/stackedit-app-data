@@ -186,9 +186,9 @@ sys_sysinfo(void)
 	return 0;
 }
 ```
-调用系统函数sysinfo时需要用户态传入一个
+调用系统函数sysinfo时需要用户态传入一个参数，一个地址用于接收系统函数返回的结果，但是内核态与用户态是不互通的，指针也不能相互访问，故需要使用copyout函数，这个函数会结合进程的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTk5Mjg2NSwtODM1NDU1Nzg0LC0xMD
+eyJoaXN0b3J5IjpbLTk4OTc2MTcwNCwtODM1NDU1Nzg0LC0xMD
 AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
 OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
 MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
