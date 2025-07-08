@@ -134,11 +134,19 @@ uint64 proc_count(void);
 ......
 ```
 因为mem_count是计算内存相关的函数，故声明在kalloc.c这个系列中，proc_count是进程相关的函数，故声明在proc.c这个系列中
-3. 
+3. 在kalloc.c中实现mem_count：
+```c
+uint64
+mem_count(void)
+{
+	acquire(&kmem.lock);
+
+	uint64 mem_bytes = 0;
+	struct run *
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjQ2MjQyODcsLTgzNTQ1NTc4NCwtMT
-AwMTI4NjcyMiwxODkwMTg3NzE1LDI0NzA2NzMzMywtMzc2NTI0
-NjksMTcxMDgwNTcsLTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEwMz
-gzMTA0NzYsOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOTEz
-LC0xMDM1NjM0MzcyXX0=
+eyJoaXN0b3J5IjpbLTcyODIzNTA1NCwtODM1NDU1Nzg0LC0xMD
+AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
+OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
+MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
+LTEwMzU2MzQzNzJdfQ==
 -->
