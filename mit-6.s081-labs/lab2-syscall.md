@@ -83,7 +83,7 @@ struct proc {
 }
 ```
 在进程中加上syscall_trace掩码作为标识，当该进程调用了系统函数trace后该标识会被置位，值为对应的掩码
-6. 在proc.c中，进程初始化结束后分配时为syscall_trace赋默认值，防止内存中垃圾数据干扰：
+6. 在proc.c中，进程初始化结束后分配时为syscall_trace赋默认值，防止内存中垃圾数据干扰，同时修改fork使子进程继承父进程的syscall_trace标识：
 ```c
 ......
 static struct proc*
@@ -108,10 +108,10 @@ sys_trace(void)
 }
 ```
 将参数中的第一个（trace也仅有一个参数）读取到mask中，然后获取调用该函数的进程，并将其进程结构体中的syscall_trace的值赋为对应的掩码，掩码的解释为右移要跟踪的系统调用编号，如果与1按位与的结果为true，则跟踪，比如read的id为5，调用trace时输入的参数为32，则掩码被赋值为32，syscall.c文件中执行syscall函数时执行了read系统函数，随后判断掩码右移read对应id，即右移5位，值为1，再与1按位与结果为true，则说明跟踪到了要求的系统函数，随后打印出系统函数调用的信息
-8. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NjAwMjE0MSwyNDcwNjczMzMsLTM3Nj
-UyNDY5LDE3MTA4MDU3LC00NTk5ODYyOTEsMTAwNDU1NzI2NSwx
-MDM4MzEwNDc2LDk4MDYyNjg2NCw3MjE0MTE4NzYsMTU1MjY0MD
-kxMywtMTAzNTYzNDM3Ml19
+eyJoaXN0b3J5IjpbMjYxMzI3MDYzLDI0NzA2NzMzMywtMzc2NT
+I0NjksMTcxMDgwNTcsLTQ1OTk4NjI5MSwxMDA0NTU3MjY1LDEw
+MzgzMTA0NzYsOTgwNjI2ODY0LDcyMTQxMTg3NiwxNTUyNjQwOT
+EzLC0xMDM1NjM0MzcyXX0=
 -->
