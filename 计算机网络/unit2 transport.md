@@ -14,7 +14,9 @@ tcp的关闭：
 tcp提供的服务
 
 tcp通过四种机制保证字节流可靠：
-1. tcp层收到消息后
+1. tcp层收到消息后向发送方发送确认消息
+2. 通过校验和jian
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTYwMDgxOTk4MiwtNDcxNzUyOTUsLTIwOD
+g3NDY2MTJdfQ==
 -->
