@@ -9,8 +9,11 @@ tcp连接由三次握手建立：
 tcp的关闭：
 首先A向B发送fin消息表示finish
 然后B确认A没有数据要发送，并停止接收来自A的新数据，B发送（data+）ack，其中data是B中可能还未发送完的数据
-当B要关闭向A的tcp连接时同理，两边都guan'l
+当B要关闭向A的tcp连接时同理，两边都关闭后tcp连接完全关闭，相关状态机可以被安全移除
+![输入图片说明](/imgs/2025-07-15/UrmOlWODh1XLsmj3.png)
+tcp提供的服务
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjE0ODk0MDAsLTIwODg3NDY2MTJdfQ
-==
+eyJoaXN0b3J5IjpbNzE2ODIxMzgxLC0yMDg4NzQ2NjEyXX0=
 -->
