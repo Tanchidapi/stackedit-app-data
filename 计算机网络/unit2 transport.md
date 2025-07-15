@@ -13,7 +13,8 @@ tcp的关闭：
 ![输入图片说明](/imgs/2025-07-15/UrmOlWODh1XLsmj3.png)
 tcp提供的服务
 
-
+tcp通过四种机制保证字节流可靠：
+1. tcp层收到消息后
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2ODIxMzgxLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
 -->
