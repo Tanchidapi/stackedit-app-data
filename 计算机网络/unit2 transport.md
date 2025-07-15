@@ -17,8 +17,8 @@ tcp通过四种机制保证字节流可靠：
 1. tcp层收到消息后向发送方发送确认消息
 2. 通过校验和检测损坏的数据
 3. 通过序列号检测丢失的数据
-4. liu'lia
+4. 流量控制防止接收方超载
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkyOTM2OTY3LC00NzE3NTI5NSwtMjA4OD
-c0NjYxMl19
+eyJoaXN0b3J5IjpbLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMD
+g4NzQ2NjEyXX0=
 -->
