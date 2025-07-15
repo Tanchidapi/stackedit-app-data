@@ -7,7 +7,9 @@ tcp连接由三次握手建立：
 最后A回复一个ack，表示同意反方向通信的请求
 
 tcp的关闭同样经过三次握手：
-A
+第一次A向B发送fin消息表示finish
+然后B确认A没有数据要发送，并停止接收来自A的新数据
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzcwNDk5MCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTE1MTEyODU3MDgsLTIwODg3NDY2MTJdfQ
+==
 -->
