@@ -33,9 +33,9 @@ tcp连接通过tcp和ip首部的五部分信息进行唯一标识，ip唯一标�
 为避免源端口冲突，主机为每个新连接递增源端口号，该字段16位，故需要64k的连接才会出现重复
 为减少字节流混淆，tcp连接时使用随机的初始字序列号来标识字节流中的字节
 ## UDP的工作原理与构建
-
+udp
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTU1ODkyMjcsLTE1OTM0NTEyNCw4OT
-U5NjM0MywtMTg5MjUyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2
-MTJdfQ==
+eyJoaXN0b3J5IjpbMTUxNzUxMTE2NiwtMTU5MzQ1MTI0LDg5NT
+k2MzQzLC0xODkyNTIzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYx
+Ml19
 -->
