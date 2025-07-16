@@ -63,11 +63,11 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 ## 端到端原则
 ![输入图片说明](/imgs/2025-07-16/LBFErXlUWSO5kcGS.png)论文原文
 
-简单来说，端到端原则就是要
+简单来说，端到端原则就是
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODIyOTQyNTksMTQ1NjEwNTIzOSwxMD
-U5ODgzMjc3LC0yODMzMzcxNDgsOTMzNjE2MDgyLC04MTAwMDYy
-NzksLTE1OTM0NTEyNCw4OTU5NjM0MywtMTg5MjUyMzU3NSwtND
-cxNzUyOTUsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTQyNjM3NTI5NCwxNDU2MTA1MjM5LDEwNT
+k4ODMyNzcsLTI4MzMzNzE0OCw5MzM2MTYwODIsLTgxMDAwNjI3
+OSwtMTU5MzQ1MTI0LDg5NTk2MzQzLC0xODkyNTIzNTc1LC00Nz
+E3NTI5NSwtMjA4ODc0NjYxMl19
 -->
