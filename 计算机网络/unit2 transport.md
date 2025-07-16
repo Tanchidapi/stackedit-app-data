@@ -97,9 +97,11 @@ crc通过将数据视为一个多项式，通过模2除法除以一个生成的�
 
 接收方验证时用同样的多项式对整个数据（含crc值）进行模2除法，若余数为0则无错误，反之有错误，crc的强度取决于多项式
 ### 消息认证码
-![输入图片说明](/imgs/2025-07-16/v3i8DmbgSMXeg5Fo.png)
+![输入图片说明](/imgs/2025-07-16/v3i8DmbgSMXeg5Fo.png)mac特点
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzUwNTAzMiwtNzM2MjczNDc4LDE5MD
+eyJoaXN0b3J5IjpbLTE3NTk5OTMzNSwtNzM2MjczNDc4LDE5MD
 M4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC0yNzU0NTEx
 MDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxNDU2MTA1MjM5LD
 EwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2MTYwODIsLTgxMDAw
