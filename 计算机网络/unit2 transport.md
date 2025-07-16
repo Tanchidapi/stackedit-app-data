@@ -114,11 +114,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 ![输入图片说明](/imgs/2025-07-16/YZsE5LGm8RkmGIfd.png)http请求的三态状态机
 
-![输入图片说明](/imgs/2025-07-16/WG62BzN5nAPB9uNN.png)tcp请求的状态机示意图
+![输入图片说明](/imgs/2025-07-16/WG62BzN5nAPB9uNN.png)tcp连接的状态机示意图
 
-上面四个状态表示了tcp连接的建立过程，中间的established是已建立连接的状态，在jian'li
+上面四个状态表示了tcp连接的建立过程，中间的established是已建立连接的状态，在建立连接之后，关闭连接之前，下面六个状态表示连接如何关闭，底部状态closed表示连接已关闭，节点可以忽略它
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDk4NDU3NiwtNjA3NTQ1OTUyLC0xNT
+eyJoaXN0b3J5IjpbLTY1NDk4NzIyOCwtNjA3NTQ1OTUyLC0xNT
 U0NzM3MDM2LC0xNzU5OTkzMzUsLTczNjI3MzQ3OCwxOTAzODM3
 MzgwLDk5NTQxNTE0MCwtMTk5Mzc3MjI0MiwtMjc1NDUxMTA5LD
 E1NjA0MzYxODYsLTE4NTQzNTg5OTAsMTQ1NjEwNTIzOSwxMDU5
