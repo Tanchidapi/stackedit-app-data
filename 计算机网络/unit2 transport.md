@@ -57,9 +57,9 @@ A发送B数据报过程中，在某个路由器上找不到到B的下一跳，�
 ping指令常用于检测目标主机是否存活，是否连接
 ![输入图片说明](/imgs/2025-07-16/dDE6nRmrSaMUJYbe.png)ping的工作原理
 
-traceroute可用于跟踪数据报经过的路径和每个路由器往返延迟
+traceroute可用于跟踪数据报经过的路径和每个路由器往返延迟，通过发送udp消息实现
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MDQ5ODA1MCwtMjgzMzM3MTQ4LDkzMz
+eyJoaXN0b3J5IjpbMTA1OTg4MzI3NywtMjgzMzM3MTQ4LDkzMz
 YxNjA4MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsODk1OTYzNDMs
 LTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
 -->
