@@ -23,9 +23,10 @@ tcp通过四种机制保证字节流可靠：
 几个重要的位置含义：
  1. source port：表示发送方端口
  2. destination port：表示接收方端口
- 3. sequence
- 4. 
+ 3. sequence：表示第一个开始的字序列号
+ 4. acknowledge sequence：期待的下一个字序列号
+ 5. flag：包括一系列符号为，标识是否确认通信
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjkwOTk0NCw4OTU5NjM0MywtMTg5Mj
+eyJoaXN0b3J5IjpbLTQ4MjI0ODkyMyw4OTU5NjM0MywtMTg5Mj
 UyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
 -->
