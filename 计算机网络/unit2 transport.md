@@ -77,13 +77,14 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 
 ip校验和不保护数据部分，只校验头部，计算时忽略校验和本身字段，接收方验证时对整个头部执行相同计算，结果应为0xffff，ip校验和只有检测错误能力，没有纠错能力
 计算过程：
-1. 先将校验和部分字段置零，将ip头部以16位2byte进行划分，若报头长度不是偶数则bu'ling
+1. 先将校验和部分字段置零，将ip头部以16位2byte进行划分，若报头长度不是偶数则补零，补的零不参与传输，仅计算
+2. 对所有分割后的十六位字进行反码加法，若结果中有溢出，则保留低16位后再
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTc4NDY3NDUsOTk1NDE1MTQwLC0xOT
-kzNzcyMjQyLC0yNzU0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1
-ODk5MCwxNDU2MTA1MjM5LDEwNTk4ODMyNzcsLTI4MzMzNzE0OC
-w5MzM2MTYwODIsLTgxMDAwNjI3OSwtMTU5MzQ1MTI0LDg5NTk2
-MzQzLC0xODkyNTIzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYxMl
-19
+eyJoaXN0b3J5IjpbNzA4MzI4NjMyLDk5NTQxNTE0MCwtMTk5Mz
+c3MjI0MiwtMjc1NDUxMTA5LDE1NjA0MzYxODYsLTE4NTQzNTg5
+OTAsMTQ1NjEwNTIzOSwxMDU5ODgzMjc3LC0yODMzMzcxNDgsOT
+MzNjE2MDgyLC04MTAwMDYyNzksLTE1OTM0NTEyNCw4OTU5NjM0
+MywtMTg5MjUyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ
+==
 -->
