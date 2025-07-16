@@ -99,13 +99,14 @@ crc通过将数据视为一个多项式，通过模2除法除以一个生成的�
 ### 消息认证码
 ![输入图片说明](/imgs/2025-07-16/v3i8DmbgSMXeg5Fo.png)mac特点
 
-mac在检错能力的基础上还增加了安全检测能力，mac本质上是一种信息加密的方法，事实上mac不保证能jian
-
+mac在检错能力的基础上还增加了安全检测能力，mac本质上是一种信息加密的方法，事实上mac不保证能检测到任何错误
+### 总结
+![输入图片说明](/imgs/2025-07-16/bE7MdCfM33OPGC5c.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MTcyOTgwNiwtMTc1OTk5MzM1LC03Mz
-YyNzM0NzgsMTkwMzgzNzM4MCw5OTU0MTUxNDAsLTE5OTM3NzIy
-NDIsLTI3NTQ1MTEwOSwxNTYwNDM2MTg2LC0xODU0MzU4OTkwLD
-E0NTYxMDUyMzksMTA1OTg4MzI3NywtMjgzMzM3MTQ4LDkzMzYx
-NjA4MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsODk1OTYzNDMsLT
-E4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNDQyNDcwOTcyLC0xNzU5OTkzMzUsLTczNj
+I3MzQ3OCwxOTAzODM3MzgwLDk5NTQxNTE0MCwtMTk5Mzc3MjI0
+MiwtMjc1NDUxMTA5LDE1NjA0MzYxODYsLTE4NTQzNTg5OTAsMT
+Q1NjEwNTIzOSwxMDU5ODgzMjc3LC0yODMzMzcxNDgsOTMzNjE2
+MDgyLC04MTAwMDYyNzksLTE1OTM0NTEyNCw4OTU5NjM0MywtMT
+g5MjUyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
 -->
