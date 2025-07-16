@@ -30,8 +30,9 @@ tcp通过四种机制保证字节流可靠：
  7. windowsize等：报头大小
 
 tcp连接通过tcp和ip首部的五部分信息进行唯一标识，ip唯一标识端点，tcp的ip协议id告诉所用传输协议为tcp，端口号标识了端主机上的应用程序进程
-为避免源端口冲突，主机通过为每个新连接递增yuan
+为避免源端口冲突，主机为每个新连接递增源端口号，该字段16位，故需要64k的连接才会出现重复
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzMyMDg4NjYsODk1OTYzNDMsLTE4OT
-I1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE1MDM2MzcyMyw4OTU5NjM0MywtMTg5Mj
+UyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
 -->
