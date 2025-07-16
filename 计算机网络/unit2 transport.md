@@ -86,10 +86,10 @@ ip校验和不保护数据部分，只校验头部，计算时忽略校验和本
 ![输入图片说明](/imgs/2025-07-16/X2ddEw6PXdrhuHQr.png)crc特点
 ![输入图片说明](/imgs/2025-07-16/bi6IQa0TuW9SR8Eg.png)crc长除法示意
 
-crc通过将数据视为一个多项式，通过模2除法除以一个生成的预设多项式，得到的余数即为crc
+crc通过将数据视为一个多项式，通过模2除法除以一个生成的预设多项式，得到的余数即为crc值校验码
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgxODc0MzA2LC03MzYyNzM0NzgsMTkwMz
+eyJoaXN0b3J5IjpbLTIzMjc1NDgwLC03MzYyNzM0NzgsMTkwMz
 gzNzM4MCw5OTU0MTUxNDAsLTE5OTM3NzIyNDIsLTI3NTQ1MTEw
 OSwxNTYwNDM2MTg2LC0xODU0MzU4OTkwLDE0NTYxMDUyMzksMT
 A1OTg4MzI3NywtMjgzMzM3MTQ4LDkzMzYxNjA4MiwtODEwMDA2
