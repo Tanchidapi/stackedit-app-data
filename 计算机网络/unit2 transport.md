@@ -58,8 +58,11 @@ ping指令常用于检测目标主机是否存活，是否连接
 ![输入图片说明](/imgs/2025-07-16/dDE6nRmrSaMUJYbe.png)ping的工作原理
 
 traceroute可用于跟踪数据报经过的路径和每个路由器往返延迟，通过发送udp消息实现
+![输入图片说明](/imgs/2025-07-16/Pb3syEBywMfxTp3k.png)
+traceroute的工作原理
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTg4MzI3NywtMjgzMzM3MTQ4LDkzMz
-YxNjA4MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsODk1OTYzNDMs
-LTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEyMDI0MzQwMTIsMTA1OTg4MzI3NywtMj
+gzMzM3MTQ4LDkzMzYxNjA4MiwtODEwMDA2Mjc5LC0xNTkzNDUx
+MjQsODk1OTYzNDMsLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMD
+g4NzQ2NjEyXX0=
 -->
