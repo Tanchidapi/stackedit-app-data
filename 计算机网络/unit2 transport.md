@@ -67,13 +67,13 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 
 ![输入图片说明](/imgs/2025-07-16/V2WMSp3qAMalpTrQ.png)强端到端原则
 
-强端到端原则表述网络的任务是尽可能高效、灵活的传输数据报，其他所有的事情应在端点完成，这也是分层思想的重要体现
+强端到端原则表述网络的任务是尽可能高效、灵活的传输数据报，其他所有的事情应在端点完成，这也是分层思想的重要体现，核心思想是对于网络层的零信任以及duan'dian
 ## Error Detection
 网络通常使用三种方法进行错误检测：检验和（checksum），循环冗余验证（CRC，常用于以太网），消息认证码（MAC，用于传输层）
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NTQ1MTEwOSwxNTYwNDM2MTg2LC0xOD
-U0MzU4OTkwLDE0NTYxMDUyMzksMTA1OTg4MzI3NywtMjgzMzM3
-MTQ4LDkzMzYxNjA4MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsOD
-k1OTYzNDMsLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2
-NjEyXX0=
+eyJoaXN0b3J5IjpbNTIyNzAzODUsLTI3NTQ1MTEwOSwxNTYwND
+M2MTg2LC0xODU0MzU4OTkwLDE0NTYxMDUyMzksMTA1OTg4MzI3
+NywtMjgzMzM3MTQ4LDkzMzYxNjA4MiwtODEwMDA2Mjc5LC0xNT
+kzNDUxMjQsODk1OTYzNDMsLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1
+LC0yMDg4NzQ2NjEyXX0=
 -->
