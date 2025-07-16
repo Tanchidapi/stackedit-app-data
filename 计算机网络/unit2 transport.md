@@ -82,10 +82,11 @@ ip校验和不保护数据部分，只校验头部，计算时忽略校验和本
 3. 对上一步的结果按位取反，结果放入校验和字段
 
 检测时同样的方法进行计算，若结果不为0xffff，则说明报头损坏
+### 循环冗余校验
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMTI4NzcwNywxOTAzODM3MzgwLDk5NT
+eyJoaXN0b3J5IjpbLTczNjI3MzQ3OCwxOTAzODM3MzgwLDk5NT
 QxNTE0MCwtMTk5Mzc3MjI0MiwtMjc1NDUxMTA5LDE1NjA0MzYx
 ODYsLTE4NTQzNTg5OTAsMTQ1NjEwNTIzOSwxMDU5ODgzMjc3LC
 0yODMzMzcxNDgsOTMzNjE2MDgyLC04MTAwMDYyNzksLTE1OTM0
