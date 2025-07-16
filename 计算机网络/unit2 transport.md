@@ -36,9 +36,12 @@ tcp连接通过tcp和ip首部的五部分信息进行唯一标识，ip唯一标�
 udp一般是在对于数据的实时性更看重的情况下所使用的一个传输层协议，因此报头也更加简单，因为不需要构建可靠的双向字节流
 ![输入图片说明](/imgs/2025-07-16/a4wEIGMzRW9WF9wL.png)udp报头示意图
 
-1. source port：源duan'kou
+1. source port：源端口号
+2. destination port：目的端口号
+3. checksum：校验和，可选，如不设置则为全0，设置可以包含IP v4的一部分信息，用于检验是否发送到错误地址
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDYzODQwMSwtMTU5MzQ1MTI0LDg5NT
-k2MzQzLC0xODkyNTIzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYx
-Ml19
+eyJoaXN0b3J5IjpbMzY1NjczNzU5LC0xNTkzNDUxMjQsODk1OT
+YzNDMsLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEy
+XX0=
 -->
