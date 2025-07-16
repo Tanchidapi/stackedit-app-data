@@ -51,9 +51,9 @@ icmp运行在网络层之上，严格来说是传输层协议
 
 ![输入图片说明](/imgs/2025-07-16/q4jemG4JGAJJnqAq.png)工作例子
 
-A发送B数据报过程中，在某个路由器上找不到到B的下一跳，于是返回A错误信息，
+A发送B数据报过程中，在某个路由器上找不到到B的下一跳，于是返回A错误信息，icmp截取ip报头和ip data的前8byte，然后加上错误类型type和代码code，作为ip data，然后加上ip报头，src为当前路由其
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDczNDE0OCwtODEwMDA2Mjc5LC0xNT
-kzNDUxMjQsODk1OTYzNDMsLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1
-LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEwMDI4MDgwNTMsLTgxMDAwNjI3OSwtMT
+U5MzQ1MTI0LDg5NTk2MzQzLC0xODkyNTIzNTc1LC00NzE3NTI5
+NSwtMjA4ODc0NjYxMl19
 -->
