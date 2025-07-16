@@ -68,10 +68,12 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 ![输入图片说明](/imgs/2025-07-16/V2WMSp3qAMalpTrQ.png)强端到端原则
 
 强端到端原则表述网络的任务是尽可能高效、灵活的传输数据报，其他所有的事情应在端点完成，这也是分层思想的重要体现
+## Error Detection
+网络通常使用三种方法进行错误检测：检验和（checksum），循环冗余验证（CRC），消息认证码（MAC）
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA5Njc4MDAzLC0xODU0MzU4OTkwLDE0NT
-YxMDUyMzksMTA1OTg4MzI3NywtMjgzMzM3MTQ4LDkzMzYxNjA4
-MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsODk1OTYzNDMsLTE4OT
-I1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxND
+U2MTA1MjM5LDEwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2MTYw
+ODIsLTgxMDAwNjI3OSwtMTU5MzQ1MTI0LDg5NTk2MzQzLC0xOD
+kyNTIzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYxMl19
 -->
