@@ -79,12 +79,15 @@ ip校验和不保护数据部分，只校验头部，计算时忽略校验和本
 计算过程：
 1. 先将校验和部分字段置零，将ip头部以16位2byte进行划分，若报头长度不是偶数则补零，补的零不参与传输，仅计算
 2. 对所有分割后的十六位字进行反码加法，若结果中有溢出，则保留低16位后再加一
+3. 对上一步的结果按位取反，结果放入校验和字段
+
+检测时同样的方法进行
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjk0OTIxMzYsOTk1NDE1MTQwLC0xOT
-kzNzcyMjQyLC0yNzU0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1
-ODk5MCwxNDU2MTA1MjM5LDEwNTk4ODMyNzcsLTI4MzMzNzE0OC
-w5MzM2MTYwODIsLTgxMDAwNjI3OSwtMTU5MzQ1MTI0LDg5NTk2
-MzQzLC0xODkyNTIzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYxMl
-19
+eyJoaXN0b3J5IjpbMTgxNDAwMzUxMSw5OTU0MTUxNDAsLTE5OT
+M3NzIyNDIsLTI3NTQ1MTEwOSwxNTYwNDM2MTg2LC0xODU0MzU4
+OTkwLDE0NTYxMDUyMzksMTA1OTg4MzI3NywtMjgzMzM3MTQ4LD
+kzMzYxNjA4MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsODk1OTYz
+NDMsLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX
+0=
 -->
