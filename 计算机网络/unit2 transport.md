@@ -43,10 +43,10 @@ udp一般是在对于数据的实时性更看重的情况下所使用的一个�
 3. checksum：校验和，可选，如不设置则为全0，设置可以包含IP v4的一部分信息，用于检验是否发送到错误地址
 4. length：udp数据大小
 ## ICMP的工作原理与构建
-icmp（internet control message protocol）能够帮助在终端主机和路由器之间传递有关网络层的消息，是保证网络层工作的一部分
-
+icmp（internet control message protocol）能够帮助在终端主机和路由器之间传递有关网络层的消息，通常用于报告错误条件，诊断问题，是保证网络层工作的一部分
+![输入图片说明](/imgs/2025-07-16/EShPyqVa2aJkxAfj.png)网络层工作的三大依赖
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTg3NDU4OTgsLTE1OTM0NTEyNCw4OT
-U5NjM0MywtMTg5MjUyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2
-MTJdfQ==
+eyJoaXN0b3J5IjpbMTA1MDgyNDIwOCwtMTU5MzQ1MTI0LDg5NT
+k2MzQzLC0xODkyNTIzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYx
+Ml19
 -->
