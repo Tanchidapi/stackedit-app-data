@@ -75,7 +75,7 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 ### 校验和
 ![输入图片说明](/imgs/2025-07-16/fb0bC8vofPyAgGxt.png)ip校验和特点
 
-ip校验和不保护数据部分，只校验头部，计算时忽略校验和本身字段，接收方验证时对整个头部执行相同计算，结果应为0xffff，ip校验和只有检测错误能力，没有纠错能力
+ip校验和不保护数据部分，只校验头部，计算时忽略校验和本身字段，接收方验证时对整个头部执行相同计算，结果应为0xffff，ip校验和只有检测错误能力，但无法检测多比特错误，没有纠错能力
 计算过程：
 1. 先将校验和部分字段置零，将ip头部以16位2byte进行划分，若报头长度不是偶数则补零，补的零不参与传输，仅计算
 2. 对所有分割后的十六位字进行反码加法，若结果中有溢出，则保留低16位后再加一
@@ -83,11 +83,12 @@ ip校验和不保护数据部分，只校验头部，计算时忽略校验和本
 
 检测时同样的方法进行计算，若结果不为0xffff，则说明报头损坏
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMzgzNzM4MCw5OTU0MTUxNDAsLTE5OT
-M3NzIyNDIsLTI3NTQ1MTEwOSwxNTYwNDM2MTg2LC0xODU0MzU4
-OTkwLDE0NTYxMDUyMzksMTA1OTg4MzI3NywtMjgzMzM3MTQ4LD
-kzMzYxNjA4MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsODk1OTYz
-NDMsLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX
-0=
+eyJoaXN0b3J5IjpbMjExMTI4NzcwNywxOTAzODM3MzgwLDk5NT
+QxNTE0MCwtMTk5Mzc3MjI0MiwtMjc1NDUxMTA5LDE1NjA0MzYx
+ODYsLTE4NTQzNTg5OTAsMTQ1NjEwNTIzOSwxMDU5ODgzMjc3LC
+0yODMzMzcxNDgsOTMzNjE2MDgyLC04MTAwMDYyNzksLTE1OTM0
+NTEyNCw4OTU5NjM0MywtMTg5MjUyMzU3NSwtNDcxNzUyOTUsLT
+IwODg3NDY2MTJdfQ==
 -->
