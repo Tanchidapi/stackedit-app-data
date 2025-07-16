@@ -89,7 +89,7 @@ crc对奇数位错误，连续的小于crc位数的错误，长错误有良好�
 
 ![输入图片说明](/imgs/2025-07-16/bi6IQa0TuW9SR8Eg.png)crc长除法示意
 
-crc通过将数据视为一个多项式，通过模2除法除以一个生成的预设多项式，得到的余数即为crc值校验码，生成多项式对应的实际使用值不存储最高次的系数作为位，即多项式的最高次幂永远为1
+crc通过将数据视为一个多项式，通过模2除法除以一个生成的预设多项式，得到的余数即为crc值校验码，生成多项式对应的实际使用值不存储最高次的系数作为位，即多项式的最高次幂永远为1，且最高次数为对应位数
 计算过程：
 1. 先生成一个多项式用于计算
 2. 对数据进行预处理，在后面补上多项式对应位数的0
@@ -101,7 +101,7 @@ crc通过将数据视为一个多项式，通过模2除法除以一个生成的�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzYxOTA0MDAsLTE3NTk5OTMzNSwtNz
+eyJoaXN0b3J5IjpbLTIxNDIwMzg0NTksLTE3NTk5OTMzNSwtNz
 M2MjczNDc4LDE5MDM4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcy
 MjQyLC0yNzU0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MC
 wxNDU2MTA1MjM5LDEwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2
