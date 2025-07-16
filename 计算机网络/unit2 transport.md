@@ -42,10 +42,9 @@ udp一般是在对于数据的实时性更看重的情况下所使用的一个�
 2. destination port：目的端口号
 3. checksum：校验和，可选，如不设置则为全0，设置可以包含IP v4的一部分信息，用于检验是否发送到错误地址
 4. length：udp数据大小
-
-
+##
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzOTU4OTMwOSwtMTU5MzQ1MTI0LDg5NT
+eyJoaXN0b3J5IjpbLTE0MTMyMTY3NSwtMTU5MzQ1MTI0LDg5NT
 k2MzQzLC0xODkyNTIzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYx
 Ml19
 -->
