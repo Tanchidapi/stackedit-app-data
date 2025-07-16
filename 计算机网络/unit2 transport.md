@@ -84,6 +84,8 @@ ip校验和不保护数据部分，只校验头部，计算时忽略校验和本
 检测时同样的方法进行计算，若结果不为0xffff，则说明报头损坏
 ### 循环冗余校验
 ![输入图片说明](/imgs/2025-07-16/X2ddEw6PXdrhuHQr.png)crc特点
+
+crc可以对奇数位错误，连续的小于
 ![输入图片说明](/imgs/2025-07-16/bi6IQa0TuW9SR8Eg.png)crc长除法示意
 
 crc通过将数据视为一个多项式，通过模2除法除以一个生成的预设多项式，得到的余数即为crc值校验码
@@ -95,10 +97,10 @@ crc通过将数据视为一个多项式，通过模2除法除以一个生成的�
 接收方验证时用同样的多项式对整个数据（含crc值）进行模2除法，若余数为0则无错误，反之有错误
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxNDU5OTc4LC03MzYyNzM0NzgsMTkwMz
-gzNzM4MCw5OTU0MTUxNDAsLTE5OTM3NzIyNDIsLTI3NTQ1MTEw
-OSwxNTYwNDM2MTg2LC0xODU0MzU4OTkwLDE0NTYxMDUyMzksMT
-A1OTg4MzI3NywtMjgzMzM3MTQ4LDkzMzYxNjA4MiwtODEwMDA2
-Mjc5LC0xNTkzNDUxMjQsODk1OTYzNDMsLTE4OTI1MjM1NzUsLT
-Q3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMjAyNzQyNTMxNywtNzM2MjczNDc4LDE5MD
+M4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC0yNzU0NTEx
+MDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxNDU2MTA1MjM5LD
+EwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2MTYwODIsLTgxMDAw
+NjI3OSwtMTU5MzQ1MTI0LDg5NTk2MzQzLC0xODkyNTIzNTc1LC
+00NzE3NTI5NSwtMjA4ODc0NjYxMl19
 -->
