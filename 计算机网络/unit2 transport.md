@@ -18,7 +18,8 @@ tcp通过四种机制保证字节流可靠：
 2. 通过校验和检测损坏的数据
 3. 通过序列号检测丢失的数据
 4. 流量控制防止接收方超载
+5. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1LC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEwMDE2NjU0MTgsLTE4OTI1MjM1NzUsLT
+Q3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
 -->
