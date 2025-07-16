@@ -61,11 +61,13 @@ traceroute可用于跟踪数据报经过的路径和每个路由器往返延迟�
 ![输入图片说明](/imgs/2025-07-16/Pb3syEBywMfxTp3k.png)
 traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 ## 端到端原则
+![输入图片说明](/imgs/2025-07-16/LBFErXlUWSO5kcGS.png)论文原文
 
+简单来说，端到端原则就是要
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NjEwNTIzOSwxMDU5ODgzMjc3LC0yOD
-MzMzcxNDgsOTMzNjE2MDgyLC04MTAwMDYyNzksLTE1OTM0NTEy
-NCw4OTU5NjM0MywtMTg5MjUyMzU3NSwtNDcxNzUyOTUsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTIwODIyOTQyNTksMTQ1NjEwNTIzOSwxMD
+U5ODgzMjc3LC0yODMzMzcxNDgsOTMzNjE2MDgyLC04MTAwMDYy
+NzksLTE1OTM0NTEyNCw4OTU5NjM0MywtMTg5MjUyMzU3NSwtND
+cxNzUyOTUsLTIwODg3NDY2MTJdfQ==
 -->
