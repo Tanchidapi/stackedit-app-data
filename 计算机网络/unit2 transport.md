@@ -49,9 +49,11 @@ icmp（internet control message protocol）能够帮助在终端主机和路由�
 icmp运行在网络层之上，严格来说是传输层协议
 ![输入图片说明](/imgs/2025-07-16/NnsIKnFgkdxi0twl.png)icmp的服务模型
 
+![输入图片说明](/imgs/2025-07-16/q4jemG4JGAJJnqAq.png)工作例子
 
+A发送B数据报过程中，在某个路由器上找不到到B的下一跳，于是返回A错误信息，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MzMxMTE5LC04MTAwMDYyNzksLTE1OT
-M0NTEyNCw4OTU5NjM0MywtMTg5MjUyMzU3NSwtNDcxNzUyOTUs
-LTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMjEyNDczNDE0OCwtODEwMDA2Mjc5LC0xNT
+kzNDUxMjQsODk1OTYzNDMsLTE4OTI1MjM1NzUsLTQ3MTc1Mjk1
+LC0yMDg4NzQ2NjEyXX0=
 -->
