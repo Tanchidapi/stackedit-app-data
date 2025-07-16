@@ -72,11 +72,14 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 网络通常使用三种方法进行错误检测：检验和（checksum），循环冗余验证（CRC，常用于以太网），消息认证码（MAC，用于传输层）
 ![输入图片说明](/imgs/2025-07-16/oMmzP3Zo74XRNfeg.png)三种方式的特点
 
+### 校验和
+![输入图片说明](/imgs/2025-07-16/fb0bC8vofPyAgGxt.png)ip校验和特点
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTM3NzIyNDIsLTI3NTQ1MTEwOSwxNT
-YwNDM2MTg2LC0xODU0MzU4OTkwLDE0NTYxMDUyMzksMTA1OTg4
-MzI3NywtMjgzMzM3MTQ4LDkzMzYxNjA4MiwtODEwMDA2Mjc5LC
-0xNTkzNDUxMjQsODk1OTYzNDMsLTE4OTI1MjM1NzUsLTQ3MTc1
-Mjk1LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC0yNz
+U0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxNDU2MTA1
+MjM5LDEwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2MTYwODIsLT
+gxMDAwNjI3OSwtMTU5MzQ1MTI0LDg5NTk2MzQzLC0xODkyNTIz
+NTc1LC00NzE3NTI5NSwtMjA4ODc0NjYxMl19
 -->
