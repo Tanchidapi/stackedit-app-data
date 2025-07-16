@@ -67,10 +67,10 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 
 ![输入图片说明](/imgs/2025-07-16/V2WMSp3qAMalpTrQ.png)强端到端原则
 
-强端到端原则表述网络的任务是尽可能高效、灵活的传输数据报
+强端到端原则表述网络的任务是尽可能高效、灵活的传输数据报，其他所有的事情应在端点完成
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTAzNTI0MjgsLTE4NTQzNTg5OTAsMT
-Q1NjEwNTIzOSwxMDU5ODgzMjc3LC0yODMzMzcxNDgsOTMzNjE2
-MDgyLC04MTAwMDYyNzksLTE1OTM0NTEyNCw4OTU5NjM0MywtMT
-g5MjUyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTMzMzkxNzAxNSwtMTg1NDM1ODk5MCwxND
+U2MTA1MjM5LDEwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2MTYw
+ODIsLTgxMDAwNjI3OSwtMTU5MzQ1MTI0LDg5NTk2MzQzLC0xOD
+kyNTIzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYxMl19
 -->
