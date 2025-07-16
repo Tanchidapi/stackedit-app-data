@@ -75,10 +75,12 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 ### 校验和
 ![输入图片说明](/imgs/2025-07-16/fb0bC8vofPyAgGxt.png)ip校验和特点
 
-ip校验和不保护数据部分，只校验头部，计算时忽略校验和本身字段，接收方验证时对整个头部执行相同计算，结果应为0xffff，ip校验和只有检测错误能力，没有纠错n
+ip校验和不保护数据部分，只校验头部，计算时忽略校验和本身字段，接收方验证时对整个头部执行相同计算，结果应为0xffff，ip校验和只有检测错误能力，没有纠错能力
+计算过程：
+1. 先将校验和部分字段置零，将ip头部以16位2byte进行划分，若报头长度不是偶数则bu'ling
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDgzODg2NzQsOTk1NDE1MTQwLC0xOT
+eyJoaXN0b3J5IjpbLTIwNTc4NDY3NDUsOTk1NDE1MTQwLC0xOT
 kzNzcyMjQyLC0yNzU0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1
 ODk5MCwxNDU2MTA1MjM5LDEwNTk4ODMyNzcsLTI4MzMzNzE0OC
 w5MzM2MTYwODIsLTgxMDAwNjI3OSwtMTU5MzQ1MTI0LDg5NTk2
