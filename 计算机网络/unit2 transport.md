@@ -18,7 +18,7 @@ tcp通过四种机制保证字节流可靠：
 2. 通过校验和检测损坏的数据
 3. 通过序列号检测丢失的数据
 4. 流量控制防止接收方超载
-![输入图片说明](/imgs/2025-07-16/qjoF2pV4jYaxAlD4.png)tcp的头示例图
+![输入图片说明](/imgs/2025-07-16/qjoF2pV4jYaxAlD4.png)tcp的报头示例图
 
 几个重要的位置含义：
  1. source port：表示发送方端口
@@ -28,7 +28,9 @@ tcp通过四种机制保证字节流可靠：
  5. flag：包括一系列符号为，标识是否确认通信、是否关闭通信、是否立即传递数据、是否同步等
  6. checksum：校验和
  7. windowsize等：报头大小
+
+tcp连接通过tcp和ip首部的五部分信息进行we
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2Mzk4MzA2NCw4OTU5NjM0MywtMTg5Mj
+eyJoaXN0b3J5IjpbMTI5OTU5MzczNyw4OTU5NjM0MywtMTg5Mj
 UyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
 -->
