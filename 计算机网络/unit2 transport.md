@@ -100,10 +100,16 @@ crc通过将数据视为一个多项式，通过模2除法除以一个生成的�
 ![输入图片说明](/imgs/2025-07-16/v3i8DmbgSMXeg5Fo.png)mac特点
 
 mac在检错能力的基础上还增加了安全检测能力，mac本质上是一种信息加密的方法，事实上mac不保证能检测到任何错误
+
+实现方法：
+1. 发送方输入消息M和密钥S
+2. 通过mac算法得到标签C
+3. 发送M与C
+4. 接收方
 ### 总结
 ![输入图片说明](/imgs/2025-07-16/bE7MdCfM33OPGC5c.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyNDcwOTcyLC0xNzU5OTkzMzUsLTczNj
+eyJoaXN0b3J5IjpbNTY4NDkwMDYyLC0xNzU5OTkzMzUsLTczNj
 I3MzQ3OCwxOTAzODM3MzgwLDk5NTQxNTE0MCwtMTk5Mzc3MjI0
 MiwtMjc1NDUxMTA5LDE1NjA0MzYxODYsLTE4NTQzNTg5OTAsMT
 Q1NjEwNTIzOSwxMDU5ODgzMjc3LC0yODMzMzcxNDgsOTMzNjE2
