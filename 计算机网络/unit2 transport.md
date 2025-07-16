@@ -54,9 +54,12 @@ icmp运行在网络层之上，严格来说是传输层协议
 A发送B数据报过程中，在某个路由器上找不到到B的下一跳，于是返回A错误信息，icmp截取ip报头和ip data的前8byte，然后加上错误类型type和代码code，作为ip data，然后加上ip报头，src为当前路由器，dst为A发送回去
 ![输入图片说明](/imgs/2025-07-16/xRskIsuJ9UX1t80U.png)常见错误类型与代码
 
-ping指令常用于检测目标主机是否存活，是否连接，
+ping指令常用于检测目标主机是否存活，是否连接
+![输入图片说明](/imgs/2025-07-16/dDE6nRmrSaMUJYbe.png)ping的工作原理
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDUzMjI2MDQsOTMzNjE2MDgyLC04MT
-AwMDYyNzksLTE1OTM0NTEyNCw4OTU5NjM0MywtMTg5MjUyMzU3
-NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTI4MzMzNzE0OCw5MzM2MTYwODIsLTgxMD
+AwNjI3OSwtMTU5MzQ1MTI0LDg5NTk2MzQzLC0xODkyNTIzNTc1
+LC00NzE3NTI5NSwtMjA4ODc0NjYxMl19
 -->
