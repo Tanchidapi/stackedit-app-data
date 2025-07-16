@@ -29,8 +29,8 @@ tcp通过四种机制保证字节流可靠：
  6. checksum：校验和
  7. windowsize等：报头大小
 
-tcp连接通过tcp和ip首部的五部分信息进行we
+tcp连接通过tcp和ip首部的五部分信息进行唯一标识，ip唯一标识端点，tcp的ip协议id告诉所用传输协议为tcp，端口号bia'so'hsi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTU5MzczNyw4OTU5NjM0MywtMTg5Mj
+eyJoaXN0b3J5IjpbLTUwMjE3Mjg4Myw4OTU5NjM0MywtMTg5Mj
 UyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
 -->
