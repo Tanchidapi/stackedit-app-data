@@ -86,6 +86,7 @@ ip校验和不保护数据部分，只校验头部，计算时忽略校验和本
 ![输入图片说明](/imgs/2025-07-16/X2ddEw6PXdrhuHQr.png)crc特点
 
 crc对奇数位错误，连续的小于crc位数的错误，长错误有良好的检测能力，并且计算速度快，对硬件良好，因此十分适用于链路层的检错应用
+
 ![输入图片说明](/imgs/2025-07-16/bi6IQa0TuW9SR8Eg.png)crc长除法示意
 
 crc通过将数据视为一个多项式，通过模2除法除以一个生成的预设多项式，得到的余数即为crc值校验码
@@ -94,13 +95,14 @@ crc通过将数据视为一个多项式，通过模2除法除以一个生成的�
 2. 对数据进行预处理，在后面补上多项式对应位数的0
 3. 进行模2除法运算，每一位异或不进位，得到余数长度为生成多项式的位数-1，余数即为crc值
 
-接收方验证时用同样的多项式对整个数据（含crc值）进行模2除法，若余数为0则无错误，反之有错误
-
+接收方验证时用同样的多项式对整个数据（含crc值）进行模2除法，若余数为0则无错误，反之有错误，crc的强度取决于多项式
+### 消息认证码
+![输入图片说明](/imgs/2025-07-16/v3i8DmbgSMXeg5Fo.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzY0MTk0MTEsLTczNjI3MzQ3OCwxOT
-AzODM3MzgwLDk5NTQxNTE0MCwtMTk5Mzc3MjI0MiwtMjc1NDUx
-MTA5LDE1NjA0MzYxODYsLTE4NTQzNTg5OTAsMTQ1NjEwNTIzOS
-wxMDU5ODgzMjc3LC0yODMzMzcxNDgsOTMzNjE2MDgyLC04MTAw
-MDYyNzksLTE1OTM0NTEyNCw4OTU5NjM0MywtMTg5MjUyMzU3NS
-wtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTAyMzUwNTAzMiwtNzM2MjczNDc4LDE5MD
+M4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC0yNzU0NTEx
+MDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxNDU2MTA1MjM5LD
+EwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2MTYwODIsLTgxMDAw
+NjI3OSwtMTU5MzQ1MTI0LDg5NTk2MzQzLC0xODkyNTIzNTc1LC
+00NzE3NTI5NSwtMjA4ODc0NjYxMl19
 -->
