@@ -18,8 +18,14 @@ tcp通过四种机制保证字节流可靠：
 2. 通过校验和检测损坏的数据
 3. 通过序列号检测丢失的数据
 4. 流量控制防止接收方超载
-![输入图片说明](/imgs/2025-07-16/qjoF2pV4jYaxAlD4.png)
+![输入图片说明](/imgs/2025-07-16/qjoF2pV4jYaxAlD4.png)tcp的表头示例图
+
+几个重要的位置含义：
+ 1. source port：表示发送方端口
+ 2. destination port：表示接收方端口
+ 3. sequence
+ 4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3NDI5MzA4LDg5NTk2MzQzLC0xODkyNT
-IzNTc1LC00NzE3NTI5NSwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTUyMjkwOTk0NCw4OTU5NjM0MywtMTg5Mj
+UyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
 -->
