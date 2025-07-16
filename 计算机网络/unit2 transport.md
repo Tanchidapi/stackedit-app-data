@@ -90,10 +90,12 @@ crc通过将数据视为一个多项式，通过模2除法除以一个生成的�
 计算过程：
 1. 先生成一个多项式用于计算
 2. 对数据进行预处理，在后面补上多项式对应位数的0
-3. 进行模2除法运算，每一位异或不进位，得到余数长度为生成多项式的wei'shu
+3. 进行模2除法运算，每一位异或不进位，得到余数长度为生成多项式的位数-1，余数即为crc值
+
+接收方验证时用同样的多项式d
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3OTQ0MTMxMSwtNzM2MjczNDc4LDE5MD
+eyJoaXN0b3J5IjpbMTczMTQ1OTA3OCwtNzM2MjczNDc4LDE5MD
 M4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC0yNzU0NTEx
 MDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxNDU2MTA1MjM5LD
 EwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2MTYwODIsLTgxMDAw
