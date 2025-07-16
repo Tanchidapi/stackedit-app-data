@@ -64,10 +64,13 @@ traceroute的工作原理，要跟踪下一跳的路由器将ttl改为2即可
 ![输入图片说明](/imgs/2025-07-16/LBFErXlUWSO5kcGS.png)论文原文
 
 简单来说，端到端原则就是要求特定的功能应该在通信的端点处实现，而不是在网络的中间节点，例如安全特性等，但是网络可以包含一个不完整的功能作为性能增强
-![输入图片说明](/imgs/2025-07-16/V2WMSp3qAMalpTrQ.png)强duan
+
+![输入图片说明](/imgs/2025-07-16/V2WMSp3qAMalpTrQ.png)强端到端原则
+
+强端到端原则表述网络的任务是尽可能高效、灵活的传输数据报
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDE3NzYyLC0xODU0MzU4OTkwLDE0NT
-YxMDUyMzksMTA1OTg4MzI3NywtMjgzMzM3MTQ4LDkzMzYxNjA4
-MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsODk1OTYzNDMsLTE4OT
-I1MjM1NzUsLTQ3MTc1Mjk1LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE3MTAzNTI0MjgsLTE4NTQzNTg5OTAsMT
+Q1NjEwNTIzOSwxMDU5ODgzMjc3LC0yODMzMzcxNDgsOTMzNjE2
+MDgyLC04MTAwMDYyNzksLTE1OTM0NTEyNCw4OTU5NjM0MywtMT
+g5MjUyMzU3NSwtNDcxNzUyOTUsLTIwODg3NDY2MTJdfQ==
 -->
