@@ -135,8 +135,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 停等协议可能效率极低，滑动窗口的思想就是从一次只发送一个数据报变成一次发送n个数据报，n = 1时与停等协议一致
 ![输入图片说明](/imgs/2025-07-18/JtFw13WQVnUlEo8D.png)滑动窗口示例
 
+![输入图片说明](/imgs/2025-07-18/GXMU6XNQ9Z5oCfYv.png)滑动窗口示例
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDExODQzNiwtNjg0MTM0NTEwLDEwOT
+eyJoaXN0b3J5IjpbMTQzMjczMzgzMywtNjg0MTM0NTEwLDEwOT
 E4NDc5OTksLTY1NDk4NzIyOCwtNjA3NTQ1OTUyLC0xNTU0NzM3
 MDM2LC0xNzU5OTkzMzUsLTczNjI3MzQ3OCwxOTAzODM3MzgwLD
 k5NTQxNTE0MCwtMTk5Mzc3MjI0MiwtMjc1NDUxMTA5LDE1NjA0
