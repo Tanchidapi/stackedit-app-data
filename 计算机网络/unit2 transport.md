@@ -149,18 +149,18 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 ![输入图片说明](/imgs/2025-07-18/3kSdNeWNPnawRdY6.png)tcp中的流量控制
 
-### 重传策略
-重传策略有两种，一种是go back n策略，这种策略在窗口中某个包丢失时选择重传整个窗口的包，另一种是选择重传策略，这种策略在丢包时只重传对应的包
+### 重传协议
+重传协议有两种，一种是go back n协议，这种协议在窗口中某个包丢失时选择重传整个窗口的包，另一种是选择重传协议，这种协议在丢包时只重传对应的包
 
 ![输入图片说明](/imgs/2025-07-18/d2a1viFoo05lg7gb.png)n=4时的go back n策略示意图
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNTA0NzQxOCw5MDMxNjYzNjQsMTUxMz
-U1MDE0MSw2ODI3MTE0NTksMTU0OTMyOTk4LDE0MzI3MzM4MzMs
-LTY4NDEzNDUxMCwxMDkxODQ3OTk5LC02NTQ5ODcyMjgsLTYwNz
-U0NTk1MiwtMTU1NDczNzAzNiwtMTc1OTk5MzM1LC03MzYyNzM0
-NzgsMTkwMzgzNzM4MCw5OTU0MTUxNDAsLTE5OTM3NzIyNDIsLT
-I3NTQ1MTEwOSwxNTYwNDM2MTg2LC0xODU0MzU4OTkwLDE0NTYx
-MDUyMzldfQ==
+eyJoaXN0b3J5IjpbLTE2NTYzMTc5OTAsOTAzMTY2MzY0LDE1MT
+M1NTAxNDEsNjgyNzExNDU5LDE1NDkzMjk5OCwxNDMyNzMzODMz
+LC02ODQxMzQ1MTAsMTA5MTg0Nzk5OSwtNjU0OTg3MjI4LC02MD
+c1NDU5NTIsLTE1NTQ3MzcwMzYsLTE3NTk5OTMzNSwtNzM2Mjcz
+NDc4LDE5MDM4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC
+0yNzU0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxNDU2
+MTA1MjM5XX0=
 -->
