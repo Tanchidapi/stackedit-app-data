@@ -27,7 +27,7 @@ tcp通过四种机制保证字节流可靠：
  4. acknowledge sequence：期待的下一个字序列号
  5. flag：包括一系列符号为，标识是否确认通信、是否关闭通信、是否立即传递数据、是否同步等
  6. checksum：校验和
- 7. windowsize等：报头大小
+ 7. windowsize：滑动窗口大小，用于流量控
 
 tcp连接通过tcp和ip首部的五部分信息进行唯一标识，ip唯一标识端点，tcp的ip协议id告诉所用传输协议为tcp，端口号标识了端主机上的应用程序进程
 为避免源端口冲突，主机为每个新连接递增源端口号，该字段16位，故需要64k的连接才会出现重复
@@ -145,13 +145,15 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 需要注意的是，接收方发送确认时是通过累积确认的方式，即只会确认连续的数据报，并发送最后一个数据报的序号，同时与tcp不同，确认的是连续的最后一个数据报的序号，而tcp发送的确认是下一个期待收到的序号
 
-![输入图片说明](/imgs/2025-07-18/D240NU4VNPuFfdpT.png)
+![输入图片说明](/imgs/2025-07-18/D240NU4VNPuFfdpT.png)滑动窗口所需的序列号空间
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTI0MTQ0Myw2ODI3MTE0NTksMTU0OT
-MyOTk4LDE0MzI3MzM4MzMsLTY4NDEzNDUxMCwxMDkxODQ3OTk5
-LC02NTQ5ODcyMjgsLTYwNzU0NTk1MiwtMTU1NDczNzAzNiwtMT
-c1OTk5MzM1LC03MzYyNzM0NzgsMTkwMzgzNzM4MCw5OTU0MTUx
-NDAsLTE5OTM3NzIyNDIsLTI3NTQ1MTEwOSwxNTYwNDM2MTg2LC
-0xODU0MzU4OTkwLDE0NTYxMDUyMzksMTA1OTg4MzI3NywtMjgz
-MzM3MTQ4XX0=
+eyJoaXN0b3J5IjpbLTEyOTcwODU0NzcsNjgyNzExNDU5LDE1ND
+kzMjk5OCwxNDMyNzMzODMzLC02ODQxMzQ1MTAsMTA5MTg0Nzk5
+OSwtNjU0OTg3MjI4LC02MDc1NDU5NTIsLTE1NTQ3MzcwMzYsLT
+E3NTk5OTMzNSwtNzM2MjczNDc4LDE5MDM4MzczODAsOTk1NDE1
+MTQwLC0xOTkzNzcyMjQyLC0yNzU0NTExMDksMTU2MDQzNjE4Ni
+wtMTg1NDM1ODk5MCwxNDU2MTA1MjM5LDEwNTk4ODMyNzcsLTI4
+MzMzNzE0OF19
 -->
