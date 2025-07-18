@@ -27,7 +27,7 @@ tcp通过四种机制保证字节流可靠：
  4. acknowledge sequence：期待的下一个字序列号
  5. flag：包括一系列符号为，标识是否确认通信、是否关闭通信、是否立即传递数据、是否同步等
  6. checksum：校验和
- 7. windowsize：滑动窗口大小，用于流量控
+ 7. windowsize：滑动窗口大小，用于流量控制，单位为字节
 
 tcp连接通过tcp和ip首部的五部分信息进行唯一标识，ip唯一标识端点，tcp的ip协议id告诉所用传输协议为tcp，端口号标识了端主机上的应用程序进程
 为避免源端口冲突，主机为每个新连接递增源端口号，该字段16位，故需要64k的连接才会出现重复
@@ -147,9 +147,10 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 ![输入图片说明](/imgs/2025-07-18/D240NU4VNPuFfdpT.png)滑动窗口所需的序列号空间
 
+![输入图片说明](/imgs/2025-07-18/3kSdNeWNPnawRdY6.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTcwODU0NzcsNjgyNzExNDU5LDE1ND
+eyJoaXN0b3J5IjpbLTE4MTg1Nzc3MTYsNjgyNzExNDU5LDE1ND
 kzMjk5OCwxNDMyNzMzODMzLC02ODQxMzQ1MTAsMTA5MTg0Nzk5
 OSwtNjU0OTg3MjI4LC02MDc1NDU5NTIsLTE1NTQ3MzcwMzYsLT
 E3NTk5OTMzNSwtNzM2MjczNDc4LDE5MDM4MzczODAsOTk1NDE1
