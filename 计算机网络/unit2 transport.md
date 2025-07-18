@@ -32,7 +32,7 @@ tcp通过四种机制保证字节流可靠：
  P：标识数据是否要推送到接收的应用程序（push）
  A：标识ack字段是否有效，一般除了第一个包都会置位
  R：标识reset，需要重置连接
- S：标识syn，建立连接用，代表是否要确认序列号
+ S：标识syn，建立连接用，用于同步序列号
  F：标识fin，关闭连接用，告诉另一个端点没有更多数据要发送
  6. checksum：校验和，涵盖了伪首部（ip头），tcp头和tcp段中的数据
  7. windowsize：滑动窗口大小，用于流量控制，单位为字节，告诉另一个端点发送方有多少接收缓冲区的空间
@@ -169,11 +169,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMDMwMzkwOSwtMTU3MDY2MTQ0OSwzNz
-gzMDAwNTUsOTAzMTY2MzY0LDE1MTM1NTAxNDEsNjgyNzExNDU5
-LDE1NDkzMjk5OCwxNDMyNzMzODMzLC02ODQxMzQ1MTAsMTA5MT
-g0Nzk5OSwtNjU0OTg3MjI4LC02MDc1NDU5NTIsLTE1NTQ3Mzcw
-MzYsLTE3NTk5OTMzNSwtNzM2MjczNDc4LDE5MDM4MzczODAsOT
-k1NDE1MTQwLC0xOTkzNzcyMjQyLC0yNzU0NTExMDksMTU2MDQz
-NjE4Nl19
+eyJoaXN0b3J5IjpbLTE2NDEzMDA1NjksLTE1NzA2NjE0NDksMz
+c4MzAwMDU1LDkwMzE2NjM2NCwxNTEzNTUwMTQxLDY4MjcxMTQ1
+OSwxNTQ5MzI5OTgsMTQzMjczMzgzMywtNjg0MTM0NTEwLDEwOT
+E4NDc5OTksLTY1NDk4NzIyOCwtNjA3NTQ1OTUyLC0xNTU0NzM3
+MDM2LC0xNzU5OTkzMzUsLTczNjI3MzQ3OCwxOTAzODM3MzgwLD
+k5NTQxNTE0MCwtMTk5Mzc3MjI0MiwtMjc1NDUxMTA5LDE1NjA0
+MzYxODZdfQ==
 -->
