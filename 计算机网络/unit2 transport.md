@@ -152,15 +152,17 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 ### 重传协议
 重传协议有两种，一种是go back n协议，这种协议在窗口中某个包丢失时选择重传整个窗口的包，另一种是选择重传协议，这种协议在丢包时只重传对应的包
 
-![输入图片说明](/imgs/2025-07-18/d2a1viFoo05lg7gb.png)n=4时的go back n策略示意图
+![输入图片说明](/imgs/2025-07-18/d2a1viFoo05lg7gb.png)n=4时的go back n协议示意图
 
-![输入图片说明](/imgs/2025-07-18/ifJu299AX3weblEX.png)n=4时的se'le
+![输入图片说明](/imgs/2025-07-18/ifJu299AX3weblEX.png)n=4时的selective repeat协议示意图
+
+go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NzcyMzQ3MCw5MDMxNjYzNjQsMTUxMz
-U1MDE0MSw2ODI3MTE0NTksMTU0OTMyOTk4LDE0MzI3MzM4MzMs
-LTY4NDEzNDUxMCwxMDkxODQ3OTk5LC02NTQ5ODcyMjgsLTYwNz
-U0NTk1MiwtMTU1NDczNzAzNiwtMTc1OTk5MzM1LC03MzYyNzM0
-NzgsMTkwMzgzNzM4MCw5OTU0MTUxNDAsLTE5OTM3NzIyNDIsLT
-I3NTQ1MTEwOSwxNTYwNDM2MTg2LC0xODU0MzU4OTkwLDE0NTYx
-MDUyMzldfQ==
+eyJoaXN0b3J5IjpbMzc4MzAwMDU1LDkwMzE2NjM2NCwxNTEzNT
+UwMTQxLDY4MjcxMTQ1OSwxNTQ5MzI5OTgsMTQzMjczMzgzMywt
+Njg0MTM0NTEwLDEwOTE4NDc5OTksLTY1NDk4NzIyOCwtNjA3NT
+Q1OTUyLC0xNTU0NzM3MDM2LC0xNzU5OTkzMzUsLTczNjI3MzQ3
+OCwxOTAzODM3MzgwLDk5NTQxNTE0MCwtMTk5Mzc3MjI0MiwtMj
+c1NDUxMTA5LDE1NjA0MzYxODYsLTE4NTQzNTg5OTAsMTQ1NjEw
+NTIzOV19
 -->
