@@ -128,11 +128,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 ![输入图片说明](/imgs/2025-07-18/PDD0j10NYJkNt6ch.png)停等协议的四个例子
 
-上述四个例子中的第四个是回复延迟的情况，这是所有可靠协议都会遇到的一个问题，这种情况下，第二次发送方收到的ack无法确认是哪一数据报对应的，停等协议下通过
+上述四个例子中的第四个是回复延迟的情况，这是所有可靠协议都会遇到的一个问题，这种情况下，第二次发送方收到的ack无法确认是哪一数据报对应的，停等协议下通过使用一个比特计数器解决问题
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NDQyMjI1NiwtNjU0OTg3MjI4LC02MD
+eyJoaXN0b3J5IjpbMjA3OTMyMDM4NSwtNjU0OTg3MjI4LC02MD
 c1NDU5NTIsLTE1NTQ3MzcwMzYsLTE3NTk5OTMzNSwtNzM2Mjcz
 NDc4LDE5MDM4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC
 0yNzU0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxNDU2
