@@ -14,7 +14,7 @@ tcp的关闭：
 然后B确认A没有数据要发送，并停止接收来自A的新数据，B发送（data+）ack，其中data是B中可能还未发送完的数据
 当B要关闭向A的tcp连接时同理，两边都关闭后tcp连接完全关闭，相关状态机可以被安全移除
 
-![输入图片说明](/imgs/2025-07-18/OFHPp2SSlGL8TOIA.png)tcp的关闭，通过ack和fin
+![输入图片说明](/imgs/2025-07-18/OFHPp2SSlGL8TOIA.png)tcp的关闭，通过ack和fin标识位以及sqe和ack字段实现
 
 ![输入图片说明](/imgs/2025-07-15/UrmOlWODh1XLsmj3.png)
 tcp提供的服务
@@ -175,11 +175,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NjQ1NDE0OCwxMjUwNjMzMjA1LC0xNj
-QxMzAwNTY5LC0xNTcwNjYxNDQ5LDM3ODMwMDA1NSw5MDMxNjYz
-NjQsMTUxMzU1MDE0MSw2ODI3MTE0NTksMTU0OTMyOTk4LDE0Mz
-I3MzM4MzMsLTY4NDEzNDUxMCwxMDkxODQ3OTk5LC02NTQ5ODcy
-MjgsLTYwNzU0NTk1MiwtMTU1NDczNzAzNiwtMTc1OTk5MzM1LC
-03MzYyNzM0NzgsMTkwMzgzNzM4MCw5OTU0MTUxNDAsLTE5OTM3
-NzIyNDJdfQ==
+eyJoaXN0b3J5IjpbNDQzODYwNDgzLDEyNTA2MzMyMDUsLTE2ND
+EzMDA1NjksLTE1NzA2NjE0NDksMzc4MzAwMDU1LDkwMzE2NjM2
+NCwxNTEzNTUwMTQxLDY4MjcxMTQ1OSwxNTQ5MzI5OTgsMTQzMj
+czMzgzMywtNjg0MTM0NTEwLDEwOTE4NDc5OTksLTY1NDk4NzIy
+OCwtNjA3NTQ1OTUyLC0xNTU0NzM3MDM2LC0xNzU5OTkzMzUsLT
+czNjI3MzQ3OCwxOTAzODM3MzgwLDk5NTQxNTE0MCwtMTk5Mzc3
+MjI0Ml19
 -->
