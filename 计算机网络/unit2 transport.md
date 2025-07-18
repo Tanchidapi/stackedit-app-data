@@ -26,6 +26,7 @@ tcp通过四种机制保证字节流可靠：
 2. 通过校验和检测损坏的数据
 3. 通过序列号检测丢失的数据
 4. 流量控制防止接收方超载
+
 ![输入图片说明](/imgs/2025-07-16/qjoF2pV4jYaxAlD4.png)
 ![输入图片说明](/imgs/2025-07-18/XyGJue8JGiOM7hF8.png)tcp的报头示例图
 
@@ -176,11 +177,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODc0NDAyNTMsMTI1MDYzMzIwNSwtMT
-Y0MTMwMDU2OSwtMTU3MDY2MTQ0OSwzNzgzMDAwNTUsOTAzMTY2
-MzY0LDE1MTM1NTAxNDEsNjgyNzExNDU5LDE1NDkzMjk5OCwxND
-MyNzMzODMzLC02ODQxMzQ1MTAsMTA5MTg0Nzk5OSwtNjU0OTg3
-MjI4LC02MDc1NDU5NTIsLTE1NTQ3MzcwMzYsLTE3NTk5OTMzNS
-wtNzM2MjczNDc4LDE5MDM4MzczODAsOTk1NDE1MTQwLC0xOTkz
-NzcyMjQyXX0=
+eyJoaXN0b3J5IjpbNjMxNzI2NzQxLDEyNTA2MzMyMDUsLTE2ND
+EzMDA1NjksLTE1NzA2NjE0NDksMzc4MzAwMDU1LDkwMzE2NjM2
+NCwxNTEzNTUwMTQxLDY4MjcxMTQ1OSwxNTQ5MzI5OTgsMTQzMj
+czMzgzMywtNjg0MTM0NTEwLDEwOTE4NDc5OTksLTY1NDk4NzIy
+OCwtNjA3NTQ1OTUyLC0xNTU0NzM3MDM2LC0xNzU5OTkzMzUsLT
+czNjI3MzQ3OCwxOTAzODM3MzgwLDk5NTQxNTE0MCwtMTk5Mzc3
+MjI0Ml19
 -->
