@@ -149,10 +149,10 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 ![输入图片说明](/imgs/2025-07-18/3kSdNeWNPnawRdY6.png)tcp中的流量控制
 
-### 重传协议
-choo
+### 重传策略
+重传策略有两种，一种是go back n策略，这种策略在窗口中某个包丢失时选择重传整个窗口的包，另一种是选择重传策略，这种策略在丢包时只重传对应的包
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDY2OTQ3MjksOTAzMTY2MzY0LDE1MT
+eyJoaXN0b3J5IjpbLTEzMDU4MTAyNjUsOTAzMTY2MzY0LDE1MT
 M1NTAxNDEsNjgyNzExNDU5LDE1NDkzMjk5OCwxNDMyNzMzODMz
 LC02ODQxMzQ1MTAsMTA5MTg0Nzk5OSwtNjU0OTg3MjI4LC02MD
 c1NDU5NTIsLTE1NTQ3MzcwMzYsLTE3NTk5OTMzNSwtNzM2Mjcz
