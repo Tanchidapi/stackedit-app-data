@@ -141,13 +141,15 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 上述过程中需注意，当某个数据报在传输过程中丢失时，例如5号丢失，则在6号的ack到达时滑动窗口的左侧无法移动
 
-![输入图片说明](/imgs/2025-07-18/kgBPe2GninktAQTW.png)jie'shou'fan
+![输入图片说明](/imgs/2025-07-18/kgBPe2GninktAQTW.png)接收方的工作
+
+需要注意的是，接收方发送确认时是通过累积确认的方式，即只会确认连续的数据报，并发送最后一个数据报的序号，同时与tcp不同，确认的是连续的最后一个数据报的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjI5MzkyMjEsMTU0OTMyOTk4LDE0Mz
-I3MzM4MzMsLTY4NDEzNDUxMCwxMDkxODQ3OTk5LC02NTQ5ODcy
-MjgsLTYwNzU0NTk1MiwtMTU1NDczNzAzNiwtMTc1OTk5MzM1LC
-03MzYyNzM0NzgsMTkwMzgzNzM4MCw5OTU0MTUxNDAsLTE5OTM3
-NzIyNDIsLTI3NTQ1MTEwOSwxNTYwNDM2MTg2LC0xODU0MzU4OT
-kwLDE0NTYxMDUyMzksMTA1OTg4MzI3NywtMjgzMzM3MTQ4LDkz
-MzYxNjA4Ml19
+eyJoaXN0b3J5IjpbNzI3NDQ3MDMwLDE1NDkzMjk5OCwxNDMyNz
+MzODMzLC02ODQxMzQ1MTAsMTA5MTg0Nzk5OSwtNjU0OTg3MjI4
+LC02MDc1NDU5NTIsLTE1NTQ3MzcwMzYsLTE3NTk5OTMzNSwtNz
+M2MjczNDc4LDE5MDM4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcy
+MjQyLC0yNzU0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MC
+wxNDU2MTA1MjM5LDEwNTk4ODMyNzcsLTI4MzMzNzE0OCw5MzM2
+MTYwODJdfQ==
 -->
