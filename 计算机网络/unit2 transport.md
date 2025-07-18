@@ -129,13 +129,14 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 ![输入图片说明](/imgs/2025-07-18/PDD0j10NYJkNt6ch.png)停等协议的四个例子
 
-上述四个例子中的第四个是回复延迟的情况，这是所有可靠协议都会遇到的一个问题，这种情况下，第二次发送方收到的ack无法确认是哪一数据报对应的，停等协议下通过使用一个比特计数器解决问题，发送的数据和回传的ack有同样的计数，对于这个比特计数器有两个简答的假设，一是网络不重传数据报，二是数据报不会延迟超过多个超时时长
+上述四个例子中的第四个是回复延迟的情况，这是所有可靠协议都会遇到的一个问题，这种情况下，第二次发送方收到的ack无法确认是哪一数据报对应的，停等协议下通过使用一个比特计数器解决问题，发送的数据和回传的ack有同样的计数，对于这个比特计数器有两个简单的假设，一是网络不重传数据报，二是数据报不会延迟超过多个超时时长
 
 ### 滑动窗口
 停等协议可能效率极低，滑动窗口的思想就是从一次只发送一个数据报变成一次发送n个数据报，n = 1时与停等协议一致
 ![输入图片说明](/imgs/2025-07-18/JtFw13WQVnUlEo8D.png)滑动窗口示例
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MzEyNTg2NSwtNjg0MTM0NTEwLDEwOT
+eyJoaXN0b3J5IjpbMTk1NDExODQzNiwtNjg0MTM0NTEwLDEwOT
 E4NDc5OTksLTY1NDk4NzIyOCwtNjA3NTQ1OTUyLC0xNTU0NzM3
 MDM2LC0xNzU5OTkzMzUsLTczNjI3MzQ3OCwxOTAzODM3MzgwLD
 k5NTQxNTE0MCwtMTk5Mzc3MjI0MiwtMjc1NDUxMTA5LDE1NjA0
