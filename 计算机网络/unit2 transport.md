@@ -30,9 +30,10 @@ tcp通过四种机制保证字节流可靠：
  5. flag：包括一系列符号位，标识是否确认通信、是否关闭通信、是否立即传递数据、是否同步等
  U：标识数据是否紧急（urgent）
  P：标识数据是否要推送到接收的应用程序（push）
- A：标识ack
+ A：标识ack字段是否有效，一般除了第一个包都会置位
  R：标识reset
- S：bi'so
+ S：标识syn
+ F：标识fin
  7. checksum：校验和，涵盖了伪首部（ip头），tcp头和tcp段中的数据
  8. windowsize：滑动窗口大小，用于流量控制，单位为字节，告诉另一个端点发送方有多少接收缓冲区的空间
  
@@ -167,7 +168,7 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1Mzc3MTE0LC0xNTcwNjYxNDQ5LDM3OD
+eyJoaXN0b3J5IjpbNDA2NTc1MDI2LC0xNTcwNjYxNDQ5LDM3OD
 MwMDA1NSw5MDMxNjYzNjQsMTUxMzU1MDE0MSw2ODI3MTE0NTks
 MTU0OTMyOTk4LDE0MzI3MzM4MzMsLTY4NDEzNDUxMCwxMDkxOD
 Q3OTk5LC02NTQ5ODcyMjgsLTYwNzU0NTk1MiwtMTU1NDczNzAz
