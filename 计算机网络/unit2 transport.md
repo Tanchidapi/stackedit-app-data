@@ -118,9 +118,9 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 上面四个状态表示了tcp连接的建立过程，中间的established是已建立连接的状态，在建立连接之后，关闭连接之前，下面六个状态表示连接如何关闭，底部状态closed表示连接已关闭，节点可以忽略它
 ## 流量控制
-流量控制试图解决的问题是发送方发送数据速度比接收方快，通常通过简单的停等协议实现
+流量控制试图解决的问题是发送方发送数据速度比接收方快，通常通过简单的停等协议和滑动窗口算法实现
 ![输入图片说明](/imgs/2025-07-18/1uPEdkKjlpCcGdOE.png)基本概念与方法
-
+### 停等
 停等协议也是一种有限状态机
 ![输入图片说明](/imgs/2025-07-18/jFBcprHuNXR4A3kG.png)停等协议方法
 
@@ -128,15 +128,15 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 ![输入图片说明](/imgs/2025-07-18/PDD0j10NYJkNt6ch.png)停等协议的四个例子
 
-上述四个例子中的第四个是回复延迟的情况，这是所有可靠协议都会遇到的一个问题，这种情况下，第二次发送方收到的ack无法确认是哪一数据报对应的，停等协议下通过使用一个比特计数器解决问题，发送的数据和回传的ack有同样的计数，对于这个比特计数器有两个简答的假设，
+上述四个例子中的第四个是回复延迟的情况，这是所有可靠协议都会遇到的一个问题，这种情况下，第二次发送方收到的ack无法确认是哪一数据报对应的，停等协议下通过使用一个比特计数器解决问题，发送的数据和回传的ack有同样的计数，对于这个比特计数器有两个简答的假设，一是网络不重传数据报，二是数据报不会延迟超过多个超时时长
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNDI5MjI2MSwxMDkxODQ3OTk5LC02NT
-Q5ODcyMjgsLTYwNzU0NTk1MiwtMTU1NDczNzAzNiwtMTc1OTk5
-MzM1LC03MzYyNzM0NzgsMTkwMzgzNzM4MCw5OTU0MTUxNDAsLT
-E5OTM3NzIyNDIsLTI3NTQ1MTEwOSwxNTYwNDM2MTg2LC0xODU0
-MzU4OTkwLDE0NTYxMDUyMzksMTA1OTg4MzI3NywtMjgzMzM3MT
-Q4LDkzMzYxNjA4MiwtODEwMDA2Mjc5LC0xNTkzNDUxMjQsODk1
-OTYzNDNdfQ==
+eyJoaXN0b3J5IjpbMzIwMzE1MTg3LDEwOTE4NDc5OTksLTY1ND
+k4NzIyOCwtNjA3NTQ1OTUyLC0xNTU0NzM3MDM2LC0xNzU5OTkz
+MzUsLTczNjI3MzQ3OCwxOTAzODM3MzgwLDk5NTQxNTE0MCwtMT
+k5Mzc3MjI0MiwtMjc1NDUxMTA5LDE1NjA0MzYxODYsLTE4NTQz
+NTg5OTAsMTQ1NjEwNTIzOSwxMDU5ODgzMjc3LC0yODMzMzcxND
+gsOTMzNjE2MDgyLC04MTAwMDYyNzksLTE1OTM0NTEyNCw4OTU5
+NjM0M119
 -->
