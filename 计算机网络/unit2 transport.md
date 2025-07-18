@@ -5,6 +5,7 @@ tcp连接由三次握手建立：
 第一次为A发送syn到B，同时发送用于识别的字节流基数，标识发送的数据从多少开始
 第二次由B发送syn+ack到A，ack表示确认请求并同意建立连接，syn表示B想与A的tcp层建立连接，发送一个数字标识反向字节流的起始
 最后A回复一个ack，表示同意反方向通信的请求
+握手时虽然会发送起始shu
 
 ![输入图片说明](/imgs/2025-07-18/dUgYDVDP3wSAwWB0.png)三次握手的示意图，其中红色是一方主动一方被动（监听）的情况，蓝色是两方都主动建立连接的情况，第二种情况下需要四条消息
 
@@ -171,11 +172,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjMxODIxOCwtMTY0MTMwMDU2OSwtMT
-U3MDY2MTQ0OSwzNzgzMDAwNTUsOTAzMTY2MzY0LDE1MTM1NTAx
-NDEsNjgyNzExNDU5LDE1NDkzMjk5OCwxNDMyNzMzODMzLC02OD
-QxMzQ1MTAsMTA5MTg0Nzk5OSwtNjU0OTg3MjI4LC02MDc1NDU5
-NTIsLTE1NTQ3MzcwMzYsLTE3NTk5OTMzNSwtNzM2MjczNDc4LD
-E5MDM4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC0yNzU0
-NTExMDldfQ==
+eyJoaXN0b3J5IjpbNjcyOTkwNzE1LC0xNjQxMzAwNTY5LC0xNT
+cwNjYxNDQ5LDM3ODMwMDA1NSw5MDMxNjYzNjQsMTUxMzU1MDE0
+MSw2ODI3MTE0NTksMTU0OTMyOTk4LDE0MzI3MzM4MzMsLTY4ND
+EzNDUxMCwxMDkxODQ3OTk5LC02NTQ5ODcyMjgsLTYwNzU0NTk1
+MiwtMTU1NDczNzAzNiwtMTc1OTk5MzM1LC03MzYyNzM0NzgsMT
+kwMzgzNzM4MCw5OTU0MTUxNDAsLTE5OTM3NzIyNDIsLTI3NTQ1
+MTEwOV19
 -->
