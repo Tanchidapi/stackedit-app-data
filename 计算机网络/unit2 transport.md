@@ -133,7 +133,7 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 ![输入图片说明](/imgs/2025-07-16/YZsE5LGm8RkmGIfd.png)http请求的三态状态机
 
-![输入图片说明](/imgs/2025-07-16/WG62BzN5nAPB9uNN.png)tcp连接的状态机示意图
+![输入图片说明](/imgs/2025-07-16/WG62BzN5nAPB9uNN.png)tcp连接的状态机示意图，其中红色是主动方，蓝色是被动方，部分灰色的线代表同时为主动方的情况
 
 上面四个状态表示了tcp连接的建立过程，中间的established是已建立连接的状态，在建立连接之后，关闭连接之前，下面六个状态表示连接如何关闭，底部状态closed表示连接已关闭，节点可以忽略它
 ## 流量控制
@@ -178,11 +178,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2ODkwNTAzMCwxMjUwNjMzMjA1LC0xNj
-QxMzAwNTY5LC0xNTcwNjYxNDQ5LDM3ODMwMDA1NSw5MDMxNjYz
-NjQsMTUxMzU1MDE0MSw2ODI3MTE0NTksMTU0OTMyOTk4LDE0Mz
-I3MzM4MzMsLTY4NDEzNDUxMCwxMDkxODQ3OTk5LC02NTQ5ODcy
-MjgsLTYwNzU0NTk1MiwtMTU1NDczNzAzNiwtMTc1OTk5MzM1LC
-03MzYyNzM0NzgsMTkwMzgzNzM4MCw5OTU0MTUxNDAsLTE5OTM3
-NzIyNDJdfQ==
+eyJoaXN0b3J5IjpbLTc3MTYyNzcyOCwxNDY4OTA1MDMwLDEyNT
+A2MzMyMDUsLTE2NDEzMDA1NjksLTE1NzA2NjE0NDksMzc4MzAw
+MDU1LDkwMzE2NjM2NCwxNTEzNTUwMTQxLDY4MjcxMTQ1OSwxNT
+Q5MzI5OTgsMTQzMjczMzgzMywtNjg0MTM0NTEwLDEwOTE4NDc5
+OTksLTY1NDk4NzIyOCwtNjA3NTQ1OTUyLC0xNTU0NzM3MDM2LC
+0xNzU5OTkzMzUsLTczNjI3MzQ3OCwxOTAzODM3MzgwLDk5NTQx
+NTE0MF19
 -->
