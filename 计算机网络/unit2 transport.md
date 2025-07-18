@@ -22,7 +22,7 @@ tcp通过四种机制保证字节流可靠：
 
 
 
-几个重要的位置含义：
+几个重要的字段含义：
  1. source port：表示发送方端口
  2. destination port：表示接收方端口
  3. sequence：表示第一个开始的字序列号
@@ -36,7 +36,7 @@ tcp通过四种机制保证字节流可靠：
  F：标识fin，关闭连接用，告诉另一个端点没有更多数据要发送
  6. checksum：校验和，涵盖了伪首部（ip头），tcp头和tcp段中的数据
  7. windowsize：滑动窗口大小，用于流量控制，单位为字节，告诉另一个端点发送方有多少接收缓冲区的空间
- 8. o
+ 8. offset：偏移量字段，tcp可能包含options，偏移量说明在该段中数据从哪里开始
  
 
 tcp连接通过tcp和ip首部的五部分信息进行唯一标识，ip唯一标识端点，tcp的ip协议id告诉所用传输协议为tcp，端口号标识了端主机上的应用程序进程
@@ -169,7 +169,7 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNjQwNDkxMSwtMTU3MDY2MTQ0OSwzNz
+eyJoaXN0b3J5IjpbMTgxMDMwMzkwOSwtMTU3MDY2MTQ0OSwzNz
 gzMDAwNTUsOTAzMTY2MzY0LDE1MTM1NTAxNDEsNjgyNzExNDU5
 LDE1NDkzMjk5OCwxNDMyNzMzODMzLC02ODQxMzQ1MTAsMTA5MT
 g0Nzk5OSwtNjU0OTg3MjI4LC02MDc1NDU5NTIsLTE1NTQ3Mzcw
