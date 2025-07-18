@@ -122,8 +122,11 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 ![输入图片说明](/imgs/2025-07-18/1uPEdkKjlpCcGdOE.png)基本概念与方法
 
 停等协议也是一种有限状态机
+![输入图片说明](/imgs/2025-07-18/jFBcprHuNXR4A3kG.png)停等协议
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNTE2Mjg5NSwtNjU0OTg3MjI4LC02MD
+eyJoaXN0b3J5IjpbMTA5NTg1NDY5OSwtNjU0OTg3MjI4LC02MD
 c1NDU5NTIsLTE1NTQ3MzcwMzYsLTE3NTk5OTMzNSwtNzM2Mjcz
 NDc4LDE5MDM4MzczODAsOTk1NDE1MTQwLC0xOTkzNzcyMjQyLC
 0yNzU0NTExMDksMTU2MDQzNjE4NiwtMTg1NDM1ODk5MCwxNDU2
