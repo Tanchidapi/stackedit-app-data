@@ -176,13 +176,17 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 ![输入图片说明](/imgs/2025-07-18/ifJu299AX3weblEX.png)n=4时的selective repeat协议示意图
 
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
+
+
+## 关于数据报与数据包
+
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MTYyNzcyOCwxNDY4OTA1MDMwLDEyNT
-A2MzMyMDUsLTE2NDEzMDA1NjksLTE1NzA2NjE0NDksMzc4MzAw
-MDU1LDkwMzE2NjM2NCwxNTEzNTUwMTQxLDY4MjcxMTQ1OSwxNT
-Q5MzI5OTgsMTQzMjczMzgzMywtNjg0MTM0NTEwLDEwOTE4NDc5
-OTksLTY1NDk4NzIyOCwtNjA3NTQ1OTUyLC0xNTU0NzM3MDM2LC
-0xNzU5OTkzMzUsLTczNjI3MzQ3OCwxOTAzODM3MzgwLDk5NTQx
-NTE0MF19
+eyJoaXN0b3J5IjpbMTUzMDEzNjE4OSwtNzcxNjI3NzI4LDE0Nj
+g5MDUwMzAsMTI1MDYzMzIwNSwtMTY0MTMwMDU2OSwtMTU3MDY2
+MTQ0OSwzNzgzMDAwNTUsOTAzMTY2MzY0LDE1MTM1NTAxNDEsNj
+gyNzExNDU5LDE1NDkzMjk5OCwxNDMyNzMzODMzLC02ODQxMzQ1
+MTAsMTA5MTg0Nzk5OSwtNjU0OTg3MjI4LC02MDc1NDU5NTIsLT
+E1NTQ3MzcwMzYsLTE3NTk5OTMzNSwtNzM2MjczNDc4LDE5MDM4
+MzczODBdfQ==
 -->
