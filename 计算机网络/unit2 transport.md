@@ -181,10 +181,10 @@ go back n协议在多个连续的数据报丢失时效率要高于selective repe
 ## 关于数据报与数据包
 ![输入图片说明](/imgs/2025-07-21/PpwdnwZ7FjLpmRbt.png)比较分析
 
-
+一个ip数据包
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzODYwNjM0NiwxNTMwMTM2MTg5LC03Nz
+eyJoaXN0b3J5IjpbLTc5ODc5OTEwMCwxNTMwMTM2MTg5LC03Nz
 E2Mjc3MjgsMTQ2ODkwNTAzMCwxMjUwNjMzMjA1LC0xNjQxMzAw
 NTY5LC0xNTcwNjYxNDQ5LDM3ODMwMDA1NSw5MDMxNjYzNjQsMT
 UxMzU1MDE0MSw2ODI3MTE0NTksMTU0OTMyOTk4LDE0MzI3MzM4
