@@ -4,7 +4,8 @@
 ## p1 Speed up system calls -ez
 要求：当要执行一些系统调用时，如getpid()，获取当前进程号，需要通过用户态与内核态的交叉，某些操作系统通过在用户与内核间共享只读的数据来实现加速系统调用，实现上述操作
 实现：
+1. 在lab2中，我们已经知道了几个头文件的作用，这边不再复述。根据提示，我们yi
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjgyMTk2MDYsNDA1MjM2ODE4XX0=
+eyJoaXN0b3J5IjpbMTQwOTQ4MzI5Nyw0MDUyMzY4MThdfQ==
 -->
