@@ -4,8 +4,8 @@
 ## p1 Speed up system calls -ez
 要求：当要执行一些系统调用时，如getpid()，获取当前进程号，需要通过用户态与内核态的交叉，某些操作系统通过在用户与内核间共享只读的数据来实现加速系统调用，实现上述操作
 实现：
-1. 在lab2中，我们已经知道了几个头文件的作用，这边不再复述。根据提示，我们应在kernel的proc文件中完成我们要共享的数据的映射，其实这块共享的数据就是在一个物理内存，然后jiang它的pa映射到
+在lab2中，我们已经知道了几个头文件的作用，这边不再复述。根据提示，我们应在kernel的proc文件中完成我们要共享的数据的映射，其实这块共享的数据就是在一个物理内存，然后将它的pa映射到用户态的进程页表中，这样用户在执行系统调用要使用的数据时就不用再来回切换获取，本题特指
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0OTcyOTA1Myw0MDUyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbLTM5MzM5NDg1Miw0MDUyMzY4MThdfQ==
 -->
