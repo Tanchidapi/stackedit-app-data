@@ -16,8 +16,10 @@ struct usyscall{
 };
 #endif
 ```
-2. 
+2. 为该页面添加映射
+因为这是一个进程的页面，所以我们要在进程的相关文件中去增加这个页面的映射代码
+在
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTgxMTE0MSwyNjA5NzE3MywtMTkyND
-A5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgxOF19
+eyJoaXN0b3J5IjpbLTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5Mj
+QwOTE1MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
 -->
