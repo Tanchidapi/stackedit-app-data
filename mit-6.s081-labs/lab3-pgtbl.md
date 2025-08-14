@@ -51,28 +51,15 @@ allocproc(void)
 {
 	······
 	if((p -> usyscall = (struct usyscall *)kalloc()) == 0){
-
-freeproc(p);
-
-release(&p -> lock);
-
-}
+		freeproc(p);
+		release(&p -> lock);
+	}
 
 p -> usyscall -> pid = p -> pid;
-
-// An empty user page table.
-
-p->pagetable = proc_pagetable(p);
-
-	if(p->pagetable == 0){
-	freeproc(p);
-	release(&p->lock);
-	return 0;
-	}
 	······
 }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTE3NTI3MywtMTQzODkxNjcyMywxMT
+eyJoaXN0b3J5IjpbLTk2NDk2MTQ4NiwtMTQzODkxNjcyMywxMT
 YxMDM4MTIyLC0xMTgzNDQsLTIxNDMxODIzMTgsMjYwOTcxNzMs
 LTE5MjQwOTE1MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
 -->
