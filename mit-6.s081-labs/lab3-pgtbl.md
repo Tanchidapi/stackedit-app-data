@@ -12,10 +12,12 @@
 #ifdef LAB_PGTBL
 #define USYSCALL (TRAPFRAME - PGSIZE)
 struct usyscall{
-
-
-
+	int pid;
+};
+#endif
+```
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYwOTcxNzMsLTE5MjQwOTE1MDIsLTg2Nz
-g0MTcxMSw0MDUyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbMTA3NTgxMTE0MSwyNjA5NzE3MywtMTkyND
+A5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgxOF19
 -->
