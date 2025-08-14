@@ -96,9 +96,10 @@ exec(char *path, char **argv)
 	······
 }
 ```
-
+2. 在defs.h中添加要使用的函数定义
+3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Mzc5NzkyMSwxODgzMTk4OTEsLTk2ND
+eyJoaXN0b3J5IjpbMTIzNzM2NzQzOCwxODgzMTk4OTEsLTk2ND
 k2MTQ4NiwtMTQzODkxNjcyMywxMTYxMDM4MTIyLC0xMTgzNDQs
 LTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5MjQwOTE1MDIsLTg2Nz
 g0MTcxMSw0MDUyMzY4MThdfQ==
