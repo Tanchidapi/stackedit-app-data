@@ -104,7 +104,7 @@ exec(char *path, char **argv)
 void			vmprint(pagetable_t);
 ```
 3. 在vm.c中完成vmprint的功能
-这边参考了freewalk的写法，要进入到子页表要判断当前正在遍历的页表的级数，可以通过观察其有效位与读写、执行位，当页面有效但无法读写、执行时，说明指向低级页表，要进入递归。pte_t
+这边参考了freewalk的写法，要进入到子页表要判断当前正在遍历的页表的级数，可以通过观察其有效位与读写、执行位，当页面有效但无法读写、执行时，说明指向低级页表，要进入递归。pte_t是uint64的类型，用于保存页表项的64位无符号整型
 ```c
 void
 helper_vmprint(pagetable_t pagetable, int layer)
@@ -139,9 +139,9 @@ vmprint(pagetable_t pagetable)
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTkwOTkxNzEsLTM0NzY0MjEyNywtOD
-M3MjAzMTcyLDE4ODMxOTg5MSwtOTY0OTYxNDg2LC0xNDM4OTE2
-NzIzLDExNjEwMzgxMjIsLTExODM0NCwtMjE0MzE4MjMxOCwyNj
-A5NzE3MywtMTkyNDA5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgx
-OF19
+eyJoaXN0b3J5IjpbMzI2NTc3ODkyLC0zNDc2NDIxMjcsLTgzNz
+IwMzE3MiwxODgzMTk4OTEsLTk2NDk2MTQ4NiwtMTQzODkxNjcy
+MywxMTYxMDM4MTIyLC0xMTgzNDQsLTIxNDMxODIzMTgsMjYwOT
+cxNzMsLTE5MjQwOTE1MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThd
+fQ==
 -->
