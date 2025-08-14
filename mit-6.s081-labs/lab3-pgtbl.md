@@ -36,7 +36,7 @@ proc_pagetable(struct proc *p)
 	return pagetable;
 }
 ```
-3. 为该页面分配内存
+3. 为该页面分配内存与回收内存
 参考trapframe即可
 在proc.h中添加：
 ```c
@@ -79,8 +79,10 @@ proc_freepagetable(pagetable_t pagetable, uint64 sz)
 	uvmfree(pagetable, sz);
 }
 ```
+## p2 Print a page table -ez
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1ODg4OTg0OCwtOTY0OTYxNDg2LC0xND
+eyJoaXN0b3J5IjpbMTc5OTU4NzgzMCwtOTY0OTYxNDg2LC0xND
 M4OTE2NzIzLDExNjEwMzgxMjIsLTExODM0NCwtMjE0MzE4MjMx
 OCwyNjA5NzE3MywtMTkyNDA5MTUwMiwtODY3ODQxNzExLDQwNT
 IzNjgxOF19
