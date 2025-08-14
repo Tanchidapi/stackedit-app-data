@@ -80,9 +80,9 @@ proc_freepagetable(pagetable_t pagetable, uint64 sz)
 }
 ```
 ## p2 Print a page table -ez
-要求：
+要求：实现一个打印页表内容的函数，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzMDQ4ODA1LC05NjQ5NjE0ODYsLTE0Mz
+eyJoaXN0b3J5IjpbNTE3OTMwOTYwLC05NjQ5NjE0ODYsLTE0Mz
 g5MTY3MjMsMTE2MTAzODEyMiwtMTE4MzQ0LC0yMTQzMTgyMzE4
 LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3MTEsNDA1Mj
 M2ODE4XX0=
