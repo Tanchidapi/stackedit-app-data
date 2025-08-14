@@ -89,19 +89,17 @@ exec(char *path, char **argv)
 {
 	······
 	if(p -> pid == 1){
-
-printf("page table %p\n", p -> pagetable);
-
-vmprint(p -> pagetable);
-
+		printf("page table %p\n", p -> pagetable);
+		vmprint(p -> pagetable);
+	}
+	return argc; // this ends up in a0, the first argument to main(argc, argv)
+	······
 }
+```
 
-  
-
-return argc; // this ends up in a0, the first argument to main(argc, argv)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg2ODM1ODk4LDE4ODMxOTg5MSwtOTY0OT
-YxNDg2LC0xNDM4OTE2NzIzLDExNjEwMzgxMjIsLTExODM0NCwt
-MjE0MzE4MjMxOCwyNjA5NzE3MywtMTkyNDA5MTUwMiwtODY3OD
-QxNzExLDQwNTIzNjgxOF19
+eyJoaXN0b3J5IjpbLTI3Mzc5NzkyMSwxODgzMTk4OTEsLTk2ND
+k2MTQ4NiwtMTQzODkxNjcyMywxMTYxMDM4MTIyLC0xMTgzNDQs
+LTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5MjQwOTE1MDIsLTg2Nz
+g0MTcxMSw0MDUyMzY4MThdfQ==
 -->
