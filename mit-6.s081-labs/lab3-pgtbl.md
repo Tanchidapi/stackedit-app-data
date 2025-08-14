@@ -103,10 +103,44 @@ exec(char *path, char **argv)
 ······
 void			vmprint(pagetable_t);
 ```
-3. 
+3. 在vm.c中完成vmprint的功能
+这边参考了freewalk的写法，要进入到子页表要判断当前正在遍历的页表的级数，可以通过观察其有效位与读写、执行位，当页面有效但无法读写、执行时，说明指向低级页表，要进入递归
+```c
+void
+helper_vmprint(pagetable_t pagetable, int layer)
+{
+    pte_t pte;
+    uint64 pa;
+    int i = 0;
+
+    for(; i < 512; i++){
+        pte = pagetable[i];
+
+        if((pte & PTE_V) && ((pte & (PTE_R | PTE_W | PTE_X)) == 0)){
+            pa = (pte >> 10) << 12;
+            for(int l = layer; l != 0; l--)
+                printf(" ..");
+            printf(" ..%d: pte %p pa %p\n", i, pte, pa);
+            uint64 next_level = PTE2PA(pte);
+            helper_vmprint((pagetable_t)next_level, layer + 1);
+        }
+        else if(pte & PTE_V){
+            pa = (pte >> 10) << 12;
+            printf(" .. .. ..%d: pte %p pa %p\n", i, pte, pa);
+        }
+    }
+    return;
+}
+
+void
+vmprint(pagetable_t pagetable)
+{
+    helper_vmprint(pagetable, 0);
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNzIwMzE3MiwxODgzMTk4OTEsLTk2ND
-k2MTQ4NiwtMTQzODkxNjcyMywxMTYxMDM4MTIyLC0xMTgzNDQs
-LTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5MjQwOTE1MDIsLTg2Nz
-g0MTcxMSw0MDUyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbLTM0NzY0MjEyNywtODM3MjAzMTcyLDE4OD
+MxOTg5MSwtOTY0OTYxNDg2LC0xNDM4OTE2NzIzLDExNjEwMzgx
+MjIsLTExODM0NCwtMjE0MzE4MjMxOCwyNjA5NzE3MywtMTkyND
+A5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgxOF19
 -->
