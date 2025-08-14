@@ -58,8 +58,18 @@ allocproc(void)
 p -> usyscall -> pid = p -> pid;
 	······
 }
+······
+static void
+freeproc(struct proc *p)
+{
+	······
+	if(p -> usyscall)
+		kfree((void*)p -> usyscall);
+
+p -> usyscall = 0;
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDk2MTQ4NiwtMTQzODkxNjcyMywxMT
-YxMDM4MTIyLC0xMTgzNDQsLTIxNDMxODIzMTgsMjYwOTcxNzMs
-LTE5MjQwOTE1MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbMTM4NDExNTYzNCwtOTY0OTYxNDg2LC0xND
+M4OTE2NzIzLDExNjEwMzgxMjIsLTExODM0NCwtMjE0MzE4MjMx
+OCwyNjA5NzE3MywtMTkyNDA5MTUwMiwtODY3ODQxNzExLDQwNT
+IzNjgxOF19
 -->
