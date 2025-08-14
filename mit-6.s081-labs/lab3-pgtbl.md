@@ -138,10 +138,11 @@ vmprint(pagetable_t pagetable)
     helper_vmprint(pagetable, 0);
 }
 ```
+## p3 Detecting which pages have been 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI2NTc3ODkyLC0zNDc2NDIxMjcsLTgzNz
-IwMzE3MiwxODgzMTk4OTEsLTk2NDk2MTQ4NiwtMTQzODkxNjcy
-MywxMTYxMDM4MTIyLC0xMTgzNDQsLTIxNDMxODIzMTgsMjYwOT
-cxNzMsLTE5MjQwOTE1MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThd
-fQ==
+eyJoaXN0b3J5IjpbLTIwMjM0MTY5NjcsLTM0NzY0MjEyNywtOD
+M3MjAzMTcyLDE4ODMxOTg5MSwtOTY0OTYxNDg2LC0xNDM4OTE2
+NzIzLDExNjEwMzgxMjIsLTExODM0NCwtMjE0MzE4MjMxOCwyNj
+A5NzE3MywtMTkyNDA5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgx
+OF19
 -->
