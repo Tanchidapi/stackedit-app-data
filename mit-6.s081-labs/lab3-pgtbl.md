@@ -23,20 +23,22 @@ struct usyscall{
 pagetable_t
 proc_pagetable(struct proc *p)
 {
-······
-if(mappages(pagetable, USYSCALL, PGSIZE,
-(uint64)(p -> usyscall), PTE_R | PTE_U) < 0){
-uvmunmap(pagetable, TRAMPOLINE, 1, 0);
-uvmunmap(pagetable, TRAPFRAME, 1, 0);
-uvmfree(pagetable, 0);
-return 0;
-}
+	······
+	if(mappages(pagetable, USYSCALL, PGSIZE,
+	(uint64)(p -> usyscall), PTE_R | PTE_U) < 0){
+		uvmunmap(pagetable, TRAMPOLINE, 1, 0);
+		uvmunmap(pagetable, TRAPFRAME, 1, 0);
+		uvmfree(pagetable, 0);
+		return 0;
+	}
 
-return pagetable;
+	return pagetable;
 }
 ```
+3. 为该页面分配内存
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NTQ0MTQ2MSwtMTE4MzQ0LC0yMTQzMT
+eyJoaXN0b3J5IjpbMTE2MTAzODEyMiwtMTE4MzQ0LC0yMTQzMT
 gyMzE4LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3MTEs
 NDA1MjM2ODE4XX0=
 -->
