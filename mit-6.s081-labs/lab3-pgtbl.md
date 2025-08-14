@@ -139,11 +139,12 @@ vmprint(pagetable_t pagetable)
 }
 ```
 ## p3 Detecting which pages have been accessed -hard
-要求：
+要求：完成一个系统调用函数，实现获取当前页表中哪些页面是已经被访问过了的
+实现：
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzU3NTE4MywtMzQ3NjQyMTI3LC04Mz
-cyMDMxNzIsMTg4MzE5ODkxLC05NjQ5NjE0ODYsLTE0Mzg5MTY3
-MjMsMTE2MTAzODEyMiwtMTE4MzQ0LC0yMTQzMTgyMzE4LDI2MD
-k3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3MTEsNDA1MjM2ODE4
-XX0=
+eyJoaXN0b3J5IjpbMzEzOTg1NTczLC0zNDc2NDIxMjcsLTgzNz
+IwMzE3MiwxODgzMTk4OTEsLTk2NDk2MTQ4NiwtMTQzODkxNjcy
+MywxMTYxMDM4MTIyLC0xMTgzNDQsLTIxNDMxODIzMTgsMjYwOT
+cxNzMsLTE5MjQwOTE1MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThd
+fQ==
 -->
