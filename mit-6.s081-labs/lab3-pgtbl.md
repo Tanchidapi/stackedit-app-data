@@ -6,9 +6,9 @@
 实现：
 在lab2中，我们已经知道了几个头文件的作用，这边不再复述。根据提示，我们应在kernel的proc文件中完成我们要共享的数据的映射，并记得在这之前要在allocproc文件中完成对应页表的分配与初始化，其实这块共享的数据就是在一个物理内存，然后将它的pa映射到用户态的进程页表中，这样用户在执行系统调用要使用的数据时就不用再来回切换获取，本题特指进程号pid
 1. 根据学到的进程虚拟内存的分布图，如下![输入图片说明](/imgs/2025-08-14/uw4sKHFW0Mjb4Dhp.png)虚拟内存分布图
-我们可以知道，我们要分配的这个页面应该在trapframe下方，heap的上方（关于trampoline和trapframe的作用会在后续课程学到，并在下一实验中使用），因此，在kernel中的memlayout
+我们可以知道，我们要分配的这个页面应该在trapframe下方，heap的上方（关于trampoline和trapframe的作用会在后续课程学到，并在下一实验中使用），因此，在kernel中的memlayout添加该
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjQwOTE1MDIsLTg2Nzg0MTcxMSw0MD
-UyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbLTEyOTQxMTkyNjYsLTE5MjQwOTE1MDIsLT
+g2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
 -->
