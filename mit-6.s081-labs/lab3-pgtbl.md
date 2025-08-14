@@ -46,9 +46,33 @@ struct proc {
 ```
 在proc.c中添加：
 ```c
+static struct proc*
+allocproc(void)
+{
+	······
+	if((p -> usyscall = (struct usyscall *)kalloc()) == 0){
 
+freeproc(p);
+
+release(&p -> lock);
+
+}
+
+p -> usyscall -> pid = p -> pid;
+
+// An empty user page table.
+
+p->pagetable = proc_pagetable(p);
+
+	if(p->pagetable == 0){
+	freeproc(p);
+	release(&p->lock);
+	return 0;
+	}
+	······
+}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzg5MTY3MjMsMTE2MTAzODEyMiwtMT
-E4MzQ0LC0yMTQzMTgyMzE4LDI2MDk3MTczLC0xOTI0MDkxNTAy
-LC04Njc4NDE3MTEsNDA1MjM2ODE4XX0=
+eyJoaXN0b3J5IjpbMTYyOTE3NTI3MywtMTQzODkxNjcyMywxMT
+YxMDM4MTIyLC0xMTgzNDQsLTIxNDMxODIzMTgsMjYwOTcxNzMs
+LTE5MjQwOTE1MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
 -->
