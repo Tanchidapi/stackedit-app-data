@@ -9,11 +9,13 @@
 我们可以知道，我们要分配的这个页面应该在trapframe下方，heap的上方（关于trampoline和trapframe的作用会在后续课程学到，并在下一实验中使用），因此，在kernel中的memlayout.h添加该页面与相关结构体
 ```c
 ······
-#ifdef
+#ifdef LAB_PGTBL
+#define USYSCALL (TRAPFRAME - PGSIZE)
+struct usyscall{
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNjk3MjU2MCwtMTkyNDA5MTUwMiwtOD
-Y3ODQxNzExLDQwNTIzNjgxOF19
+eyJoaXN0b3J5IjpbMjYwOTcxNzMsLTE5MjQwOTE1MDIsLTg2Nz
+g0MTcxMSw0MDUyMzY4MThdfQ==
 -->
