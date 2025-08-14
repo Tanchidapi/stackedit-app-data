@@ -36,9 +36,13 @@ proc_pagetable(struct proc *p)
 }
 ```
 3. 为该页面分配内存
-
+参考trapframe即可
+在proc.h中添加：
+```c
+struct proc {
+	···
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MTAzODEyMiwtMTE4MzQ0LC0yMTQzMT
-gyMzE4LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3MTEs
-NDA1MjM2ODE4XX0=
+eyJoaXN0b3J5IjpbODc3NDgzMDcxLDExNjEwMzgxMjIsLTExOD
+M0NCwtMjE0MzE4MjMxOCwyNjA5NzE3MywtMTkyNDA5MTUwMiwt
+ODY3ODQxNzExLDQwNTIzNjgxOF19
 -->
