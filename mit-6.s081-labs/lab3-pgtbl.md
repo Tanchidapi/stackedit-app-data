@@ -140,11 +140,15 @@ vmprint(pagetable_t pagetable)
 ```
 ## p3 Detecting which pages have been accessed -hard
 要求：完成一个系统调用函数，实现获取当前页表中哪些页面是已经被访问过了的，该函数有三个参数，第一个说明检查的起始地址，第二个说明检查的页面数，第三个用于存储结果到用户缓冲区，以掩码形式存储
-实现：判断一个页面是否被访问过，只需观察其access位即可，这边要注意调用完题目函数后要将access位置零，不然在下一次调用时无法判断所检查的页面是否是最近访问过的，根据上图我们知道A是第六位，要在risc.h头文件中添加该位，实现时用到了walk函数，它接受三个参数，分别是一个页表指针，一个虚拟地址，一个标志位，返回给定的页表中虚拟地址对应的页表项，标志位用于标识缺页时是否同意分配确实的页面。还用到了copyout函数，其用于将内核态下的数据拷贝到用户态下，接受四个参数，进程的页表指针，要存放数据的虚拟地址，要复制的shu'j
+实现：判断一个页面是否被访问过，只需观察其access位即可，这边要注意调用完题目函数后要将access位置零，不然在下一次调用时无法判断所检查的页面是否是最近访问过的，根据上图我们知道A是第六位，要在risc.h头文件中添加该位，实现时用到了walk函数，它接受三个参数，分别是一个页表指针，一个虚拟地址，一个标志位，返回给定的页表中虚拟地址对应的页表项，标志位用于标识缺页时是否同意分配确实的页面。还用到了copyout函数，其用于将内核态下的数据拷贝到用户态下，接受四个参数，进程的页表指针，要存放数据的虚拟地址，要复制的数据的指针，和要复制的数据的长度。
+1. 在riscv.h中添加
+```c
+······
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4NDI3MDQ2LC0xMTQ1MjI4MDk4LC0zND
-c2NDIxMjcsLTgzNzIwMzE3MiwxODgzMTk4OTEsLTk2NDk2MTQ4
-NiwtMTQzODkxNjcyMywxMTYxMDM4MTIyLC0xMTgzNDQsLTIxND
-MxODIzMTgsMjYwOTcxNzMsLTE5MjQwOTE1MDIsLTg2Nzg0MTcx
-MSw0MDUyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbLTE5NDkwMjczMzQsLTExNDUyMjgwOTgsLT
+M0NzY0MjEyNywtODM3MjAzMTcyLDE4ODMxOTg5MSwtOTY0OTYx
+NDg2LC0xNDM4OTE2NzIzLDExNjEwMzgxMjIsLTExODM0NCwtMj
+E0MzE4MjMxOCwyNjA5NzE3MywtMTkyNDA5MTUwMiwtODY3ODQx
+NzExLDQwNTIzNjgxOF19
 -->
