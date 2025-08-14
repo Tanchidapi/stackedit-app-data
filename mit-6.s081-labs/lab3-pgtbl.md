@@ -104,7 +104,7 @@ exec(char *path, char **argv)
 void			vmprint(pagetable_t);
 ```
 3. 在vm.c中完成vmprint的功能
-这边参考了freewalk的写法，要进入到子页表要判断当前正在遍历的页表的级数，可以通过观察其有效位与读写、执行位，当页面有效但无法读写、执行时，说明指向低级页表，要进入递归
+这边参考了freewalk的写法，要进入到子页表要判断当前正在遍历的页表的级数，可以通过观察其有效位与读写、执行位，当页面有效但无法读写、执行时，说明指向低级页表，要进入递归。pte_t
 ```c
 void
 helper_vmprint(pagetable_t pagetable, int layer)
@@ -139,8 +139,9 @@ vmprint(pagetable_t pagetable)
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NzY0MjEyNywtODM3MjAzMTcyLDE4OD
-MxOTg5MSwtOTY0OTYxNDg2LC0xNDM4OTE2NzIzLDExNjEwMzgx
-MjIsLTExODM0NCwtMjE0MzE4MjMxOCwyNjA5NzE3MywtMTkyND
-A5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgxOF19
+eyJoaXN0b3J5IjpbLTEyOTkwOTkxNzEsLTM0NzY0MjEyNywtOD
+M3MjAzMTcyLDE4ODMxOTg5MSwtOTY0OTYxNDg2LC0xNDM4OTE2
+NzIzLDExNjEwMzgxMjIsLTExODM0NCwtMjE0MzE4MjMxOCwyNj
+A5NzE3MywtMTkyNDA5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgx
+OF19
 -->
