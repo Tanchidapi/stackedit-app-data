@@ -80,9 +80,10 @@ proc_freepagetable(pagetable_t pagetable, uint64 sz)
 }
 ```
 ## p2 Print a page table -ez
-要求：实现一个打印页表内容的函数，
+要求：实现一个打印页表内容的函数，在xv6启动时打印出第一个进程的页表
+实现：首先要理解上面na'zh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3OTMwOTYwLC05NjQ5NjE0ODYsLTE0Mz
+eyJoaXN0b3J5IjpbNDIxNTkzOTM3LC05NjQ5NjE0ODYsLTE0Mz
 g5MTY3MjMsMTE2MTAzODEyMiwtMTE4MzQ0LC0yMTQzMTgyMzE4
 LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3MTEsNDA1Mj
 M2ODE4XX0=
