@@ -40,9 +40,13 @@ proc_pagetable(struct proc *p)
 在proc.h中添加：
 ```c
 struct proc {
-	···
+	······
+	struct usyscall *usyscall;
+}
+```
+在
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3NDgzMDcxLDExNjEwMzgxMjIsLTExOD
-M0NCwtMjE0MzE4MjMxOCwyNjA5NzE3MywtMTkyNDA5MTUwMiwt
-ODY3ODQxNzExLDQwNTIzNjgxOF19
+eyJoaXN0b3J5IjpbMTE2MjcwOTc5OSwxMTYxMDM4MTIyLC0xMT
+gzNDQsLTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5MjQwOTE1MDIs
+LTg2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
 -->
