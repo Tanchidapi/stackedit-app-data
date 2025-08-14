@@ -147,11 +147,63 @@ vmprint(pagetable_t pagetable)
 #define PTE_A (1L << 6) // Access
 ······
 ```
-2. 在
+2. 在sysproc.c中完成
+```c
+······
+#ifdef LAB_PGTBL
+extern pte_t * walk(pagetable_t, uint64, int);
+
+int
+sys_pgaccess(void)
+{
+  // lab pgtbl: your code here.
+  uint64 start_va;
+  int num;
+  uint64 maskbit;
+  
+  uint64 maskbuffer = 0;
+
+  if(argaddr(0, &start_va) < 0){
+      printf("error: can't get virture address\n");
+      return -1;
+  }
+
+  if(argint(1, &num) < 0){
+      printf("error: can't get number of pages\n");
+      return -1;
+  }
+  
+  if(num > MAXSCAN){
+      printf("error: too many pages\n");
+      return -1;
+  }
+
+  if(argaddr(2, &maskbit) < 0){
+      printf("error: can't get buffer address\n");
+      return -1;
+  }
+
+  for(int i = 0; i < num; i++, start_va += PGSIZE){
+      pte_t *pte = walk(myproc() -> pagetable, start_va, 0);
+      if(pte == 0)
+          panic("walk failed\n");
+      if(*pte & PTE_A){
+          maskbuffer = maskbuffer | (1 << i);
+          *pte = *pte & ~PTE_A;
+      }
+  }
+  
+  copyout(myproc() -> pagetable, maskbit, (char *)&maskbuffer, sizeof(maskbuffer));
+
+  return 0;
+}
+#endif
+······
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NjgyMTk4NywtMTE0NTIyODA5OCwtMz
-Q3NjQyMTI3LC04MzcyMDMxNzIsMTg4MzE5ODkxLC05NjQ5NjE0
-ODYsLTE0Mzg5MTY3MjMsMTE2MTAzODEyMiwtMTE4MzQ0LC0yMT
-QzMTgyMzE4LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3
-MTEsNDA1MjM2ODE4XX0=
+eyJoaXN0b3J5IjpbMTA2NzEwMzMwMywxMDg2ODIxOTg3LC0xMT
+Q1MjI4MDk4LC0zNDc2NDIxMjcsLTgzNzIwMzE3MiwxODgzMTk4
+OTEsLTk2NDk2MTQ4NiwtMTQzODkxNjcyMywxMTYxMDM4MTIyLC
+0xMTgzNDQsLTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5MjQwOTE1
+MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
 -->
