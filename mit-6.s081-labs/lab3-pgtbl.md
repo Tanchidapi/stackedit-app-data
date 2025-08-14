@@ -96,11 +96,17 @@ exec(char *path, char **argv)
 	······
 }
 ```
-2. 在defs.h中添加要使用的函数定义
+2. 在defs.h中添加要使用的函数声明
+```c
+······
+//vm.c
+······
+void			vmprint(pagetable_t);
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjk3OTkzNSwxODgzMTk4OTEsLTk2ND
-k2MTQ4NiwtMTQzODkxNjcyMywxMTYxMDM4MTIyLC0xMTgzNDQs
-LTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5MjQwOTE1MDIsLTg2Nz
-g0MTcxMSw0MDUyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbLTEyOTI5OTI1NTcsMTg4MzE5ODkxLC05Nj
+Q5NjE0ODYsLTE0Mzg5MTY3MjMsMTE2MTAzODEyMiwtMTE4MzQ0
+LC0yMTQzMTgyMzE4LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Nj
+c4NDE3MTEsNDA1MjM2ODE4XX0=
 -->
