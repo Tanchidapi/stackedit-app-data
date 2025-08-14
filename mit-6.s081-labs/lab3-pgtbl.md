@@ -80,10 +80,10 @@ proc_freepagetable(pagetable_t pagetable, uint64 sz)
 }
 ```
 ## p2 Print a page table -ez
-
+要求：
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5OTU4NzgzMCwtOTY0OTYxNDg2LC0xND
-M4OTE2NzIzLDExNjEwMzgxMjIsLTExODM0NCwtMjE0MzE4MjMx
-OCwyNjA5NzE3MywtMTkyNDA5MTUwMiwtODY3ODQxNzExLDQwNT
-IzNjgxOF19
+eyJoaXN0b3J5IjpbNTYzMDQ4ODA1LC05NjQ5NjE0ODYsLTE0Mz
+g5MTY3MjMsMTE2MTAzODEyMiwtMTE4MzQ0LC0yMTQzMTgyMzE4
+LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3MTEsNDA1Mj
+M2ODE4XX0=
 -->
