@@ -18,8 +18,11 @@ struct usyscall{
 ```
 2. 为该页面添加映射
 因为这是一个进程的页面，所以我们要在进程的相关文件中去增加这个页面的映射代码
-在
+在proc.c中添加：
+```c
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5Mj
-QwOTE1MDIsLTg2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbLTExODM0NCwtMjE0MzE4MjMxOCwyNjA5Nz
+E3MywtMTkyNDA5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgxOF19
+
 -->
