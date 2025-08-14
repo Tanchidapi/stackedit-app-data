@@ -44,9 +44,11 @@ struct proc {
 	struct usyscall *usyscall;
 }
 ```
-在
+在proc.c中添加：
+```c
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjcwOTc5OSwxMTYxMDM4MTIyLC0xMT
-gzNDQsLTIxNDMxODIzMTgsMjYwOTcxNzMsLTE5MjQwOTE1MDIs
-LTg2Nzg0MTcxMSw0MDUyMzY4MThdfQ==
+eyJoaXN0b3J5IjpbLTE0Mzg5MTY3MjMsMTE2MTAzODEyMiwtMT
+E4MzQ0LC0yMTQzMTgyMzE4LDI2MDk3MTczLC0xOTI0MDkxNTAy
+LC04Njc4NDE3MTEsNDA1MjM2ODE4XX0=
 -->
