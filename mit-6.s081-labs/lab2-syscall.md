@@ -134,6 +134,7 @@ uint64 proc_count(void);
 ......
 ```
 因为mem_count是计算内存相关的函数，故声明在kalloc.c这个系列中，proc_count是进程相关的函数，故声明在proc.c这个系列中
+
 3. 在kalloc.c中实现mem_count：
 ```c
 uint64
@@ -153,6 +154,7 @@ mem_count(void)
 }
 ```
 在这个函数中，我们要先取得锁，防止竞态条件出现干扰，kmem是内核中管理内存的结构体，xv6中的内存空闲形式为空闲链表法，其他常见的方法还有空闲表法、位示图法、成组链接法，通过空闲链表统计当前的空闲页，每有一个节点就加上一页的大小，最后返回统计结果
+
 4. 在proc.c中实现proc_count：
 ```c
 uint64
@@ -167,6 +169,7 @@ proc_count(void)
 }
 ```
 proc在proc.c中定义位进程数组，元素都是进程结构体，这里让指针p指向其首地址，则p相当于指向首地址里面的元素的指针，如果进程状态为UNUSED则计数器加一，随后p++，指针++相当于移动一个元素的单位，即指向下一个进程元素
+
 5. 在sysproc.c完成sysinfo函数：
 ```c
 ......
@@ -187,11 +190,12 @@ sys_sysinfo(void)
 }
 ```
 调用系统函数sysinfo时需要用户态传入一个参数，一个地址用于接收系统函数返回的结果，但是内核态与用户态是不互通的，指针也不能相互访问，故需要使用copyout函数，这个函数会结合进程的页表找到用户态传入的指针对应的物理地址，然后将内核要传出的数据拷贝到这个物理地址中，这样在回到用户态时就能根据传入的指针指向的地址查看返回的结果了，sysinfo结构体是sysinfo.h头文件中定义的，包含了使用sysinfo时返回的形式，将空闲内存和进程数包装在结构体中，copyout直接将这一结构体拷贝到目标地址即可，通过调用前面写的辅助函数实现sysinfo即可，注意要在前面include一下sysinfo.h，不然会报错未定义的结构体sysinfo
+
 6. 在syscall相关文件中添加sysinfo的相关代码，和p1类似，不再赘述
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTcwOTMyOSwtODM1NDU1Nzg0LC0xMD
-AxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3MzMzLC0zNzY1MjQ2
-OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMDQ1NTcyNjUsMTAzOD
-MxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2LDE1NTI2NDA5MTMs
-LTEwMzU2MzQzNzJdfQ==
+eyJoaXN0b3J5IjpbLTEzMTI4NDA3NzksMTc3NTcwOTMyOSwtOD
+M1NDU1Nzg0LC0xMDAxMjg2NzIyLDE4OTAxODc3MTUsMjQ3MDY3
+MzMzLC0zNzY1MjQ2OSwxNzEwODA1NywtNDU5OTg2MjkxLDEwMD
+Q1NTcyNjUsMTAzODMxMDQ3Niw5ODA2MjY4NjQsNzIxNDExODc2
+LDE1NTI2NDA5MTMsLTEwMzU2MzQzNzJdfQ==
 -->
