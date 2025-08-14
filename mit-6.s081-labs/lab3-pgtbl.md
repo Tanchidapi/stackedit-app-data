@@ -20,9 +20,23 @@ struct usyscall{
 因为这是一个进程的页面，所以我们要在进程的相关文件中去增加这个页面的映射代码
 在proc.c中添加：
 ```c
+pagetable_t
+proc_pagetable(struct proc *p)
+{
+······
+if(mappages(pagetable, USYSCALL, PGSIZE,
+(uint64)(p -> usyscall), PTE_R | PTE_U) < 0){
+uvmunmap(pagetable, TRAMPOLINE, 1, 0);
+uvmunmap(pagetable, TRAPFRAME, 1, 0);
+uvmfree(pagetable, 0);
+return 0;
+}
 
+return pagetable;
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODM0NCwtMjE0MzE4MjMxOCwyNjA5Nz
-E3MywtMTkyNDA5MTUwMiwtODY3ODQxNzExLDQwNTIzNjgxOF19
-
+eyJoaXN0b3J5IjpbLTQ4NTQ0MTQ2MSwtMTE4MzQ0LC0yMTQzMT
+gyMzE4LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3MTEs
+NDA1MjM2ODE4XX0=
 -->
