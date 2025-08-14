@@ -83,9 +83,25 @@ proc_freepagetable(pagetable_t pagetable, uint64 sz)
 要求：实现一个打印页表内容的函数，在xv6启动时打印出第一个进程的页表
 实现：首先要理解上面那张页表机制的图片，根据三级页表去打印，具体的打印方式通过递归实现即可
 1. 根据指导书在exec.c中添加
+```c
+int
+exec(char *path, char **argv)
+{
+	······
+	if(p -> pid == 1){
+
+printf("page table %p\n", p -> pagetable);
+
+vmprint(p -> pagetable);
+
+}
+
+  
+
+return argc; // this ends up in a0, the first argument to main(argc, argv)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MzE5ODkxLC05NjQ5NjE0ODYsLTE0Mz
-g5MTY3MjMsMTE2MTAzODEyMiwtMTE4MzQ0LC0yMTQzMTgyMzE4
-LDI2MDk3MTczLC0xOTI0MDkxNTAyLC04Njc4NDE3MTEsNDA1Mj
-M2ODE4XX0=
+eyJoaXN0b3J5IjpbMjg2ODM1ODk4LDE4ODMxOTg5MSwtOTY0OT
+YxNDg2LC0xNDM4OTE2NzIzLDExNjEwMzgxMjIsLTExODM0NCwt
+MjE0MzE4MjMxOCwyNjA5NzE3MywtMTkyNDA5MTUwMiwtODY3OD
+QxNzExLDQwNTIzNjgxOF19
 -->
