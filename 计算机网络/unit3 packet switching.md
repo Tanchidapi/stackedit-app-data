@@ -8,7 +8,8 @@
 1. 效率不高，计算机通信中常见猝发通信，并且可能在建立连接后进入长时间的沉默，如浏览网页时，电路交换在专用电路建立时是独占的，不允许在结束断开连接时被别的通信使用该线路，因此易造成效率低下
 2. 多样化的速率，计算机通信中不同应用不同时间的传输速率一般是不同的，电路交换的单一线路提供的速率不符合实际使用情况
 3. 状态维护，在电路交换中，我们需要维护所有的状态，如果出现故障，我们需要进入并更改这些状态，来重新路由电话
+### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NjIwMTAzLC01NDQwNzYxMDQsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTgxMzgwMzk1OCwtNTQ0MDc2MTA0LC0yMD
+g4NzQ2NjEyXX0=
 -->
