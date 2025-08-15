@@ -5,8 +5,8 @@
 ![输入图片说明](/imgs/2025-08-15/6C6cE8LGdb6Mf3ij.png)电路交换的性质
 
 电路交换在电话系统中运行的很好，但是用于计算机通信时会有一些问题：
-1. 
+1. 效率不高，计算机通信中常见猝发通信，并且可能在建立连接后进入chan
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjk3ODIzNDAsLTU0NDA3NjEwNCwtMj
-A4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNzIwNzg4MjkwLC01NDQwNzYxMDQsLTIwOD
+g3NDY2MTJdfQ==
 -->
