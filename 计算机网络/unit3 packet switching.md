@@ -5,8 +5,9 @@
 ![输入图片说明](/imgs/2025-08-15/6C6cE8LGdb6Mf3ij.png)电路交换的性质
 
 电路交换在电话系统中运行的很好，但是用于计算机通信时会有一些问题：
-1. 效率不高，计算机通信中常见猝发通信，并且可能在建立连接后进入chan
+1. 效率不高，计算机通信中常见猝发通信，并且可能在建立连接后进入长时间的沉默，如浏览网页时，电路交换在专用电路建立时是独占的，不允许在结束断开连接时被别的通信使用该线路，因此易造成
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwNzg4MjkwLC01NDQwNzYxMDQsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTM3ODYyNjQsLTU0NDA3NjEwNCwtMjA4OD
+c0NjYxMl19
 -->
