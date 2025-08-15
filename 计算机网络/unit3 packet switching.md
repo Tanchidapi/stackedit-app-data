@@ -1,5 +1,5 @@
 ## what is packet switching
-### circuit switch
+### circuit switching
 分组交换的前身是电路交换，用于早期的电话系统，可以通过三步解析它，首先是拨号，这告诉了交换机我们想要连接的端点，从而建立专用的电路，然后是使用，在我们说话的过程中，声信号被转换成电信号通过交换机建立的电路传递，最后是挂断，要移除该专用电路和路径上交换机的任意状态![输入图片说明](/imgs/2025-08-15/bjHCJUR65UbWrACX.png)示意图
 
 ![输入图片说明](/imgs/2025-08-15/6C6cE8LGdb6Mf3ij.png)电路交换的性质
@@ -8,8 +8,9 @@
 1. 效率不高，计算机通信中常见猝发通信，并且可能在建立连接后进入长时间的沉默，如浏览网页时，电路交换在专用电路建立时是独占的，不允许在结束断开连接时被别的通信使用该线路，因此易造成效率低下
 2. 多样化的速率，计算机通信中不同应用不同时间的传输速率一般是不同的，电路交换的单一线路提供的速率不符合实际使用情况
 3. 状态维护，在电路交换中，我们需要维护所有的状态，如果出现故障，我们需要进入并更改这些状态，来重新路由电话
-### 
+### packet switching
+分组交换网络由
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMzgwMzk1OCwtNTQ0MDc2MTA0LC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTc4NTc5MjIsLTU0NDA3NjEwNCwtMjA4OD
+c0NjYxMl19
 -->
