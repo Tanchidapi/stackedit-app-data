@@ -9,8 +9,10 @@
 2. 多样化的速率，计算机通信中不同应用不同时间的传输速率一般是不同的，电路交换的单一线路提供的速率不符合实际使用情况
 3. 状态维护，在电路交换中，我们需要维护所有的状态，如果出现故障，我们需要进入并更改这些状态，来重新路由电话
 ### packet switching
-分组交换网络由端主机、链路和分组交换机组成，路由器ye
+分组交换网络由端主机、链路和分组交换机组成，路由器也是分组交换机的一种，它处理互联网地址![输入图片说明](/imgs/2025-08-15/mJ4gWgnQSEnA2F66.png)分组交换示意图
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODk1OTIyOTgsLTU0NDA3NjEwNCwtMj
-A4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTQzMzg1MzA4NiwtNTQ0MDc2MTA0LC0yMD
+g4NzQ2NjEyXX0=
 -->
