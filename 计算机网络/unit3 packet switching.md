@@ -12,7 +12,12 @@
 分组交换网络由端主机、链路和分组交换机组成，路由器也是分组交换机的一种，它处理互联网地址![输入图片说明](/imgs/2025-08-15/mJ4gWgnQSEnA2F66.png)分组交换示意图
 
 分组交换机有缓冲区（buffer），假设有两个数据包以输出链路的全速率同时到达一个分组交换机时，数据包交换机必须保留其中一个，一次只能发送一个，因一个交换机可能有多个输入链路，因此要有一个缓冲区来保存多个数据包
+![输入图片说明](/imgs/2025-08-17/oIDhbixS2vnV8tr1.png)
+分组交换的性质
+
+### why use it
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MzYyNTE3NSwxNDMzODUzMDg2LC01ND
-QwNzYxMDQsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbNTQ0NDQzOTc4LDIxNDM2MjUxNzUsMTQzMz
+g1MzA4NiwtNTQ0MDc2MTA0LC0yMDg4NzQ2NjEyXX0=
 -->
