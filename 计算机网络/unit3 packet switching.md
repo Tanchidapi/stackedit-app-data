@@ -11,8 +11,8 @@
 ### packet switching
 分组交换网络由端主机、链路和分组交换机组成，路由器也是分组交换机的一种，它处理互联网地址![输入图片说明](/imgs/2025-08-15/mJ4gWgnQSEnA2F66.png)分组交换示意图
 
-
+分组交换机有缓冲区（buffer），假设有两个数据包
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzg1MzA4NiwtNTQ0MDc2MTA0LC0yMD
-g4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTY0MzQ4OTk5NiwxNDMzODUzMDg2LC01ND
+QwNzYxMDQsLTIwODg3NDY2MTJdfQ==
 -->
