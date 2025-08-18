@@ -16,8 +16,9 @@
 分组交换的性质
 
 ### why use it
-
+![输入图片说明](/imgs/2025-08-18/ZP8H1ACvwOhl9sdD.png)使用分组交换的原因
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ0NDQzOTc4LDIxNDM2MjUxNzUsMTQzMz
-g1MzA4NiwtNTQ0MDc2MTA0LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEyOTczMTc4NjgsNTQ0NDQzOTc4LDIxND
+M2MjUxNzUsMTQzMzg1MzA4NiwtNTQ0MDc2MTA0LC0yMDg4NzQ2
+NjEyXX0=
 -->
