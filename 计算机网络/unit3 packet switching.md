@@ -20,9 +20,10 @@
 
 第三个重要原因是，互联网最初被设计成已有网络的互连，当时所有的通信网络/计算机网络都是分组交换的，互联网要连接这些网络就也要使用分组交换
 ## 传播延迟与分组延迟
-### 
+### useful definition
+![输入图片说明](/imgs/2025-08-18/5ECYxlTHARUFFHjq.png)传播延迟的定义
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1MzIzMTIxLDU0NDQ0Mzk3OCwyMTQzNj
+eyJoaXN0b3J5IjpbMzgwNzE4MTMxLDU0NDQ0Mzk3OCwyMTQzNj
 I1MTc1LDE0MzM4NTMwODYsLTU0NDA3NjEwNCwtMjA4ODc0NjYx
 Ml19
 -->
