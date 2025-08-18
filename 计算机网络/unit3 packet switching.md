@@ -17,8 +17,10 @@
 
 ### why use it
 ![输入图片说明](/imgs/2025-08-18/ZP8H1ACvwOhl9sdD.png)使用分组交换的原因
+
+第三个重要原因是，互联网最初被设计成已有网络的互连，当时所有的通信
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTczMTc4NjgsNTQ0NDQzOTc4LDIxND
-M2MjUxNzUsMTQzMzg1MzA4NiwtNTQ0MDc2MTA0LC0yMDg4NzQ2
-NjEyXX0=
+eyJoaXN0b3J5IjpbOTkyMTIxMzMwLDU0NDQ0Mzk3OCwyMTQzNj
+I1MTc1LDE0MzM4NTMwODYsLTU0NDA3NjEwNCwtMjA4ODc0NjYx
+Ml19
 -->
