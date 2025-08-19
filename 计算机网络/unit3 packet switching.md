@@ -33,8 +33,9 @@
 ![输入图片说明](/imgs/2025-08-19/MPpCiS46oHxtvSFq.png)example
 
 链路在所用用户的数据包之间是共享的，多个数据包在交换机处可能需要在缓冲区等待，称有大量数据包在队列等待通过的行为的下一条链路为拥塞
+在缓冲区存在的情况下，端到端的延迟还需要多考虑在各个交换机的等待时间
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNjgxODY1MywzMzIzNjkzNDcsMzgwNz
+eyJoaXN0b3J5IjpbMTM5NzE0NDI1MSwzMzIzNjkzNDcsMzgwNz
 E4MTMxLDU0NDQ0Mzk3OCwyMTQzNjI1MTc1LDE0MzM4NTMwODYs
 LTU0NDA3NjEwNCwtMjA4ODc0NjYxMl19
 -->
