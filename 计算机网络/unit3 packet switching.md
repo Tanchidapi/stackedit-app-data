@@ -25,9 +25,9 @@
 和链路大小无关，只和链路长度和传播速度（一般是光速）有关
 
 ![输入图片说明](/imgs/2025-08-19/ru0NljtAUdZvzyaP.png)分组延迟的定义
-是co
+是从分组的第一个bit被放到链路上开始，到最后一个bit被放到链路上所用的时间，本质上取决于我们可以打包（packet）的有多紧
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNDc2MjAzNywzODA3MTgxMzEsNTQ0ND
-QzOTc4LDIxNDM2MjUxNzUsMTQzMzg1MzA4NiwtNTQ0MDc2MTA0
-LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE1OTMzOTk3MDksMzgwNzE4MTMxLDU0ND
+Q0Mzk3OCwyMTQzNjI1MTc1LDE0MzM4NTMwODYsLTU0NDA3NjEw
+NCwtMjA4ODc0NjYxMl19
 -->
