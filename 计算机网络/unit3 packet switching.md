@@ -28,9 +28,11 @@
 分组延迟的定义
 是从分组的第一个bit被放到链路上开始，到最后一个bit被放到链路上所用的时间，本质上取决于我们可以打包（packet）的有多紧
 ### end-to-end delay
-端到端延迟是从在第一个链路上发送的第一个bit开始，直到数据包最后一个bit到达目的地所用的时间
+端到端延迟是从在第一个链路上发送的第一个bit开始，直到数据包最后一个bit到达目的地所用的时间，是分组延迟和传播延迟的和
+![输入图片说明](/imgs/2025-08-19/c5a7bk72okhgAU3f.png)端到端延迟
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjk4ODkwMjYsMzgwNzE4MTMxLDU0ND
-Q0Mzk3OCwyMTQzNjI1MTc1LDE0MzM4NTMwODYsLTU0NDA3NjEw
-NCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMzMyMzY5MzQ3LDM4MDcxODEzMSw1NDQ0ND
+M5NzgsMjE0MzYyNTE3NSwxNDMzODUzMDg2LC01NDQwNzYxMDQs
+LTIwODg3NDY2MTJdfQ==
 -->
