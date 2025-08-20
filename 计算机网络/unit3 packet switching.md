@@ -37,10 +37,10 @@
 ![输入图片说明](/imgs/2025-08-19/9vgMw51pV4ICtCZs.png)考虑排队延迟后的公式
 
 ## queueing delay
-一些应用，如视频播放器/网站、语音通话、音乐软件等，会更看重数据的实时性，因此其对于排队延迟更敏感，为解决排队延迟带来的问题，一般会采用数据缓冲区
+一些应用，如视频播放器/网站、语音通话、音乐软件等，会更看重数据的实时性，因此其对于排队延迟更敏感，为解决排队延迟带来的问题，一般会采用数据缓冲区，以防一些数据包延迟或没有及时到达，出现短暂的故障，设计缓冲区时一般要考虑提前多长时间
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg1NzQ0NTUyLDMyNjg4MTYwMSwxMzk3MT
-Q0MjUxLDMzMjM2OTM0NywzODA3MTgxMzEsNTQ0NDQzOTc4LDIx
-NDM2MjUxNzUsMTQzMzg1MzA4NiwtNTQ0MDc2MTA0LC0yMDg4Nz
-Q2NjEyXX0=
+eyJoaXN0b3J5IjpbMTc5MzMxNDA5OSwzMjY4ODE2MDEsMTM5Nz
+E0NDI1MSwzMzIzNjkzNDcsMzgwNzE4MTMxLDU0NDQ0Mzk3OCwy
+MTQzNjI1MTc1LDE0MzM4NTMwODYsLTU0NDA3NjEwNCwtMjA4OD
+c0NjYxMl19
 -->
