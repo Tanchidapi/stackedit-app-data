@@ -40,12 +40,12 @@
 一些应用，如视频播放器/网站、语音通话、音乐软件等，会更看重数据的实时性，因此其对于排队延迟更敏感，为解决排队延迟带来的问题，一般会采用数据缓冲区，以防一些数据包延迟或没有及时到达，出现短暂的故障，设计缓冲区时一般要考虑提前多长时间
 ![输入图片说明](/imgs/2025-08-20/OPoY2SFJlcqbmg3i.png)示意图
 
-
+![输入图片说明](/imgs/2025-08-20/5evYBZY1WEE23iFI.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDI3OTYwNTUsMzI2ODgxNjAxLDEzOT
-cxNDQyNTEsMzMyMzY5MzQ3LDM4MDcxODEzMSw1NDQ0NDM5Nzgs
-MjE0MzYyNTE3NSwxNDMzODUzMDg2LC01NDQwNzYxMDQsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbOTAwNDE1MDQsLTIxNDI3OTYwNTUsMzI2OD
+gxNjAxLDEzOTcxNDQyNTEsMzMyMzY5MzQ3LDM4MDcxODEzMSw1
+NDQ0NDM5NzgsMjE0MzYyNTE3NSwxNDMzODUzMDg2LC01NDQwNz
+YxMDQsLTIwODg3NDY2MTJdfQ==
 -->
