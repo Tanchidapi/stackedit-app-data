@@ -36,10 +36,11 @@
 在缓冲区存在的情况下，端到端的延迟还需要多考虑在各个交换机的等待时间，即排队延迟
 ![输入图片说明](/imgs/2025-08-19/9vgMw51pV4ICtCZs.png)考虑排队延迟后的公式
 
-## queuing 
+## queueing delay
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI5NTY1MjE3LDMyNjg4MTYwMSwxMzk3MT
-Q0MjUxLDMzMjM2OTM0NywzODA3MTgxMzEsNTQ0NDQzOTc4LDIx
-NDM2MjUxNzUsMTQzMzg1MzA4NiwtNTQ0MDc2MTA0LC0yMDg4Nz
-Q2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE0MzA0NjMzNDcsMzI2ODgxNjAxLDEzOT
+cxNDQyNTEsMzMyMzY5MzQ3LDM4MDcxODEzMSw1NDQ0NDM5Nzgs
+MjE0MzYyNTE3NSwxNDMzODUzMDg2LC01NDQwNzYxMDQsLTIwOD
+g3NDY2MTJdfQ==
 -->
