@@ -62,13 +62,13 @@ Q是排队中的字节数，A是累积到达的字节数，D是输出离开的�
 ![输入图片说明](/imgs/2025-08-21/FA5Yh0VqjnMIwva2.png)计算题例题，计算平均队列占用率
 
 ### small packets reduce end to end delay
-![输入图片说明](/imgs/2025-08-21/7mli5TVMNRLTyW5Z.png)the reason
+![输入图片说明](/imgs/2025-08-21/7mli5TVMNRLTyW5Z.png)the rea
 有点类似于计算机组成原理中的流水线，分成更小的包发送可以极大的提高发送效率
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk3Mzk5NjY2LDU2NTc1OTQ0OCwtOTc1Mz
-EyOTIyLDgwNTE5MTg1NSwyNDkxNDA0NTAsNjU4NzE3NTQ2LC04
-MzI5MzI0NTksLTIxNDI3OTYwNTUsMzI2ODgxNjAxLDEzOTcxND
-QyNTEsMzMyMzY5MzQ3LDM4MDcxODEzMSw1NDQ0NDM5NzgsMjE0
-MzYyNTE3NSwxNDMzODUzMDg2LC01NDQwNzYxMDQsLTIwODg3ND
-Y2MTJdfQ==
+eyJoaXN0b3J5IjpbLTIxNDUxNDUwNDgsNjk3Mzk5NjY2LDU2NT
+c1OTQ0OCwtOTc1MzEyOTIyLDgwNTE5MTg1NSwyNDkxNDA0NTAs
+NjU4NzE3NTQ2LC04MzI5MzI0NTksLTIxNDI3OTYwNTUsMzI2OD
+gxNjAxLDEzOTcxNDQyNTEsMzMyMzY5MzQ3LDM4MDcxODEzMSw1
+NDQ0NDM5NzgsMjE0MzYyNTE3NSwxNDMzODUzMDg2LC01NDQwNz
+YxMDQsLTIwODg3NDY2MTJdfQ==
 -->
