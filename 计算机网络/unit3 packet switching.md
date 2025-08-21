@@ -53,11 +53,13 @@
 
 ## queue models
 ### simple deterministic queue model
-![输入图片说明](/imgs/2025-08-21/LghPru4OW7BsRy2A.png)shi'yi
+![输入图片说明](/imgs/2025-08-21/LghPru4OW7BsRy2A.png)示意图
+
+Q是排队中的字节数，A是累积到达的字节数，D是输出离开的字节数，均为t的函数，R是输出链路的速率
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTEzNjYwMiwyNDkxNDA0NTAsNjU4Nz
-E3NTQ2LC04MzI5MzI0NTksLTIxNDI3OTYwNTUsMzI2ODgxNjAx
-LDEzOTcxNDQyNTEsMzMyMzY5MzQ3LDM4MDcxODEzMSw1NDQ0ND
-M5NzgsMjE0MzYyNTE3NSwxNDMzODUzMDg2LC01NDQwNzYxMDQs
-LTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbODA1MTkxODU1LDI0OTE0MDQ1MCw2NTg3MT
+c1NDYsLTgzMjkzMjQ1OSwtMjE0Mjc5NjA1NSwzMjY4ODE2MDEs
+MTM5NzE0NDI1MSwzMzIzNjkzNDcsMzgwNzE4MTMxLDU0NDQ0Mz
+k3OCwyMTQzNjI1MTc1LDE0MzM4NTMwODYsLTU0NDA3NjEwNCwt
+MjA4ODc0NjYxMl19
 -->
