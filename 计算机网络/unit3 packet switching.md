@@ -40,13 +40,13 @@
 一些应用，如视频播放器/网站、语音通话、音乐软件等，会更看重数据的实时性，因此其对于排队延迟更敏感，为解决排队延迟带来的问题，一般会采用数据缓冲区，以防一些数据包延迟或没有及时到达，出现短暂的故障，设计缓冲区时一般要考虑提前多长时间
 ![输入图片说明](/imgs/2025-08-20/OPoY2SFJlcqbmg3i.png)示意图
 
-![输入图片说明](/imgs/2025-08-20/5evYBZY1WEE23iFI.png)发送、接收、播放与缓冲的字节的关系图，其中，纵坐标是累积的字节数，横坐标是时间，曲线间水平方向的差分别表示了变化的延迟时长（因为排队延迟）和缓冲所用的时间，竖直方向上的差分别表示了缓冲路径上缓冲的数据量有多大和（客户端）缓冲区的字节数，接收的字节的曲线的斜率体现了最后一个链路的速率（上限）
+![输入图片说明](/imgs/2025-08-20/5evYBZY1WEE23iFI.png)上图是发送、接收、播放与缓冲的字节的关系图，其中，纵坐标是累积的字节数，横坐标是时间，曲线间水平方向的差分别表示了变化的延迟时长（因为排队延迟）和缓冲所用的时间，竖直方向上的差分别表示了缓冲路径上缓冲的数据量有多大和（客户端）缓冲区的字节数，接收的字节的曲线的斜率体现了最后一个链路的速率（上限）
 
 ![输入图片说明](/imgs/2025-08-21/fplG2uQufPLhV8iS.png)客户端视角
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODk1MjE2NzgsNjU4NzE3NTQ2LC04Mz
+eyJoaXN0b3J5IjpbLTIwMDAwMzgzMDEsNjU4NzE3NTQ2LC04Mz
 I5MzI0NTksLTIxNDI3OTYwNTUsMzI2ODgxNjAxLDEzOTcxNDQy
 NTEsMzMyMzY5MzQ3LDM4MDcxODEzMSw1NDQ0NDM5NzgsMjE0Mz
 YyNTE3NSwxNDMzODUzMDg2LC01NDQwNzYxMDQsLTIwODg3NDY2
