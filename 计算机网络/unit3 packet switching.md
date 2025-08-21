@@ -59,11 +59,14 @@ Q是排队中的字节数，A是累积到达的字节数，D是输出离开的�
 ![输入图片说明](/imgs/2025-08-21/wbexRll5THJIBDN6.png)坐标下的示意图
 绿色曲线为A，黄色是D，标注的红色即为Q，是绿色和黄色线的竖直距离，水平差表示了一个字节经过了多久才离开路由器，用d表示其延迟时长
 
-![输入图片说明](/imgs/2025-08-21/FA5Yh0VqjnMIwva2.png)
+![输入图片说明](/imgs/2025-08-21/FA5Yh0VqjnMIwva2.png)计算题例题，计算平均队列占用率
+
+### small packets reduce end to end delay
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDc0OTU2OTMsLTk3NTMxMjkyMiw4MD
-UxOTE4NTUsMjQ5MTQwNDUwLDY1ODcxNzU0NiwtODMyOTMyNDU5
-LC0yMTQyNzk2MDU1LDMyNjg4MTYwMSwxMzk3MTQ0MjUxLDMzMj
-M2OTM0NywzODA3MTgxMzEsNTQ0NDQzOTc4LDIxNDM2MjUxNzUs
-MTQzMzg1MzA4NiwtNTQ0MDc2MTA0LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNTY1NzU5NDQ4LC05NzUzMTI5MjIsODA1MT
+kxODU1LDI0OTE0MDQ1MCw2NTg3MTc1NDYsLTgzMjkzMjQ1OSwt
+MjE0Mjc5NjA1NSwzMjY4ODE2MDEsMTM5NzE0NDI1MSwzMzIzNj
+kzNDcsMzgwNzE4MTMxLDU0NDQ0Mzk3OCwyMTQzNjI1MTc1LDE0
+MzM4NTMwODYsLTU0NDA3NjEwNCwtMjA4ODc0NjYxMl19
 -->
