@@ -56,10 +56,12 @@
 ![输入图片说明](/imgs/2025-08-21/LghPru4OW7BsRy2A.png)示意图
 
 Q是排队中的字节数，A是累积到达的字节数，D是输出离开的字节数，均为t的函数，R是输出链路的速率
+![输入图片说明](/imgs/2025-08-21/wbexRll5THJIBDN6.png)坐标下的示意图
+绿色曲线为A，黄色是D，标注的红色即为Q，是绿色和黄色线的竖直距离，水平差表示了一个字节经过了多久才离开路由器，用d表示其延迟时长
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1MTkxODU1LDI0OTE0MDQ1MCw2NTg3MT
-c1NDYsLTgzMjkzMjQ1OSwtMjE0Mjc5NjA1NSwzMjY4ODE2MDEs
-MTM5NzE0NDI1MSwzMzIzNjkzNDcsMzgwNzE4MTMxLDU0NDQ0Mz
-k3OCwyMTQzNjI1MTc1LDE0MzM4NTMwODYsLTU0NDA3NjEwNCwt
-MjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTk3NTMxMjkyMiw4MDUxOTE4NTUsMjQ5MT
+QwNDUwLDY1ODcxNzU0NiwtODMyOTMyNDU5LC0yMTQyNzk2MDU1
+LDMyNjg4MTYwMSwxMzk3MTQ0MjUxLDMzMjM2OTM0NywzODA3MT
+gxMzEsNTQ0NDQzOTc4LDIxNDM2MjUxNzUsMTQzMzg1MzA4Niwt
+NTQ0MDc2MTA0LC0yMDg4NzQ2NjEyXX0=
 -->
