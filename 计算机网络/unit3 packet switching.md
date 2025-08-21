@@ -19,7 +19,7 @@
 ![输入图片说明](/imgs/2025-08-18/ZP8H1ACvwOhl9sdD.png)使用分组交换的原因
 
 第三个重要原因是，互联网最初被设计成已有网络的互连，当时所有的通信网络/计算机网络都是分组交换的，互联网要连接这些网络就也要使用分组交换
-## 传播延迟与分组延迟
+## 传播延迟、分组延迟与排队延迟
 ### useful definition
 ![输入图片说明](/imgs/2025-08-18/5ECYxlTHARUFFHjq.png)传播延迟的定义
 和链路大小无关，只和链路长度和传播速度（一般是光速）有关
@@ -36,7 +36,7 @@
 在缓冲区存在的情况下，端到端的延迟还需要多考虑在各个交换机的等待时间，即排队延迟
 ![输入图片说明](/imgs/2025-08-19/9vgMw51pV4ICtCZs.png)考虑排队延迟后的公式
 
-## queuing delay
+### queuing delay
 一些应用，如视频播放器/网站、语音通话、音乐软件等，会更看重数据的实时性，因此其对于排队延迟更敏感，为解决排队延迟带来的问题，一般会采用数据缓冲区，以防一些数据包延迟或没有及时到达，出现短暂的故障，设计缓冲区时一般要考虑提前多长时间
 ![输入图片说明](/imgs/2025-08-20/OPoY2SFJlcqbmg3i.png)示意图
 
@@ -49,9 +49,11 @@
 
 ![输入图片说明](/imgs/2025-08-21/3QPXRramZMBKMHfj.png)playback buffer summary
 
+![输入图片说明](/imgs/2025-08-21/aSUVzJrgAPmAT5Qo.png)end-to-end delay summary
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwODcxNTU0Myw2NTg3MTc1NDYsLTgzMj
+eyJoaXN0b3J5IjpbLTEyNTUyNTYwNiw2NTg3MTc1NDYsLTgzMj
 kzMjQ1OSwtMjE0Mjc5NjA1NSwzMjY4ODE2MDEsMTM5NzE0NDI1
 MSwzMzIzNjkzNDcsMzgwNzE4MTMxLDU0NDQ0Mzk3OCwyMTQzNj
 I1MTc1LDE0MzM4NTMwODYsLTU0NDA3NjEwNCwtMjA4ODc0NjYx
