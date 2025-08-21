@@ -65,7 +65,7 @@ Q是排队中的字节数，A是累积到达的字节数，D是输出离开的�
 ![输入图片说明](/imgs/2025-08-21/7mli5TVMNRLTyW5Z.png)用更小的数据包的原因
 有点类似于计算机组成原理中的流水线，分成更小的包发送可以极大的提高发送效率
 
-### statistical mu'l'ti
+### statistical multiplexing
 ![输入图片说明](/imgs/2025-08-21/JH61GFGrvoDBd8VR.png)统计多路复用
 用于处理多输入单输出时，输出链路跟不上输入速率的问题
 
@@ -75,11 +75,11 @@ AB两个流量相加预期会得到统计复用增益
 ![输入图片说明](/imgs/2025-08-21/JMEUxaGVM7GLThIb.png)统计复用增益的计算
 两种不同的情况，一种是未使用缓冲区，一种使用了缓冲区，使用了缓冲区的情况下值会更大，总之，统计复用可以让我们在一个链路上高效的承载多个流，这也是我们使用分组交换的主要原因之一
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDA0ODU4Nyw0MDEwNDE4MjIsLTE5Mj
-A0NjMwMDUsNjk3Mzk5NjY2LDU2NTc1OTQ0OCwtOTc1MzEyOTIy
-LDgwNTE5MTg1NSwyNDkxNDA0NTAsNjU4NzE3NTQ2LC04MzI5Mz
-I0NTksLTIxNDI3OTYwNTUsMzI2ODgxNjAxLDEzOTcxNDQyNTEs
-MzMyMzY5MzQ3LDM4MDcxODEzMSw1NDQ0NDM5NzgsMjE0MzYyNT
-E3NSwxNDMzODUzMDg2LC01NDQwNzYxMDQsLTIwODg3NDY2MTJd
-fQ==
+eyJoaXN0b3J5IjpbMTE2MzczOTkwLDQwMTA0MTgyMiwtMTkyMD
+Q2MzAwNSw2OTczOTk2NjYsNTY1NzU5NDQ4LC05NzUzMTI5MjIs
+ODA1MTkxODU1LDI0OTE0MDQ1MCw2NTg3MTc1NDYsLTgzMjkzMj
+Q1OSwtMjE0Mjc5NjA1NSwzMjY4ODE2MDEsMTM5NzE0NDI1MSwz
+MzIzNjkzNDcsMzgwNzE4MTMxLDU0NDQ0Mzk3OCwyMTQzNjI1MT
+c1LDE0MzM4NTMwODYsLTU0NDA3NjEwNCwtMjA4ODc0NjYxMl19
+
 -->
