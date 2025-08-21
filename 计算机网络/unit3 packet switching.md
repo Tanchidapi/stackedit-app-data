@@ -58,10 +58,12 @@
 Q是排队中的字节数，A是累积到达的字节数，D是输出离开的字节数，均为t的函数，R是输出链路的速率
 ![输入图片说明](/imgs/2025-08-21/wbexRll5THJIBDN6.png)坐标下的示意图
 绿色曲线为A，黄色是D，标注的红色即为Q，是绿色和黄色线的竖直距离，水平差表示了一个字节经过了多久才离开路由器，用d表示其延迟时长
+
+![输入图片说明](/imgs/2025-08-21/FA5Yh0VqjnMIwva2.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NTMxMjkyMiw4MDUxOTE4NTUsMjQ5MT
-QwNDUwLDY1ODcxNzU0NiwtODMyOTMyNDU5LC0yMTQyNzk2MDU1
-LDMyNjg4MTYwMSwxMzk3MTQ0MjUxLDMzMjM2OTM0NywzODA3MT
-gxMzEsNTQ0NDQzOTc4LDIxNDM2MjUxNzUsMTQzMzg1MzA4Niwt
-NTQ0MDc2MTA0LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE2NDc0OTU2OTMsLTk3NTMxMjkyMiw4MD
+UxOTE4NTUsMjQ5MTQwNDUwLDY1ODcxNzU0NiwtODMyOTMyNDU5
+LC0yMTQyNzk2MDU1LDMyNjg4MTYwMSwxMzk3MTQ0MjUxLDMzMj
+M2OTM0NywzODA3MTgxMzEsNTQ0NDQzOTc4LDIxNDM2MjUxNzUs
+MTQzMzg1MzA4NiwtNTQ0MDc2MTA0LC0yMDg4NzQ2NjEyXX0=
 -->
