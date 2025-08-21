@@ -67,8 +67,12 @@ Q是排队中的字节数，A是累积到达的字节数，D是输出离开的�
 
 ![输入图片说明](/imgs/2025-08-21/JH61GFGrvoDBd8VR.png)统计多路复用
 用于处理多输入单输出时，输出链路跟不上输入速率的问题
+
+![输入图片说明](/imgs/2025-08-21/RAJYhNlFJuDJCyIt.png)example for statistical multiplex
+AB两个流量相加预期会得到统计复用增益
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDI3NzQzLC0xOTIwNDYzMDA1LDY5Nz
+eyJoaXN0b3J5IjpbNDAxMDQxODIyLC0xOTIwNDYzMDA1LDY5Nz
 M5OTY2Niw1NjU3NTk0NDgsLTk3NTMxMjkyMiw4MDUxOTE4NTUs
 MjQ5MTQwNDUwLDY1ODcxNzU0NiwtODMyOTMyNDU5LC0yMTQyNz
 k2MDU1LDMyNjg4MTYwMSwxMzk3MTQ0MjUxLDMzMjM2OTM0Nywz
