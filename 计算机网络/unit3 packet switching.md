@@ -44,9 +44,12 @@
 
 ![输入图片说明](/imgs/2025-08-21/fplG2uQufPLhV8iS.png)客户端视角
 
+![输入图片说明](/imgs/2025-08-21/wL6D9KIiCK5MimfO.png)缓冲区不够的情况
+一般客户端会通过冻结屏幕等待缓冲来解决
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDAwMzgzMDEsNjU4NzE3NTQ2LC04Mz
+eyJoaXN0b3J5IjpbLTE4Njk1MDg1NDIsNjU4NzE3NTQ2LC04Mz
 I5MzI0NTksLTIxNDI3OTYwNTUsMzI2ODgxNjAxLDEzOTcxNDQy
 NTEsMzMyMzY5MzQ3LDM4MDcxODEzMSw1NDQ0NDM5NzgsMjE0Mz
 YyNTE3NSwxNDMzODUzMDg2LC01NDQwNzYxMDQsLTIwODg3NDY2
