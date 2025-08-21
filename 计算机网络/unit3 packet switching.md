@@ -19,6 +19,11 @@
 ![输入图片说明](/imgs/2025-08-18/ZP8H1ACvwOhl9sdD.png)使用分组交换的原因
 
 第三个重要原因是，互联网最初被设计成已有网络的互连，当时所有的通信网络/计算机网络都是分组交换的，互联网要连接这些网络就也要使用分组交换
+
+![输入图片说明](/imgs/2025-08-21/MIxlXESMa6CeEBWx.png)分组交换与电路交换的区别
+
+![输入图片说明](/imgs/2025-08-21/YzhCvDTpst9xigU5.png)分组交换的特点
+
 ## 传播延迟、分组延迟与排队延迟
 ### useful definition
 ![输入图片说明](/imgs/2025-08-18/5ECYxlTHARUFFHjq.png)传播延迟的定义
@@ -75,11 +80,11 @@ AB两个流量相加预期会得到统计复用增益
 ![输入图片说明](/imgs/2025-08-21/JMEUxaGVM7GLThIb.png)统计复用增益的计算
 两种不同的情况，一种是未使用缓冲区，一种使用了缓冲区，使用了缓冲区的情况下值会更大，总之，统计复用可以让我们在一个链路上高效的承载多个流，这也是我们使用分组交换的主要原因之一
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MzczOTkwLDQwMTA0MTgyMiwtMTkyMD
-Q2MzAwNSw2OTczOTk2NjYsNTY1NzU5NDQ4LC05NzUzMTI5MjIs
-ODA1MTkxODU1LDI0OTE0MDQ1MCw2NTg3MTc1NDYsLTgzMjkzMj
-Q1OSwtMjE0Mjc5NjA1NSwzMjY4ODE2MDEsMTM5NzE0NDI1MSwz
-MzIzNjkzNDcsMzgwNzE4MTMxLDU0NDQ0Mzk3OCwyMTQzNjI1MT
-c1LDE0MzM4NTMwODYsLTU0NDA3NjEwNCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTE1MDQ3MDMzOSwxMTYzNzM5OTAsNDAxMD
+QxODIyLC0xOTIwNDYzMDA1LDY5NzM5OTY2Niw1NjU3NTk0NDgs
+LTk3NTMxMjkyMiw4MDUxOTE4NTUsMjQ5MTQwNDUwLDY1ODcxNz
+U0NiwtODMyOTMyNDU5LC0yMTQyNzk2MDU1LDMyNjg4MTYwMSwx
+Mzk3MTQ0MjUxLDMzMjM2OTM0NywzODA3MTgxMzEsNTQ0NDQzOT
+c4LDIxNDM2MjUxNzUsMTQzMzg1MzA4NiwtNTQ0MDc2MTA0XX0=
 
 -->
