@@ -94,13 +94,15 @@ AB两个流量相加预期会得到统计复用增益
 ![输入图片说明](/imgs/2025-08-22/AgrL6d6V3bukTrGN.png)questionD，问再套娃一个队列的情况下，第二个队列的占用率，答案是零，因为不缓存数据
 
 ## useful queue properties
-![输入图片说明](/imgs/2025-08-22/9MQ7WqOqrn0UT0p1.png)一般来说，数据到达某一个队列的过程是复杂的，因此我们y'b
+![输入图片说明](/imgs/2025-08-22/9MQ7WqOqrn0UT0p1.png)一般来说，数据到达某一个队列的过程是复杂的，因此我们一般将其看作随机过程看待
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjUzMDkzMjYsNjU1MTcxNTE1LC0xMz
-AxNjI2MzQ1LC0yMDg3NTkyMjg2LC0yMTE4NzQ1MjQyLC0xNDkz
-MDU3NTQ3LDExNTA0NzAzMzksMTE2MzczOTkwLDQwMTA0MTgyMi
-wtMTkyMDQ2MzAwNSw2OTczOTk2NjYsNTY1NzU5NDQ4LC05NzUz
-MTI5MjIsODA1MTkxODU1LDI0OTE0MDQ1MCw2NTg3MTc1NDYsLT
-gzMjkzMjQ1OSwtMjE0Mjc5NjA1NSwzMjY4ODE2MDEsMTM5NzE0
-NDI1MV19
+eyJoaXN0b3J5IjpbOTczNjQyNzcyLDY1NTE3MTUxNSwtMTMwMT
+YyNjM0NSwtMjA4NzU5MjI4NiwtMjExODc0NTI0MiwtMTQ5MzA1
+NzU0NywxMTUwNDcwMzM5LDExNjM3Mzk5MCw0MDEwNDE4MjIsLT
+E5MjA0NjMwMDUsNjk3Mzk5NjY2LDU2NTc1OTQ0OCwtOTc1MzEy
+OTIyLDgwNTE5MTg1NSwyNDkxNDA0NTAsNjU4NzE3NTQ2LC04Mz
+I5MzI0NTksLTIxNDI3OTYwNTUsMzI2ODgxNjAxLDEzOTcxNDQy
+NTFdfQ==
 -->
