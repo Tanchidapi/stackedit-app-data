@@ -85,15 +85,15 @@ AB两个流量相加预期会得到统计复用增益
 
 ![输入图片说明](/imgs/2025-08-21/EUTrqMbAG5d0P33Y.png)questionB，计算了平均每个bit的延迟
 
-![输入图片说明](/imgs/2025-08-22/0DMWEPwqPbAPAoVg.png)questionC，如果随机到达的情况下，问占有率如何变化，答案是变大，下图两个例子解释了QC的答案
+![输入图片说明](/imgs/2025-08-22/0DMWEPwqPbAPAoVg.png)questionC，如果随机到达的情况下，保持平均每秒一个100bit的包到达，问占有率如何变化，答案是变大，下图两个例子解释了QC的答案
 
-![输入图片说明](/imgs/2025-08-22/GakiJmB6FrFO1ZFo.png)因为输出速率不变，在case2中hui'dao
+![输入图片说明](/imgs/2025-08-22/GakiJmB6FrFO1ZFo.png)因为输出速率不变，在case2中会导致需要两倍的时间
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODg0NjY3NiwtMjA4NzU5MjI4NiwtMj
-ExODc0NTI0MiwtMTQ5MzA1NzU0NywxMTUwNDcwMzM5LDExNjM3
-Mzk5MCw0MDEwNDE4MjIsLTE5MjA0NjMwMDUsNjk3Mzk5NjY2LD
-U2NTc1OTQ0OCwtOTc1MzEyOTIyLDgwNTE5MTg1NSwyNDkxNDA0
-NTAsNjU4NzE3NTQ2LC04MzI5MzI0NTksLTIxNDI3OTYwNTUsMz
-I2ODgxNjAxLDEzOTcxNDQyNTEsMzMyMzY5MzQ3LDM4MDcxODEz
-MV19
+eyJoaXN0b3J5IjpbLTEzMDE2MjYzNDUsLTIwODc1OTIyODYsLT
+IxMTg3NDUyNDIsLTE0OTMwNTc1NDcsMTE1MDQ3MDMzOSwxMTYz
+NzM5OTAsNDAxMDQxODIyLC0xOTIwNDYzMDA1LDY5NzM5OTY2Ni
+w1NjU3NTk0NDgsLTk3NTMxMjkyMiw4MDUxOTE4NTUsMjQ5MTQw
+NDUwLDY1ODcxNzU0NiwtODMyOTMyNDU5LC0yMTQyNzk2MDU1LD
+MyNjg4MTYwMSwxMzk3MTQ0MjUxLDMzMjM2OTM0NywzODA3MTgx
+MzFdfQ==
 -->
