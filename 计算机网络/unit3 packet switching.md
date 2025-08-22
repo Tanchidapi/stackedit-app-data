@@ -101,10 +101,11 @@ AB两个流量相加预期会得到统计复用增益
 上图中猝发传输导致了队列的平均占有率更高，同时也导致了方差更大，导致了延迟增加
 
 ### determinism minimizes delay
+确定的系统会
 ### little's result
-
+![输入图片说明](/imgs/2025-08-23/3W3KqUHBBlL3HdxH.png)一些有用的小结论，图中λ表示一个明确的到达速率，L是队列中的平均bit数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTA0NDgxNTgsNDQ0NzI3MjAyLC0xNz
+eyJoaXN0b3J5IjpbLTEyNzM2ODg3MzMsNDQ0NzI3MjAyLC0xNz
 IzMjc2NzgzLDY1NTE3MTUxNSwtMTMwMTYyNjM0NSwtMjA4NzU5
 MjI4NiwtMjExODc0NTI0MiwtMTQ5MzA1NzU0NywxMTUwNDcwMz
 M5LDExNjM3Mzk5MCw0MDEwNDE4MjIsLTE5MjA0NjMwMDUsNjk3
