@@ -2,11 +2,7 @@
 ### circuit switching
 分组交换的前身是电路交换，用于早期的电话系统，可以通过三步解析它，首先是拨号，这告诉了交换机我们想要连接的端点，从而建立专用的电路，然后是使用，在我们说话的过程中，声信号被转换成电信号通过交换机建立的电路传递，最后是挂断，要移除该专用电路和路径上交换机的任意状态![输入图片说明](/imgs/2025-08-15/bjHCJUR65UbWrACX.png)
 
-~~
-
 示意图
-
-~~
 
 ![输入图片说明](/imgs/2025-08-15/6C6cE8LGdb6Mf3ij.png)电路交换的性质
 
@@ -95,11 +91,11 @@ AB两个流量相加预期会得到统计复用增益
 
 ![输入图片说明](/imgs/2025-08-22/GakiJmB6FrFO1ZFo.png)因为输出速率不变，在case2中会导致需要两倍的时间
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1ODU2OTIxMSwtMTMwMTYyNjM0NSwtMj
-A4NzU5MjI4NiwtMjExODc0NTI0MiwtMTQ5MzA1NzU0NywxMTUw
-NDcwMzM5LDExNjM3Mzk5MCw0MDEwNDE4MjIsLTE5MjA0NjMwMD
-UsNjk3Mzk5NjY2LDU2NTc1OTQ0OCwtOTc1MzEyOTIyLDgwNTE5
-MTg1NSwyNDkxNDA0NTAsNjU4NzE3NTQ2LC04MzI5MzI0NTksLT
-IxNDI3OTYwNTUsMzI2ODgxNjAxLDEzOTcxNDQyNTEsMzMyMzY5
-MzQ3XX0=
+eyJoaXN0b3J5IjpbNjU1MTcxNTE1LC0xMzAxNjI2MzQ1LC0yMD
+g3NTkyMjg2LC0yMTE4NzQ1MjQyLC0xNDkzMDU3NTQ3LDExNTA0
+NzAzMzksMTE2MzczOTkwLDQwMTA0MTgyMiwtMTkyMDQ2MzAwNS
+w2OTczOTk2NjYsNTY1NzU5NDQ4LC05NzUzMTI5MjIsODA1MTkx
+ODU1LDI0OTE0MDQ1MCw2NTg3MTc1NDYsLTgzMjkzMjQ1OSwtMj
+E0Mjc5NjA1NSwzMjY4ODE2MDEsMTM5NzE0NDI1MSwzMzIzNjkz
+NDddfQ==
 -->
