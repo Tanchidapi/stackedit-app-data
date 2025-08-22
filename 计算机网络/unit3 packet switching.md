@@ -104,9 +104,9 @@ AB两个流量相加预期会得到统计复用增益
 通常，确定的系统会减小延迟，反之，随机到达的情况会有更高的平均延迟
 
 ### little's result
-![输入图片说明](/imgs/2025-08-23/3W3KqUHBBlL3HdxH.png)一些有用的小结论，图中λ表示一个明确的到达速率，L是队列中的平均bit数，d是平均延迟，三者关系如上图所示，此公式不考虑无丢包（丢弃）情况的系统
+![输入图片说明](/imgs/2025-08-23/3W3KqUHBBlL3HdxH.png)一些有用的小结论，图中λ表示一个明确的到达速率，L是队列中的平均bit数，d是平均延迟，三者关系如上图所示，此公式不考虑无丢包（丢弃）情况的系统，L与d要对应，如果L是队列中正在被服务的数据的平均数量，则d
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTIwMDIwNjQsNDQ0NzI3MjAyLC0xNz
+eyJoaXN0b3J5IjpbLTE2NzY5NDkyNzAsNDQ0NzI3MjAyLC0xNz
 IzMjc2NzgzLDY1NTE3MTUxNSwtMTMwMTYyNjM0NSwtMjA4NzU5
 MjI4NiwtMjExODc0NTI0MiwtMTQ5MzA1NzU0NywxMTUwNDcwMz
 M5LDExNjM3Mzk5MCw0MDEwNDE4MjIsLTE5MjA0NjMwMDUsNjk3
