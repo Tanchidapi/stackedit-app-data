@@ -98,9 +98,10 @@ AB两个流量相加预期会得到统计复用增益
 
 ### burstiness increases delay
 ![输入图片说明](/imgs/2025-08-22/LFZ5PfavgV6fwozz.png)example
-上图中猝发传输导致了队列的平均占有率更高
+上图中猝发传输导致了队列的平均占有率更高，同时也导致了方差更大，导致了延迟增加
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjczMDgxNTM4LC0xNzIzMjc2NzgzLDY1NT
+eyJoaXN0b3J5IjpbLTk3MTE2MjgyLC0xNzIzMjc2NzgzLDY1NT
 E3MTUxNSwtMTMwMTYyNjM0NSwtMjA4NzU5MjI4NiwtMjExODc0
 NTI0MiwtMTQ5MzA1NzU0NywxMTUwNDcwMzM5LDExNjM3Mzk5MC
 w0MDEwNDE4MjIsLTE5MjA0NjMwMDUsNjk3Mzk5NjY2LDU2NTc1
