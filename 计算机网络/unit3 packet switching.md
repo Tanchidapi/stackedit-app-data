@@ -116,9 +116,9 @@ AB两个流量相加预期会得到统计复用增益
 2. 数据包的到达不是泊松过程
 3. 但是泊松过程很适用于描述新数据流的到达
 
-M/M/1 queue是使用泊松过程的一个常见例子，第一个M指的是马尔可夫到达过程，本例中是泊松过程，第二个M指的是马尔可夫服务过程，本例中是呈指数分布的，
+M/M/1 queue是使用泊松过程的一个常见例子，第一个M指的是马尔可夫到达过程，本例中是泊松过程，第二个M指的是马尔可夫服务过程，本例中是呈指数分布的，这意味着为一个数据包服务，且每个数据包的服务时间与其他的独立，只有一条输出线为该队列服务
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxMDY2OTY3LC03ODY5OTkwNSwxMTc0Nj
+eyJoaXN0b3J5IjpbNjcxNDgyNDE5LC03ODY5OTkwNSwxMTc0Nj
 kzMzY2LC05MDg3MzE3ODcsNDQ0NzI3MjAyLC0xNzIzMjc2Nzgz
 LDY1NTE3MTUxNSwtMTMwMTYyNjM0NSwtMjA4NzU5MjI4NiwtMj
 ExODc0NTI0MiwtMTQ5MzA1NzU0NywxMTUwNDcwMzM5LDExNjM3
