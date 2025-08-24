@@ -107,12 +107,14 @@ AB两个流量相加预期会得到统计复用增益
 ![输入图片说明](/imgs/2025-08-23/3W3KqUHBBlL3HdxH.png)一个有用的小结论，图中λ表示一个明确的到达速率，L是队列中的平均bit数，d是平均延迟，三者关系如上图所示，此公式不考虑无丢包（丢弃）情况的系统，L与d要对应，如果L是队列中正在被服务的数据的平均数量，则d是直到用户完成服务的平均延迟；如果L是仅在队列中但尚未进入服务的数据的平均数量，则d是通过队列进入服务之前的平均延迟
 
 ![输入图片说明](/imgs/2025-08-24/U46y1hVpBZIYsAzR.png)泊松过程
+
+![输入图片说明](/imgs/2025-08-24/SUEyEX0UAsWaoXyO.png)为什么我们使用
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NDY5MzM2NiwtOTA4NzMxNzg3LDQ0ND
-cyNzIwMiwtMTcyMzI3Njc4Myw2NTUxNzE1MTUsLTEzMDE2MjYz
-NDUsLTIwODc1OTIyODYsLTIxMTg3NDUyNDIsLTE0OTMwNTc1ND
-csMTE1MDQ3MDMzOSwxMTYzNzM5OTAsNDAxMDQxODIyLC0xOTIw
-NDYzMDA1LDY5NzM5OTY2Niw1NjU3NTk0NDgsLTk3NTMxMjkyMi
-w4MDUxOTE4NTUsMjQ5MTQwNDUwLDY1ODcxNzU0NiwtODMyOTMy
-NDU5XX0=
+eyJoaXN0b3J5IjpbMjAwMDA2NzYwNywxMTc0NjkzMzY2LC05MD
+g3MzE3ODcsNDQ0NzI3MjAyLC0xNzIzMjc2NzgzLDY1NTE3MTUx
+NSwtMTMwMTYyNjM0NSwtMjA4NzU5MjI4NiwtMjExODc0NTI0Mi
+wtMTQ5MzA1NzU0NywxMTUwNDcwMzM5LDExNjM3Mzk5MCw0MDEw
+NDE4MjIsLTE5MjA0NjMwMDUsNjk3Mzk5NjY2LDU2NTc1OTQ0OC
+wtOTc1MzEyOTIyLDgwNTE5MTg1NSwyNDkxNDA0NTAsNjU4NzE3
+NTQ2XX0=
 -->
