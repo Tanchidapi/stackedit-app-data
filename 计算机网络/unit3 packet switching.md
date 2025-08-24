@@ -106,6 +106,7 @@ AB两个流量相加预期会得到统计复用增益
 ### little's result
 ![输入图片说明](/imgs/2025-08-23/3W3KqUHBBlL3HdxH.png)一个有用的小结论，图中λ表示一个明确的到达速率，L是队列中的平均bit数，d是平均延迟，三者关系如上图所示，此公式不考虑无丢包（丢弃）情况的系统，L与d要对应，如果L是队列中正在被服务的数据的平均数量，则d是直到用户完成服务的平均延迟；如果L是仅在队列中但尚未进入服务的数据的平均数量，则d是通过队列进入服务之前的平均延迟
 
+### M/M/1 queue
 ![输入图片说明](/imgs/2025-08-24/U46y1hVpBZIYsAzR.png)泊松过程
 
 ![输入图片说明](/imgs/2025-08-24/SUEyEX0UAsWaoXyO.png)为什么我们使用泊松过程
@@ -115,12 +116,13 @@ AB两个流量相加预期会得到统计复用增益
 2. 数据包的到达不是泊松过程
 3. 但是泊松过程很适用于描述新数据流的到达
 
+M/M/1 queue是使用泊松过程的一个常见例子
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzc3MjIxNzAsLTc4Njk5OTA1LDExNz
-Q2OTMzNjYsLTkwODczMTc4Nyw0NDQ3MjcyMDIsLTE3MjMyNzY3
-ODMsNjU1MTcxNTE1LC0xMzAxNjI2MzQ1LC0yMDg3NTkyMjg2LC
-0yMTE4NzQ1MjQyLC0xNDkzMDU3NTQ3LDExNTA0NzAzMzksMTE2
-MzczOTkwLDQwMTA0MTgyMiwtMTkyMDQ2MzAwNSw2OTczOTk2Nj
-YsNTY1NzU5NDQ4LC05NzUzMTI5MjIsODA1MTkxODU1LDI0OTE0
-MDQ1MF19
+eyJoaXN0b3J5IjpbLTc5NDYwNDIwMywtNzg2OTk5MDUsMTE3ND
+Y5MzM2NiwtOTA4NzMxNzg3LDQ0NDcyNzIwMiwtMTcyMzI3Njc4
+Myw2NTUxNzE1MTUsLTEzMDE2MjYzNDUsLTIwODc1OTIyODYsLT
+IxMTg3NDUyNDIsLTE0OTMwNTc1NDcsMTE1MDQ3MDMzOSwxMTYz
+NzM5OTAsNDAxMDQxODIyLC0xOTIwNDYzMDA1LDY5NzM5OTY2Ni
+w1NjU3NTk0NDgsLTk3NTMxMjkyMiw4MDUxOTE4NTUsMjQ5MTQw
+NDUwXX0=
 -->
