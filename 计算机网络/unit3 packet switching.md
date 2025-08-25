@@ -137,9 +137,9 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ![输入图片说明](/imgs/2025-08-25/mbTncjuC01WgjzT1.png)最长前缀匹配
 
-
+![输入图片说明](/imgs/2025-08-25/Ha2lTDWg2IrlXPNQ.png)匹配的查找tong
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MTExOTkwMCwtMjE2OTE2MjM1LC0xNj
+eyJoaXN0b3J5IjpbMTQ0OTU5NTM4NSwtMjE2OTE2MjM1LC0xNj
 UwNzc0NTA3LC04MTU0MjMwMTQsLTEzMjYxMzE0MjgsMTIyMjM4
 ODY5NywtNjI5Njc1MzAzLDEyOTQ0NDU4MzIsNjcxNDgyNDE5LC
 03ODY5OTkwNSwxMTc0NjkzMzY2LC05MDg3MzE3ODcsNDQ0NzI3
