@@ -123,14 +123,14 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ## how a packet switch works
 ### what a packet switch look like
-
+![输入图片说明](/imgs/2025-08-25/NZyYs68QFQAnn7pb.png)多路输入输出路由器示意图，当一个数据包到达时，路由器会根据其报头信息来查找下一跳转发地址，然后通过数据总线（中间黑线）转发到背板，到对应的输出链路去
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjM4ODY5NywtNjI5Njc1MzAzLDEyOT
-Q0NDU4MzIsNjcxNDgyNDE5LC03ODY5OTkwNSwxMTc0NjkzMzY2
-LC05MDg3MzE3ODcsNDQ0NzI3MjAyLC0xNzIzMjc2NzgzLDY1NT
-E3MTUxNSwtMTMwMTYyNjM0NSwtMjA4NzU5MjI4NiwtMjExODc0
-NTI0MiwtMTQ5MzA1NzU0NywxMTUwNDcwMzM5LDExNjM3Mzk5MC
-w0MDEwNDE4MjIsLTE5MjA0NjMwMDUsNjk3Mzk5NjY2LDU2NTc1
-OTQ0OF19
+eyJoaXN0b3J5IjpbLTEzMjYxMzE0MjgsMTIyMjM4ODY5NywtNj
+I5Njc1MzAzLDEyOTQ0NDU4MzIsNjcxNDgyNDE5LC03ODY5OTkw
+NSwxMTc0NjkzMzY2LC05MDg3MzE3ODcsNDQ0NzI3MjAyLC0xNz
+IzMjc2NzgzLDY1NTE3MTUxNSwtMTMwMTYyNjM0NSwtMjA4NzU5
+MjI4NiwtMjExODc0NTI0MiwtMTQ5MzA1NzU0NywxMTUwNDcwMz
+M5LDExNjM3Mzk5MCw0MDEwNDE4MjIsLTE5MjA0NjMwMDUsNjk3
+Mzk5NjY2XX0=
 -->
