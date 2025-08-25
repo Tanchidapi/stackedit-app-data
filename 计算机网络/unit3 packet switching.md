@@ -131,9 +131,11 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 交换机的主要功能和关注的操作：查找地址与转发
 
-![输入图片说明](/imgs/2025-08-25/sIQQ5YXxEocgyWiM.png)以太网交换机的地址查找，通过查找表实现，匹配时通过匹配最长前缀实现
+![输入图片说明](/imgs/2025-08-25/sIQQ5YXxEocgyWiM.png)以太网交换机的地址查找，通过查找表实现
+
+![输入图片说明](/imgs/2025-08-25/73JDDhI4kNUyweWv.png)ip地址的查找表，匹配时通过匹配最长前缀实现
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcyODkzOTQ2LC0xNjUwNzc0NTA3LC04MT
+eyJoaXN0b3J5IjpbODM5NzA5MTI4LC0xNjUwNzc0NTA3LC04MT
 U0MjMwMTQsLTEzMjYxMzE0MjgsMTIyMjM4ODY5NywtNjI5Njc1
 MzAzLDEyOTQ0NDU4MzIsNjcxNDgyNDE5LC03ODY5OTkwNSwxMT
 c0NjkzMzY2LC05MDg3MzE3ODcsNDQ0NzI3MjAyLC0xNzIzMjc2
