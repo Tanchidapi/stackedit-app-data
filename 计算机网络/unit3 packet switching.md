@@ -121,14 +121,15 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ![输入图片说明](/imgs/2025-08-25/PW0Fc8rFgkYAZbt6.png)M/M/1 queue的公式，d代表一个数据包通过该队列的平均延迟，L来表示平均占有率，λ/μ表示交通强度，右图几乎适用于任意排队系统，我们用mm1 queue来代替更复杂系统的原因仅仅是其数学模型更简单，表达式也更简单
 
-## how a
+## how a packet switch works
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDM0Mzg4OSwtNjI5Njc1MzAzLDEyOT
-Q0NDU4MzIsNjcxNDgyNDE5LC03ODY5OTkwNSwxMTc0NjkzMzY2
-LC05MDg3MzE3ODcsNDQ0NzI3MjAyLC0xNzIzMjc2NzgzLDY1NT
-E3MTUxNSwtMTMwMTYyNjM0NSwtMjA4NzU5MjI4NiwtMjExODc0
-NTI0MiwtMTQ5MzA1NzU0NywxMTUwNDcwMzM5LDExNjM3Mzk5MC
-w0MDEwNDE4MjIsLTE5MjA0NjMwMDUsNjk3Mzk5NjY2LDU2NTc1
-OTQ0OF19
+eyJoaXN0b3J5IjpbOTA3NzA4MjczLC02Mjk2NzUzMDMsMTI5ND
+Q0NTgzMiw2NzE0ODI0MTksLTc4Njk5OTA1LDExNzQ2OTMzNjYs
+LTkwODczMTc4Nyw0NDQ3MjcyMDIsLTE3MjMyNzY3ODMsNjU1MT
+cxNTE1LC0xMzAxNjI2MzQ1LC0yMDg3NTkyMjg2LC0yMTE4NzQ1
+MjQyLC0xNDkzMDU3NTQ3LDExNTA0NzAzMzksMTE2MzczOTkwLD
+QwMTA0MTgyMiwtMTkyMDQ2MzAwNSw2OTczOTk2NjYsNTY1NzU5
+NDQ4XX0=
 -->
