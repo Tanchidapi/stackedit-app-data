@@ -133,13 +133,13 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ![输入图片说明](/imgs/2025-08-25/sIQQ5YXxEocgyWiM.png)以太网交换机的地址查找，通过查找表实现
 
-![输入图片说明](/imgs/2025-08-25/73JDDhI4kNUyweWv.png)ip地址的查找表，匹配时通过匹配最长前缀实现，ip转发表
+![输入图片说明](/imgs/2025-08-25/73JDDhI4kNUyweWv.png)ip地址的查找表，匹配时通过匹配最长前缀实现，ip转发表匹配完后，会解析对应ip地址的以太网地址，将数据包封装到对应的以太网帧中
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTQ4Njg5MzYsLTE2NTA3NzQ1MDcsLT
-gxNTQyMzAxNCwtMTMyNjEzMTQyOCwxMjIyMzg4Njk3LC02Mjk2
-NzUzMDMsMTI5NDQ0NTgzMiw2NzE0ODI0MTksLTc4Njk5OTA1LD
-ExNzQ2OTMzNjYsLTkwODczMTc4Nyw0NDQ3MjcyMDIsLTE3MjMy
-NzY3ODMsNjU1MTcxNTE1LC0xMzAxNjI2MzQ1LC0yMDg3NTkyMj
-g2LC0yMTE4NzQ1MjQyLC0xNDkzMDU3NTQ3LDExNTA0NzAzMzks
-MTE2MzczOTkwXX0=
+eyJoaXN0b3J5IjpbLTIxNjkxNjIzNSwtMTY1MDc3NDUwNywtOD
+E1NDIzMDE0LC0xMzI2MTMxNDI4LDEyMjIzODg2OTcsLTYyOTY3
+NTMwMywxMjk0NDQ1ODMyLDY3MTQ4MjQxOSwtNzg2OTk5MDUsMT
+E3NDY5MzM2NiwtOTA4NzMxNzg3LDQ0NDcyNzIwMiwtMTcyMzI3
+Njc4Myw2NTUxNzE1MTUsLTEzMDE2MjYzNDUsLTIwODc1OTIyOD
+YsLTIxMTg3NDUyNDIsLTE0OTMwNTc1NDcsMTE1MDQ3MDMzOSwx
+MTYzNzM5OTBdfQ==
 -->
