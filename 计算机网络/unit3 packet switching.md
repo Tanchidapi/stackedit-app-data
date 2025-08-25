@@ -128,8 +128,10 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 ![输入图片说明](/imgs/2025-08-25/w7dFm0kS4NQGaomV.png)更具体的，一种常见类型的数据包交换机是以太网交换机，上图说明了以太网交换机的四种基本操作
 
 ![输入图片说明](/imgs/2025-08-25/pwjTh33eFxWYUqOr.png)上图说明了互联网路由器的七种基本操作
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MTA3MzQ2MSwtODE1NDIzMDE0LC0xMz
+eyJoaXN0b3J5IjpbLTU0MTQzNjUwNSwtODE1NDIzMDE0LC0xMz
 I2MTMxNDI4LDEyMjIzODg2OTcsLTYyOTY3NTMwMywxMjk0NDQ1
 ODMyLDY3MTQ4MjQxOSwtNzg2OTk5MDUsMTE3NDY5MzM2NiwtOT
 A4NzMxNzg3LDQ0NDcyNzIwMiwtMTcyMzI3Njc4Myw2NTUxNzE1
