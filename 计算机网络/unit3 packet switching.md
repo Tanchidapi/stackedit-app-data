@@ -139,13 +139,13 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ![输入图片说明](/imgs/2025-08-25/Ha2lTDWg2IrlXPNQ.png)匹配的查找的常见方法，通过二叉树实现
 
-![输入图片说明](/imgs/2025-08-25/o82212xxqHdwQecj.png)另一种存储查找方法，三态内容可寻址存储器（TCAM），是并行查找匹配的，消耗较大但是速度快
+![输入图片说明](/imgs/2025-08-25/o82212xxqHdwQecj.png)另一种存储查找方法，三态内容可寻址存储器（TCAM），是并行查找匹配的，消耗较大但是速度快，通常在路由器中使用
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzY4NDk0MSw0MjgyNDIwMTksLTIxNj
-kxNjIzNSwtMTY1MDc3NDUwNywtODE1NDIzMDE0LC0xMzI2MTMx
-NDI4LDEyMjIzODg2OTcsLTYyOTY3NTMwMywxMjk0NDQ1ODMyLD
-Y3MTQ4MjQxOSwtNzg2OTk5MDUsMTE3NDY5MzM2NiwtOTA4NzMx
-Nzg3LDQ0NDcyNzIwMiwtMTcyMzI3Njc4Myw2NTUxNzE1MTUsLT
-EzMDE2MjYzNDUsLTIwODc1OTIyODYsLTIxMTg3NDUyNDIsLTE0
-OTMwNTc1NDddfQ==
+eyJoaXN0b3J5IjpbMTE0NzYwMTY5NSwxOTEzNjg0OTQxLDQyOD
+I0MjAxOSwtMjE2OTE2MjM1LC0xNjUwNzc0NTA3LC04MTU0MjMw
+MTQsLTEzMjYxMzE0MjgsMTIyMjM4ODY5NywtNjI5Njc1MzAzLD
+EyOTQ0NDU4MzIsNjcxNDgyNDE5LC03ODY5OTkwNSwxMTc0Njkz
+MzY2LC05MDg3MzE3ODcsNDQ0NzI3MjAyLC0xNzIzMjc2NzgzLD
+Y1NTE3MTUxNSwtMTMwMTYyNjM0NSwtMjA4NzU5MjI4NiwtMjEx
+ODc0NTI0Ml19
 -->
