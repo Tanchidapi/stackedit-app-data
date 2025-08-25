@@ -117,11 +117,12 @@ AB两个流量相加预期会得到统计复用增益
 3. 但是泊松过程很适用于描述新数据流的到达
 
 M/M/1 queue是使用泊松过程的一个常见例子，第一个M指的是马尔可夫到达过程，本例中是泊松过程，第二个M指的是马尔可夫服务过程，本例中是呈指数分布的，这意味着为一个数据包服务，且每个数据包的服务时间与其他的独立，1意味着只有一条输出线为该队列服务
-M/M/1 queue假设缓冲区无限大，请求来源无限和工作sh
+M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只要有请求就会不停工作
 
 ![输入图片说明](/imgs/2025-08-25/78J7cuhWfVHj0UjS.png)M/M/1 queue的公式，d代表一个数据包通过该队列的平均延迟，右图几乎适用于任意排队系统，我们用mm1 queue来代替更复杂系统的原因仅仅是其数学模型更简单，表达式也更简单
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTI5MzI0MiwxMjk0NDQ1ODMyLDY3MT
+eyJoaXN0b3J5IjpbLTM5NTg2MjgyNiwxMjk0NDQ1ODMyLDY3MT
 Q4MjQxOSwtNzg2OTk5MDUsMTE3NDY5MzM2NiwtOTA4NzMxNzg3
 LDQ0NDcyNzIwMiwtMTcyMzI3Njc4Myw2NTUxNzE1MTUsLTEzMD
 E2MjYzNDUsLTIwODc1OTIyODYsLTIxMTg3NDUyNDIsLTE0OTMw
