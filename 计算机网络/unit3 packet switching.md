@@ -125,9 +125,11 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 ### what a packet switch look like
 ![输入图片说明](/imgs/2025-08-25/NZyYs68QFQAnn7pb.png)多路输入输出数据包交换机示意图，当一个数据包到达时，路由器会根据其报头信息来查找下一跳转发地址，然后通过数据总线（中间黑线）转发到背板，到对应的输出链路去，当链路需求冲突时（如图中的两个红色数据包），将把一个数据包一直发送到它的输出，另一个数据包留在缓冲区
 
-![输入图片说明](/imgs/2025-08-25/w7dFm0kS4NQGaomV.png)更具体的，一种常见类型的数据包交换机是以太网交换机，上图b
+![输入图片说明](/imgs/2025-08-25/w7dFm0kS4NQGaomV.png)更具体的，一种常见类型的数据包交换机是以太网交换机，上图说明了以太网交换机的四种基本操作
+
+![输入图片说明](/imgs/2025-08-25/pwjTh33eFxWYUqOr.png)上图说明了互联网路由器
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMTEzMDY1MiwtMTMyNjEzMTQyOCwxMj
+eyJoaXN0b3J5IjpbLTgxNTQyMzAxNCwtMTMyNjEzMTQyOCwxMj
 IyMzg4Njk3LC02Mjk2NzUzMDMsMTI5NDQ0NTgzMiw2NzE0ODI0
 MTksLTc4Njk5OTA1LDExNzQ2OTMzNjYsLTkwODczMTc4Nyw0ND
 Q3MjcyMDIsLTE3MjMyNzY3ODMsNjU1MTcxNTE1LC0xMzAxNjI2
