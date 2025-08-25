@@ -135,9 +135,11 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ![输入图片说明](/imgs/2025-08-25/73JDDhI4kNUyweWv.png)ip地址的查找表，匹配时通过匹配最长前缀实现，ip转发表匹配完后，会解析对应ip地址的以太网地址，将数据包封装到对应的以太网帧中
 
-![输入图片说明](/imgs/2025-08-25/mbTncjuC01WgjzT1.png)最长
+![输入图片说明](/imgs/2025-08-25/mbTncjuC01WgjzT1.png)最长前缀匹配
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzY3ODA2MywtMjE2OTE2MjM1LC0xNj
+eyJoaXN0b3J5IjpbLTM2MTExOTkwMCwtMjE2OTE2MjM1LC0xNj
 UwNzc0NTA3LC04MTU0MjMwMTQsLTEzMjYxMzE0MjgsMTIyMjM4
 ODY5NywtNjI5Njc1MzAzLDEyOTQ0NDU4MzIsNjcxNDgyNDE5LC
 03ODY5OTkwNSwxMTc0NjkzMzY2LC05MDg3MzE3ODcsNDQ0NzI3
