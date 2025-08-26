@@ -82,6 +82,8 @@ AB两个流量相加预期会得到统计复用增益
 ![输入图片说明](/imgs/2025-08-21/JMEUxaGVM7GLThIb.png)统计复用增益的计算
 两种不同的情况，一种是未使用缓冲区，一种使用了缓冲区，使用了缓冲区的情况下值会更大，总之，统计复用可以让我们在一个链路上高效的承载多个流，这也是我们使用分组交换的主要原因之一
 
+![输入图片说明](/imgs/2025-08-26/UgUSM5Fm7YhpEtvm.png)为什么要使用统计多路复用，以及其为什么能带来增益，和飞机超出座位数售票同理
+
 ### workd example
 ![输入图片说明](/imgs/2025-08-21/6Y7P9I9cDxueVUrX.png)questionA
 
@@ -148,13 +150,13 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ![输入图片说明](/imgs/2025-08-26/plq7jgEYJYo972N6.png)输入队列交换机，将缓冲区放到了输入端口处，使得每个缓冲区的速率要求从（N+1）*R变为了目标的2R，本质原因是避免了多个输入同输出链路的数据包在输出队列的缓冲区拥塞，但是在输入队列交换机中存在首部阻塞问题
 
-![输入图片说明](/imgs/2025-08-26/Ou6KPSP75eW827hK.png)首部阻塞示意图
+![输入图片说明](/imgs/2025-08-26/Ou6KPSP75eW827hK.png)首部阻塞示意图，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAwNDk4MDAzLC00NDU5MzcyODMsMTU3Mz
-EzMDEyMSwxMTQ3NjAxNjk1LDE5MTM2ODQ5NDEsNDI4MjQyMDE5
-LC0yMTY5MTYyMzUsLTE2NTA3NzQ1MDcsLTgxNTQyMzAxNCwtMT
-MyNjEzMTQyOCwxMjIyMzg4Njk3LC02Mjk2NzUzMDMsMTI5NDQ0
-NTgzMiw2NzE0ODI0MTksLTc4Njk5OTA1LDExNzQ2OTMzNjYsLT
-kwODczMTc4Nyw0NDQ3MjcyMDIsLTE3MjMyNzY3ODMsNjU1MTcx
-NTE1XX0=
+eyJoaXN0b3J5IjpbLTk1MTIzNDQwNCw1MDA0OTgwMDMsLTQ0NT
+kzNzI4MywxNTczMTMwMTIxLDExNDc2MDE2OTUsMTkxMzY4NDk0
+MSw0MjgyNDIwMTksLTIxNjkxNjIzNSwtMTY1MDc3NDUwNywtOD
+E1NDIzMDE0LC0xMzI2MTMxNDI4LDEyMjIzODg2OTcsLTYyOTY3
+NTMwMywxMjk0NDQ1ODMyLDY3MTQ4MjQxOSwtNzg2OTk5MDUsMT
+E3NDY5MzM2NiwtOTA4NzMxNzg3LDQ0NDcyNzIwMiwtMTcyMzI3
+Njc4M119
 -->
