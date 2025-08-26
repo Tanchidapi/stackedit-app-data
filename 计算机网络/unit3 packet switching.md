@@ -153,12 +153,15 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 ![输入图片说明](/imgs/2025-08-26/Ou6KPSP75eW827hK.png)首部阻塞示意图，图中黑色与绿色的链路是空闲的，但是因为被红色的数据包在前面阻塞了，导致了资源的浪费与等待带来的延迟，解决的方案是虚拟输出队列
 
 ![输入图片说明](/imgs/2025-08-26/WcQQ4ZnTgl8dVqjp.png)虚拟输出队列示意图，为了解决首部阻塞，本质上就是在每一个输入端口为每一个输出端口都维护一个独立的队列，在把队列传输速率（内存运行速率）降低到2R的前提下，最大的提高了吞吐量
+
+输出队列交换机的性质：
+1. 当系统中有数据包等待发送到某个输出链路时，该链路永远不会空闲
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDUyMDU4OCwxNDY0NzE0NTExLC0xMz
-YyNjkwNjgzLC05NTEyMzQ0MDQsNTAwNDk4MDAzLC00NDU5Mzcy
-ODMsMTU3MzEzMDEyMSwxMTQ3NjAxNjk1LDE5MTM2ODQ5NDEsND
-I4MjQyMDE5LC0yMTY5MTYyMzUsLTE2NTA3NzQ1MDcsLTgxNTQy
-MzAxNCwtMTMyNjEzMTQyOCwxMjIyMzg4Njk3LC02Mjk2NzUzMD
-MsMTI5NDQ0NTgzMiw2NzE0ODI0MTksLTc4Njk5OTA1LDExNzQ2
-OTMzNjZdfQ==
+eyJoaXN0b3J5IjpbLTEzMDg2MTY0MTQsMTYwNDUyMDU4OCwxND
+Y0NzE0NTExLC0xMzYyNjkwNjgzLC05NTEyMzQ0MDQsNTAwNDk4
+MDAzLC00NDU5MzcyODMsMTU3MzEzMDEyMSwxMTQ3NjAxNjk1LD
+E5MTM2ODQ5NDEsNDI4MjQyMDE5LC0yMTY5MTYyMzUsLTE2NTA3
+NzQ1MDcsLTgxNTQyMzAxNCwtMTMyNjEzMTQyOCwxMjIyMzg4Nj
+k3LC02Mjk2NzUzMDMsMTI5NDQ0NTgzMiw2NzE0ODI0MTksLTc4
+Njk5OTA1XX0=
 -->
