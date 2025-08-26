@@ -152,9 +152,9 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ![输入图片说明](/imgs/2025-08-26/Ou6KPSP75eW827hK.png)首部阻塞示意图，图中黑色与绿色的链路是空闲的，但是因为被红色的数据包在前面阻塞了，导致了资源的浪费与等待带来的延迟，解决的方案是虚拟输出队列
 
-![输入图片说明](/imgs/2025-08-26/WcQQ4ZnTgl8dVqjp.png)虚拟输出队列示意图，为了解决首部阻塞，本质上就是在每一个输入端口为每一个输出端口维护一个独立的队列
+![输入图片说明](/imgs/2025-08-26/WcQQ4ZnTgl8dVqjp.png)虚拟输出队列示意图，为了解决首部阻塞，本质上就是在每一个输入端口为每一个输出端口都维护一个独立的队列，在把队列传输速率（内存运行速率）降低到2R的前提下，最大的提高了吞吐量
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTI3MTM5OSwxNDY0NzE0NTExLC0xMz
+eyJoaXN0b3J5IjpbMTYwNDUyMDU4OCwxNDY0NzE0NTExLC0xMz
 YyNjkwNjgzLC05NTEyMzQ0MDQsNTAwNDk4MDAzLC00NDU5Mzcy
 ODMsMTU3MzEzMDEyMSwxMTQ3NjAxNjk1LDE5MTM2ODQ5NDEsND
 I4MjQyMDE5LC0yMTY5MTYyMzUsLTE2NTA3NzQ1MDcsLTgxNTQy
