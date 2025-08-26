@@ -144,15 +144,15 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 ![输入图片说明](/imgs/2025-08-26/sSt9tDe2B96n2P3D.png)交换机查找地址的范式
 
 ### 交换机的队列
-通常可以分为输出队列交换机（即前面所展示的图片），输入队列交换机和······
+通常可以分为输出队列交换机（即前面所展示的图片），输入队列交换机和虚拟输出队列
 
 ![输入图片说明](/imgs/2025-08-26/plq7jgEYJYo972N6.png)输入队列交换机，将缓冲区放到了输入端口处，使得每个缓冲区的速率要求从（N+1）*R变为了目标的2R，本质原因是避免了多个输入同输出链路的数据包在输出队列的缓冲区拥塞，但是在输入队列交换机中存在首部阻塞问题
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTkzNzI4MywxNTczMTMwMTIxLDExND
-c2MDE2OTUsMTkxMzY4NDk0MSw0MjgyNDIwMTksLTIxNjkxNjIz
-NSwtMTY1MDc3NDUwNywtODE1NDIzMDE0LC0xMzI2MTMxNDI4LD
-EyMjIzODg2OTcsLTYyOTY3NTMwMywxMjk0NDQ1ODMyLDY3MTQ4
-MjQxOSwtNzg2OTk5MDUsMTE3NDY5MzM2NiwtOTA4NzMxNzg3LD
-Q0NDcyNzIwMiwtMTcyMzI3Njc4Myw2NTUxNzE1MTUsLTEzMDE2
-MjYzNDVdfQ==
+eyJoaXN0b3J5IjpbODU5NDE0OTA1LC00NDU5MzcyODMsMTU3Mz
+EzMDEyMSwxMTQ3NjAxNjk1LDE5MTM2ODQ5NDEsNDI4MjQyMDE5
+LC0yMTY5MTYyMzUsLTE2NTA3NzQ1MDcsLTgxNTQyMzAxNCwtMT
+MyNjEzMTQyOCwxMjIyMzg4Njk3LC02Mjk2NzUzMDMsMTI5NDQ0
+NTgzMiw2NzE0ODI0MTksLTc4Njk5OTA1LDExNzQ2OTMzNjYsLT
+kwODczMTc4Nyw0NDQ3MjcyMDIsLTE3MjMyNzY3ODMsNjU1MTcx
+NTE1XX0=
 -->
