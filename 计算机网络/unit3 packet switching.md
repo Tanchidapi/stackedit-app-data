@@ -168,9 +168,9 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 
 ![输入图片说明](/imgs/2025-08-26/9xsSvvFqh7LswObi.png)严格优先级队列的示意图，在高优先级数据流量合理较小时适用，否则低优先级的流量会有阻塞死的风险
 
-![输入图片说明](/imgs/2025-08-26/wmsBhumJAsKsRbX1.png)权重优先级队列的
+![输入图片说明](/imgs/2025-08-26/wmsBhumJAsKsRbX1.png)权重优先级队列的示意图，可以将各个队列的速率看作是对应权重的占比乘上链路的实际输出速率，更像是速率的分配，例如只有两个队列时，一个权重2，一个1，则对应一个队列输出两次后另一个队列输出一次
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NzkzNTg5MywxMzQzNjk4OTEzLDE4Mz
+eyJoaXN0b3J5IjpbLTM2MzczMzIwOCwxMzQzNjk4OTEzLDE4Mz
 Q3ODAyNDMsMTEzOTUwNTI5OCwtMTAwNjQ2OTgxNCwxODQ3Mzk5
 MjYwLC0xNjg3MDI2NDY2LC0xMzA4NjE2NDE0LDE2MDQ1MjA1OD
 gsMTQ2NDcxNDUxMSwtMTM2MjY5MDY4MywtOTUxMjM0NDA0LDUw
