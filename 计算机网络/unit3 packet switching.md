@@ -148,18 +148,19 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 ### 交换机的队列
 通常可以分为输出队列交换机（即前面所展示的图片），输入队列交换机和虚拟输出队列
 
-![输入图片说明](/imgs/2025-08-26/plq7jgEYJYo972N6.png)输入队列交换机，将缓冲区放到了输入端口处，使得每个缓冲区的速率要求从（N+1）*R变为了目标的2R，本质原因是避免了多个输入同输出链路的数据包在输出队列的缓冲区拥塞，但是在输入队列交换机中存在首部阻塞问题
+![输入图片说明](/imgs/2025-08-26/plq7jgEYJYo972N6.png)输入队列交换机，将缓冲区放到了输入端口处，使得每个缓冲区的传输速率要求从（N+1）*R变为了目标的2R，本质原因是避免了多个输入同输出链路的数据包在输出队列的缓冲区拥塞，但是在输入队列交换机中存在首部阻塞问题
 
 ![输入图片说明](/imgs/2025-08-26/Ou6KPSP75eW827hK.png)首部阻塞示意图，图中黑色与绿色的链路是空闲的，但是因为被红色的数据包在前面阻塞了，导致了资源的浪费与等待带来的延迟，解决的方案是虚拟输出队列
 
 ![输入图片说明](/imgs/2025-08-26/WcQQ4ZnTgl8dVqjp.png)虚拟输出队列示意图，为了解决首部阻塞，本质上就是在每一个输入端口为每一个输出端口都维护一个独立的队列，在把队列传输速率（内存运行速率）降低到2R的前提下，最大的提高了吞吐量
 
+![输入图片说明](/imgs/2025-08-26/YJboJPRBrG56Xl77.png)OQ的负载函数-延迟图
 输出队列交换机的性质：
 1. 当系统中有数据包等待发送到某个输出链路时，该链路永远不会空闲，称为工作保留的
 2. 吞吐量最大化
 3. 预期延迟最小化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTAxODU1MywtMTMwODYxNjQxNCwxNj
+eyJoaXN0b3J5IjpbMTQ4MTkxODc5NywtMTMwODYxNjQxNCwxNj
 A0NTIwNTg4LDE0NjQ3MTQ1MTEsLTEzNjI2OTA2ODMsLTk1MTIz
 NDQwNCw1MDA0OTgwMDMsLTQ0NTkzNzI4MywxNTczMTMwMTIxLD
 ExNDc2MDE2OTUsMTkxMzY4NDk0MSw0MjgyNDIwMTksLTIxNjkx
