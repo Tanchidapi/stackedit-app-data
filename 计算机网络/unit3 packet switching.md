@@ -166,9 +166,11 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 ## strict properties and guaranteed flow rates
 fifo队列的情况下，较大的流更容易挤占队列，导致更小的流丢包，总而言之，fifo不能区分重要性，对于缓冲区大小为B，输出速率为R的队列而言，最后一个数据包的最大延迟为B/R
 
-![输入图片说明](/imgs/2025-08-26/9xsSvvFqh7LswObi.png)严格优先级队列的示意图，在高优先级数据流量合理较小时适用，否则滴油夏季
+![输入图片说明](/imgs/2025-08-26/9xsSvvFqh7LswObi.png)严格优先级队列的示意图，在高优先级数据流量合理较小时适用，否则低优先级的流量会有阻塞死的风险
+
+![输入图片说明](/imgs/2025-08-26/wmsBhumJAsKsRbX1.png)权重优先级队列的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MjUzMzIwMCwxMzQzNjk4OTEzLDE4Mz
+eyJoaXN0b3J5IjpbMTg2NzkzNTg5MywxMzQzNjk4OTEzLDE4Mz
 Q3ODAyNDMsMTEzOTUwNTI5OCwtMTAwNjQ2OTgxNCwxODQ3Mzk5
 MjYwLC0xNjg3MDI2NDY2LC0xMzA4NjE2NDE0LDE2MDQ1MjA1OD
 gsMTQ2NDcxNDUxMSwtMTM2MjY5MDY4MywtOTUxMjM0NDA0LDUw
