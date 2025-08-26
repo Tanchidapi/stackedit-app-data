@@ -164,9 +164,9 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 首部负载会导致几乎一半的性能损失，但可以通过虚拟输出队列来优化，使用voq时延迟略高，但是asm吞吐量100%
 
 ## strict properties and guaranteed flow rates
-fifo队列的情况下，较大的流更容易挤占队列，导致更小的流丢包，总而言之，fifo不能
+fifo队列的情况下，较大的流更容易挤占队列，导致更小的流丢包，总而言之，fifo不能区分重要性，对于缓冲区大小为B，输出速率为R的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTk0MzMwMzcsMTgzNDc4MDI0MywxMT
+eyJoaXN0b3J5IjpbLTE1OTAzNDEzMTMsMTgzNDc4MDI0MywxMT
 M5NTA1Mjk4LC0xMDA2NDY5ODE0LDE4NDczOTkyNjAsLTE2ODcw
 MjY0NjYsLTEzMDg2MTY0MTQsMTYwNDUyMDU4OCwxNDY0NzE0NT
 ExLC0xMzYyNjkwNjgzLC05NTEyMzQ0MDQsNTAwNDk4MDAzLC00
