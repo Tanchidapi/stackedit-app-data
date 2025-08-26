@@ -150,13 +150,13 @@ M/M/1 queue假设缓冲区无限大，请求来源无限和工作守恒，即只
 
 ![输入图片说明](/imgs/2025-08-26/plq7jgEYJYo972N6.png)输入队列交换机，将缓冲区放到了输入端口处，使得每个缓冲区的速率要求从（N+1）*R变为了目标的2R，本质原因是避免了多个输入同输出链路的数据包在输出队列的缓冲区拥塞，但是在输入队列交换机中存在首部阻塞问题
 
-![输入图片说明](/imgs/2025-08-26/Ou6KPSP75eW827hK.png)首部阻塞示意图，
+![输入图片说明](/imgs/2025-08-26/Ou6KPSP75eW827hK.png)首部阻塞示意图，图中黑色与绿色的链路是空闲的，但是因为被红色的数据包在前面阻塞了，导致了资源的浪费与等待带来的延迟
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTIzNDQwNCw1MDA0OTgwMDMsLTQ0NT
-kzNzI4MywxNTczMTMwMTIxLDExNDc2MDE2OTUsMTkxMzY4NDk0
-MSw0MjgyNDIwMTksLTIxNjkxNjIzNSwtMTY1MDc3NDUwNywtOD
-E1NDIzMDE0LC0xMzI2MTMxNDI4LDEyMjIzODg2OTcsLTYyOTY3
-NTMwMywxMjk0NDQ1ODMyLDY3MTQ4MjQxOSwtNzg2OTk5MDUsMT
-E3NDY5MzM2NiwtOTA4NzMxNzg3LDQ0NDcyNzIwMiwtMTcyMzI3
-Njc4M119
+eyJoaXN0b3J5IjpbLTEzNjI2OTA2ODMsLTk1MTIzNDQwNCw1MD
+A0OTgwMDMsLTQ0NTkzNzI4MywxNTczMTMwMTIxLDExNDc2MDE2
+OTUsMTkxMzY4NDk0MSw0MjgyNDIwMTksLTIxNjkxNjIzNSwtMT
+Y1MDc3NDUwNywtODE1NDIzMDE0LC0xMzI2MTMxNDI4LDEyMjIz
+ODg2OTcsLTYyOTY3NTMwMywxMjk0NDQ1ODMyLDY3MTQ4MjQxOS
+wtNzg2OTk5MDUsMTE3NDY5MzM2NiwtOTA4NzMxNzg3LDQ0NDcy
+NzIwMl19
 -->
