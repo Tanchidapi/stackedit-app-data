@@ -181,13 +181,13 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 
 ![输入图片说明](/imgs/2025-08-28/DZaL0v5eOpaNMVGu.png)对于一个队列，我们具体分析。根据前文学到的队列累积字节数与时间的函数图像，当垂直距离所代表的队列缓存字节数超过缓冲区大小B时，就会发生丢包
 
-![输入图片说明](/imgs/2025-08-28/KPz7ic1FzCUySezQ.png)为解决上述问题，我们现在关注到达函数，要使到达函数在一定时间内的差值，即累积的到达字节数要xiao'yu'd
+![输入图片说明](/imgs/2025-08-28/KPz7ic1FzCUySezQ.png)为解决上述问题，我们现在关注到达函数，要使到达函数在一定时间内的差值，即累积的到达字节数要小于等于缓冲区大小B+这段时间内离开的字节数R1T即可
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDA3MzY2MCwtMTY0NDE2NjA1OCw4MD
-MyODczNjAsLTE5MjYwOTg4ODUsMTM5MDQ1NTcwNiwyMDIwNTUy
-OTIxLDEzNDM2OTg5MTMsMTgzNDc4MDI0MywxMTM5NTA1Mjk4LC
-0xMDA2NDY5ODE0LDE4NDczOTkyNjAsLTE2ODcwMjY0NjYsLTEz
-MDg2MTY0MTQsMTYwNDUyMDU4OCwxNDY0NzE0NTExLC0xMzYyNj
-kwNjgzLC05NTEyMzQ0MDQsNTAwNDk4MDAzLC00NDU5MzcyODMs
-MTU3MzEzMDEyMV19
+eyJoaXN0b3J5IjpbNDc5MTg1MTczLC0xNjQ0MTY2MDU4LDgwMz
+I4NzM2MCwtMTkyNjA5ODg4NSwxMzkwNDU1NzA2LDIwMjA1NTI5
+MjEsMTM0MzY5ODkxMywxODM0NzgwMjQzLDExMzk1MDUyOTgsLT
+EwMDY0Njk4MTQsMTg0NzM5OTI2MCwtMTY4NzAyNjQ2NiwtMTMw
+ODYxNjQxNCwxNjA0NTIwNTg4LDE0NjQ3MTQ1MTEsLTEzNjI2OT
+A2ODMsLTk1MTIzNDQwNCw1MDA0OTgwMDMsLTQ0NTkzNzI4Mywx
+NTczMTMwMTIxXX0=
 -->
