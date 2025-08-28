@@ -170,9 +170,9 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 
 ![输入图片说明](/imgs/2025-08-26/wmsBhumJAsKsRbX1.png)权重优先级队列的示意图，可以将各个队列的速率看作是对应权重的占比乘上链路的实际输出速率，更像是速率的分配，例如只有两个队列时，一个权重2，一个1，则对应一个队列输出两次后另一个队列输出一次。当所有数据包长度相同时，我们依次访问队列一次，称为一轮，然后将分别发送wi个单位，故他们可以是每个队列一轮中的位或完整数据包
 
-实际队列中，我们可以递归地计算出每一个数据包的服务结束时间，通过计算其开始服务时间得到，每次调度器会选择完成时间最早的包，和贪心典型例题中的规定时间内完成最多的ren
+实际队列中，我们可以递归地计算出每一个数据包的服务结束时间，通过计算其开始服务时间得到，每次调度器会选择完成时间最早的包，和贪心典型例题中的规定时间内完成最多的任务数相似
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MjE4MjM0NywtMTkyNjA5ODg4NSwxMz
+eyJoaXN0b3J5IjpbMTc1MDE1MzE1NCwtMTkyNjA5ODg4NSwxMz
 kwNDU1NzA2LDIwMjA1NTI5MjEsMTM0MzY5ODkxMywxODM0Nzgw
 MjQzLDExMzk1MDUyOTgsLTEwMDY0Njk4MTQsMTg0NzM5OTI2MC
 wtMTY4NzAyNjQ2NiwtMTMwODYxNjQxNCwxNjA0NTIwNTg4LDE0
