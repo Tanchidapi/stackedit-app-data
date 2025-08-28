@@ -175,9 +175,9 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 ![输入图片说明](/imgs/2025-08-28/SY7IggCmKo7sTwYj.png)summary
 
 ## guaranteed delay
-
+端到端的延迟在前文提到过，它是可变的，但是如果我们能够得知每个交换机的排队延迟，就可以
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMzQ0NTkzOSwtMTY0NDE2NjA1OCw4MD
+eyJoaXN0b3J5IjpbMjA5NjcxMjMxNCwtMTY0NDE2NjA1OCw4MD
 MyODczNjAsLTE5MjYwOTg4ODUsMTM5MDQ1NTcwNiwyMDIwNTUy
 OTIxLDEzNDM2OTg5MTMsMTgzNDc4MDI0MywxMTM5NTA1Mjk4LC
 0xMDA2NDY5ODE0LDE4NDczOTkyNjAsLTE2ODcwMjY0NjYsLTEz
