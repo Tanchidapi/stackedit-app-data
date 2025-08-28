@@ -175,9 +175,9 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 ![输入图片说明](/imgs/2025-08-28/SY7IggCmKo7sTwYj.png)summary
 
 ## guaranteed delay
-端到端的延迟在前文提到过，它是可变的，但是如果我们能够得知每个交换机的排队延迟上限，就可以得出得到端到端延迟的上限，数据包被分配到某一权重队列对应权重wi，其缓冲区大小为B，则Ri可以通过上文权重队列中的公式算出，最大延迟上限可通过缓冲区大小和队列速率算出
+端到端的延迟在前文提到过，它是可变的，但是如果我们能够得知每个交换机的排队延迟上限，就可以得出得到端到端延迟的上限，数据包被分配到某一权重队列对应权重wi，其缓冲区大小为B，则Ri可以通过上文权重队列中的公式算出，最大延迟上限可通过缓冲区大小和队列速率算出。但是需要考虑一点，如果缓冲区溢出导致丢包，则上述kao'l
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzA0NzI2NSwtMTY0NDE2NjA1OCw4MD
+eyJoaXN0b3J5IjpbMjAxOTg5MDg5NywtMTY0NDE2NjA1OCw4MD
 MyODczNjAsLTE5MjYwOTg4ODUsMTM5MDQ1NTcwNiwyMDIwNTUy
 OTIxLDEzNDM2OTg5MTMsMTgzNDc4MDI0MywxMTM5NTA1Mjk4LC
 0xMDA2NDY5ODE0LDE4NDczOTkyNjAsLTE2ODcwMjY0NjYsLTEz
