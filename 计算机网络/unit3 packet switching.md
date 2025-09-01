@@ -194,9 +194,11 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 
 各种相关值如源与路由器的速率、缓冲区大小、σ和ρ的值等通过IETF发布的RFC 2205文档定义的RSVP协议进行填充，便于整个链路运行起来
 
-![输入图片说明](/imgs/2025-09-01/K5XQZuFMRwMD3Ffs.png)![输入图片说明](/imgs/2025-09-01/qArUcloyb6eev5TR.png)
+![输入图片说明](/imgs/2025-09-01/K5XQZuFMRwMD3Ffs.png)![输入图片说明](/imgs/2025-09-01/qArUcloyb6eev5TR.png)例题
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Njg0NDEzNCw4Mzg5MTMyMzgsLTczNT
+eyJoaXN0b3J5IjpbLTQ2NjA2NjU3MSw4Mzg5MTMyMzgsLTczNT
 c4MjY4MSwyMDc2ODA2NTc0LDE3MDkzODI4OTcsMTgwMTEzMzgx
 NCw0NzkxODUxNzMsLTE2NDQxNjYwNTgsODAzMjg3MzYwLC0xOT
 I2MDk4ODg1LDEzOTA0NTU3MDYsMjAyMDU1MjkyMSwxMzQzNjk4
