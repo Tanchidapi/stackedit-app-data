@@ -192,9 +192,9 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 
 ![输入图片说明](/imgs/2025-09-01/mBM1TibJD94bCO8W.png)漏桶和令牌桶的区别
 
-各种相关值如源与路由器的速率、缓冲区大小、σ和ρ的值等通过RSVP、IETF和RFC 2205等协议进行填充，便于整个链路运行起来
+各种相关值如源与路由器的速率、缓冲区大小、σ和ρ的值等通过i协议进行填充，便于整个链路运行起来
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTUxMzkwNTcsLTczNTc4MjY4MSwyMD
+eyJoaXN0b3J5IjpbLTE3MTE5MzI5MzEsLTczNTc4MjY4MSwyMD
 c2ODA2NTc0LDE3MDkzODI4OTcsMTgwMTEzMzgxNCw0NzkxODUx
 NzMsLTE2NDQxNjYwNTgsODAzMjg3MzYwLC0xOTI2MDk4ODg1LD
 EzOTA0NTU3MDYsMjAyMDU1MjkyMSwxMzQzNjk4OTEzLDE4MzQ3
