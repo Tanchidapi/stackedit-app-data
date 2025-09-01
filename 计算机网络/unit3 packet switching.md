@@ -192,9 +192,9 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 
 ![输入图片说明](/imgs/2025-09-01/mBM1TibJD94bCO8W.png)漏桶和令牌桶的区别
 
-各种相关值如yuan
+各种相关值如源与路由器的速率、缓冲区大小、σ和ρ的值等通过RSVP、ietf
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU2OTQ5NzQ4LC03MzU3ODI2ODEsMjA3Nj
+eyJoaXN0b3J5IjpbODg3OTUyMTcwLC03MzU3ODI2ODEsMjA3Nj
 gwNjU3NCwxNzA5MzgyODk3LDE4MDExMzM4MTQsNDc5MTg1MTcz
 LC0xNjQ0MTY2MDU4LDgwMzI4NzM2MCwtMTkyNjA5ODg4NSwxMz
 kwNDU1NzA2LDIwMjA1NTI5MjEsMTM0MzY5ODkxMywxODM0Nzgw
