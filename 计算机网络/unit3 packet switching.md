@@ -187,16 +187,18 @@ fifo队列的情况下，较大的流更容易挤占队列，导致更小的流�
 
 ![输入图片说明](/imgs/2025-09-01/vIkhlBMVlK5cTMFJ.png)在不丢包的情况下，如何通过控制可控量来控制延迟，因此只要控制好到达函数A即可，通过漏桶调节实现
 
-![输入图片说明](/imgs/2025-09-01/3wSrienaddkcuTEW.png)令牌桶调节示意图。简单来说，令牌桶调节就是通过一个令牌桶来模拟到达函数A的上限，图中上方的表示令牌桶，大小为σ补充速率为ρ，下方是缓冲区和数据包的转发示意图，当桶中有足够的对应即将发送的数据包的令牌时该数据包才会发出，因此在令牌桶调节下的最大猝发发送大小为σ，平均最大速率为ρ，满足σρ调节。
-而漏桶的本质的核心就是将不规则、猝发的流量转化成平滑的、恒定速率的输出流。上述为令牌桶，区别如下。
+![输入图片说明](/imgs/2025-09-01/3wSrienaddkcuTEW.png)令牌桶调节示意图。简单来说，令牌桶调节就是通过一个令牌桶来模拟到达函数A的上限，图中上方的表示令牌桶，大小为σ补充速率为ρ，下方是缓冲区和数据包的转发示意图，当桶中有足够的对应即将发送的数据包的令牌时该数据包才会发出，因此在令牌桶调节下的最大猝发发送大小为σ，平均最大速率为ρ，满足σρ调节，实现可控的输入流。
+而漏桶的本质的核心就是将不规则、猝发的流量转化成平滑的、恒定速率的输出流。区别如下。
 
 ![输入图片说明](/imgs/2025-09-01/mBM1TibJD94bCO8W.png)漏桶和令牌桶的区别
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNjk0OTM4LDIwNzY4MDY1NzQsMTcwOT
-M4Mjg5NywxODAxMTMzODE0LDQ3OTE4NTE3MywtMTY0NDE2NjA1
-OCw4MDMyODczNjAsLTE5MjYwOTg4ODUsMTM5MDQ1NTcwNiwyMD
-IwNTUyOTIxLDEzNDM2OTg5MTMsMTgzNDc4MDI0MywxMTM5NTA1
-Mjk4LC0xMDA2NDY5ODE0LDE4NDczOTkyNjAsLTE2ODcwMjY0Nj
-YsLTEzMDg2MTY0MTQsMTYwNDUyMDU4OCwxNDY0NzE0NTExLC0x
-MzYyNjkwNjgzXX0=
+eyJoaXN0b3J5IjpbLTczNTc4MjY4MSwyMDc2ODA2NTc0LDE3MD
+kzODI4OTcsMTgwMTEzMzgxNCw0NzkxODUxNzMsLTE2NDQxNjYw
+NTgsODAzMjg3MzYwLC0xOTI2MDk4ODg1LDEzOTA0NTU3MDYsMj
+AyMDU1MjkyMSwxMzQzNjk4OTEzLDE4MzQ3ODAyNDMsMTEzOTUw
+NTI5OCwtMTAwNjQ2OTgxNCwxODQ3Mzk5MjYwLC0xNjg3MDI2ND
+Y2LC0xMzA4NjE2NDE0LDE2MDQ1MjA1ODgsMTQ2NDcxNDUxMSwt
+MTM2MjY5MDY4M119
 -->
