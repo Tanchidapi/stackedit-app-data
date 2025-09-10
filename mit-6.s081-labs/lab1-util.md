@@ -4,6 +4,7 @@
 qemu的搭建根据mit官网的实验指导书运行到make这一步会出问题，解决方案见
 https://www.bilibili.com/video/BV11K4y127Qk?t=5.0， 评论区有精简版
 所有实验过程中的调试（用qemu-gdb）、本地评测等问题见https://www.bilibili.com/video/BV1Nkxre2Ewe?t=576.0
+
 ## p1 sleep -ez
 要求：完成一个c程序sleep，实现暂停（sleep）用户从终端键入的时长
 实现：在程序中调用系统函数sleep即可，该系统函数接收一个整型参数，暂停所给的时长。编写时先判断参数数量然后直接进行调用即可，使用atoi函数将参数字符串转为对应整数
@@ -308,9 +309,9 @@ main(int argc, char *argv[]){
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5OTIzODYzLDE2MDcyNDU3NTQsLTE4MT
-cwMzcwMDQsLTIwNzY4NTg0ODMsLTQxMTM4NjEyNSw1MTM4MDM1
-MjUsODA0NzU2OTYwLDUzMTk5MjE4OCwxMTQyNzkxODksMTMxMj
-ExMTUyMCwtMzA4MjM2Mzk3LDE5MjM5ODUzNTEsLTYwNTIzOTg4
-Ml19
+eyJoaXN0b3J5IjpbMTczMDE1Njc3Nyw2NTk5MjM4NjMsMTYwNz
+I0NTc1NCwtMTgxNzAzNzAwNCwtMjA3Njg1ODQ4MywtNDExMzg2
+MTI1LDUxMzgwMzUyNSw4MDQ3NTY5NjAsNTMxOTkyMTg4LDExND
+I3OTE4OSwxMzEyMTExNTIwLC0zMDgyMzYzOTcsMTkyMzk4NTM1
+MSwtNjA1MjM5ODgyXX0=
 -->
