@@ -22,9 +22,9 @@
 4. 实现分布式控制
 
 ## 拥塞控制基本方法
-
+需要注意的一点是之前提到过的（加权）公平队列确实可以控制每个lian'lu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0NDQyMTM4LDczODIzMTIwMiwtMTcyOT
-I2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQzMTcz
-NDY1OSwxMzM3ODE4ODg4XX0=
+eyJoaXN0b3J5IjpbMzg2MzMyNjM0LDUwNDQ0MjEzOCw3MzgyMz
+EyMDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3
+MTcsLTE0MzE3MzQ2NTksMTMzNzgxODg4OF19
 -->
