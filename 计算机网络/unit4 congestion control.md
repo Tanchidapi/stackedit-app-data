@@ -53,11 +53,11 @@
 
 ![输入图片说明](/imgs/2025-09-18/2CmyEISRX8kOFyGa.png)单流下的速率计算，可以简单的定义为一个窗口所发送出的字节数除以往返时间，因此其实最终结果是一个常数，窗口本质上做的就是探索袋子有多大，我们可以将多少字节放入网络而不溢出
 
-![输入图片说明](/imgs/2025-09-18/TZgmALuVWJGJFbct.png)gun
+![输入图片说明](/imgs/2025-09-18/TZgmALuVWJGJFbct.png)关于缓冲区的大小，最理想的情况是其大小等于往返时间乘上链路输出的速率，如果小于该大小，则会导致在发生减半
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjUzNzEwMSwxNzc5NjgxNTkyLDEyNT
-M1OTc5NzQsLTczMDgyMzYzNiwtMzM2MDA0NDgyLC03NzIxMTU5
-MjksLTEwODIxMjE1MjYsNTA0NDQyMTM4LDczODIzMTIwMiwtMT
-cyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQz
-MTczNDY1OSwxMzM3ODE4ODg4XX0=
+eyJoaXN0b3J5IjpbLTIwNTY0NzQ4ODIsMTc3OTY4MTU5MiwxMj
+UzNTk3OTc0LC03MzA4MjM2MzYsLTMzNjAwNDQ4MiwtNzcyMTE1
+OTI5LC0xMDgyMTIxNTI2LDUwNDQ0MjEzOCw3MzgyMzEyMDIsLT
+E3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3MTcsLTE0
+MzE3MzQ2NTksMTMzNzgxODg4OF19
 -->
