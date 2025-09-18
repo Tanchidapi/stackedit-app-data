@@ -44,11 +44,13 @@
 
 ## 单数据流中的AIMD控制
 ![输入图片说明](/imgs/2025-09-18/kCrWW4HVDh242WGQ.png)示意图
-在缓冲区放不下输入链路来的数据包后，会出现丢包，并将该标记附加在缓冲区队列中的最后一个包，等该包到达目的地后目的地会返回丢包信号，发送端收到该信号后就会按照AIMD减小一半的窗口大小，tong's
+在缓冲区放不下输入链路来的数据包后，会出现丢包，并将该标记附加在缓冲区队列中的最后一个包，等该包到达目的地后目的地会返回丢包信号，发送端收到该信号后就会按照AIMD减小一半的窗口大小，同时停止发送，停止发送与恢复的情况如下图
 
-![输入图片说明](/imgs/2025-09-18/pGflQrtdiZ6vovu5.png)示意图
+![输入图片说明](/imgs/2025-09-18/RzpOVbn3pXKLVoch.png)两种方法发送端来判断是否丢包，并做出不同的处理
+
+![输入图片说明](/imgs/2025-09-18/pGflQrtdiZ6vovu5.png)示意图三张图有四张曲线，分别表示了cwnd
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc5NTUwNzMzLDEyNTM1OTc5NzQsLTczMD
+eyJoaXN0b3J5IjpbMzk3ODkzMzg2LDEyNTM1OTc5NzQsLTczMD
 gyMzYzNiwtMzM2MDA0NDgyLC03NzIxMTU5MjksLTEwODIxMjE1
 MjYsNTA0NDQyMTM4LDczODIzMTIwMiwtMTcyOTI2MzU4NCwtMT
 c1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQzMTczNDY1OSwxMzM3
