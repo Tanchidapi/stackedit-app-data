@@ -114,6 +114,8 @@ crc通过将数据视为一个多项式，通过模2除法除以一个生成的�
 2. 对数据进行预处理，在后面补上多项式对应位数的0
 3. 进行模2除法运算，每一位异或不进位，得到余数长度为生成多项式的位数-1，余数即为crc值
 
+对错误小于r+1位的长度
+
 接收方验证时用同样的多项式对整个数据（含crc值）进行模2除法，若余数为0则无错误，反之有错误，crc的强度取决于多项式
 ### 消息认证码
 ![输入图片说明](/imgs/2025-07-16/v3i8DmbgSMXeg5Fo.png)mac特点
@@ -184,11 +186,11 @@ go back n协议在多个连续的数据报丢失时效率要高于selective repe
 一个ip数据包会包含一个udp的数据报或者tcp段，报与包的说法主要在于层级不同和所用协议不同
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4MzA2NjM4LDE1MzAxMzYxODksLTc3MT
-YyNzcyOCwxNDY4OTA1MDMwLDEyNTA2MzMyMDUsLTE2NDEzMDA1
-NjksLTE1NzA2NjE0NDksMzc4MzAwMDU1LDkwMzE2NjM2NCwxNT
-EzNTUwMTQxLDY4MjcxMTQ1OSwxNTQ5MzI5OTgsMTQzMjczMzgz
-MywtNjg0MTM0NTEwLDEwOTE4NDc5OTksLTY1NDk4NzIyOCwtNj
-A3NTQ1OTUyLC0xNTU0NzM3MDM2LC0xNzU5OTkzMzUsLTczNjI3
-MzQ3OF19
+eyJoaXN0b3J5IjpbMTA5OTI1NjUzOCw2MDgzMDY2MzgsMTUzMD
+EzNjE4OSwtNzcxNjI3NzI4LDE0Njg5MDUwMzAsMTI1MDYzMzIw
+NSwtMTY0MTMwMDU2OSwtMTU3MDY2MTQ0OSwzNzgzMDAwNTUsOT
+AzMTY2MzY0LDE1MTM1NTAxNDEsNjgyNzExNDU5LDE1NDkzMjk5
+OCwxNDMyNzMzODMzLC02ODQxMzQ1MTAsMTA5MTg0Nzk5OSwtNj
+U0OTg3MjI4LC02MDc1NDU5NTIsLTE1NTQ3MzcwMzYsLTE3NTk5
+OTMzNV19
 -->
