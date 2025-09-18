@@ -28,10 +28,10 @@
 ![输入图片说明](/imgs/2025-09-18/lXjFm32AtS0C8wXv.png)示意图
 
 ### 基于端主机的流量控制
-设想为通过观察网络的行为，由此来决定发送数据的速率。这一方法的优势在于
+设想为通过观察网络的行为，由此来决定发送数据的速率。这一方法的优势在于如果不依赖于路由器的行为，或者不依赖于路由器发送回特定的消息，则端主机可以在不更改网络的情况下随着时间的推移和bi'a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5NDQ4NDM5LC0xMDgyMTIxNTI2LDUwND
-Q0MjEzOCw3MzgyMzEyMDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2
-MjgsLTExMTU3MTI3MTcsLTE0MzE3MzQ2NTksMTMzNzgxODg4OF
-19
+eyJoaXN0b3J5IjpbLTE5MTAwNTYwOTQsLTEwODIxMjE1MjYsNT
+A0NDQyMTM4LDczODIzMTIwMiwtMTcyOTI2MzU4NCwtMTc1MjY4
+MzYyOCwtMTExNTcxMjcxNywtMTQzMTczNDY1OSwxMzM3ODE4OD
+g4XX0=
 -->
