@@ -110,11 +110,11 @@ crc对奇数位错误，连续的小于crc位数的错误，长错误有良好�
 
 crc通过将数据视为一个多项式，通过模2除法除以一个生成的预设多项式，得到的余数即为crc值校验码，生成多项式对应的实际使用值不存储最高次的系数作为位，即多项式的最高次幂永远为1，且最高次数为对应位数
 计算过程：
-1. 先生成一个多项式用于计算
-2. 对数据进行预处理，在后面补上多项式对应位数的0
+1. 先生成一个多项式用于计算，多项式长度为r+1（实际二进制代码少一位）
+2. 对数据进行预处理，在后面补上多项式对应位数r的0
 3. 进行模2除法运算，每一位异或不进位，得到余数长度为生成多项式的位数-1，余数即为crc值
 
-对错误小于r+1位的长度
+对错误小于r+1位的长度可以检错，生成的CRC长度为r
 
 接收方验证时用同样的多项式对整个数据（含crc值）进行模2除法，若余数为0则无错误，反之有错误，crc的强度取决于多项式
 ### 消息认证码
@@ -186,11 +186,11 @@ go back n协议在多个连续的数据报丢失时效率要高于selective repe
 一个ip数据包会包含一个udp的数据报或者tcp段，报与包的说法主要在于层级不同和所用协议不同
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5OTI1NjUzOCw2MDgzMDY2MzgsMTUzMD
-EzNjE4OSwtNzcxNjI3NzI4LDE0Njg5MDUwMzAsMTI1MDYzMzIw
-NSwtMTY0MTMwMDU2OSwtMTU3MDY2MTQ0OSwzNzgzMDAwNTUsOT
-AzMTY2MzY0LDE1MTM1NTAxNDEsNjgyNzExNDU5LDE1NDkzMjk5
-OCwxNDMyNzMzODMzLC02ODQxMzQ1MTAsMTA5MTg0Nzk5OSwtNj
-U0OTg3MjI4LC02MDc1NDU5NTIsLTE1NTQ3MzcwMzYsLTE3NTk5
-OTMzNV19
+eyJoaXN0b3J5IjpbLTEyMTY5MTg5NDcsNjA4MzA2NjM4LDE1Mz
+AxMzYxODksLTc3MTYyNzcyOCwxNDY4OTA1MDMwLDEyNTA2MzMy
+MDUsLTE2NDEzMDA1NjksLTE1NzA2NjE0NDksMzc4MzAwMDU1LD
+kwMzE2NjM2NCwxNTEzNTUwMTQxLDY4MjcxMTQ1OSwxNTQ5MzI5
+OTgsMTQzMjczMzgzMywtNjg0MTM0NTEwLDEwOTE4NDc5OTksLT
+Y1NDk4NzIyOCwtNjA3NTQ1OTUyLC0xNTU0NzM3MDM2LC0xNzU5
+OTkzMzVdfQ==
 -->
