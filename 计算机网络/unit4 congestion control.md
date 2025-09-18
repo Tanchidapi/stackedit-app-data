@@ -24,9 +24,12 @@
 ## 拥塞控制基本方法
 
 ### 基于网络的流量控制
-需要注意的一点是之前提到过的（加权）公平队列确实可以控制每个链路对应的发送速率，但是不能反馈到输入链路的源以控制他们该以什么速率来发送数据，因此实现拥塞控制时需要来自路由器的显示反馈用于指示网络中的拥塞。通常可以将网络中拥塞的情况通过da'cheng要到达某一端点的包
+需要注意的一点是之前提到过的（加权）公平队列确实可以控制每个链路对应的发送速率，但是不能反馈到输入链路的源以控制他们该以什么速率来发送数据，因此实现拥塞控制时需要来自路由器的显示反馈用于指示网络中的拥塞。通常可以将网络中拥塞的情况通过搭乘要到达某一端点的包来反馈到该端点，端主机可以自由的决定如何处理网络中存在拥塞的情况，如减小流量、实行最大最小公平性等
+![输入图片说明](/imgs/2025-09-18/lXjFm32AtS0C8wXv.png)示意图
+
+### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTI1MDc5MjMsNTA0NDQyMTM4LDczOD
-IzMTIwMiwtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcx
-MjcxNywtMTQzMTczNDY1OSwxMzM3ODE4ODg4XX0=
+eyJoaXN0b3J5IjpbNDM2MDg3MjQ0LDUwNDQ0MjEzOCw3MzgyMz
+EyMDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3
+MTcsLTE0MzE3MzQ2NTksMTMzNzgxODg4OF19
 -->
