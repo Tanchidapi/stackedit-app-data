@@ -51,11 +51,11 @@
 ![输入图片说明](/imgs/2025-09-18/pGflQrtdiZ6vovu5.png)示意图三张图有四张曲线，分别表示了cwnd的大小、往返时间（由于有包在缓冲区中而变大）、瓶颈链路利用率、缓冲区占用率
 由图可以看出在AIMD的作用下链路始终保持繁忙，提高了利用效率
 
-
+![输入图片说明](/imgs/2025-09-18/2CmyEISRX8kOFyGa.png)单流下的速率计算，可以简单的定义为一个窗口所发送出的字节数c
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ0NjE4MzM3LDEyNTM1OTc5NzQsLTczMD
-gyMzYzNiwtMzM2MDA0NDgyLC03NzIxMTU5MjksLTEwODIxMjE1
-MjYsNTA0NDQyMTM4LDczODIzMTIwMiwtMTcyOTI2MzU4NCwtMT
-c1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQzMTczNDY1OSwxMzM3
-ODE4ODg4XX0=
+eyJoaXN0b3J5IjpbMTc3Mjc0OTUzOSwxMjUzNTk3OTc0LC03Mz
+A4MjM2MzYsLTMzNjAwNDQ4MiwtNzcyMTE1OTI5LC0xMDgyMTIx
+NTI2LDUwNDQ0MjEzOCw3MzgyMzEyMDIsLTE3MjkyNjM1ODQsLT
+E3NTI2ODM2MjgsLTExMTU3MTI3MTcsLTE0MzE3MzQ2NTksMTMz
+NzgxODg4OF19
 -->
