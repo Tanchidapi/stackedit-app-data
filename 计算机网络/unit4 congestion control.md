@@ -56,9 +56,9 @@
 ![输入图片说明](/imgs/2025-09-18/TZgmALuVWJGJFbct.png)关于缓冲区的大小，最理想的情况是其大小等于往返时间乘上链路输出的速率，如果小于该大小，则会导致在发生减半后的一小段时间内链路的利用率降低
 
 ### 示例
-
+![输入图片说明](/imgs/2025-09-18/WrlvUS8S7f09mB2M.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDY3NDQxOSwxNzc5NjgxNTkyLDEyNT
+eyJoaXN0b3J5IjpbMTExMjk2OTY0MywxNzc5NjgxNTkyLDEyNT
 M1OTc5NzQsLTczMDgyMzYzNiwtMzM2MDA0NDgyLC03NzIxMTU5
 MjksLTEwODIxMjE1MjYsNTA0NDQyMTM4LDczODIzMTIwMiwtMT
 cyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQz
