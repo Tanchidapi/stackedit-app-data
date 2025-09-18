@@ -22,9 +22,9 @@
 4. 实现分布式控制
 
 ## 拥塞控制基本方法
-需要注意的一点是之前提到过的（加权）公平队列确实可以控制每个lian'lu
+需要注意的一点是之前提到过的（加权）公平队列确实可以控制每个链路对应的发送速率，但是不能反馈到输入链路的源以控制他们该以什么速率来发送数据，因此实现拥塞控制时需要来自路由器的显示反馈用于指示
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg2MzMyNjM0LDUwNDQ0MjEzOCw3MzgyMz
-EyMDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3
-MTcsLTE0MzE3MzQ2NTksMTMzNzgxODg4OF19
+eyJoaXN0b3J5IjpbLTE4Njc4ODU5OTIsNTA0NDQyMTM4LDczOD
+IzMTIwMiwtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcx
+MjcxNywtMTQzMTczNDY1OSwxMzM3ODE4ODg4XX0=
 -->
