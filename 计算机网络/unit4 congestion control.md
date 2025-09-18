@@ -38,10 +38,10 @@
 
 ![输入图片说明](/imgs/2025-09-18/3Wa5R2qx5uRBgnEj.png)TCP协议会在发送方考虑滑动窗口的大小，在网络通畅时，会用接收端反馈的窗口大小，而在网络拥塞时，则会在发送端计算cwnd的大小，将其作为窗口大小
 
-
+![输入图片说明](/imgs/2025-09-18/FlVfQjMPgAzpcyKv.png)计算
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNjAwNDQ4MiwtNzcyMTE1OTI5LC0xMD
-gyMTIxNTI2LDUwNDQ0MjEzOCw3MzgyMzEyMDIsLTE3MjkyNjM1
-ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3MTcsLTE0MzE3MzQ2NT
-ksMTMzNzgxODg4OF19
+eyJoaXN0b3J5IjpbLTE5ODczNzI2MzcsLTMzNjAwNDQ4MiwtNz
+cyMTE1OTI5LC0xMDgyMTIxNTI2LDUwNDQ0MjEzOCw3MzgyMzEy
+MDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3MT
+csLTE0MzE3MzQ2NTksMTMzNzgxODg4OF19
 -->
