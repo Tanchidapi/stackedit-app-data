@@ -48,11 +48,11 @@
 
 ![输入图片说明](/imgs/2025-09-18/RzpOVbn3pXKLVoch.png)两种方法发送端来判断是否丢包，并做出不同的处理
 
-![输入图片说明](/imgs/2025-09-18/pGflQrtdiZ6vovu5.png)示意图三张图有四张曲线，分别表示了cwnd的大小、往返时间（由于有包在缓冲区中而变大）、
+![输入图片说明](/imgs/2025-09-18/pGflQrtdiZ6vovu5.png)示意图三张图有四张曲线，分别表示了cwnd的大小、往返时间（由于有包在缓冲区中而变大）、瓶颈链路利用率、缓冲区占用率
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ3MDAzNzk5LDEyNTM1OTc5NzQsLTczMD
-gyMzYzNiwtMzM2MDA0NDgyLC03NzIxMTU5MjksLTEwODIxMjE1
-MjYsNTA0NDQyMTM4LDczODIzMTIwMiwtMTcyOTI2MzU4NCwtMT
-c1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQzMTczNDY1OSwxMzM3
-ODE4ODg4XX0=
+eyJoaXN0b3J5IjpbLTE1MTY5Mjk5NjEsMTI1MzU5Nzk3NCwtNz
+MwODIzNjM2LC0zMzYwMDQ0ODIsLTc3MjExNTkyOSwtMTA4MjEy
+MTUyNiw1MDQ0NDIxMzgsNzM4MjMxMjAyLC0xNzI5MjYzNTg0LC
+0xNzUyNjgzNjI4LC0xMTE1NzEyNzE3LC0xNDMxNzM0NjU5LDEz
+Mzc4MTg4ODhdfQ==
 -->
