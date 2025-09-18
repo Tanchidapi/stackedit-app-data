@@ -13,8 +13,8 @@
 
 ![输入图片说明](/imgs/2025-09-18/oyHfz87EVB0Hbnda.png)以单链路为例的一个分配例子
 
-先根据输入链路数量与输出lian'lu
+先根据输入链路数量与输出链路速率平均分配，然后从速率最小的输入链路开始，如果其速率小于分配速率，则只分配给其对应的速率，剩下的速率再平分给剩下的链路，然后再考虑次小，如果超过了分配的速率，则只分配给其平均速率，以此类推
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDg3NzQzODYsLTE3NTI2ODM2MjgsLT
+eyJoaXN0b3J5IjpbLTE3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLT
 ExMTU3MTI3MTcsLTE0MzE3MzQ2NTksMTMzNzgxODg4OF19
 -->
