@@ -17,9 +17,13 @@
 
 ### 阻塞控制的目标
 1. 实现高吞吐量
-2. 
+2. 实现公平性，通过最大最小原则实现
+3. 实现对网络情况的快速反应
+4. 实现分布式控制
+
+## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjEzMjQ4OTYsLTE3MjkyNjM1ODQsLT
-E3NTI2ODM2MjgsLTExMTU3MTI3MTcsLTE0MzE3MzQ2NTksMTMz
-NzgxODg4OF19
+eyJoaXN0b3J5IjpbNzM4MjMxMjAyLC0xNzI5MjYzNTg0LC0xNz
+UyNjgzNjI4LC0xMTE1NzEyNzE3LC0xNDMxNzM0NjU5LDEzMzc4
+MTg4ODhdfQ==
 -->
