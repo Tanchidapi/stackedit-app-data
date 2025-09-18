@@ -7,7 +7,10 @@
 
 方案一保证了吞吐量，但是方案二在第二条链路上保证了公平性，设计拥塞时要提前达成公平性
 
+![输入图片说明](/imgs/2025-09-18/7uSqvVPRANRCjw1L.png)常用的公平方法——最大最小原则
 
+简单来说就是将最大流最小化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE3MzQ2NTksMTMzNzgxODg4OF19
+eyJoaXN0b3J5IjpbLTExMTU3MTI3MTcsLTE0MzE3MzQ2NTksMT
+MzNzgxODg4OF19
 -->
