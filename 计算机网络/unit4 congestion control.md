@@ -22,8 +22,9 @@
 4. 实现分布式控制
 
 ## 拥塞控制基本方法
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE0MDUwNzk2LDczODIzMTIwMiwtMTcyOT
+eyJoaXN0b3J5IjpbNTA0NDQyMTM4LDczODIzMTIwMiwtMTcyOT
 I2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQzMTcz
 NDY1OSwxMzM3ODE4ODg4XX0=
 -->
