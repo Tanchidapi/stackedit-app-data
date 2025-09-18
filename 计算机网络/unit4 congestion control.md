@@ -56,11 +56,13 @@
 ![输入图片说明](/imgs/2025-09-18/TZgmALuVWJGJFbct.png)关于缓冲区的大小，最理想的情况是其大小等于往返时间乘上链路输出的速率，如果小于该大小，则会导致在发生减半后的一小段时间内链路的利用率降低
 
 ### 示例
-![输入图片说明](/imgs/2025-09-18/WrlvUS8S7f09mB2M.png)![输入图片说明](/imgs/2025-09-18/GMQHddXR58P1pA4S.png)![输入图片说明](/imgs/2025-09-18/E6hKEnx1cyOn3UoO.png)![输入图片说明](/imgs/2025-09-18/vW35pxbeFdIC3Rzz.png)![输入图片说明](/imgs/2025-09-18/8UzY5VPi5fg3Y9ub.png)![输入图片说明](/imgs/2025-09-18/mesBl1QlcW74Vg2I.png)最后一题的答案提示了我们在出现丢包后AIMD需要chang'shi
+![输入图片说明](/imgs/2025-09-18/WrlvUS8S7f09mB2M.png)![输入图片说明](/imgs/2025-09-18/GMQHddXR58P1pA4S.png)![输入图片说明](/imgs/2025-09-18/E6hKEnx1cyOn3UoO.png)![输入图片说明](/imgs/2025-09-18/vW35pxbeFdIC3Rzz.png)![输入图片说明](/imgs/2025-09-18/8UzY5VPi5fg3Y9ub.png)![输入图片说明](/imgs/2025-09-18/mesBl1QlcW74Vg2I.png)最后一题的答案提示了我们在出现丢包后AIMD需要长时间来恢复到缓冲区的最大利用率的情况，因此还需对此方法做出修改
+## 多流数据下的AIMD控制
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTUzNzk4MDQsLTEyODE4NTQ0MTMsMT
-c3OTY4MTU5MiwxMjUzNTk3OTc0LC03MzA4MjM2MzYsLTMzNjAw
-NDQ4MiwtNzcyMTE1OTI5LC0xMDgyMTIxNTI2LDUwNDQ0MjEzOC
-w3MzgyMzEyMDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLTEx
-MTU3MTI3MTcsLTE0MzE3MzQ2NTksMTMzNzgxODg4OF19
+eyJoaXN0b3J5IjpbLTg2OTgyMTA3NywtMTI4MTg1NDQxMywxNz
+c5NjgxNTkyLDEyNTM1OTc5NzQsLTczMDgyMzYzNiwtMzM2MDA0
+NDgyLC03NzIxMTU5MjksLTEwODIxMjE1MjYsNTA0NDQyMTM4LD
+czODIzMTIwMiwtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTEx
+NTcxMjcxNywtMTQzMTczNDY1OSwxMzM3ODE4ODg4XX0=
 -->
