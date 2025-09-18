@@ -21,9 +21,9 @@
 3. 实现对网络情况的快速反应
 4. 实现分布式控制
 
-## 
+## 拥塞控制基本方法
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4MjMxMjAyLC0xNzI5MjYzNTg0LC0xNz
-UyNjgzNjI4LC0xMTE1NzEyNzE3LC0xNDMxNzM0NjU5LDEzMzc4
-MTg4ODhdfQ==
+eyJoaXN0b3J5IjpbNDE0MDUwNzk2LDczODIzMTIwMiwtMTcyOT
+I2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQzMTcz
+NDY1OSwxMzM3ODE4ODg4XX0=
 -->
