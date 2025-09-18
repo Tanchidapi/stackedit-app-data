@@ -28,10 +28,14 @@
 ![输入图片说明](/imgs/2025-09-18/lXjFm32AtS0C8wXv.png)示意图
 
 ### 基于端主机的流量控制
-设想为通过观察网络的行为，由此来决定发送数据的速率。这一方法的优势在于如果不依赖于路由器的行为，或者不依赖于路由器发送回特定的消息，则端主机可以在不更改网络的情况下随着时间的推移而演化和适应它。一个实际的例子就是TCP，它通过观察网路的行为，完全在端主机上实现拥塞控制。如果一个包丢失了，则端主机可以通过超时或者看到一系列相同的确认信息来判断，从而减小速率来控制拥塞。TCP之所以采取这种方式的还有一个原因是IP本身不提供网络中拥塞情况的fan'k
+设想为通过观察网络的行为，由此来决定发送数据的速率。这一方法的优势在于如果不依赖于路由器的行为，或者不依赖于路由器发送回特定的消息，则端主机可以在不更改网络的情况下随着时间的推移而演化和适应它。一个实际的例子就是TCP，它通过观察网路的行为，完全在端主机上实现拥塞控制。如果一个包丢失了，则端主机可以通过超时或者看到一系列相同的确认信息来判断，从而减小速率来控制拥塞。TCP之所以采取这种方式的还有一个原因是IP本身不提供网络中拥塞情况的反馈，TCP是在IP基础上的，因此采用基于端主机的方式来进行流量控制
+
+![输入图片说明](/imgs/2025-09-18/sQSkXkcJpX3SqLwg.png)示意图
+
+![输入图片说明](/imgs/2025-09-18/OxrrvuNpKxUVhk4h.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTAwNTg4NTMsLTEwODIxMjE1MjYsNT
-A0NDQyMTM4LDczODIzMTIwMiwtMTcyOTI2MzU4NCwtMTc1MjY4
-MzYyOCwtMTExNTcxMjcxNywtMTQzMTczNDY1OSwxMzM3ODE4OD
-g4XX0=
+eyJoaXN0b3J5IjpbLTc3MjExNTkyOSwtMTA4MjEyMTUyNiw1MD
+Q0NDIxMzgsNzM4MjMxMjAyLC0xNzI5MjYzNTg0LC0xNzUyNjgz
+NjI4LC0xMTE1NzEyNzE3LC0xNDMxNzM0NjU5LDEzMzc4MTg4OD
+hdfQ==
 -->
