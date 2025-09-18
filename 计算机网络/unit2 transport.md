@@ -127,6 +127,12 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 2. 通过mac算法得到标签C
 3. 发送M与C
 4. 接收方通过接收到的M，结合密钥S再次计算C，对比接收到的C，若一致则消息真实且完整，否则可能被篡改或消息不完整
+
+### 一种补充的检错纠错码
+![输入图片说明](/imgs/2025-09-18/O8eIhVGjbXR2a3dT.jpeg)
+
+![输入图片说明](/imgs/2025-09-18/MaEoPAa9ZhRZyGno.jpeg)
+
 ### 总结
 ![输入图片说明](/imgs/2025-07-16/bE7MdCfM33OPGC5c.png)三种检错方法比对
 
@@ -186,11 +192,11 @@ go back n协议在多个连续的数据报丢失时效率要高于selective repe
 一个ip数据包会包含一个udp的数据报或者tcp段，报与包的说法主要在于层级不同和所用协议不同
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTY5MTg5NDcsNjA4MzA2NjM4LDE1Mz
-AxMzYxODksLTc3MTYyNzcyOCwxNDY4OTA1MDMwLDEyNTA2MzMy
-MDUsLTE2NDEzMDA1NjksLTE1NzA2NjE0NDksMzc4MzAwMDU1LD
-kwMzE2NjM2NCwxNTEzNTUwMTQxLDY4MjcxMTQ1OSwxNTQ5MzI5
-OTgsMTQzMjczMzgzMywtNjg0MTM0NTEwLDEwOTE4NDc5OTksLT
-Y1NDk4NzIyOCwtNjA3NTQ1OTUyLC0xNTU0NzM3MDM2LC0xNzU5
-OTkzMzVdfQ==
+eyJoaXN0b3J5IjpbMTU3MzYwNjU0MCwtMTIxNjkxODk0Nyw2MD
+gzMDY2MzgsMTUzMDEzNjE4OSwtNzcxNjI3NzI4LDE0Njg5MDUw
+MzAsMTI1MDYzMzIwNSwtMTY0MTMwMDU2OSwtMTU3MDY2MTQ0OS
+wzNzgzMDAwNTUsOTAzMTY2MzY0LDE1MTM1NTAxNDEsNjgyNzEx
+NDU5LDE1NDkzMjk5OCwxNDMyNzMzODMzLC02ODQxMzQ1MTAsMT
+A5MTg0Nzk5OSwtNjU0OTg3MjI4LC02MDc1NDU5NTIsLTE1NTQ3
+MzcwMzZdfQ==
 -->
