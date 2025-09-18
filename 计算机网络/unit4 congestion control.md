@@ -9,8 +9,8 @@
 
 ![输入图片说明](/imgs/2025-09-18/7uSqvVPRANRCjw1L.png)常用的公平方法——最大最小原则
 
-简单来说就是将最大流最小化
+简单来说就是将最大流最小化，ben'zhi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTU3MTI3MTcsLTE0MzE3MzQ2NTksMT
-MzNzgxODg4OF19
+eyJoaXN0b3J5IjpbLTY0MDM0NzEwNCwtMTExNTcxMjcxNywtMT
+QzMTczNDY1OSwxMzM3ODE4ODg4XX0=
 -->
