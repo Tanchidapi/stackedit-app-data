@@ -28,9 +28,9 @@
 ![输入图片说明](/imgs/2025-09-18/lXjFm32AtS0C8wXv.png)示意图
 
 ### 基于端主机的流量控制
-设想为通过观察网络的行为，由此
+设想为通过观察网络的行为，由此来决定发送数据的速率。这一方法的优势在于
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTI4MjQ1LC0xMDgyMTIxNTI2LDUwND
+eyJoaXN0b3J5IjpbNTk5NDQ4NDM5LC0xMDgyMTIxNTI2LDUwND
 Q0MjEzOCw3MzgyMzEyMDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2
 MjgsLTExMTU3MTI3MTcsLTE0MzE3MzQ2NTksMTMzNzgxODg4OF
 19
