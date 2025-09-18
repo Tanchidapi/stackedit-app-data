@@ -38,10 +38,10 @@
 
 ![输入图片说明](/imgs/2025-09-18/3Wa5R2qx5uRBgnEj.png)TCP协议会在发送方考虑滑动窗口的大小，在网络通畅时，会用接收端反馈的窗口大小，而在网络拥塞时，则会在发送端计算cwnd的大小，将其作为窗口大小
 
-![输入图片说明](/imgs/2025-09-18/FlVfQjMPgAzpcyKv.png)计算
+![输入图片说明](/imgs/2025-09-18/FlVfQjMPgAzpcyKv.png)计算cwnd的方法为AIMD，即线性增大、乘性减小，每有一个包顺利收到则cwnd大小增加窗口大小的倒数，否则若丢包则将窗口大小减半，因此若一窗口
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODczNzI2MzcsLTMzNjAwNDQ4MiwtNz
-cyMTE1OTI5LC0xMDgyMTIxNTI2LDUwNDQ0MjEzOCw3MzgyMzEy
-MDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3MT
-csLTE0MzE3MzQ2NTksMTMzNzgxODg4OF19
+eyJoaXN0b3J5IjpbLTY1NjcxMjg1OSwtMzM2MDA0NDgyLC03Nz
+IxMTU5MjksLTEwODIxMjE1MjYsNTA0NDQyMTM4LDczODIzMTIw
+MiwtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMjcxNy
+wtMTQzMTczNDY1OSwxMzM3ODE4ODg4XX0=
 -->
