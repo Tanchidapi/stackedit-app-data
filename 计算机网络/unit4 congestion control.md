@@ -34,10 +34,10 @@
 
 ![输入图片说明](/imgs/2025-09-18/OxrrvuNpKxUVhk4h.png)TCP控制概述
 
-![输入图片说明](/imgs/2025-09-18/wy0c0UGYraJvSKSx.png)图zho
+![输入图片说明](/imgs/2025-09-18/wy0c0UGYraJvSKSx.png)图中展示的两种情况，一是往返时间大于窗口大小的情况，二是往返时间等于窗口大小的情况，第二种情况下
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzgwMjY4NCwtNzcyMTE1OTI5LC0xMD
-gyMTIxNTI2LDUwNDQ0MjEzOCw3MzgyMzEyMDIsLTE3MjkyNjM1
-ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3MTcsLTE0MzE3MzQ2NT
-ksMTMzNzgxODg4OF19
+eyJoaXN0b3J5IjpbLTExNzkyMTYxMzIsLTc3MjExNTkyOSwtMT
+A4MjEyMTUyNiw1MDQ0NDIxMzgsNzM4MjMxMjAyLC0xNzI5MjYz
+NTg0LC0xNzUyNjgzNjI4LC0xMTE1NzEyNzE3LC0xNDMxNzM0Nj
+U5LDEzMzc4MTg4ODhdfQ==
 -->
