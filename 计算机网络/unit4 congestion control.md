@@ -38,9 +38,9 @@
 
 ![输入图片说明](/imgs/2025-09-18/3Wa5R2qx5uRBgnEj.png)TCP协议会在发送方考虑滑动窗口的大小，在网络通畅时，会用接收端反馈的窗口大小，而在网络拥塞时，则会在发送端计算cwnd的大小，将其作为窗口大小
 
-![输入图片说明](/imgs/2025-09-18/FlVfQjMPgAzpcyKv.png)计算cwnd的方法为AIMD，即线性增大、乘性减小，每有一个包顺利收到则cwnd大小增加窗口大小的倒数，否则若丢包则将窗口大小减半，因此若一窗口顺利发送则会为窗口增加1的大小（W个包），否则就将窗口大小减半。下图是示意图，这一曲线也被称作TCP锯齿，绿色的曲线是放大后的图像，
+![输入图片说明](/imgs/2025-09-18/FlVfQjMPgAzpcyKv.png)计算cwnd的方法为AIMD，即线性增大、乘性减小，每有一个包顺利收到则cwnd大小增加窗口大小的倒数，否则若丢包则将窗口大小减半，因此若一窗口顺利发送则会为窗口增加1的大小（W个包），否则就将窗口大小减半。下图是示意图，这一曲线也被称作TCP（AIMD）锯齿波，绿色的曲线是放大后的图像，实际上是每过一个RTT（包确认往返时间）cwnd才增大1
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNDY2MTU5NSwtMzM2MDA0NDgyLC03Nz
+eyJoaXN0b3J5IjpbLTczMDgyMzYzNiwtMzM2MDA0NDgyLC03Nz
 IxMTU5MjksLTEwODIxMjE1MjYsNTA0NDQyMTM4LDczODIzMTIw
 MiwtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMjcxNy
 wtMTQzMTczNDY1OSwxMzM3ODE4ODg4XX0=
