@@ -40,11 +40,14 @@
 
 ![输入图片说明](/imgs/2025-09-18/FlVfQjMPgAzpcyKv.png)计算cwnd的方法为AIMD，即线性增大、乘性减小，每有一个包顺利收到则cwnd大小增加窗口大小的倒数，否则若丢包则将窗口大小减半，因此若一窗口顺利发送则会为窗口增加1的大小（W个包），否则就将窗口大小减半。下图是示意图，这一曲线也被称作TCP（AIMD）锯齿波，绿色的曲线是放大后的图像，实际上是每过一个RTT（包确认往返时间）cwnd才增大1
 
-![输入图片说明](/imgs/2025-09-18/THvsV0IXLn0onPA5.png)S
+![输入图片说明](/imgs/2025-09-18/THvsV0IXLn0onPA5.png)Summary
+
+## 单数据流中的AIMD控制
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTI3NTQ0NDgsLTczMDgyMzYzNiwtMz
-M2MDA0NDgyLC03NzIxMTU5MjksLTEwODIxMjE1MjYsNTA0NDQy
-MTM4LDczODIzMTIwMiwtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOC
-wtMTExNTcxMjcxNywtMTQzMTczNDY1OSwxMzM3ODE4ODg4XX0=
+eyJoaXN0b3J5IjpbMTI1MzU5Nzk3NCwtNzMwODIzNjM2LC0zMz
+YwMDQ0ODIsLTc3MjExNTkyOSwtMTA4MjEyMTUyNiw1MDQ0NDIx
+MzgsNzM4MjMxMjAyLC0xNzI5MjYzNTg0LC0xNzUyNjgzNjI4LC
+0xMTE1NzEyNzE3LC0xNDMxNzM0NjU5LDEzMzc4MTg4ODhdfQ==
 
 -->
