@@ -34,10 +34,12 @@
 
 ![输入图片说明](/imgs/2025-09-18/OxrrvuNpKxUVhk4h.png)TCP控制概述
 
-![输入图片说明](/imgs/2025-09-18/wy0c0UGYraJvSKSx.png)图中展示的两种情况，一是往返时间大于窗口大小的情况，二是往返时间等于窗口大小的情况，第二种情况下对网络的利用效率更高，
+![输入图片说明](/imgs/2025-09-18/wy0c0UGYraJvSKSx.png)图中展示的两种情况，一是往返时间大于窗口大小的情况，二是往返时间等于窗口大小的情况，第二种情况下对网络的利用效率更高
+
+![输入图片说明](/imgs/2025-09-18/3Wa5R2qx5uRBgnEj.png)TCP协议会在发送方考虑滑动窗口的大小，在网络通畅时，会用接收端反馈的窗口大小，而在网络yo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNDc3MjQ2MiwtNzcyMTE1OTI5LC0xMD
-gyMTIxNTI2LDUwNDQ0MjEzOCw3MzgyMzEyMDIsLTE3MjkyNjM1
-ODQsLTE3NTI2ODM2MjgsLTExMTU3MTI3MTcsLTE0MzE3MzQ2NT
-ksMTMzNzgxODg4OF19
+eyJoaXN0b3J5IjpbLTIwNTA5Mjg3MTUsLTc3MjExNTkyOSwtMT
+A4MjEyMTUyNiw1MDQ0NDIxMzgsNzM4MjMxMjAyLC0xNzI5MjYz
+NTg0LC0xNzUyNjgzNjI4LC0xMTE1NzEyNzE3LC0xNDMxNzM0Nj
+U5LDEzMzc4MTg4ODhdfQ==
 -->
