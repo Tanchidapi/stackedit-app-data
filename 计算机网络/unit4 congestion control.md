@@ -58,11 +58,12 @@
 ### 示例
 ![输入图片说明](/imgs/2025-09-18/WrlvUS8S7f09mB2M.png)![输入图片说明](/imgs/2025-09-18/GMQHddXR58P1pA4S.png)![输入图片说明](/imgs/2025-09-18/E6hKEnx1cyOn3UoO.png)![输入图片说明](/imgs/2025-09-18/vW35pxbeFdIC3Rzz.png)![输入图片说明](/imgs/2025-09-18/8UzY5VPi5fg3Y9ub.png)![输入图片说明](/imgs/2025-09-18/mesBl1QlcW74Vg2I.png)最后一题的答案提示了我们在出现丢包后AIMD需要长时间来恢复到缓冲区的最大利用率的情况，因此还需对此方法做出修改
 ## 多流数据下的AIMD控制
-
+AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认数据包的数量，即那些已发出但还没收到确认的数据包
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTgyMTA3NywtMTI4MTg1NDQxMywxNz
-c5NjgxNTkyLDEyNTM1OTc5NzQsLTczMDgyMzYzNiwtMzM2MDA0
-NDgyLC03NzIxMTU5MjksLTEwODIxMjE1MjYsNTA0NDQyMTM4LD
-czODIzMTIwMiwtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTEx
-NTcxMjcxNywtMTQzMTczNDY1OSwxMzM3ODE4ODg4XX0=
+eyJoaXN0b3J5IjpbNTgyMjM3MzQxLC04Njk4MjEwNzcsLTEyOD
+E4NTQ0MTMsMTc3OTY4MTU5MiwxMjUzNTk3OTc0LC03MzA4MjM2
+MzYsLTMzNjAwNDQ4MiwtNzcyMTE1OTI5LC0xMDgyMTIxNTI2LD
+UwNDQ0MjEzOCw3MzgyMzEyMDIsLTE3MjkyNjM1ODQsLTE3NTI2
+ODM2MjgsLTExMTU3MTI3MTcsLTE0MzE3MzQ2NTksMTMzNzgxOD
+g4OF19
 -->
