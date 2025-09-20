@@ -64,11 +64,14 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 
 ![输入图片说明](/imgs/2025-09-20/Th6n43U5wfeKVnI7.png)
 当存在多个流时，将RTT（往返时间）视为基本恒定的想法是合理的，因为多流下的缓冲区几乎总是拥塞的，但是单流情况下RTT会随着缓冲区的情况而变化，因此其锯齿波在上升时呈现一定弧度，每一个窗口的完整发送所用的往返时间随着缓冲区内包的增多而变大，因此计算多流下的平均吞吐率可以用平均窗口大小除以RTT
+
+![输入图片说明](/imgs/2025-09-20/cCfv5wq1Xg4ZYeBy.png)su'l
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNDM5Nzc4MCwxNzU5NTE2Mjk0LC02NT
-EyMDE5MTcsLTg2OTgyMTA3NywtMTI4MTg1NDQxMywxNzc5Njgx
-NTkyLDEyNTM1OTc5NzQsLTczMDgyMzYzNiwtMzM2MDA0NDgyLC
-03NzIxMTU5MjksLTEwODIxMjE1MjYsNTA0NDQyMTM4LDczODIz
-MTIwMiwtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMj
-cxNywtMTQzMTczNDY1OSwxMzM3ODE4ODg4XX0=
+eyJoaXN0b3J5IjpbLTI2NTAzMzE2NCwxNzA0Mzk3NzgwLDE3NT
+k1MTYyOTQsLTY1MTIwMTkxNywtODY5ODIxMDc3LC0xMjgxODU0
+NDEzLDE3Nzk2ODE1OTIsMTI1MzU5Nzk3NCwtNzMwODIzNjM2LC
+0zMzYwMDQ0ODIsLTc3MjExNTkyOSwtMTA4MjEyMTUyNiw1MDQ0
+NDIxMzgsNzM4MjMxMjAyLC0xNzI5MjYzNTg0LC0xNzUyNjgzNj
+I4LC0xMTE1NzEyNzE3LC0xNDMxNzM0NjU5LDEzMzc4MTg4ODhd
+fQ==
 -->
