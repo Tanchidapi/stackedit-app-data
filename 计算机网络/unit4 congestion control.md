@@ -70,13 +70,15 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-09-20/OdQqEPfS9l4lOhBe.png)第一点含义为在AIMD下我们会惩罚更远的链路速率，但这不是我们想要的，因此这一点通常被认为是AIMD的缺点
 第二点指出了丢包是AIMD中控制的关键，它告诉发送方网络中存在太多未确认的包，从而指导发送方控制窗口大小，进而控制拥塞
 
-![输入图片说明](/imgs/2025-09-20/gObFQOzFVvMioC7E.png)
+![输入图片说明](/imgs/2025-09-20/gObFQOzFVvMioC7E.png)Summary
+
+## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTk2Nzc2MjksLTkxNjM3ODgwMywxNz
-A0Mzk3NzgwLDE3NTk1MTYyOTQsLTY1MTIwMTkxNywtODY5ODIx
-MDc3LC0xMjgxODU0NDEzLDE3Nzk2ODE1OTIsMTI1MzU5Nzk3NC
-wtNzMwODIzNjM2LC0zMzYwMDQ0ODIsLTc3MjExNTkyOSwtMTA4
-MjEyMTUyNiw1MDQ0NDIxMzgsNzM4MjMxMjAyLC0xNzI5MjYzNT
-g0LC0xNzUyNjgzNjI4LC0xMTE1NzEyNzE3LC0xNDMxNzM0NjU5
-LDEzMzc4MTg4ODhdfQ==
+eyJoaXN0b3J5IjpbODkxNzAzNTMzLC05MTYzNzg4MDMsMTcwND
+M5Nzc4MCwxNzU5NTE2Mjk0LC02NTEyMDE5MTcsLTg2OTgyMTA3
+NywtMTI4MTg1NDQxMywxNzc5NjgxNTkyLDEyNTM1OTc5NzQsLT
+czMDgyMzYzNiwtMzM2MDA0NDgyLC03NzIxMTU5MjksLTEwODIx
+MjE1MjYsNTA0NDQyMTM4LDczODIzMTIwMiwtMTcyOTI2MzU4NC
+wtMTc1MjY4MzYyOCwtMTExNTcxMjcxNywtMTQzMTczNDY1OSwx
+MzM3ODE4ODg4XX0=
 -->
