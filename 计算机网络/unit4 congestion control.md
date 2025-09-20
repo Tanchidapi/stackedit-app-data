@@ -67,9 +67,10 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 
 ![输入图片说明](/imgs/2025-09-20/cCfv5wq1Xg4ZYeBy.png)吞吐率与丢包概率的关系，以几何的形式推导，注意图中阴影面积的A指的是在一个周期内发送的总的字节数，是发送的窗口个数对各个窗口大小的一个累积，故A的表达式中不含RTT项，最终将速率写成和丢包概率有关的函数，RTT为已知量
 
-![输入图片说明](/imgs/2025-09-20/OdQqEPfS9l4lOhBe.png)di
+![输入图片说明](/imgs/2025-09-20/OdQqEPfS9l4lOhBe.png)第一点含义为在AIMD下我们会惩罚更远的链路速率，但这不是我们想要的，因此这一点通常被认为是AIMD的缺点
+第二点指出了丢包是AIMD中控制的关键，它告诉发送方网络中存在太多未确认的包，从而指导发送方k
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1ODIxNDQ3LC05MTYzNzg4MDMsMTcwND
+eyJoaXN0b3J5IjpbMzQ5Njg3NDY1LC05MTYzNzg4MDMsMTcwND
 M5Nzc4MCwxNzU5NTE2Mjk0LC02NTEyMDE5MTcsLTg2OTgyMTA3
 NywtMTI4MTg1NDQxMywxNzc5NjgxNTkyLDEyNTM1OTc5NzQsLT
 czMDgyMzYzNiwtMzM2MDA0NDgyLC03NzIxMTU5MjksLTEwODIx
