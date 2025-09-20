@@ -83,11 +83,13 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ### 拥塞窗口控制
 前文提到的AIMD就是拥塞窗口控制的一个基本思想
 
-![输入图片说明](/imgs/2025-09-20/sghH86HPANxauX7f.png)控制窗口只取决于端主机，大小为
+![输入图片说明](/imgs/2025-09-20/sghH86HPANxauX7f.png)控制窗口只取决于端主机，大小为流量窗口与拥塞窗口中的最小值，而拥塞窗口的大小可以分为两种情况：
+1. 慢启动，用于重连和数据包超时的情况
+2. 拥塞避免，用于接近网络
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5MTM5MTAwLDEyMTU0MDAzMjEsLTkxNj
+eyJoaXN0b3J5IjpbMjcxMzUyNDY0LDEyMTU0MDAzMjEsLTkxNj
 M3ODgwMywxNzA0Mzk3NzgwLDE3NTk1MTYyOTQsLTY1MTIwMTkx
 NywtODY5ODIxMDc3LC0xMjgxODU0NDEzLDE3Nzk2ODE1OTIsMT
 I1MzU5Nzk3NCwtNzMwODIzNjM2LC0zMzYwMDQ0ODIsLTc3MjEx
