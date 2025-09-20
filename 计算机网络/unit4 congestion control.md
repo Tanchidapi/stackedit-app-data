@@ -65,9 +65,9 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-09-20/Th6n43U5wfeKVnI7.png)
 当存在多个流时，将RTT（往返时间）视为基本恒定的想法是合理的，因为多流下的缓冲区几乎总是拥塞的，但是单流情况下RTT会随着缓冲区的情况而变化，因此其锯齿波在上升时呈现一定弧度，每一个窗口的完整发送所用的往返时间随着缓冲区内包的增多而变大，因此计算多流下的平均吞吐率可以用平均窗口大小除以RTT
 
-![输入图片说明](/imgs/2025-09-20/cCfv5wq1Xg4ZYeBy.png)su'l
+![输入图片说明](/imgs/2025-09-20/cCfv5wq1Xg4ZYeBy.png)吞吐率与丢包概率的关系，以几何的形式推导，注意图中阴影面积的A指的是在一个周期内发送的总的字节数，是发送的窗口个数对各个窗口大小的一个累积，故A的表达式红
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NTAzMzE2NCwxNzA0Mzk3NzgwLDE3NT
+eyJoaXN0b3J5IjpbMTIxMjg4MjQ3OSwxNzA0Mzk3NzgwLDE3NT
 k1MTYyOTQsLTY1MTIwMTkxNywtODY5ODIxMDc3LC0xMjgxODU0
 NDEzLDE3Nzk2ODE1OTIsMTI1MzU5Nzk3NCwtNzMwODIzNjM2LC
 0zMzYwMDQ0ODIsLTc3MjExNTkyOSwtMTA4MjEyMTUyNiw1MDQ0
