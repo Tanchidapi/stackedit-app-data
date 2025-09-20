@@ -62,9 +62,10 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 
 ![输入图片说明](/imgs/2025-09-20/qCEMWi56ZFCiGS7O.png)多流情况下，缓冲区里的数据包来自各个流
 
+![输入图片说明](/imgs/2025-09-20/Th6n43U5wfeKVnI7.png)
 当存在多个流时，将RTT（往返时间）视为基本恒定的想法是合理的
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTM2NTc3LC02NTEyMDE5MTcsLTg2OT
+eyJoaXN0b3J5IjpbOTE2NDgwNDkyLC02NTEyMDE5MTcsLTg2OT
 gyMTA3NywtMTI4MTg1NDQxMywxNzc5NjgxNTkyLDEyNTM1OTc5
 NzQsLTczMDgyMzYzNiwtMzM2MDA0NDgyLC03NzIxMTU5MjksLT
 EwODIxMjE1MjYsNTA0NDQyMTM4LDczODIzMTIwMiwtMTcyOTI2
