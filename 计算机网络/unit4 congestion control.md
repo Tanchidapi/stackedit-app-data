@@ -87,15 +87,17 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 1. 慢启动，用于重连和数据包超时的情况
 2. 拥塞避免，用于接近网络容量拥塞时使用
 ### 慢启动
-慢启动的慢其实是相对于旧版TCP的行为而言的，事实上，慢启动的总体过程中，发送数据包的大小与时间呈指数关系
+慢启动的慢其实是相对于旧版TCP的行为而言的，事实上，慢启动的总体过程中，发送数据包的大小与时间呈指数关系，并不慢
+
+![输入图片说明](/imgs/2025-09-21/BuDhjaWUVrxFNb08.png)慢启动的好处
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwODEyNTYwMiwtNzgzNjkzMTU3LDEyMT
-U0MDAzMjEsLTkxNjM3ODgwMywxNzA0Mzk3NzgwLDE3NTk1MTYy
-OTQsLTY1MTIwMTkxNywtODY5ODIxMDc3LC0xMjgxODU0NDEzLD
-E3Nzk2ODE1OTIsMTI1MzU5Nzk3NCwtNzMwODIzNjM2LC0zMzYw
-MDQ0ODIsLTc3MjExNTkyOSwtMTA4MjEyMTUyNiw1MDQ0NDIxMz
-gsNzM4MjMxMjAyLC0xNzI5MjYzNTg0LC0xNzUyNjgzNjI4LC0x
-MTE1NzEyNzE3XX0=
+eyJoaXN0b3J5IjpbMTI3MzUwMzkzMywtNjA4MTI1NjAyLC03OD
+M2OTMxNTcsMTIxNTQwMDMyMSwtOTE2Mzc4ODAzLDE3MDQzOTc3
+ODAsMTc1OTUxNjI5NCwtNjUxMjAxOTE3LC04Njk4MjEwNzcsLT
+EyODE4NTQ0MTMsMTc3OTY4MTU5MiwxMjUzNTk3OTc0LC03MzA4
+MjM2MzYsLTMzNjAwNDQ4MiwtNzcyMTE1OTI5LC0xMDgyMTIxNT
+I2LDUwNDQ0MjEzOCw3MzgyMzEyMDIsLTE3MjkyNjM1ODQsLTE3
+NTI2ODM2MjhdfQ==
 -->
