@@ -74,7 +74,7 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 
 ## TCP Tahoe
 ### 旧的TCP方案
-![输入图片说明](/imgs/2025-09-20/Ec2W2NqqprenZDVa.png)在流量控制出现前，TCP总是直接将可用窗口大小的数据量一次性发送，即发送方在建立连接后，会一口气将接收方声明窗口大小的数据包全部注入网络中
+![输入图片说明](/imgs/2025-09-20/Ec2W2NqqprenZDVa.png)在流量控制出现前，TCP总是直接将可用窗口大小的数据量一次性发送，即发送方在建立连接后，会一口气将接收方声明窗口大小的数据包全部注入网络中，这种方法被称为流量启动
 
 ![输入图片说明](/imgs/2025-09-20/t0gfTwulSgf9yeg6.png)早期没有拥塞控制下的TCP，因大量的丢包或超时的重传而导致没有预期中的吞吐率
 
@@ -87,13 +87,13 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 1. 慢启动，用于重连和数据包超时的情况
 2. 拥塞避免，用于接近网络容量拥塞时使用
 ### 慢启动
-慢启动的慢其实是相对于旧版TCP的行为而言的，事实上，慢启动的总体过程中，发送数据包的大小与时间呈指数关系，并不慢
+慢启动的慢其实是相对于旧版TCP的流量启动而言的，事实上，慢启动的总体过程中，发送数据包的大小与时间呈指数关系，并不慢
 
 ![输入图片说明](/imgs/2025-09-21/BuDhjaWUVrxFNb08.png)慢启动的好处
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzUwMzkzMywtNjA4MTI1NjAyLC03OD
+eyJoaXN0b3J5IjpbMTA2MDg3MTY1MiwtNjA4MTI1NjAyLC03OD
 M2OTMxNTcsMTIxNTQwMDMyMSwtOTE2Mzc4ODAzLDE3MDQzOTc3
 ODAsMTc1OTUxNjI5NCwtNjUxMjAxOTE3LC04Njk4MjEwNzcsLT
 EyODE4NTQ0MTMsMTc3OTY4MTU5MiwxMjUzNTk3OTc0LC03MzA4
