@@ -92,13 +92,13 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 
 ![输入图片说明](/imgs/2025-09-21/BuDhjaWUVrxFNb08.png)慢启动的好处
 ### 拥塞避免
-![输入图片说明](/imgs/2025-09-21/YPbrjuAHr9sL5sWJ.png)拥塞避免与慢启动的区别，拥塞避免是在每收到一个ack确认，发送窗口就增加MSS平方除以拥塞窗口大小的大小
+![输入图片说明](/imgs/2025-09-21/YPbrjuAHr9sL5sWJ.png)拥塞避免与慢启动的区别，拥塞避免是在每收到一个ack确认，发送窗口就增加MSS平方除以拥塞窗口大小的大小，实际上是随着往返时间RTT的一个线性增长
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDY4OTE1NTgsMTQyNjM5MjA2NSwtNj
-A4MTI1NjAyLC03ODM2OTMxNTcsMTIxNTQwMDMyMSwtOTE2Mzc4
-ODAzLDE3MDQzOTc3ODAsMTc1OTUxNjI5NCwtNjUxMjAxOTE3LC
-04Njk4MjEwNzcsLTEyODE4NTQ0MTMsMTc3OTY4MTU5MiwxMjUz
-NTk3OTc0LC03MzA4MjM2MzYsLTMzNjAwNDQ4MiwtNzcyMTE1OT
-I5LC0xMDgyMTIxNTI2LDUwNDQ0MjEzOCw3MzgyMzEyMDIsLTE3
-MjkyNjM1ODRdfQ==
+eyJoaXN0b3J5IjpbNzU5ODUwMDQyLDE0MjYzOTIwNjUsLTYwOD
+EyNTYwMiwtNzgzNjkzMTU3LDEyMTU0MDAzMjEsLTkxNjM3ODgw
+MywxNzA0Mzk3NzgwLDE3NTk1MTYyOTQsLTY1MTIwMTkxNywtOD
+Y5ODIxMDc3LC0xMjgxODU0NDEzLDE3Nzk2ODE1OTIsMTI1MzU5
+Nzk3NCwtNzMwODIzNjM2LC0zMzYwMDQ0ODIsLTc3MjExNTkyOS
+wtMTA4MjEyMTUyNiw1MDQ0NDIxMzgsNzM4MjMxMjAyLC0xNzI5
+MjYzNTg0XX0=
 -->
