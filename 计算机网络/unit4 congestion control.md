@@ -88,13 +88,13 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 2. 拥塞避免，用于接近网络容量拥塞时使用
 ### 慢启动
 慢启动的慢其实是相对于旧版TCP的流量启动而言的，事实上，慢启动的总体过程中，发送数据包的大小与时间呈指数关系，并不慢
-慢启动是一种试探性增长的过程，一开始，
+慢启动是一种试探性增长的过程，一开始，将窗口大小的
 
 ![输入图片说明](/imgs/2025-09-21/BuDhjaWUVrxFNb08.png)慢启动的好处
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTk4NzkyNywtNjA4MTI1NjAyLC03OD
+eyJoaXN0b3J5IjpbMTUxMTYzMzY3NywtNjA4MTI1NjAyLC03OD
 M2OTMxNTcsMTIxNTQwMDMyMSwtOTE2Mzc4ODAzLDE3MDQzOTc3
 ODAsMTc1OTUxNjI5NCwtNjUxMjAxOTE3LC04Njk4MjEwNzcsLT
 EyODE4NTQ0MTMsMTc3OTY4MTU5MiwxMjUzNTk3OTc0LC03MzA4
