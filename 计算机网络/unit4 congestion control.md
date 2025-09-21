@@ -102,9 +102,9 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-09-21/CvCxngXeTVzK8qB1.png)示意图
 
 ### 更准确的RTT估计
-
+![输入图片说明](/imgs/2025-09-21/dpLCwrGNHvPTlWTK.png)RTT估计的重要性
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODE4NzYxOTYsLTE1OTA5OTY2MzUsNz
+eyJoaXN0b3J5IjpbLTEwMzk4MjQ2OTEsLTE1OTA5OTY2MzUsNz
 U5ODUwMDQyLDE0MjYzOTIwNjUsLTYwODEyNTYwMiwtNzgzNjkz
 MTU3LDEyMTU0MDAzMjEsLTkxNjM3ODgwMywxNzA0Mzk3NzgwLD
 E3NTk1MTYyOTQsLTY1MTIwMTkxNywtODY5ODIxMDc3LC0xMjgx
