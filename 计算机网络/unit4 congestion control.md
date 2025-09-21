@@ -97,13 +97,13 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ### 两种状态的切换
 ![输入图片说明](/imgs/2025-09-21/RD4G2HCo3HLjCzyV.png)慢启动和拥塞避免两种状态的切换情况
 
-![输入图片说明](/imgs/2025-09-21/QETey1xyrZ3C2B7h.png)TCP Tahoe的有限状态机，在慢启动和拥塞避免之间切换状态，ssthresh为慢启动的阈值，慢启动在窗口大小指数增长到阈值后切换到拥塞避免，然后变为线性增长，在出现超时或者三次重复的ack出现后将cwnd降至1，并将
+![输入图片说明](/imgs/2025-09-21/QETey1xyrZ3C2B7h.png)TCP Tahoe的有限状态机，在慢启动和拥塞避免之间切换状态，ssthresh为慢启动的阈值，慢启动在窗口大小指数增长到阈值后切换到拥塞避免，然后变为线性增长，在出现超时或者三次重复的ack出现后将cwnd降至1，并将ssthresh改为原先cwnd大小的一半，再次开始慢启动
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MDg4NTIsLTE1OTA5OTY2MzUsNzU5OD
-UwMDQyLDE0MjYzOTIwNjUsLTYwODEyNTYwMiwtNzgzNjkzMTU3
-LDEyMTU0MDAzMjEsLTkxNjM3ODgwMywxNzA0Mzk3NzgwLDE3NT
-k1MTYyOTQsLTY1MTIwMTkxNywtODY5ODIxMDc3LC0xMjgxODU0
-NDEzLDE3Nzk2ODE1OTIsMTI1MzU5Nzk3NCwtNzMwODIzNjM2LC
-0zMzYwMDQ0ODIsLTc3MjExNTkyOSwtMTA4MjEyMTUyNiw1MDQ0
-NDIxMzhdfQ==
+eyJoaXN0b3J5IjpbOTgzMjM1MjkwLC0xNTkwOTk2NjM1LDc1OT
+g1MDA0MiwxNDI2MzkyMDY1LC02MDgxMjU2MDIsLTc4MzY5MzE1
+NywxMjE1NDAwMzIxLC05MTYzNzg4MDMsMTcwNDM5Nzc4MCwxNz
+U5NTE2Mjk0LC02NTEyMDE5MTcsLTg2OTgyMTA3NywtMTI4MTg1
+NDQxMywxNzc5NjgxNTkyLDEyNTM1OTc5NzQsLTczMDgyMzYzNi
+wtMzM2MDA0NDgyLC03NzIxMTU5MjksLTEwODIxMjE1MjYsNTA0
+NDQyMTM4XX0=
 -->
