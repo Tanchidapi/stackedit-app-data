@@ -95,9 +95,9 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-09-21/YPbrjuAHr9sL5sWJ.png)拥塞避免与慢启动的区别，拥塞避免是在每收到一个ack确认，发送窗口就增加MSS平方除以拥塞窗口大小的大小，实际上是随着往返时间RTT的一个线性增长
 
 ### 两种状态的切换
-![输入图片说明](/imgs/2025-09-21/RD4G2HCo3HLjCzyV.png)慢启动和拥塞bi
+![输入图片说明](/imgs/2025-09-21/RD4G2HCo3HLjCzyV.png)慢启动和拥塞避免两种状态的切换情况
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDIxNjM2NTMsNzU5ODUwMDQyLDE0Mj
+eyJoaXN0b3J5IjpbLTE1OTA5OTY2MzUsNzU5ODUwMDQyLDE0Mj
 YzOTIwNjUsLTYwODEyNTYwMiwtNzgzNjkzMTU3LDEyMTU0MDAz
 MjEsLTkxNjM3ODgwMywxNzA0Mzk3NzgwLDE3NTk1MTYyOTQsLT
 Y1MTIwMTkxNywtODY5ODIxMDc3LC0xMjgxODU0NDEzLDE3Nzk2
