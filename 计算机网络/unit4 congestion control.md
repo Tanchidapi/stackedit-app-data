@@ -73,8 +73,8 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-09-20/gObFQOzFVvMioC7E.png)Summary
 
 ## TCP Tahoe
-### 慢启动
-![输入图片说明](/imgs/2025-09-20/Ec2W2NqqprenZDVa.png)在流量控制出现前，TCP总是直接将可用窗口大小的数据量一次性发送
+### 旧的TCP
+![输入图片说明](/imgs/2025-09-20/Ec2W2NqqprenZDVa.png)在流量控制出现前，TCP总是直接将可用窗口大小的数据量一次性发送，即发送方在建立连接后，会一口气将接收方声明窗口大小的数据包全部注入网络中
 
 ![输入图片说明](/imgs/2025-09-20/t0gfTwulSgf9yeg6.png)早期没有拥塞控制下的TCP，因大量的丢包或超时的重传而导致没有预期中的吞吐率
 
@@ -89,11 +89,11 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MzY5MzE1NywxMjE1NDAwMzIxLC05MT
-YzNzg4MDMsMTcwNDM5Nzc4MCwxNzU5NTE2Mjk0LC02NTEyMDE5
-MTcsLTg2OTgyMTA3NywtMTI4MTg1NDQxMywxNzc5NjgxNTkyLD
-EyNTM1OTc5NzQsLTczMDgyMzYzNiwtMzM2MDA0NDgyLC03NzIx
-MTU5MjksLTEwODIxMjE1MjYsNTA0NDQyMTM4LDczODIzMTIwMi
-wtMTcyOTI2MzU4NCwtMTc1MjY4MzYyOCwtMTExNTcxMjcxNywt
-MTQzMTczNDY1OV19
+eyJoaXN0b3J5IjpbNjEwODQ0OTUxLC03ODM2OTMxNTcsMTIxNT
+QwMDMyMSwtOTE2Mzc4ODAzLDE3MDQzOTc3ODAsMTc1OTUxNjI5
+NCwtNjUxMjAxOTE3LC04Njk4MjEwNzcsLTEyODE4NTQ0MTMsMT
+c3OTY4MTU5MiwxMjUzNTk3OTc0LC03MzA4MjM2MzYsLTMzNjAw
+NDQ4MiwtNzcyMTE1OTI5LC0xMDgyMTIxNTI2LDUwNDQ0MjEzOC
+w3MzgyMzEyMDIsLTE3MjkyNjM1ODQsLTE3NTI2ODM2MjgsLTEx
+MTU3MTI3MTddfQ==
 -->
