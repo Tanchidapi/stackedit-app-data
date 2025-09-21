@@ -97,9 +97,9 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ### 两种状态的切换
 ![输入图片说明](/imgs/2025-09-21/RD4G2HCo3HLjCzyV.png)慢启动和拥塞避免两种状态的切换情况
 
-![输入图片说明](/imgs/2025-09-21/QETey1xyrZ3C2B7h.png)TCO
+![输入图片说明](/imgs/2025-09-21/QETey1xyrZ3C2B7h.png)TCP Tahoe的有限状态机，在慢启动和拥塞
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjA0ODQ2MTIsLTE1OTA5OTY2MzUsNz
+eyJoaXN0b3J5IjpbLTE3MzQ0MDA0MTYsLTE1OTA5OTY2MzUsNz
 U5ODUwMDQyLDE0MjYzOTIwNjUsLTYwODEyNTYwMiwtNzgzNjkz
 MTU3LDEyMTU0MDAzMjEsLTkxNjM3ODgwMywxNzA0Mzk3NzgwLD
 E3NTk1MTYyOTQsLTY1MTIwMTkxNywtODY5ODIxMDc3LC0xMjgx
