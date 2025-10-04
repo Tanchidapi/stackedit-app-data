@@ -106,13 +106,13 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 
 ![输入图片说明](/imgs/2025-09-21/3MgcRZB89T3v9VQc.png)Tahoe前的RTT估计方式，问题在于估计值r的值没有反应RTT的分布情况，当包的RTT分布情况较密集时（图中a的情况），β为2的估计过于保守，这会导致RTT估计过大，而包的RTT分布较广泛时（图中b曲线、蓝色），β为2的估计过于激进，会导致RTT估计过小
 
-![输入图片说明](/imgs/2025-09-21/Sq8bPeuWFGTGkntN.png)Tahoe通过引入RTT方差的概念来解决这一问题
+![输入图片说明](/imgs/2025-09-21/Sq8bPeuWFGTGkntN.png)Tahoe通过引入RTT方差的概念来解决这一问题，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMDEzOTk2NCwtMTQ1ODkxMjA4MiwxOD
-UyMzYyNzM2LDY3MzE3ODMwMCwtMTU5MDk5NjYzNSw3NTk4NTAw
-NDIsMTQyNjM5MjA2NSwtNjA4MTI1NjAyLC03ODM2OTMxNTcsMT
-IxNTQwMDMyMSwtOTE2Mzc4ODAzLDE3MDQzOTc3ODAsMTc1OTUx
-NjI5NCwtNjUxMjAxOTE3LC04Njk4MjEwNzcsLTEyODE4NTQ0MT
-MsMTc3OTY4MTU5MiwxMjUzNTk3OTc0LC03MzA4MjM2MzYsLTMz
-NjAwNDQ4Ml19
+eyJoaXN0b3J5IjpbLTUxNjYyNjMwMCwtMzMwMTM5OTY0LC0xND
+U4OTEyMDgyLDE4NTIzNjI3MzYsNjczMTc4MzAwLC0xNTkwOTk2
+NjM1LDc1OTg1MDA0MiwxNDI2MzkyMDY1LC02MDgxMjU2MDIsLT
+c4MzY5MzE1NywxMjE1NDAwMzIxLC05MTYzNzg4MDMsMTcwNDM5
+Nzc4MCwxNzU5NTE2Mjk0LC02NTEyMDE5MTcsLTg2OTgyMTA3Ny
+wtMTI4MTg1NDQxMywxNzc5NjgxNTkyLDEyNTM1OTc5NzQsLTcz
+MDgyMzYzNl19
 -->
