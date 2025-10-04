@@ -109,9 +109,9 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-09-21/Sq8bPeuWFGTGkntN.png)Tahoe通过引入RTT方差的概念来解决这一问题，通过将偏差也平滑之后再进行超时计算，v体现了网络的波动程度，网络波动越大，超时时间估计的越保守
 
 ### 自时钟
-![输入图片说明](/imgs/2025-10-04/WiR0qrCo8t42x9RH.png)姿势
+![输入图片说明](/imgs/2025-10-04/WiR0qrCo8t42x9RH.png)自时钟模型
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDU1MzE0OTQsNTAyOTY1NTU5LC0zMz
+eyJoaXN0b3J5IjpbLTE0ODQ4MDE4MjcsNTAyOTY1NTU5LC0zMz
 AxMzk5NjQsLTE0NTg5MTIwODIsMTg1MjM2MjczNiw2NzMxNzgz
 MDAsLTE1OTA5OTY2MzUsNzU5ODUwMDQyLDE0MjYzOTIwNjUsLT
 YwODEyNTYwMiwtNzgzNjkzMTU3LDEyMTU0MDAzMjEsLTkxNjM3
