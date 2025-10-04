@@ -114,9 +114,9 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-10-04/wBlqTY9SaDaYLr2X.png)自时钟原则
 
 ### 三大机制总结
-![输入图片说明](/imgs/2025-10-04/j08f3wBvLeLKhMHc.png)总的来说，拥塞chuang
+![输入图片说明](/imgs/2025-10-04/j08f3wBvLeLKhMHc.png)总的来说，拥塞窗口/慢启动
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDA2MTc0NCw1MDI5NjU1NTksLTMzMD
+eyJoaXN0b3J5IjpbMTkxMTE3NjM4Niw1MDI5NjU1NTksLTMzMD
 EzOTk2NCwtMTQ1ODkxMjA4MiwxODUyMzYyNzM2LDY3MzE3ODMw
 MCwtMTU5MDk5NjYzNSw3NTk4NTAwNDIsMTQyNjM5MjA2NSwtNj
 A4MTI1NjAyLC03ODM2OTMxNTcsMTIxNTQwMDMyMSwtOTE2Mzc4
