@@ -109,13 +109,15 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-09-21/Sq8bPeuWFGTGkntN.png)Tahoe通过引入RTT方差的概念来解决这一问题，通过将偏差也平滑之后再进行超时计算，v体现了网络的波动程度，网络波动越大，超时时间估计的越保守
 
 ### 自时钟
-![输入图片说明](/imgs/2025-10-04/WiR0qrCo8t42x9RH.png)自时钟模型，上图模型展示了发送端和接收端都有一个较大的缓冲区，但是受到链路瓶颈的限制，发送的时间会被拉长，接收端受到后有变回原样，但是由于传输过程中的时间被拉长了，故接收端两个包之间会有时间间隔，发送回的ack也有间隔，同时因为ack的体积更小，会使得链路中有大量的空闲，发送端收到的ack频率也远小于发送频率，而发送端就会根据收到的ack速率调整自己发送数据的速率，这样数据包就可以根据正确的速率进入链路
+![输入图片说明](/imgs/2025-10-04/WiR0qrCo8t42x9RH.png)自时钟模型，上图模型展示了发送端和接收端都有一个较大的缓冲区，但是受到链路瓶颈的限制，发送的时间会被拉长，接收端受到后有变回原样，但是由于传输过程中的时间被拉长了，故接收端两个包之间会有时间间隔，发送回的ack也有间隔，同时因为ack的体积更小，会使得链路中有大量的空闲，发送端收到的ack频率也远小于发送频率，而发送端就会根据收到的ack速率调整自己发送数据的速率，这样数据包就可以根据正确的速率进入链路。简单来说，ack除了充当确认信号外，还起到了作为时钟的作用
+
+![输入图片说明](/imgs/2025-10-04/wBlqTY9SaDaYLr2X.png)zi'shi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5OTk3MDYsNTAyOTY1NTU5LC0zMzAxMz
-k5NjQsLTE0NTg5MTIwODIsMTg1MjM2MjczNiw2NzMxNzgzMDAs
-LTE1OTA5OTY2MzUsNzU5ODUwMDQyLDE0MjYzOTIwNjUsLTYwOD
-EyNTYwMiwtNzgzNjkzMTU3LDEyMTU0MDAzMjEsLTkxNjM3ODgw
-MywxNzA0Mzk3NzgwLDE3NTk1MTYyOTQsLTY1MTIwMTkxNywtOD
-Y5ODIxMDc3LC0xMjgxODU0NDEzLDE3Nzk2ODE1OTIsMTI1MzU5
-Nzk3NF19
+eyJoaXN0b3J5IjpbMjAxMDA0NDIwNiw1MDI5NjU1NTksLTMzMD
+EzOTk2NCwtMTQ1ODkxMjA4MiwxODUyMzYyNzM2LDY3MzE3ODMw
+MCwtMTU5MDk5NjYzNSw3NTk4NTAwNDIsMTQyNjM5MjA2NSwtNj
+A4MTI1NjAyLC03ODM2OTMxNTcsMTIxNTQwMDMyMSwtOTE2Mzc4
+ODAzLDE3MDQzOTc3ODAsMTc1OTUxNjI5NCwtNjUxMjAxOTE3LC
+04Njk4MjEwNzcsLTEyODE4NTQ0MTMsMTc3OTY4MTU5MiwxMjUz
+NTk3OTc0XX0=
 -->
