@@ -109,13 +109,13 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-09-21/Sq8bPeuWFGTGkntN.png)Tahoe通过引入RTT方差的概念来解决这一问题，通过将偏差也平滑之后再进行超时计算，v体现了网络的波动程度，网络波动越大，超时时间估计的越保守
 
 ### 自时钟
-![输入图片说明](/imgs/2025-10-04/WiR0qrCo8t42x9RH.png)自时钟模型
+![输入图片说明](/imgs/2025-10-04/WiR0qrCo8t42x9RH.png)自时钟模型，上图模型展示了发送端和接收端都有一个较大的缓冲区，但是受到链路瓶颈的限制，发送的时间会被拉长，接收端受到后有变回原样，但是由于传输过程中的时间被拉长了，故接收端两个包之间会有时间间隔，g
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQ4MDE4MjcsNTAyOTY1NTU5LC0zMz
-AxMzk5NjQsLTE0NTg5MTIwODIsMTg1MjM2MjczNiw2NzMxNzgz
-MDAsLTE1OTA5OTY2MzUsNzU5ODUwMDQyLDE0MjYzOTIwNjUsLT
-YwODEyNTYwMiwtNzgzNjkzMTU3LDEyMTU0MDAzMjEsLTkxNjM3
-ODgwMywxNzA0Mzk3NzgwLDE3NTk1MTYyOTQsLTY1MTIwMTkxNy
-wtODY5ODIxMDc3LC0xMjgxODU0NDEzLDE3Nzk2ODE1OTIsMTI1
-MzU5Nzk3NF19
+eyJoaXN0b3J5IjpbODUxNTAyMDIwLDUwMjk2NTU1OSwtMzMwMT
+M5OTY0LC0xNDU4OTEyMDgyLDE4NTIzNjI3MzYsNjczMTc4MzAw
+LC0xNTkwOTk2NjM1LDc1OTg1MDA0MiwxNDI2MzkyMDY1LC02MD
+gxMjU2MDIsLTc4MzY5MzE1NywxMjE1NDAwMzIxLC05MTYzNzg4
+MDMsMTcwNDM5Nzc4MCwxNzU5NTE2Mjk0LC02NTEyMDE5MTcsLT
+g2OTgyMTA3NywtMTI4MTg1NDQxMywxNzc5NjgxNTkyLDEyNTM1
+OTc5NzRdfQ==
 -->
