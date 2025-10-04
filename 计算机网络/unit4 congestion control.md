@@ -111,9 +111,12 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ### 自时钟
 ![输入图片说明](/imgs/2025-10-04/WiR0qrCo8t42x9RH.png)自时钟模型，上图模型展示了发送端和接收端都有一个较大的缓冲区，但是受到链路瓶颈的限制，发送的时间会被拉长，接收端受到后有变回原样，但是由于传输过程中的时间被拉长了，故接收端两个包之间会有时间间隔，发送回的ack也有间隔，同时因为ack的体积更小，会使得链路中有大量的空闲，发送端收到的ack频率也远小于发送频率，而发送端就会根据收到的ack速率调整自己发送数据的速率，这样数据包就可以根据正确的速率进入链路。简单来说，ack除了充当确认信号外，还起到了作为时钟的作用
 
-![输入图片说明](/imgs/2025-10-04/wBlqTY9SaDaYLr2X.png)zi'shi
+![输入图片说明](/imgs/2025-10-04/wBlqTY9SaDaYLr2X.png)自时钟原则
+
+### 三大机制总结
+![输入图片说明](/imgs/2025-10-04/j08f3wBvLeLKhMHc.png)总的来说，拥塞chuang
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMDA0NDIwNiw1MDI5NjU1NTksLTMzMD
+eyJoaXN0b3J5IjpbMTY1MDA2MTc0NCw1MDI5NjU1NTksLTMzMD
 EzOTk2NCwtMTQ1ODkxMjA4MiwxODUyMzYyNzM2LDY3MzE3ODMw
 MCwtMTU5MDk5NjYzNSw3NTk4NTAwNDIsMTQyNjM5MjA2NSwtNj
 A4MTI1NjAyLC03ODM2OTMxNTcsMTIxNTQwMDMyMSwtOTE2Mzc4
