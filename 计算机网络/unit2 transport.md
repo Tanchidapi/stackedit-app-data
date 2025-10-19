@@ -185,7 +185,7 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
 
-假设序列号bit长度为n，即有2^n^ 个序号（0到2^n^-1），则在GBN的情况下窗口最大大小为2^n^-1，在SR的情况下窗口最大大小为2^n-1^。这是因为G
+假设序列号bit长度为n，即有2^n^ 个序号（0到2^n^-1），则在GBN的情况下窗口最大大小为2^n^-1，在SR的情况下窗口最大大小为2^n-1^。这是因为GBN会把N步内的包全部重传，为了防止弄混需要保证不会在重传时重复整个窗口序列号；而SR选择性重传时最多选择窗口大小的序列号个数，因此要保证
 
 ## 关于数据报与数据包
 ![输入图片说明](/imgs/2025-07-21/PpwdnwZ7FjLpmRbt.png)比较分析
@@ -193,7 +193,7 @@ go back n协议在多个连续的数据报丢失时效率要高于selective repe
 一个ip数据包会包含一个udp的数据报或者tcp段，报与包的说法主要在于层级不同和所用协议不同
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNTk1NzY5MywxNTczNjA2NTQwLC0xMj
+eyJoaXN0b3J5IjpbMTA2MDcxMDc0NiwxNTczNjA2NTQwLC0xMj
 E2OTE4OTQ3LDYwODMwNjYzOCwxNTMwMTM2MTg5LC03NzE2Mjc3
 MjgsMTQ2ODkwNTAzMCwxMjUwNjMzMjA1LC0xNjQxMzAwNTY5LC
 0xNTcwNjYxNDQ5LDM3ODMwMDA1NSw5MDMxNjYzNjQsMTUxMzU1
