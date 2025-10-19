@@ -110,7 +110,7 @@ crc对奇数位错误，连续的小于crc位数的错误，长错误有良好�
 
 crc通过将数据视为一个多项式，通过模2除法除以一个生成的预设多项式，得到的余数即为crc值校验码，生成多项式对应的实际使用值不存储最高次的系数作为位，即多项式的最高次幂永远为1，且最高次数为对应位数
 计算过程：
-1. 先生成一个多项式用于计算，多项式长度为r+1（实际二进制代码少一位）
+1. 先生成一个多项式用于计算，多项式长度为r-1（实际二进制代码多一位）
 2. 对数据进行预处理，在后面补上多项式对应位数r的0
 3. 进行模2除法运算，每一位异或不进位，得到余数长度为生成多项式的位数-1，余数即为crc值
 
@@ -194,11 +194,11 @@ go back n协议在多个连续的数据报丢失时效率要高于selective repe
 一个ip数据包会包含一个udp的数据报或者tcp段，报与包的说法主要在于层级不同和所用协议不同
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTA2Mjc5NzMsMTU3MzYwNjU0MCwtMT
-IxNjkxODk0Nyw2MDgzMDY2MzgsMTUzMDEzNjE4OSwtNzcxNjI3
-NzI4LDE0Njg5MDUwMzAsMTI1MDYzMzIwNSwtMTY0MTMwMDU2OS
-wtMTU3MDY2MTQ0OSwzNzgzMDAwNTUsOTAzMTY2MzY0LDE1MTM1
-NTAxNDEsNjgyNzExNDU5LDE1NDkzMjk5OCwxNDMyNzMzODMzLC
-02ODQxMzQ1MTAsMTA5MTg0Nzk5OSwtNjU0OTg3MjI4LC02MDc1
-NDU5NTJdfQ==
+eyJoaXN0b3J5IjpbMTA0MDU2MTQyNCwtMTU1MDYyNzk3MywxNT
+czNjA2NTQwLC0xMjE2OTE4OTQ3LDYwODMwNjYzOCwxNTMwMTM2
+MTg5LC03NzE2Mjc3MjgsMTQ2ODkwNTAzMCwxMjUwNjMzMjA1LC
+0xNjQxMzAwNTY5LC0xNTcwNjYxNDQ5LDM3ODMwMDA1NSw5MDMx
+NjYzNjQsMTUxMzU1MDE0MSw2ODI3MTE0NTksMTU0OTMyOTk4LD
+E0MzI3MzM4MzMsLTY4NDEzNDUxMCwxMDkxODQ3OTk5LC02NTQ5
+ODcyMjhdfQ==
 -->
