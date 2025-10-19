@@ -185,6 +185,7 @@ mac在检错能力的基础上还增加了安全检测能力，mac本质上是�
 
 go back n协议在多个连续的数据报丢失时效率要高于selective repeat，速度更快，当sws为4，rws为1时，重传的表现类似于go back n，当sws于rws都为4时，重传的表现类似于selective repeat
 
+假设序列号bit长度为n，即有2^n^ 个序号（0到2^n^-1），则在GBN
 
 ## 关于数据报与数据包
 ![输入图片说明](/imgs/2025-07-21/PpwdnwZ7FjLpmRbt.png)比较分析
@@ -192,11 +193,11 @@ go back n协议在多个连续的数据报丢失时效率要高于selective repe
 一个ip数据包会包含一个udp的数据报或者tcp段，报与包的说法主要在于层级不同和所用协议不同
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MzYwNjU0MCwtMTIxNjkxODk0Nyw2MD
-gzMDY2MzgsMTUzMDEzNjE4OSwtNzcxNjI3NzI4LDE0Njg5MDUw
-MzAsMTI1MDYzMzIwNSwtMTY0MTMwMDU2OSwtMTU3MDY2MTQ0OS
-wzNzgzMDAwNTUsOTAzMTY2MzY0LDE1MTM1NTAxNDEsNjgyNzEx
-NDU5LDE1NDkzMjk5OCwxNDMyNzMzODMzLC02ODQxMzQ1MTAsMT
-A5MTg0Nzk5OSwtNjU0OTg3MjI4LC02MDc1NDU5NTIsLTE1NTQ3
-MzcwMzZdfQ==
+eyJoaXN0b3J5IjpbNjYzNzkxMjUzLDE1NzM2MDY1NDAsLTEyMT
+Y5MTg5NDcsNjA4MzA2NjM4LDE1MzAxMzYxODksLTc3MTYyNzcy
+OCwxNDY4OTA1MDMwLDEyNTA2MzMyMDUsLTE2NDEzMDA1NjksLT
+E1NzA2NjE0NDksMzc4MzAwMDU1LDkwMzE2NjM2NCwxNTEzNTUw
+MTQxLDY4MjcxMTQ1OSwxNTQ5MzI5OTgsMTQzMjczMzgzMywtNj
+g0MTM0NTEwLDEwOTE4NDc5OTksLTY1NDk4NzIyOCwtNjA3NTQ1
+OTUyXX0=
 -->
