@@ -125,9 +125,9 @@ Reno和Tahoe的区别在于收到三个重复ACK时的行为不同，不再将�
 ![输入图片说明](/imgs/2025-10-20/73Lai2LEd1OLa6SN.png)Reno特点
 
 ![输入图片说明](/imgs/2025-10-20/XrZ4zg6R4gHw5EJx.png)Reno示意图
-窗口
+窗口大小降低后的不变的区间是在进行快速重传，遇到超时时和Tahoe的行为相同，进入慢启动在对数时间内回到阈值
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MDgwNDk0MiwxNTgyODQ0ODg3LC00Mj
+eyJoaXN0b3J5IjpbLTQzNzIyMjc2NSwxNTgyODQ0ODg3LC00Mj
 QxMzI5NywxMjQwOTc1OTcxLC03MzM2MzQzOTgsNTAyOTY1NTU5
 LC0zMzAxMzk5NjQsLTE0NTg5MTIwODIsMTg1MjM2MjczNiw2Nz
 MxNzgzMDAsLTE1OTA5OTY2MzUsNzU5ODUwMDQyLDE0MjYzOTIw
