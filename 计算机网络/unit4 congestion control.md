@@ -225,14 +225,14 @@ NewReno是对Reno的主要改进，旨在解决Rino在**多个数据包丢失**�
 通过AIMD实现震荡的逐渐收敛至理想点，即用户公平且链路完全利用
 
 ## how to read RFC
-RFC是一个收集了和互联网相关信息的文档，如何阅读RFC可以参考下列回答[(81 封私信 / 80 条消息) 如何阅读RFC？ - 知乎](https://zhuanlan.zhihu.com/p/44635072)
+RFC是一个收集了和互联网相关信息，包括标准、协议、流程等的文档，是在接触互联网时必备且十分方便的一份规则手册。如何阅读RFC可以参考下列回答[(81 封私信 / 80 条消息) 如何阅读RFC？ - 知乎](https://zhuanlan.zhihu.com/p/44635072)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MjY3MzAzLDIwNTM4NDgxNTQsNTk0Nj
-AwNzAwLC0xNTEwMjMwMDI3LDE1NzYwMTgwODYsMTk1NTUyNzE5
-NCwtMTk2MDYzOTk0NywxNzQ4MTg2NTgsMjEzOTM3Mjc1MSwtND
-M3MjIyNzY1LDE1ODI4NDQ4ODcsLTQyNDEzMjk3LDEyNDA5NzU5
-NzEsLTczMzYzNDM5OCw1MDI5NjU1NTksLTMzMDEzOTk2NCwtMT
-Q1ODkxMjA4MiwxODUyMzYyNzM2LDY3MzE3ODMwMCwtMTU5MDk5
-NjYzNV19
+eyJoaXN0b3J5IjpbMTk0NjQyNzU0Niw4NDcyNjczMDMsMjA1Mz
+g0ODE1NCw1OTQ2MDA3MDAsLTE1MTAyMzAwMjcsMTU3NjAxODA4
+NiwxOTU1NTI3MTk0LC0xOTYwNjM5OTQ3LDE3NDgxODY1OCwyMT
+M5MzcyNzUxLC00MzcyMjI3NjUsMTU4Mjg0NDg4NywtNDI0MTMy
+OTcsMTI0MDk3NTk3MSwtNzMzNjM0Mzk4LDUwMjk2NTU1OSwtMz
+MwMTM5OTY0LC0xNDU4OTEyMDgyLDE4NTIzNjI3MzYsNjczMTc4
+MzAwXX0=
 -->
