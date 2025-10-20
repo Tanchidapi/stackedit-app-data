@@ -117,9 +117,9 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 ![输入图片说明](/imgs/2025-10-04/j08f3wBvLeLKhMHc.png)总的来说，拥塞窗口/慢启动、超时估计、自时钟三个机制是TCP Tahoe的核心基础
 
 ## TCP Reno / TCP NewReno
-TCP Tahoe的进一步改进，在保证正确性的前提下提高了性能。简单来说，Tahoe在慢启动时指数增长，超时时将窗口阈值改为当前值一半，然后窗口大小改为1，再次慢启动，到达阈值时bai'n'we
+TCP Tahoe的进一步改进，在保证正确性的前提下提高了性能。简单来说，Tahoe在慢启动时指数增长，超时时将窗口阈值改为当前值一半，然后窗口大小改为1，再次慢启动，到达阈值时变为线性增长，直到遇到超时
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MjU3OTEwOCwxMjQwOTc1OTcxLC03Mz
+eyJoaXN0b3J5IjpbMTM1OTE0NTU4OSwxMjQwOTc1OTcxLC03Mz
 M2MzQzOTgsNTAyOTY1NTU5LC0zMzAxMzk5NjQsLTE0NTg5MTIw
 ODIsMTg1MjM2MjczNiw2NzMxNzgzMDAsLTE1OTA5OTY2MzUsNz
 U5ODUwMDQyLDE0MjYzOTIwNjUsLTYwODEyNTYwMiwtNzgzNjkz
