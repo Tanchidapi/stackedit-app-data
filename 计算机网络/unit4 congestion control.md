@@ -214,18 +214,19 @@ NewReno是对Reno的主要改进，旨在解决Rino在**多个数据包丢失**�
 | **处理单个丢包** | 性能差（窗口降至1） | **性能好**（保持较高窗口） | 性能好（同Reno） |
 | **处理多个丢包** | 性能差（窗口降至1） | 性能差（易导致超时） | **性能好**（避免超时） |
 | **历史地位** | 早期基础版本 | 广泛应用，重要改进 | 对Reno的显著增强，曾是许多系统的默认选项 |
-
+```
 **演进脉络**：
 **Tahoe**（发现丢包就重置） -> **Reno**（引入快速恢复，优雅处理单个丢包） -> **NewReno**（改进快速恢复，能处理多个丢包）。
-```
+
 如今，Linux等现代操作系统中默认的TCP拥塞控制算法（如CUBIC）都包含了比NewReno更先进的特性，但理解这三者的区别是掌握TCP拥塞控制演进逻辑的关键。
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3NTQ5NDg2LC0xOTYwNjM5OTQ3LDE3ND
-gxODY1OCwyMTM5MzcyNzUxLC00MzcyMjI3NjUsMTU4Mjg0NDg4
-NywtNDI0MTMyOTcsMTI0MDk3NTk3MSwtNzMzNjM0Mzk4LDUwMj
-k2NTU1OSwtMzMwMTM5OTY0LC0xNDU4OTEyMDgyLDE4NTIzNjI3
-MzYsNjczMTc4MzAwLC0xNTkwOTk2NjM1LDc1OTg1MDA0MiwxND
-I2MzkyMDY1LC02MDgxMjU2MDIsLTc4MzY5MzE1NywxMjE1NDAw
-MzIxXX0=
+eyJoaXN0b3J5IjpbMTk1NTUyNzE5NCwtMTk2MDYzOTk0NywxNz
+Q4MTg2NTgsMjEzOTM3Mjc1MSwtNDM3MjIyNzY1LDE1ODI4NDQ4
+ODcsLTQyNDEzMjk3LDEyNDA5NzU5NzEsLTczMzYzNDM5OCw1MD
+I5NjU1NTksLTMzMDEzOTk2NCwtMTQ1ODkxMjA4MiwxODUyMzYy
+NzM2LDY3MzE3ODMwMCwtMTU5MDk5NjYzNSw3NTk4NTAwNDIsMT
+QyNjM5MjA2NSwtNjA4MTI1NjAyLC03ODM2OTMxNTcsMTIxNTQw
+MDMyMV19
 -->
