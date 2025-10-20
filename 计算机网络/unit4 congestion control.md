@@ -221,9 +221,10 @@ NewReno是对Reno的主要改进，旨在解决Rino在**多个数据包丢失**�
 如今，Linux等现代操作系统中默认的TCP拥塞控制算法（如CUBIC）都包含了比NewReno更先进的特性，但理解这三者的区别是掌握TCP拥塞控制演进逻辑的关键。
 ```
 ### 通过Chiu Jain图说明为什么要用AIMD
-![输入图片说明](/imgs/2025-10-20/67juruncwYg4pd8C.png)CJP
+![输入图片说明](/imgs/2025-10-20/67juruncwYg4pd8C.png)CJP示意图
+通过AIMD实现震荡的逐渐收敛至理想点，即用户公平且链路完全利用
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NjE3NTgxNCw1OTQ2MDA3MDAsLTE1MT
+eyJoaXN0b3J5IjpbMjA1Mzg0ODE1NCw1OTQ2MDA3MDAsLTE1MT
 AyMzAwMjcsMTU3NjAxODA4NiwxOTU1NTI3MTk0LC0xOTYwNjM5
 OTQ3LDE3NDgxODY1OCwyMTM5MzcyNzUxLC00MzcyMjI3NjUsMT
 U4Mjg0NDg4NywtNDI0MTMyOTcsMTI0MDk3NTk3MSwtNzMzNjM0
