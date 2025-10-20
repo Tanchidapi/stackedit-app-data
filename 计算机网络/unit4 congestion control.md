@@ -120,9 +120,9 @@ AIMD并不是控制发送速率，实际上，AIMD控制的是网络中未确认
 TCP Tahoe的进一步改进，在保证正确性的前提下提高了性能。简单来说，Tahoe在慢启动时指数增长，超时时将窗口阈值改为当前值一半，然后窗口大小改为1，再次慢启动，到达阈值时变为线性增长，直到遇到超时。
 ![输入图片说明](/imgs/2025-10-20/B1uizAnXH4KYbBm9.png)Tahoe示意图
 
-
+Reno和Tahoe的区别在于收到三个重复ACK时的行为不同，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk0NjA3MjAwLDEyNDA5NzU5NzEsLTczMz
+eyJoaXN0b3J5IjpbLTQyNDEzMjk3LDEyNDA5NzU5NzEsLTczMz
 YzNDM5OCw1MDI5NjU1NTksLTMzMDEzOTk2NCwtMTQ1ODkxMjA4
 MiwxODUyMzYyNzM2LDY3MzE3ODMwMCwtMTU5MDk5NjYzNSw3NT
 k4NTAwNDIsMTQyNjM5MjA2NSwtNjA4MTI1NjAyLC03ODM2OTMx
