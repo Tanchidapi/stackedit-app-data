@@ -133,14 +133,99 @@ NR在超时方面仍然和Tahoe相同，在收到三个重复ACK时也和Reno一
 ![输入图片说明](/imgs/2025-10-20/xGS9TLwXO0lcSSoQ.png)NewReno的特点
 
 ![输入图片说明](/imgs/2025-10-20/8o2IPDpMpKKxSywF.png)总结
+下面是ds给出的总结，与课程所讲解的略有不同
+```
+### 核心共同点
 
+在讨论区别之前，首先要了解它们共享的基础机制，这是TCP拥塞控制的基石：
 
+1.  **慢启动（Slow Start）**：连接开始时或超时后，拥塞窗口（cwnd）从1个MSS开始，每收到一个ACK就翻倍（指数增长），旨在快速探测可用带宽。
+2.  **拥塞避免（Congestion Avoidance）**：当cwnd达到慢启动阈值（ssthresh）后，进入拥塞避免阶段，cwnd每个RTT只增加1个MSS（线性增长），趋于稳定。
+3.  **快速重传（Fast Retransmit）**：当发送方收到3个重复的ACK时，它推断有数据包丢失（而非网络严重拥塞），会立即重传对方所要求的那个数据包，而不必等待超时计时器。
+
+**它们的关键区别在于“快速重传”之后做了什么，即“快速恢复（Fast Recovery）”阶段的行为。**
+
+---
+
+### 1. TCP Tahoe
+
+Tahoe是较早的版本，它的逻辑相对简单粗暴。
+
+*   **行为**：
+    1.  发生**超时**或收到**3个重复ACK**时，都视为拥塞。
+    2.  立即将 `ssthresh` 设置为当前 `cwnd` 的一半（至少为2个MSS）：`ssthresh = cwnd / 2`
+    3.  然后将 `cwnd` **重置为 1个MSS**。
+    4.  重新开始**慢启动**过程，直到cwnd增长到新的ssthresh，再进入拥塞避免。
+
+*   **优点**：实现简单，对拥塞反应强烈，能迅速缓解网络压力。
+*   **缺点**：**过于保守**。即使在只有单个包丢失（通过重复ACK感知）的情况下，它也会将窗口骤降至1，导致网络吞吐量急剧下降，无法有效利用带宽。
+
+**简而言之：Tahoe把任何拥塞信号（超时或重复ACK）都一视同仁，直接打回慢启动原点。**
+
+---
+
+### 2. TCP Reno
+
+Reno在Tahoe的基础上引入了 **“快速恢复（Fast Recovery）”** 算法，这是最关键的改进。
+
+*   **行为**：
+    1.  **发生超时**：行为与Tahoe完全一样 -> `cwnd = 1`，进入慢启动。
+    2.  **收到3个重复ACK（快速重传）**：
+        *   将 `ssthresh` 设置为当前 `cwnd` 的一半：`ssthresh = cwnd / 2`
+        *   **关键区别**：并不将 `cwnd` 重置为1。而是将 `cwnd` 设置为 `ssthresh + 3个MSS`（因为3个重复ACK意味着有3个数据包已经离开网络到达了接收方）。
+        *   然后进入**快速恢复**阶段。
+            *   在快速恢复阶段，每收到一个**重复的ACK**，就稍微增大一点cwnd（因为认为又有一个包离开了网络）。
+            *   当收到一个**对新数据的ACK**（即确认了之前所有丢失和未确认的数据）时，退出快速恢复阶段，将 `cwnd` 设置为 `ssthresh`，然后进入**拥塞避免**阶段。
+
+*   **优点**：在发生**单个数据包丢失**时，避免了Tahoe那样从1开始的慢启动，能够保持较高的吞吐量。这是巨大的进步。
+*   **缺点**：**无法有效处理同一窗口内的多个数据包丢失**。如果同一个发送窗口内丢失了多个包，Reno在快速恢复阶段可能只能重传其中一个（通过重复ACK触发的那个）。当收到对新数据的ACK退出快速恢复时，可能还有其他丢失的包未被处理，最终只能等待**超时**。一旦超时，cwnd又会被重置为1，性能损失很大。
+
+**简而言之：Reno能优雅处理单个丢包，但多个丢包会导致性能劣化。**
+
+---
+
+### 3. TCP NewReno
+
+NewReno是对Reno的主要改进，旨在解决Rino在**多个数据包丢失**时性能不佳的问题。
+
+*   **行为**：
+    *   在**快速恢复**阶段，Reno在收到一个对新数据的ACK后就退出。而NewReno增加了一个 **“部分确认（Partial ACK）”** 的概念。
+    *   **部分确认**：在快速恢复阶段，如果一个ACK确认了部分但不是全部从进入快速恢复时开始未被确认的数据，那么它就是一个“部分确认”。这通常意味着又有一个之前丢失的包被重传并收到了。
+    *   **NewReno的处理方式**：
+        1.  当收到一个部分确认时，NewReno会推断出又有一个包丢失了，于是立即**重传这个部分确认所指向的下一个数据包**。
+        2.  同时，将cwnd相应地减小（通常会减去已确认的数据量再加上一个MSS，以补偿重传）。
+        3.  它**不会退出快速恢复阶段**，而是继续保持在这个阶段，等待下一个ACK。
+        4.  只有当收到一个确认了**进入快速恢复时所有未确认数据**的ACK（称为“完全ACK”）时，它才会退出快速恢复，将cwnd设置为ssthresh，进入拥塞避免。
+
+*   **优点**：**能够在一个RTT内恢复多个数据包的丢失**，极大地减少了因多个丢包而引发超时的可能性，从而提升了吞吐量。
+*   **缺点**：仍然是一个基于“丢包”的拥塞控制算法。在高速或长延迟网络中，表现不如后续的BBR等基于延迟的算法。但它比Reno强大得多。
+
+**简而言之：NewReno通过“部分确认”机制，延长了快速恢复阶段，从而能够高效地处理同一窗口内的多个丢包。**
+
+---
+```
+### 总结对比表格
+
+| 特性 | TCP Tahoe | TCP Reno | TCP NewReno |
+| :--- | :--- | :--- | :--- |
+| **核心机制** | 慢启动、拥塞避免、快速重传 | 在Tahoe基础上增加**快速恢复** | 在Reno基础上改进**快速恢复** |
+| **收到3个DupACK** | `cwnd` 重置为1，进入慢启动 | 进入**快速恢复**，`cwnd = ssthresh + 3` | 同Reno，进入**快速恢复** |
+| **快速恢复阶段** | **无**快速恢复阶段 | 有。收到**新数据ACK**后退出，进入拥塞避免 | 有。通过**部分确认**重传多个丢包，收到**完全ACK**后才退出 |
+| **处理单个丢包** | 性能差（窗口降至1） | **性能好**（保持较高窗口） | 性能好（同Reno） |
+| **处理多个丢包** | 性能差（窗口降至1） | 性能差（易导致超时） | **性能好**（避免超时） |
+| **历史地位** | 早期基础版本 | 广泛应用，重要改进 | 对Reno的显著增强，曾是许多系统的默认选项 |
+
+**演进脉络**：
+**Tahoe**（发现丢包就重置） -> **Reno**（引入快速恢复，优雅处理单个丢包） -> **NewReno**（改进快速恢复，能处理多个丢包）。
+```
+如今，Linux等现代操作系统中默认的TCP拥塞控制算法（如CUBIC）都包含了比NewReno更先进的特性，但理解这三者的区别是掌握TCP拥塞控制演进逻辑的关键。
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjA2Mzk5NDcsMTc0ODE4NjU4LDIxMz
-kzNzI3NTEsLTQzNzIyMjc2NSwxNTgyODQ0ODg3LC00MjQxMzI5
-NywxMjQwOTc1OTcxLC03MzM2MzQzOTgsNTAyOTY1NTU5LC0zMz
-AxMzk5NjQsLTE0NTg5MTIwODIsMTg1MjM2MjczNiw2NzMxNzgz
-MDAsLTE1OTA5OTY2MzUsNzU5ODUwMDQyLDE0MjYzOTIwNjUsLT
-YwODEyNTYwMiwtNzgzNjkzMTU3LDEyMTU0MDAzMjEsLTkxNjM3
-ODgwM119
+eyJoaXN0b3J5IjpbNjc3NTQ5NDg2LC0xOTYwNjM5OTQ3LDE3ND
+gxODY1OCwyMTM5MzcyNzUxLC00MzcyMjI3NjUsMTU4Mjg0NDg4
+NywtNDI0MTMyOTcsMTI0MDk3NTk3MSwtNzMzNjM0Mzk4LDUwMj
+k2NTU1OSwtMzMwMTM5OTY0LC0xNDU4OTEyMDgyLDE4NTIzNjI3
+MzYsNjczMTc4MzAwLC0xNTkwOTk2NjM1LDc1OTg1MDA0MiwxND
+I2MzkyMDY1LC02MDgxMjU2MDIsLTc4MzY5MzE1NywxMjE1NDAw
+MzIxXX0=
 -->
