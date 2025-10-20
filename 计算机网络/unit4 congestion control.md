@@ -133,7 +133,7 @@ NR在超时方面仍然和Tahoe相同，在收到三个重复ACK时也和Reno一
 ![输入图片说明](/imgs/2025-10-20/xGS9TLwXO0lcSSoQ.png)NewReno的特点
 
 ![输入图片说明](/imgs/2025-10-20/8o2IPDpMpKKxSywF.png)总结
-下面是ds给出的总结，与课程所讲解的略有不同
+下面是ds给出的总结，与课程所讲解的略有不同，区别在于Reno发生快重传时cwnd
 ```
 ### 核心共同点
 
@@ -222,11 +222,11 @@ NewReno是对Reno的主要改进，旨在解决Rino在**多个数据包丢失**�
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTUyNzE5NCwtMTk2MDYzOTk0NywxNz
-Q4MTg2NTgsMjEzOTM3Mjc1MSwtNDM3MjIyNzY1LDE1ODI4NDQ4
-ODcsLTQyNDEzMjk3LDEyNDA5NzU5NzEsLTczMzYzNDM5OCw1MD
-I5NjU1NTksLTMzMDEzOTk2NCwtMTQ1ODkxMjA4MiwxODUyMzYy
-NzM2LDY3MzE3ODMwMCwtMTU5MDk5NjYzNSw3NTk4NTAwNDIsMT
-QyNjM5MjA2NSwtNjA4MTI1NjAyLC03ODM2OTMxNTcsMTIxNTQw
-MDMyMV19
+eyJoaXN0b3J5IjpbMTc1MDM5MjQxLDE5NTU1MjcxOTQsLTE5Nj
+A2Mzk5NDcsMTc0ODE4NjU4LDIxMzkzNzI3NTEsLTQzNzIyMjc2
+NSwxNTgyODQ0ODg3LC00MjQxMzI5NywxMjQwOTc1OTcxLC03Mz
+M2MzQzOTgsNTAyOTY1NTU5LC0zMzAxMzk5NjQsLTE0NTg5MTIw
+ODIsMTg1MjM2MjczNiw2NzMxNzgzMDAsLTE1OTA5OTY2MzUsNz
+U5ODUwMDQyLDE0MjYzOTIwNjUsLTYwODEyNTYwMiwtNzgzNjkz
+MTU3XX0=
 -->
