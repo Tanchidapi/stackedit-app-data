@@ -133,7 +133,7 @@ NR在超时方面仍然和Tahoe相同，在收到三个重复ACK时也和Reno一
 ![输入图片说明](/imgs/2025-10-20/xGS9TLwXO0lcSSoQ.png)NewReno的特点
 
 ![输入图片说明](/imgs/2025-10-20/8o2IPDpMpKKxSywF.png)总结
-下面是ds给出的总结，与课程所讲解的略有不同，区别在于Reno发生快重传时cwnd改为原大小+3，New Reno退出快重传的条件为收到恢复
+下面是ds给出的总结，与课程所讲解的略有不同，区别在于Reno发生快重传时cwnd改为原大小+3，New Reno退出快重传的条件为收到恢复应答，即确认全部的丢包情况都已解决，用于处理多丢包情况。
 ```
 ### 核心共同点
 
@@ -222,11 +222,11 @@ NewReno是对Reno的主要改进，旨在解决Rino在**多个数据包丢失**�
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNzE5MDg1OSwxNTc2MDE4MDg2LDE5NT
-U1MjcxOTQsLTE5NjA2Mzk5NDcsMTc0ODE4NjU4LDIxMzkzNzI3
-NTEsLTQzNzIyMjc2NSwxNTgyODQ0ODg3LC00MjQxMzI5NywxMj
-QwOTc1OTcxLC03MzM2MzQzOTgsNTAyOTY1NTU5LC0zMzAxMzk5
-NjQsLTE0NTg5MTIwODIsMTg1MjM2MjczNiw2NzMxNzgzMDAsLT
-E1OTA5OTY2MzUsNzU5ODUwMDQyLDE0MjYzOTIwNjUsLTYwODEy
-NTYwMl19
+eyJoaXN0b3J5IjpbLTE1MTAyMzAwMjcsMTU3NjAxODA4NiwxOT
+U1NTI3MTk0LC0xOTYwNjM5OTQ3LDE3NDgxODY1OCwyMTM5Mzcy
+NzUxLC00MzcyMjI3NjUsMTU4Mjg0NDg4NywtNDI0MTMyOTcsMT
+I0MDk3NTk3MSwtNzMzNjM0Mzk4LDUwMjk2NTU1OSwtMzMwMTM5
+OTY0LC0xNDU4OTEyMDgyLDE4NTIzNjI3MzYsNjczMTc4MzAwLC
+0xNTkwOTk2NjM1LDc1OTg1MDA0MiwxNDI2MzkyMDY1LC02MDgx
+MjU2MDJdfQ==
 -->
