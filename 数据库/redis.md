@@ -31,8 +31,9 @@ sinter 取交集
 sunion 取并集
 sdiff 取差集
 ### 有序集合sortedset
-
+有序集合中的每个元素会关联一个浮点型的分数，ha
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNjQ1NjY3MywtMTAzMjM3NjQ1LDY4Mz
-czNzMyOSwtOTQzMDMzMDkxLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbOTkyNjgzNTQ0LDE2MDY0NTY2NzMsLTEwMz
+IzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0NjYx
+Ml19
 -->
