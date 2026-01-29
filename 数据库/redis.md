@@ -26,8 +26,12 @@ ltrim name start end 用于删除start到end以外的数据，只保留其之间
 sadd name value 向名为name的集合中插入value
 smembers 显示name集合中的所有数据
 sismember name value 判断value是否在集合中
-srem name 
+srem name value 删除集合中数据value
+sinter 取交集
+sunion 取并集
+sdiff 取差集
+### 有序集合sortedset
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5ODYyNDMwMyw2ODM3MzczMjksLTk0Mz
+eyJoaXN0b3J5IjpbLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0Mz
 AzMzA5MSwtMjA4ODc0NjYxMl19
 -->
