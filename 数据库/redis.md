@@ -34,9 +34,13 @@ sdiff 取差集
 有序集合中的每个元素会关联一个浮点型的分数，按照分数对集合中的元素进行从小到大排序，元素唯一但是分数可重复，常用命令如下：
 zadd name score value 向名为name的有序集合插入分数为score的value
 zrange name start end （withscores） 显示有序集合中的元素（同时显示分数）
-zscore name 
+zscore name value 查看成员分数
+zrank name value 查看成员排名
+zrevrank name value 查看成员排名，从大到小
+zrem name value 删除成员
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDM2Nzc3MywxNjA2NDU2NjczLC0xMD
-MyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2
-MTJdfQ==
+eyJoaXN0b3J5IjpbMTg1MTczMzEsMTYwNjQ1NjY3MywtMTAzMj
+M3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkxLC0yMDg4NzQ2NjEy
+XX0=
 -->
