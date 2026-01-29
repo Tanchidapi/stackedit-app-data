@@ -48,9 +48,10 @@ hexists name field 判断是否存在某个键值对
 hkeys/hlen 获取所有键/数量
 ### 发布订阅模式
 通过publish命令将消息发布至指定的频道，通过subscribe来订阅对应频道，如：
-在一个终端中用命令`subscribe erii
+在一个终端中用命令`subscribe erii`用于接收消息，另一个终端中使用`publish erii sakura`来发送消息到对应频道
+订阅频道的终端可以有
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDEyNDcyODcsLTg4Njk1NDU3OSwxNj
-A2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMw
-OTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTU0MzA0NTM1OSwtODg2OTU0NTc5LDE2MD
+Y0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5
+MSwtMjA4ODc0NjYxMl19
 -->
