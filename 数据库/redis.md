@@ -31,9 +31,11 @@ sinter 取交集
 sunion 取并集
 sdiff 取差集
 ### 有序集合sortedset
-有序集合中的每个元素会关联一个浮点型的分数，按照分数对集合中的元素进行从小到大排序，元素唯一但是分数可重复
+有序集合中的每个元素会关联一个浮点型的分数，按照分数对集合中的元素进行从小到大排序，元素唯一但是分数可重复，常用命令如下：
+zadd name value 向名为name的有序集合插入value 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3NjYyNzcyLDE2MDY0NTY2NzMsLTEwMz
-IzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0NjYx
-Ml19
+eyJoaXN0b3J5IjpbLTQ4ODQ1ODI1NCwxNjA2NDU2NjczLC0xMD
+MyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2
+MTJdfQ==
 -->
