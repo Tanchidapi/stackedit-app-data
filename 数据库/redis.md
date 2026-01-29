@@ -47,9 +47,9 @@ hdel name field 删除对应键值对
 hexists name field 判断是否存在某个键值对
 hkeys/hlen 获取所有键/数量
 ### 发布订阅模式
-通过publish
+通过publish命令将消息发布至指定的频道，通过subscribe来订阅对应频道
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NDcyOTYyMywxNjA2NDU2NjczLC0xMD
+eyJoaXN0b3J5IjpbLTg4Njk1NDU3OSwxNjA2NDU2NjczLC0xMD
 MyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2
 MTJdfQ==
 -->
