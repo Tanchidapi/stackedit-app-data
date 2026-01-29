@@ -49,9 +49,12 @@ hkeys/hlen 获取所有键/数量
 ### 发布订阅模式
 通过publish命令将消息发布至指定的频道，通过subscribe来订阅对应频道，如：
 在一个终端中用命令`subscribe erii`用于接收消息，另一个终端中使用`publish erii sakura`来发送消息到对应频道
-订阅频道的终端可以有
+订阅频道的终端可以有多个
+发布订阅模式的局限性在于消息无法持久化，无法记录历史消息等，利用stream流可以解决上述问题
+### 消息队列stream
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MzA0NTM1OSwtODg2OTU0NTc5LDE2MD
+eyJoaXN0b3J5IjpbMTQ4NzgyODYyMywtODg2OTU0NTc5LDE2MD
 Y0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5
 MSwtMjA4ODc0NjYxMl19
 -->
