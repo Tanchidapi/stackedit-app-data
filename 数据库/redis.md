@@ -12,7 +12,7 @@ expire key time 设置过期时间
 setex key value time 设置过期时间
 setinx key value 如果键值对不存在则插入
 ### 列表list
-类似于deque双端队列，可以在两端插入、删除数据，也可以删除指定范围外的数据，常用命令如下
+类似于deque双端队列，可以在两端插入、删除数据，也可以删除指定范围外的数据，可以实现简单的消息队列，常用命令如下：
 lpush name value 在name列表的左边插入value
 rpush name value 同上，不过是在右边
 lpop name 删除左边第一个元素
@@ -20,8 +20,9 @@ rpop name 同上，删除右边
 上述两个pop命令可以在最后加上数字来一次性删除多个元素
 lrange name startidx endidx 显示起始位置和结束位置之间的所有数据，endidx取-1时表示最后一个元素
 llen name 显示列表长度
+ltrim name start end 用于删除start到end以外的数据，只保留其之间的
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NDIzOTgyLDY4MzczNzMyOSwtOTQzMD
-MzMDkxLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTQ3OTgxOTgwNyw2ODM3MzczMjksLTk0Mz
+AzMzA5MSwtMjA4ODc0NjYxMl19
 -->
