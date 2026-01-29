@@ -60,9 +60,11 @@ xdel name id 删除编号为id的消息
 xtrim name maxlen 0 删除所有消息
 id的格式是整数-整数，第一个整数表示一个时间戳，第二个整数表示一个序列号，无论手动还是自动，都要保证id递增
 xread count num block time name start 一次读取num条消息，从start开始，如果没有消息就阻塞time（ms），start使用`$`符号表示获取从现在开始以后的最新消息。读取操作是可以重复进行的
-xgroup creat name 创建一个消费者组
+xgroup creat name groupname id 创建一个消费者组，消息队列名称name，组名称groupname
+xinfo groups name 查看name对应的消费者组的信息
+x'g
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDg3ODE4MDksLTg4Njk1NDU3OSwxNj
-A2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMw
-OTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTMzOTk3NjU3NSwtODg2OTU0NTc5LDE2MD
+Y0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5
+MSwtMjA4ODc0NjYxMl19
 -->
