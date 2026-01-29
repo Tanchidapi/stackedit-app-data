@@ -53,9 +53,9 @@ hkeys/hlen 获取所有键/数量
 发布订阅模式的局限性在于消息无法持久化，无法记录历史消息等，利用stream流可以解决上述问题
 ### 消息队列stream
 是一个轻量级的消息队列，常见命令如下：
-xadd key * 
+xadd name * key value 星号表示自动生成一个消息的id，该命令用于向name消息队列插入一条消息，ne'r
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzU1NzU5LC04ODY5NTQ1NzksMTYwNj
-Q1NjY3MywtMTAzMjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkx
-LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTY1OTA1NjQ2NCwtODg2OTU0NTc5LDE2MD
+Y0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5
+MSwtMjA4ODc0NjYxMl19
 -->
