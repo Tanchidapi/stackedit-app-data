@@ -41,9 +41,11 @@ zrem name value 删除成员
 ### 哈希hash
 字符类型的字段和值的映射表，存储键值对对象，常见命令如下：
 hset name field value 向名为name的哈希中插入键值对
-
+hget name field 获取field对应的值
+hgetall 显示所有的键值对
+hdel name field shan's
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxNDQ0NTI5LDE2MDY0NTY2NzMsLTEwMz
-IzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0NjYx
-Ml19
+eyJoaXN0b3J5IjpbLTIwMjMwNDU3MzksMTYwNjQ1NjY3MywtMT
+AzMjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkxLC0yMDg4NzQ2
+NjEyXX0=
 -->
