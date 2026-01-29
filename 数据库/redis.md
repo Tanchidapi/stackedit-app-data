@@ -21,8 +21,11 @@ rpop name 同上，删除右边
 lrange name startidx endidx 显示起始位置和结束位置之间的所有数据，endidx取-1时表示最后一个元素
 llen name 显示列表长度
 ltrim name start end 用于删除start到end以外的数据，只保留其之间的
-
+### 集合set
+不能重复且不像list是有顺序的，常用命令如下：
+sadd name value
+smembers
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTgxOTgwNyw2ODM3MzczMjksLTk0Mz
-AzMzA5MSwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTE0MDEzNTU1ODUsNjgzNzM3MzI5LC05ND
+MwMzMwOTEsLTIwODg3NDY2MTJdfQ==
 -->
