@@ -57,9 +57,10 @@ xadd name * key value 星号表示自动生成一个消息的id，该命令用�
 xlen name 查看name中消息的数量
 xrange name start end 查看name中消息的详细内容，start和end使用-和+可以表示所有消息
 xdel name id 删除编号为id的消息
-xtrim name m
+xtrim name maxlen 0 删除所有消息
+id的格式是整数-整数，第一个整数表示一个时间戳，第二个整数表示一个序列号，无论手动还是自动，都要保证id递增
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODI2NjA4NjQsLTg4Njk1NDU3OSwxNj
-A2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMw
-OTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbODM0NjU5Njg5LC04ODY5NTQ1NzksMTYwNj
+Q1NjY3MywtMTAzMjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkx
+LC0yMDg4NzQ2NjEyXX0=
 -->
