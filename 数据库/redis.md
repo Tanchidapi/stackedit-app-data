@@ -43,9 +43,13 @@ zrem name value 删除成员
 hset name field value 向名为name的哈希中插入键值对
 hget name field 获取field对应的值
 hgetall 显示所有的键值对
-hdel name field shan's
+hdel name field 删除对应键值对
+hexists name field 判断是否存在某个键值对
+hkeys/hlen 获取所有键/数量
+### 发布订阅模式
+通过publish
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjMwNDU3MzksMTYwNjQ1NjY3MywtMT
-AzMjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkxLC0yMDg4NzQ2
-NjEyXX0=
+eyJoaXN0b3J5IjpbLTM3NDcyOTYyMywxNjA2NDU2NjczLC0xMD
+MyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2
+MTJdfQ==
 -->
