@@ -62,9 +62,9 @@ id的格式是整数-整数，第一个整数表示一个时间戳，第二个�
 xread count num block time name start 一次读取num条消息，从start开始，如果没有消息就阻塞time（ms），start使用`$`符号表示获取从现在开始以后的最新消息。读取操作是可以重复进行的
 xgroup creat name groupname id 创建一个消费者组，消息队列名称name，组名称groupname
 xinfo groups name 查看name对应的消费者组的信息
-xgroup createconsumer
+xgroup createconsumer name groupname consumername 创建对应消息队列对应消费者组的消费者并指定名字
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NjYzNDIyOCwtODg2OTU0NTc5LDE2MD
-Y0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5
-MSwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTEyMjI3NjEzNDMsLTU3NjYzNDIyOCwtOD
+g2OTU0NTc5LDE2MDY0NTY2NzMsLTEwMzIzNzY0NSw2ODM3Mzcz
+MjksLTk0MzAzMzA5MSwtMjA4ODc0NjYxMl19
 -->
