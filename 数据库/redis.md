@@ -1,4 +1,5 @@
 ### Redis和MYSQL的区别
+MYSQL是关系型数据库，核心是数据的持久性存储和
 ### 常用命令
 常见的数据类型有基础的string、list、set、sortedset、hash和高级的消息队列stream、地理空间geospatial、hyperloglog、位图bitmap、位域bitfield
 redis中的数据都是以键值对的形式存储的，且大小写敏感，以二进制存储和显示，因此默认不支持中文，可以在启动cli时加上raw参数表示显示以原始形式显示内容，下面以string作为常见操作的说明
@@ -66,7 +67,7 @@ xinfo groups name 查看name对应的消费者组的信息
 xgroup createconsumer name groupname consumername 创建对应消息队列对应消费者组的消费者并指定名字
 xreadgroup group groupname consumername count num block time streams name > 使用消费者组中的指定消费者读取num条消息，阻塞时间time，`>`表示从消息队列中读取最新消息
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk0Mzk3Mjk0LC01NzY2MzQyMjgsLTg4Nj
-k1NDU3OSwxNjA2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5
-LC05NDMwMzMwOTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTI3NzMxNDY5NCw2OTQzOTcyOTQsLTU3Nj
+YzNDIyOCwtODg2OTU0NTc5LDE2MDY0NTY2NzMsLTEwMzIzNzY0
+NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0NjYxMl19
 -->
