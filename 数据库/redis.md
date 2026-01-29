@@ -31,9 +31,9 @@ sinter 取交集
 sunion 取并集
 sdiff 取差集
 ### 有序集合sortedset
-有序集合中的每个元素会关联一个浮点型的分数，ha
+有序集合中的每个元素会关联一个浮点型的分数，按照分数对集合中的元素进行从小到大排序，元素唯一但是分数可重复
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyNjgzNTQ0LDE2MDY0NTY2NzMsLTEwMz
+eyJoaXN0b3J5IjpbMjE3NjYyNzcyLDE2MDY0NTY2NzMsLTEwMz
 IzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0NjYx
 Ml19
 -->
