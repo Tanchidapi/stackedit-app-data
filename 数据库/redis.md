@@ -15,11 +15,11 @@ setinx key value 如果键值对不存在则插入
 类似于deque双端队列，可以在两端插入、删除数据，也可以删除指定范围外的数据，常用命令如下
 lpush name value 在name列表的左边插入value
 rpush name value 同上，不过是在右边
-lpop
+lpop name shan'c
 rpop
-lrange name startidx endidx 显示qi
+lrange name startidx endidx 显示起始位置和结束位置之间的所有数据，endidx取-1时表示最后一个元素
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDk5MDM0Niw2ODM3MzczMjksLTk0Mz
+eyJoaXN0b3J5IjpbMTQ5ODA0NTQ3NCw2ODM3MzczMjksLTk0Mz
 AzMzA5MSwtMjA4ODc0NjYxMl19
 -->
