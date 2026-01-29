@@ -63,8 +63,9 @@ xread count num block time name start 一次读取num条消息，从start开始�
 xgroup creat name groupname id 创建一个消费者组，消息队列名称name，组名称groupname
 xinfo groups name 查看name对应的消费者组的信息
 xgroup createconsumer name groupname consumername 创建对应消息队列对应消费者组的消费者并指定名字
+xread 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjI3NjEzNDMsLTU3NjYzNDIyOCwtOD
-g2OTU0NTc5LDE2MDY0NTY2NzMsLTEwMzIzNzY0NSw2ODM3Mzcz
-MjksLTk0MzAzMzA5MSwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMjQxMTk1NTQ5LC01NzY2MzQyMjgsLTg4Nj
+k1NDU3OSwxNjA2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5
+LC05NDMwMzMwOTEsLTIwODg3NDY2MTJdfQ==
 -->
