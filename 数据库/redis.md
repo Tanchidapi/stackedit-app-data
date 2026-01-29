@@ -38,9 +38,12 @@ zscore name value 查看成员分数
 zrank name value 查看成员排名
 zrevrank name value 查看成员排名，从大到小
 zrem name value 删除成员
+### 哈希hash
+字符类型的字段和值的映射表，存储键值对对象，常见命令如下：
+hset name field value 向名为name的哈希中插入键值对
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MTczMzEsMTYwNjQ1NjY3MywtMTAzMj
-M3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkxLC0yMDg4NzQ2NjEy
-XX0=
+eyJoaXN0b3J5IjpbODcxNDQ0NTI5LDE2MDY0NTY2NzMsLTEwMz
+IzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0NjYx
+Ml19
 -->
