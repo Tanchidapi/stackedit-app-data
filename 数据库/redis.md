@@ -12,8 +12,10 @@ expire key time 设置过期时间
 setex key value time 设置过期时间
 setinx key value 如果键值对不存在则插入
 ### 列表list
-类似于deque双端队列
+类似于deque双端队列，可以在两端插入、删除数据，也可以删除指定范围外的数据，常用命令如下
+rpush name value
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2NDgyNDY1LDY4MzczNzMyOSwtOTQzMD
+eyJoaXN0b3J5IjpbLTk5ODg4NTc5LDY4MzczNzMyOSwtOTQzMD
 MzMDkxLC0yMDg4NzQ2NjEyXX0=
 -->
