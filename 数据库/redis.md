@@ -9,8 +9,11 @@ keys mode 查看所有匹配mode的键
 flushall 删除所有键
 ttl key 查看键过期时间，-2表示过期
 expire key time 设置过期时间
-
+setex key value time 设置过期时间
+setinx key value 如果键值对不存在则插入
+### 列表list
+类似于deque双端队列
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzE0MTc3MjQsNjgzNzM3MzI5LC05ND
-MwMzMwOTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbNDg2NDgyNDY1LDY4MzczNzMyOSwtOTQzMD
+MzMDkxLC0yMDg4NzQ2NjEyXX0=
 -->
