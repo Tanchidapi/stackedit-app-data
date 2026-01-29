@@ -59,8 +59,9 @@ xrange name start end 查看name中消息的详细内容，start和end使用-和
 xdel name id 删除编号为id的消息
 xtrim name maxlen 0 删除所有消息
 id的格式是整数-整数，第一个整数表示一个时间戳，第二个整数表示一个序列号，无论手动还是自动，都要保证id递增
+xread count num block time name start 一次读取num条消息，如果没有消息就阻塞time（ms）
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM0NjU5Njg5LC04ODY5NTQ1NzksMTYwNj
-Q1NjY3MywtMTAzMjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkx
-LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTkxNjAxODE3OCwtODg2OTU0NTc5LDE2MD
+Y0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5
+MSwtMjA4ODc0NjYxMl19
 -->
