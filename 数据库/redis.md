@@ -55,9 +55,11 @@ hkeys/hlen 获取所有键/数量
 是一个轻量级的消息队列，常见命令如下：
 xadd name * key value 星号表示自动生成一个消息的id，该命令用于向name消息队列插入一条消息，内容为key value
 xlen name 查看name中消息的数量
-xrange name  查看name中消息的详细内容
+xrange name start end 查看name中消息的详细内容，start和end使用-和+可以表示所有消息
+xdel name id 删除编号为id的消息
+xtrim name m
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwNjQwNTE5LC04ODY5NTQ1NzksMTYwNj
-Q1NjY3MywtMTAzMjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkx
-LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTExODI2NjA4NjQsLTg4Njk1NDU3OSwxNj
+A2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMw
+OTEsLTIwODg3NDY2MTJdfQ==
 -->
