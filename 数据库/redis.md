@@ -23,9 +23,11 @@ llen name 显示列表长度
 ltrim name start end 用于删除start到end以外的数据，只保留其之间的
 ### 集合set
 不能重复且不像list是有顺序的，常用命令如下：
-sadd name value
-smembers
+sadd name value 向名为name的集合中插入value
+smembers 显示name集合中的所有数据
+sismember name value 判断value是否在集合中
+srem name 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDEzNTU1ODUsNjgzNzM3MzI5LC05ND
-MwMzMwOTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTM5ODYyNDMwMyw2ODM3MzczMjksLTk0Mz
+AzMzA5MSwtMjA4ODc0NjYxMl19
 -->
