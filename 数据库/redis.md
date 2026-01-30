@@ -90,11 +90,11 @@ bitpos mapname value start end 返回mapname中第一个出现value的位置，�
 位域可以将很多小的整数存储到一个较大的位图，以实现更高效的使用内存，常用命令如下：
 bitfield idkey set type #position value 创建一个idkey的位域，并将position位置设置为值value
 get idkey 用于查看内存中对应idkey的情况，会显示十六进制的编码
-bitfield idkey get 
+bitfield idkey get type #position 获取idkey的position位置的值
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTQxNzE2OCwtNDUyNDIxMDM5LDE2Nz
-czNTU4NzMsMjA1MjkxMjAyMCwtNDk2MTAzODc4LC0xMTY4Mzc3
-ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC01NzY2MzQyMjgsLT
-g4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3
-MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEyMTg5OTU3OTksLTQ1MjQyMTAzOSwxNj
+c3MzU1ODczLDIwNTI5MTIwMjAsLTQ5NjEwMzg3OCwtMTE2ODM3
+Nzg0MiwxMjc3MzE0Njk0LDY5NDM5NzI5NCwtNTc2NjM0MjI4LC
+04ODY5NTQ1NzksMTYwNjQ1NjY3MywtMTAzMjM3NjQ1LDY4Mzcz
+NzMyOSwtOTQzMDMzMDkxLC0yMDg4NzQ2NjEyXX0=
 -->
