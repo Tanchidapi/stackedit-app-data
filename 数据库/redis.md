@@ -94,9 +94,10 @@ bitfield idkey get type #position 获取idkey的position位置的值
 ### 事务
 即在一个请求中执行多条命令，通过multi和exec来开启并执行，在redis中，事务不保证所有的命令都执行成功，redis保证以下三点：1.所有命令在exec执行前都会被放入到一个队列中缓存起来。2.收到exec命令后事务开始执行，任何一个命令执行失败不影响其他命令。3.事务执行过程中，其他客户端提交的命令请求不会被插入到事务的执行序列中
 ### 持久化
-redis基于内存，持久化有两种方式
+redis基于内存，持久化有两种方式：1.RDB（Redis Database）2.AOF（Append Only File）
+RDB通过在指定时间间隔内将内存中的数据快照写入磁盘实现持久化，是某个shi'jian
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NDMyMDcwNywtMTIxODk5NTc5OSwtND
+eyJoaXN0b3J5IjpbLTU0Nzk4MDk3NiwtMTIxODk5NTc5OSwtND
 UyNDIxMDM5LDE2NzczNTU4NzMsMjA1MjkxMjAyMCwtNDk2MTAz
 ODc4LC0xMTY4Mzc3ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC
 01NzY2MzQyMjgsLTg4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMy
