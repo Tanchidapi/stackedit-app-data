@@ -73,11 +73,12 @@ geoadd name longitude latitude locationname 在name地理空间中添加location
 geopos name locationname 获取对应位置的地理位置信息
 geodist name locationname1 locationname2 计算两个位置的直线距离，默认单位米
 geosearch name frommember locationname byradius radiusnum 查找locationname为圆心，radiusnum为半径的园内的location，也可以使用bybox表示使用矩形范围
-### 
+### 基数统计算法HyperLogLog
+基数是指集合中不重复的元素的个数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0NzU4Mzg4LDE2NzczNTU4NzMsMjA1Mj
-kxMjAyMCwtNDk2MTAzODc4LC0xMTY4Mzc3ODQyLDEyNzczMTQ2
-OTQsNjk0Mzk3Mjk0LC01NzY2MzQyMjgsLTg4Njk1NDU3OSwxNj
-A2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMw
-OTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE3MDI4NTA4NDksMTY3NzM1NTg3MywyMD
+UyOTEyMDIwLC00OTYxMDM4NzgsLTExNjgzNzc4NDIsMTI3NzMx
+NDY5NCw2OTQzOTcyOTQsLTU3NjYzNDIyOCwtODg2OTU0NTc5LD
+E2MDY0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAz
+MzA5MSwtMjA4ODc0NjYxMl19
 -->
