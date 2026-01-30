@@ -86,11 +86,12 @@ getbit mapname offset 获取mapname的offset位置的bit值
 set mapname "value" 有个技巧是value可以使用十六进制来一次设置四位的值
 bitcount mapname 统计mapname中有几个bit为1
 bitpos mapname value start end 返回mapname中第一个出现value的位置，可以从指定的start到end的范围内查找
-
+### 位域bitfield
+位域可以将很多小的整数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDg4Njk1LDE2NzczNTU4NzMsMjA1Mj
-kxMjAyMCwtNDk2MTAzODc4LC0xMTY4Mzc3ODQyLDEyNzczMTQ2
-OTQsNjk0Mzk3Mjk0LC01NzY2MzQyMjgsLTg4Njk1NDU3OSwxNj
-A2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMw
-OTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE5MTkwMjg3NDQsMTY3NzM1NTg3MywyMD
+UyOTEyMDIwLC00OTYxMDM4NzgsLTExNjgzNzc4NDIsMTI3NzMx
+NDY5NCw2OTQzOTcyOTQsLTU3NjYzNDIyOCwtODg2OTU0NTc5LD
+E2MDY0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAz
+MzA5MSwtMjA4ODc0NjYxMl19
 -->
