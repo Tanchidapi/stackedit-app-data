@@ -70,9 +70,9 @@ xreadgroup group groupname consumername count num block time streams name > 使�
 ### 地理空间geospatial
 用于存储地理位置空间并支持对地理位置进行各种运算，常用命令如下：
 geoadd name longitude latitude locationname 在name地理空间中添加locationname的地理位置信息，经纬度为longitude和latitude
-
+geopos name locationname 获取对应位置的地理位置信息
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NDg2NzQxOCwtNDk2MTAzODc4LC0xMT
+eyJoaXN0b3J5IjpbMjA1MjkxMjAyMCwtNDk2MTAzODc4LC0xMT
 Y4Mzc3ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC01NzY2MzQy
 MjgsLTg4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMyMzc2NDUsNj
 gzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2MTJdfQ==
