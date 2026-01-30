@@ -91,10 +91,10 @@ bitpos mapname value start end 返回mapname中第一个出现value的位置，�
 bitfield idkey set type #position value 创建一个idkey的位域，并将position位置设置为值value
 get idkey 用于查看内存中对应idkey的情况，会显示十六进制的编码
 bitfield idkey get type #position 获取idkey的position位置的值
-### 事物
-即在一个请求中执行多条命令，通过
+### 事务
+即在一个请求中执行多条命令，通过multi和exec来开启并执行
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTU5MTU4NjUsLTEyMTg5OTU3OTksLT
+eyJoaXN0b3J5IjpbLTEzOTE2NDY3NDgsLTEyMTg5OTU3OTksLT
 Q1MjQyMTAzOSwxNjc3MzU1ODczLDIwNTI5MTIwMjAsLTQ5NjEw
 Mzg3OCwtMTE2ODM3Nzg0MiwxMjc3MzE0Njk0LDY5NDM5NzI5NC
 wtNTc2NjM0MjI4LC04ODY5NTQ1NzksMTYwNjQ1NjY3MywtMTAz
