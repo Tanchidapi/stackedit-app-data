@@ -92,12 +92,12 @@ bitfield idkey set type #position value 创建一个idkey的位域，并将posit
 get idkey 用于查看内存中对应idkey的情况，会显示十六进制的编码
 bitfield idkey get type #position 获取idkey的position位置的值
 ### 事务
-即在一个请求中执行多条命令，通过multi和exec来开启并执行，在redis中，事务不保证所有的命令都执行成功，redis保证以下三点：1.所有命令在exec执行前都会被放入到一个队列中缓存起来。2. 
+即在一个请求中执行多条命令，通过multi和exec来开启并执行，在redis中，事务不保证所有的命令都执行成功，redis保证以下三点：1.所有命令在exec执行前都会被放入到一个队列中缓存起来。2.收到exec命令后事务开始执行，任何一个命令执行失败不影响其他命令。3.事务执行过程中，其他客户端提交的命令请求不会被插入到
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDc2NDc0MjQsLTEyMTg5OTU3OTksLT
-Q1MjQyMTAzOSwxNjc3MzU1ODczLDIwNTI5MTIwMjAsLTQ5NjEw
-Mzg3OCwtMTE2ODM3Nzg0MiwxMjc3MzE0Njk0LDY5NDM5NzI5NC
-wtNTc2NjM0MjI4LC04ODY5NTQ1NzksMTYwNjQ1NjY3MywtMTAz
-MjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkxLC0yMDg4NzQ2Nj
-EyXX0=
+eyJoaXN0b3J5IjpbMTY1NzYwNzc5NiwtMTIxODk5NTc5OSwtND
+UyNDIxMDM5LDE2NzczNTU4NzMsMjA1MjkxMjAyMCwtNDk2MTAz
+ODc4LC0xMTY4Mzc3ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC
+01NzY2MzQyMjgsLTg4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMy
+Mzc2NDUsNjgzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2MT
+JdfQ==
 -->
