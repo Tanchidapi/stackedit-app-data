@@ -93,11 +93,13 @@ get idkey 用于查看内存中对应idkey的情况，会显示十六进制的�
 bitfield idkey get type #position 获取idkey的position位置的值
 ### 事务
 即在一个请求中执行多条命令，通过multi和exec来开启并执行，在redis中，事务不保证所有的命令都执行成功，redis保证以下三点：1.所有命令在exec执行前都会被放入到一个队列中缓存起来。2.收到exec命令后事务开始执行，任何一个命令执行失败不影响其他命令。3.事务执行过程中，其他客户端提交的命令请求不会被插入到事务的执行序列中
+### 持久化
+redis基于内存，持久化有两种方式
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc5MjY5MzQ2LC0xMjE4OTk1Nzk5LC00NT
-I0MjEwMzksMTY3NzM1NTg3MywyMDUyOTEyMDIwLC00OTYxMDM4
-NzgsLTExNjgzNzc4NDIsMTI3NzMxNDY5NCw2OTQzOTcyOTQsLT
-U3NjYzNDIyOCwtODg2OTU0NTc5LDE2MDY0NTY2NzMsLTEwMzIz
-NzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0NjYxMl
-19
+eyJoaXN0b3J5IjpbLTY1NDMyMDcwNywtMTIxODk5NTc5OSwtND
+UyNDIxMDM5LDE2NzczNTU4NzMsMjA1MjkxMjAyMCwtNDk2MTAz
+ODc4LC0xMTY4Mzc3ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC
+01NzY2MzQyMjgsLTg4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMy
+Mzc2NDUsNjgzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2MT
+JdfQ==
 -->
