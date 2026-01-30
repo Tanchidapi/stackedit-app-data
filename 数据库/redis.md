@@ -87,11 +87,12 @@ set mapname "value" 有个技巧是value可以使用十六进制来一次设置�
 bitcount mapname 统计mapname中有几个bit为1
 bitpos mapname value start end 返回mapname中第一个出现value的位置，可以从指定的start到end的范围内查找
 ### 位域bitfield
-位域可以将很多小的整数存储到一个较大的位图
+位域可以将很多小的整数存储到一个较大的位图，以实现更高效的使用内存，常用命令如下：
+bitfield idkey set type 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjQyMTAzOSwxNjc3MzU1ODczLDIwNT
-I5MTIwMjAsLTQ5NjEwMzg3OCwtMTE2ODM3Nzg0MiwxMjc3MzE0
-Njk0LDY5NDM5NzI5NCwtNTc2NjM0MjI4LC04ODY5NTQ1NzksMT
-YwNjQ1NjY3MywtMTAzMjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMz
-MDkxLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTY2ODAzNjE0MywtNDUyNDIxMDM5LDE2Nz
+czNTU4NzMsMjA1MjkxMjAyMCwtNDk2MTAzODc4LC0xMTY4Mzc3
+ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC01NzY2MzQyMjgsLT
+g4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3
+MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2MTJdfQ==
 -->
