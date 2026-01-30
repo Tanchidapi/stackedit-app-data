@@ -76,9 +76,12 @@ geosearch name frommember locationname byradius radiusnum 查找locationname为�
 ### 基数统计算法HyperLogLog
 基数是指集合中不重复的元素的个数，hyperloglog的原理是使用随机算法来计算，通过牺牲一定精确度换取更小的内存消耗。优点是占用内存小，缺点是会有一定的误差，适用于对精确度要求不高且数据量很大的统计工作，如统计某个网站的uv或是某个词的搜索次数，常用命令如下：
 pfadd name elements··· 添加元素elements到name中
-pf
+pfcount name 计算name的基数
+pfmerge resultname name1 name2 合并name1和name2到resultname中
+### 位图bitmap
+位图是string类型的扩展
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjY3NTQ1MSwxNjc3MzU1ODczLDIwNT
+eyJoaXN0b3J5IjpbMTQxNjk2NzYwMSwxNjc3MzU1ODczLDIwNT
 I5MTIwMjAsLTQ5NjEwMzg3OCwtMTE2ODM3Nzg0MiwxMjc3MzE0
 Njk0LDY5NDM5NzI5NCwtNTc2NjM0MjI4LC04ODY5NTQ1NzksMT
 YwNjQ1NjY3MywtMTAzMjM3NjQ1LDY4MzczNzMyOSwtOTQzMDMz
