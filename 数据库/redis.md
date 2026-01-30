@@ -79,9 +79,10 @@ pfadd name elements··· 添加元素elements到name中
 pfcount name 计算name的基数
 pfmerge resultname name1 name2 合并name1和name2到resultname中
 ### 位图bitmap
-位图是string类型的扩展，可以使用一个string类型来模拟一个bit数组，数组下标就是偏移量，值只有0和1，支持位运算
+位图是string类型的扩展，可以使用一个string类型来模拟一个bit数组，数组下标就是偏移量，值只有0和1，支持位运算，常用命令如下：
+setbit mapname offset bitvalue 设置mapname位图offset的位置的值为
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzEzMzI5MjAsMTY3NzM1NTg3MywyMD
+eyJoaXN0b3J5IjpbLTEyNjU4MjU4NzUsMTY3NzM1NTg3MywyMD
 UyOTEyMDIwLC00OTYxMDM4NzgsLTExNjgzNzc4NDIsMTI3NzMx
 NDY5NCw2OTQzOTcyOTQsLTU3NjYzNDIyOCwtODg2OTU0NTc5LD
 E2MDY0NTY2NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAz
