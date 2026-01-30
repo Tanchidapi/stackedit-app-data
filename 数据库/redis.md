@@ -72,11 +72,12 @@ xreadgroup group groupname consumername count num block time streams name > 使�
 geoadd name longitude latitude locationname 在name地理空间中添加locationname的地理位置信息，经纬度为longitude和latitude
 geopos name locationname 获取对应位置的地理位置信息
 geodist name locationname1 locationname2 计算两个位置的直线距离，默认单位米
-geosearch name frommember locationname byradius 
+geosearch name frommember locationname byradius radiusnum 查找locationname为圆心，radiusnum为半径的园内的location，也可以使用bybox表示使用矩形范围
+### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NzM1NTg3MywyMDUyOTEyMDIwLC00OT
-YxMDM4NzgsLTExNjgzNzc4NDIsMTI3NzMxNDY5NCw2OTQzOTcy
-OTQsLTU3NjYzNDIyOCwtODg2OTU0NTc5LDE2MDY0NTY2NzMsLT
-EwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0
-NjYxMl19
+eyJoaXN0b3J5IjpbNjI0NzU4Mzg4LDE2NzczNTU4NzMsMjA1Mj
+kxMjAyMCwtNDk2MTAzODc4LC0xMTY4Mzc3ODQyLDEyNzczMTQ2
+OTQsNjk0Mzk3Mjk0LC01NzY2MzQyMjgsLTg4Njk1NDU3OSwxNj
+A2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMw
+OTEsLTIwODg3NDY2MTJdfQ==
 -->
