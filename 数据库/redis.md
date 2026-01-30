@@ -69,9 +69,10 @@ xgroup createconsumer name groupname consumername 创建对应消息队列对应
 xreadgroup group groupname consumername count num block time streams name > 使用消费者组中的指定消费者读取num条消息，阻塞时间time，`>`表示从消息队列中读取最新消息
 ### 地理空间geospatial
 用于存储地理位置空间并支持对地理位置进行各种运算，常用命令如下：
-geoadd name longitude la't
+geoadd name longitude latitude locationname 在name地理空间中添加locationname的地理位置信息，经纬度为longitude和latitude
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MzM5NTQyMiwtNDk2MTAzODc4LC0xMT
+eyJoaXN0b3J5IjpbMTE4NDg2NzQxOCwtNDk2MTAzODc4LC0xMT
 Y4Mzc3ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC01NzY2MzQy
 MjgsLTg4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMyMzc2NDUsNj
 gzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2MTJdfQ==
