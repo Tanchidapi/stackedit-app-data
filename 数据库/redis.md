@@ -67,9 +67,10 @@ xgroup creat name groupname id 创建一个消费者组，消息队列名称name
 xinfo groups name 查看name对应的消费者组的信息
 xgroup createconsumer name groupname consumername 创建对应消息队列对应消费者组的消费者并指定名字
 xreadgroup group groupname consumername count num block time streams name > 使用消费者组中的指定消费者读取num条消息，阻塞时间time，`>`表示从消息队列中读取最新消息
+### di'l
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjgzNzc4NDIsMTI3NzMxNDY5NCw2OT
-QzOTcyOTQsLTU3NjYzNDIyOCwtODg2OTU0NTc5LDE2MDY0NTY2
-NzMsLTEwMzIzNzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMj
-A4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTExMzkxMTY5MSwtMTE2ODM3Nzg0MiwxMj
+c3MzE0Njk0LDY5NDM5NzI5NCwtNTc2NjM0MjI4LC04ODY5NTQ1
+NzksMTYwNjQ1NjY3MywtMTAzMjM3NjQ1LDY4MzczNzMyOSwtOT
+QzMDMzMDkxLC0yMDg4NzQ2NjEyXX0=
 -->
