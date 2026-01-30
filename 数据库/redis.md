@@ -88,11 +88,11 @@ bitcount mapname 统计mapname中有几个bit为1
 bitpos mapname value start end 返回mapname中第一个出现value的位置，可以从指定的start到end的范围内查找
 ### 位域bitfield
 位域可以将很多小的整数存储到一个较大的位图，以实现更高效的使用内存，常用命令如下：
-bitfield idkey set type 
+bitfield idkey set type #position
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODAzNjE0MywtNDUyNDIxMDM5LDE2Nz
-czNTU4NzMsMjA1MjkxMjAyMCwtNDk2MTAzODc4LC0xMTY4Mzc3
-ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC01NzY2MzQyMjgsLT
-g4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMyMzc2NDUsNjgzNzM3
-MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbNTYzNTI4OTE5LC00NTI0MjEwMzksMTY3Nz
+M1NTg3MywyMDUyOTEyMDIwLC00OTYxMDM4NzgsLTExNjgzNzc4
+NDIsMTI3NzMxNDY5NCw2OTQzOTcyOTQsLTU3NjYzNDIyOCwtOD
+g2OTU0NTc5LDE2MDY0NTY2NzMsLTEwMzIzNzY0NSw2ODM3Mzcz
+MjksLTk0MzAzMzA5MSwtMjA4ODc0NjYxMl19
 -->
