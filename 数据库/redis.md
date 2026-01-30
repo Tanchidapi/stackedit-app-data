@@ -71,9 +71,12 @@ xreadgroup group groupname consumername count num block time streams name > 使�
 用于存储地理位置空间并支持对地理位置进行各种运算，常用命令如下：
 geoadd name longitude latitude locationname 在name地理空间中添加locationname的地理位置信息，经纬度为longitude和latitude
 geopos name locationname 获取对应位置的地理位置信息
+geodist name locationname1 locationname2 计算两个位置的直线距离，默认单位米
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjkxMjAyMCwtNDk2MTAzODc4LC0xMT
-Y4Mzc3ODQyLDEyNzczMTQ2OTQsNjk0Mzk3Mjk0LC01NzY2MzQy
-MjgsLTg4Njk1NDU3OSwxNjA2NDU2NjczLC0xMDMyMzc2NDUsNj
-gzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEzMzM4MDM1NzgsMjA1MjkxMjAyMCwtND
+k2MTAzODc4LC0xMTY4Mzc3ODQyLDEyNzczMTQ2OTQsNjk0Mzk3
+Mjk0LC01NzY2MzQyMjgsLTg4Njk1NDU3OSwxNjA2NDU2NjczLC
+0xMDMyMzc2NDUsNjgzNzM3MzI5LC05NDMwMzMwOTEsLTIwODg3
+NDY2MTJdfQ==
 -->
