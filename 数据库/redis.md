@@ -96,12 +96,12 @@ bitfield idkey get type #position 获取idkey的position位置的值
 ### 持久化
 redis基于内存，持久化有两种方式：1.RDB（Redis Database）2.AOF（Append Only File）
 RDB通过在指定时间间隔内将内存中的数据快照写入磁盘实现持久化，是某个时间点上数据的完整副本，更适合用于做备份，可以通过save文件修改配置或者手动save命令来写入
-
+AOF通过追加文件，在写命令执行的时候不仅将命令写入内存
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY1Njc4MTEsLTEyMTg5OTU3OTksLTQ1Mj
-QyMTAzOSwxNjc3MzU1ODczLDIwNTI5MTIwMjAsLTQ5NjEwMzg3
-OCwtMTE2ODM3Nzg0MiwxMjc3MzE0Njk0LDY5NDM5NzI5NCwtNT
-c2NjM0MjI4LC04ODY5NTQ1NzksMTYwNjQ1NjY3MywtMTAzMjM3
-NjQ1LDY4MzczNzMyOSwtOTQzMDMzMDkxLC0yMDg4NzQ2NjEyXX
-0=
+eyJoaXN0b3J5IjpbNjM4MzI4MDA0LC0xMjE4OTk1Nzk5LC00NT
+I0MjEwMzksMTY3NzM1NTg3MywyMDUyOTEyMDIwLC00OTYxMDM4
+NzgsLTExNjgzNzc4NDIsMTI3NzMxNDY5NCw2OTQzOTcyOTQsLT
+U3NjYzNDIyOCwtODg2OTU0NTc5LDE2MDY0NTY2NzMsLTEwMzIz
+NzY0NSw2ODM3MzczMjksLTk0MzAzMzA5MSwtMjA4ODc0NjYxMl
+19
 -->
