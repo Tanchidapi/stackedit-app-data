@@ -98,9 +98,10 @@ redis基于内存，持久化有两种方式：1.RDB（Redis Database）2.AOF（
 RDB通过在指定时间间隔内将内存中的数据快照写入磁盘实现持久化，是某个时间点上数据的完整副本，更适合用于做备份，可以通过save文件修改配置或者手动save命令来写入
 AOF通过追加文件，在写命令执行的时候不仅将命令写入内存，还将命令写入到一个追加的文件中，该文件以日志的形式记录每一个写操作，redis重启时就通过重新执行AOF中的命令来在内存中重新构建数据库，开启方法在配置文件中设置
 ### 主从复制
-指将一台redis服务器的数据复制到其他服务器，主从可以是一对多的关系，复制是单向的，只能从主到从，一般主节点负责写，从节点负责读，主节点将自身数据变化异步的
+指将一台redis服务器的数据复制到其他服务器，主从可以是一对多的关系，复制是单向的，只能从主到从，一般主节点负责写，从节点负责读，主节点将自身数据变化异步的发送给从节点来保持数据一致，配置方法如下：
+默认配置就是主节点，对从节点，可以通过命令配置或者修改配置文件，使用命令replicaof 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTA1MzQ1MjgsOTMyNDkzMTQsLTEyMT
+eyJoaXN0b3J5IjpbLTE2MTM3MTExNzAsOTMyNDkzMTQsLTEyMT
 g5OTU3OTksLTQ1MjQyMTAzOSwxNjc3MzU1ODczLDIwNTI5MTIw
 MjAsLTQ5NjEwMzg3OCwtMTE2ODM3Nzg0MiwxMjc3MzE0Njk0LD
 Y5NDM5NzI5NCwtNTc2NjM0MjI4LC04ODY5NTQ1NzksMTYwNjQ1
